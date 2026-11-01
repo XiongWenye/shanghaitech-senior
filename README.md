@@ -7,7 +7,7 @@
 [![CourseBench Reviews](https://img.shields.io/badge/Reviews-2300+-orange.svg)]()
 
 > **“选课不踩坑，复习有真题，作业有答案，毕业不延毕。”**  
-> 专为上海科技大学（ShanghaiTech）本科生打造的**全能学业导师与通关伙伴**。融合 **CourseBench** 真实学生评价大数据、**2026 级全校 12 大本科专业官方培养方案**，以及 **iTechX、XiongWenye、zsc2003** 三大开源课程资料库。
+> 专为上海科技大学（ShanghaiTech）本科生打造的**全能学业导师与通关伙伴**。融合 **CourseBench** 真实学生评价大数据、**全校 12 大本科专业官方培养方案**，以及三大开源课程资料库。
 
 ---
 
@@ -23,7 +23,7 @@
 - **📝 历年期中期末真题**：收录 2008～2025 最新考卷回忆版、试卷原题扫描件、答案解析与名师讲解视频（如 2025 数分I、2025 普物I、2025 线代I、CS100 2025 中期含答案）。
 - **💡 平时作业与官方解答**：各学期 Homework 题目、标准答案（Solutions）及配套测试用例包。
 - **🖥️ 讲义课件与复习提纲**：官方 PPT 课件、Recitation 习题课讲义、学长手写高分思维导图。
-- **🛠️ 实验与大作业代码**：zsc2003 学长通关仓库代码、图论/算法模板、大作业参考。
+- **🛠️ 实验与大作业代码**：学长通关仓库代码、图论/算法模板、大作业参考。
 
 ### 3. 🗺️ 全校专业官方修课路线图 (Curriculum Roadmaps)
 - 完整录入 **2026 级全校 12 大本科专业官方培养方案**（SIST 计科/AI荣誉班/电子、IMS 数学/信计、SPST 物理/化学/材料、SLST 生科/生技、BME 生医工、SCA 工业设计）。
@@ -46,15 +46,15 @@
 
 ## 🚀 快速上手 (Quick Start)
 
-### 模式 A：作为 Antigravity / Gemini Agent 技能使用 (推荐)
+### 模式 A：作为Agent技能使用 (推荐)
 
 直接克隆至本机的 Skills 目录：
 
 ```bash
-git clone https://github.com/XiongWenye/shanghaitech-senior.git ~/.gemini/config/skills/shanghaitech-senior
+git clone https://github.com/XiongWenye/shanghaitech-senior.git ~/你的Agent Skill目录/shanghaitech-senior
 ```
 
-重启 Antigravity 或刷新对话后，AI 即可化身为“上科大本科老学长”，自动在对话中响应：
+重启 Agent 或刷新对话后，AI 即可化身为“上科大本科老学长”，自动在对话中响应：
 - *“学长，CS100 怎么样？难不难？该怎么学？”*
 - *“快期末考了，有没有大物I和高数I的历年真题卷？”*
 - *“下学期计科大一春季选什么课好？帮我推荐个路线。”*
@@ -106,6 +106,14 @@ python3 scripts/senior.py search "体系结构"
 - 上海科技大学 CourseBench 平台全体贡献真实评课的同学们
 
 ---
+
+## ☕ Buy me a coffee
+
+如果你觉得本项目对你有帮助，欢迎请老学长喝杯咖啡以支持持续维护和更新！本人承诺**所有捐赠**将用于本项目维护及相关开源生态建设（如高价值历年真题/解答的**贡献者激励**）。
+
+| 微信支付 (WeChat Pay) | 支付宝 (Alipay) |
+| :---: | :---: |
+| <img src="./assets/wechat.jpg" width="230" alt="微信支付收款码" /> | <img src="./assets/alipay.png" width="230" alt="支付宝收款码" /> |
 
 ## 📄 开源许可证 (License)
 
