@@ -16028,7 +16028,7 @@
           "available": true,
           "folder_name": "普通物理I实验",
           "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E6%99%AE%E9%80%9A%E7%89%A9%E7%90%86I%E5%AE%9E%E9%AA%8C",
-          "total_files": 69,
+          "total_files": 57,
           "exams": [],
           "solutions": [],
           "slides_notes": [
@@ -16195,7 +16195,7 @@
           "available": true,
           "folder_name": "普通物理I",
           "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E6%99%AE%E9%80%9A%E7%89%A9%E7%90%86I",
-          "total_files": 8,
+          "total_files": 21,
           "exams": [
             {
               "name": "普物21年春季期中.pdf",
