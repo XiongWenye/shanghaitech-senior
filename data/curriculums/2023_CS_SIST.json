@@ -1,0 +1,173 @@
+{
+  "major_id": "2023_CS_SIST",
+  "grade": 2023,
+  "degree": "工学学士",
+  "institute": "信息科学与技术学院",
+  "major": "计算机科学与技术",
+  "min_total_credits": 140,
+  "modules": [
+    {
+      "name": "思想政治理论课",
+      "required_credits": 16,
+      "compulsory_courses": [
+        {"code": "GESS1028", "name": "思想道德与法治", "credit": 2},
+        {"code": "GESS1018", "name": "中国近现代史纲要", "credit": 2},
+        {"code": "CLEC1001", "name": "形势与政策", "credit": 2},
+        {"code": "GESS1016", "name": "毛泽东思想和中国特色社会主义理论体系概论", "credit": 5},
+        {"code": "GESS1027", "name": "马克思主义基本原理", "credit": 3}
+      ],
+      "elective_required_credits": 2,
+      "elective_pool": [
+        "GEHA1097", "GESS1026", "GEHA1101", "GEHA1095", "GEHA1061",
+        "MT1013", "MT1014", "MT1015", "MT1016", "MT1017", "MT1018",
+        "MT1019", "MT1029", "MT1030", "MT1031", "MT1032", "MT1033", "MT1034"
+      ]
+    },
+    {
+      "name": "通识必修",
+      "required_credits": 11,
+      "compulsory_courses": [
+        {"code": "CPRA1006", "name": "军事技能", "credit": 2},
+        {"code": "CLEC1003", "name": "军事理论", "credit": 2},
+        {"code": "GEHA1050", "name": "中华文明通论", "credit": 3}
+      ],
+      "choice_groups": [
+        {
+          "name": "世界文明/科技文明",
+          "required_credits": 2,
+          "options": [
+            {"code": "GEHA1003", "name": "世界文明通论", "credit": 2},
+            {"code": "GEHA1004", "name": "科技文明通论", "credit": 2}
+          ]
+        },
+        {
+          "name": "设计思维",
+          "required_credits": 3,
+          "options": [
+            {"code": "SEMI1101", "name": "设计思维：创业与管理中的创新方案", "credit": 3},
+            {"code": "SEMI1102", "name": "设计思维：心理学与创新", "credit": 3},
+            {"code": "ARTS1701", "name": "设计思维：产品与交互设计的创新方案", "credit": 3}
+          ]
+        },
+        {
+          "name": "经济学导论",
+          "required_credits": 3,
+          "options": [
+            {"code": "ECON1001", "name": "经济学导论", "credit": 3},
+            {"code": "ECON1101", "name": "经济学导论：能源环境产业", "credit": 3},
+            {"code": "ECON1102", "name": "经济学导论：生物医药产业", "credit": 3},
+            {"code": "ECON1103", "name": "经济学导论：信息技术产业", "credit": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "通识选修-文明经典导读",
+      "required_credits": 2,
+      "prefix_patterns": ["GEHA1054", "GEHA1055", "GEHA1088", "GEHA1074", "GEHA1076", "GEHA1046", "GEHA1117", "GEHA1087", "GEHA1166", "GESS1029", "GEHA1084", "GEHA1047", "GEHA1183", "GEHA1198", "GEHA1199", "GEHA1217", "GEHA1218", "GEHA1219", "GEHA1230", "GEHA1252", "GEHA1262", "GEHA1268", "GEHA1282", "GEHA1290", "GEHA1296"]
+    },
+    {
+      "name": "通识选修-文学与写作课程群",
+      "required_credits": 3,
+      "prefix_patterns": ["GEHA1128", "GEHA1220", "GEHA1233", "GEHA1234", "GEHA1235", "GEHA1236", "GEHA1123", "GEHA1124", "GEHA1125", "GEHA1126", "GEHA1151", "GEHA1152", "GEHA1153", "GEHA1154", "GEHA1155", "GEHA1156", "GEHA1157", "GEHA1158", "GEHA1177", "GEHA1193", "GEHA1194", "GEHA1195", "GEHA1196", "GEHA1197", "GEHA1260", "GEHA1261", "GEHA1270", "GEHA1271", "GEHA1295"]
+    },
+    {
+      "name": "通识选修-创意与艺术课程群",
+      "required_credits": 2,
+      "prefix_patterns": ["ARTS1", "CLGE1007", "CLGE1106"]
+    },
+    {
+      "name": "体育课程群",
+      "required_credits": 4,
+      "rules": "体育I修满2学分，体育II修满2学分",
+      "prefix_patterns": ["GEPE", "CLPE"]
+    },
+    {
+      "name": "自然科学基础",
+      "required_credits": 35,
+      "compulsory_courses": [
+        {"code": "PHYS1181", "name": "普通物理I", "credit": 3},
+        {"code": "PHYS1111", "name": "普通物理I实验", "credit": 1},
+        {"code": "CHEM1103", "name": "普通化学I", "credit": 3},
+        {"code": "CHEM1100", "name": "普通化学I实验", "credit": 1},
+        {"code": "SI100B", "name": "信息科学技术导论", "credit": 4},
+        {"code": "MATH1112", "name": "线性代数I", "credit": 4},
+        {"code": "SI120", "name": "离散数学", "credit": 4},
+        {"code": "SI140A", "name": "面向信息科学的概率论与数理统计", "credit": 4}
+      ],
+      "choice_groups": [
+        {
+          "name": "高等数学/数学分析I",
+          "required_credits": 4,
+          "options": [
+            {"code": "GEMA1001", "name": "高等数学I", "credit": 4},
+            {"code": "GEMA1009", "name": "数学分析I", "credit": 5}
+          ]
+        },
+        {
+          "name": "高等数学/数学分析II",
+          "required_credits": 4,
+          "options": [
+            {"code": "GEMA1003", "name": "高等数学II", "credit": 4},
+            {"code": "GEMA1010", "name": "数学分析II", "credit": 5}
+          ]
+        },
+        {
+          "name": "现代生命科学导论",
+          "required_credits": 3,
+          "options": [
+            {"code": "BIO1002", "name": "现代生命科学导论B", "credit": 3},
+            {"code": "BIO1011", "name": "现代生命科学导论C", "credit": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "专业必修",
+      "required_credits": 24,
+      "compulsory_courses": [
+        {"code": "CS181", "name": "人工智能I", "credit": 4},
+        {"code": "CS100", "name": "计算机编程", "credit": 4},
+        {"code": "CS101", "name": "算法与数据结构", "credit": 4},
+        {"code": "CS110", "name": "计算机体系结构I", "credit": 4},
+        {"code": "CS110P", "name": "计算机体系结构I课程设计", "credit": 2},
+        {"code": "SI199", "name": "毕业论文", "credit": 6}
+      ]
+    },
+    {
+      "name": "电子基础选修",
+      "required_credits": 5,
+      "choice_groups": [
+        {
+          "name": "电路或信号基础",
+          "required_credits": 5,
+          "options": [
+            {"code": "EE111+EE111L", "name": "电路基础(4) + 电路基础实验(1)", "credit": 5},
+            {"code": "EE150+EE150L", "name": "信号与系统(4) + 信号与系统实验(1)", "credit": 5}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "专业选修方向群",
+      "required_credits": 11,
+      "description": "专业选修模块需至少修满11学分（如图形视觉、体系结构、网络系统、理论与算法等）"
+    },
+    {
+      "name": "本学科选修",
+      "required_credits": 29,
+      "description": "信息学院开设的本科生或研究生专业课程 (CS, SI, EE 开头)"
+    },
+    {
+      "name": "跨学科选修课程",
+      "required_credits": 3,
+      "description": "物质学院、生命学院、生物医学工程学院、数学科学研究所开设的部分本科生专业课程。课程代码开头为 CHEM、MSE、PHYS、SP、BIO、BME、SL、MATH，且与培养方案其它模块课程不重复。",
+      "allowed_prefixes": ["CHEM", "MSE", "PHYS", "SP", "BIO", "BME", "SL", "MATH"]
+    },
+    {
+      "name": "任意选修课",
+      "required_credits": 9,
+      "description": "全校所有开放课程（除培养方案已计算学分外）"
+    }
+  ]
+}

@@ -1,0 +1,7626 @@
+{
+  "curriculum_id": "2026_ID_SCA",
+  "grade": 2026,
+  "institute": "创意与艺术学院",
+  "major": "工业设计",
+  "track": "智能硬件产品 / 娱乐与互动设计",
+  "degree": "工学学士学位",
+  "min_total_credits": 151,
+  "interdisciplinary_prefixes": [
+    "CS",
+    "SI",
+    "EE",
+    "CHEM",
+    "MSE",
+    "PHYS",
+    "BIO",
+    "BME",
+    "MATH",
+    "ECON"
+  ],
+  "summary_requirements": {
+    "人文社科通识总学分": 53.0,
+    "思想政治理论课": 17.0,
+    "通识必修": 13.0,
+    "大学英语": 7.0,
+    "大学体育": 7.0,
+    "人文写作": 3.0,
+    "文明经典导读": 2.0,
+    "创意与艺术": 2.0,
+    "创新创业": 2.0,
+    "毕业要求总学分": 151
+  },
+  "modules": [
+    {
+      "name": "通识必修",
+      "required_credits": 7.0,
+      "compulsory_courses": [
+        {
+          "code": "MT1024",
+          "name": "形势与政策",
+          "credit": 2.0,
+          "semesters": [
+            4
+          ],
+          "dept": "思想政治需按规定理论课教研部参加形势",
+          "notes": "与政策课"
+        },
+        {
+          "code": "GESS1028",
+          "name": "思想道德与法洽",
+          "credit": 2.0,
+          "semesters": [],
+          "dept": "思想政治理论课教研部",
+          "notes": ""
+        },
+        {
+          "code": "MT1021",
+          "name": "色社会主义思想概论3 习近平新时代中国特",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "理论课教思想政治政部开设论课（思研部） +1学分",
+          "notes": ""
+        }
+      ],
+      "elective_pool": []
+    },
+    {
+      "name": "专业选修",
+      "required_credits": 8.0,
+      "compulsory_courses": [
+        {
+          "code": "GESS1018",
+          "name": "中国近现代史纲要",
+          "credit": 2.0,
+          "semesters": [
+            4
+          ],
+          "dept": "思想政治理论课教研部",
+          "notes": ""
+        },
+        {
+          "code": "MT1023",
+          "name": "毛泽东思想和中国特色社会主义理论体系概论",
+          "credit": 3.0,
+          "semesters": [
+            4
+          ],
+          "dept": "理论课教一思想政治论课（思政部开设研部） +1学分",
+          "notes": ""
+        },
+        {
+          "code": "GESS1027",
+          "name": "马克思主义基本原理",
+          "credit": 3.0,
+          "semesters": [
+            7
+          ],
+          "dept": "思想政治理论课教研部",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "SMRT1138",
+          "name": "综合设计V：系统设计",
+          "credit": 3.0,
+          "dept": "创意与艺V，二选木学院"
+        },
+        {
+          "code": "ENT1105",
+          "name": "色彩理论与应用",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "SMRT1205",
+          "name": "创意思维",
+          "credit": 2.0,
+          "dept": "创意与艺木学院"
+        },
+        {
+          "code": "ENT1103",
+          "name": "造型原理",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "ENT1128",
+          "name": "角色表现",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "ENT1132",
+          "name": "中国传统文化符号",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "SMRT1124",
+          "name": "用户界面设计",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "ENT1133",
+          "name": "虚拟引擎应用与设辻",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "ENT1114",
+          "name": "设计案例研究",
+          "credit": 2.0,
+          "dept": "创意与艺木学院"
+        },
+        {
+          "code": "ENT1134",
+          "name": "游戏机制研究",
+          "credit": 2.0,
+          "dept": "创意与艺木学院"
+        },
+        {
+          "code": "SMRT1209",
+          "name": "服务设计",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "ENT1118",
+          "name": "当代艺术研究",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "ENT1139",
+          "name": "电子游戏设计",
+          "credit": 2.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "SMRT1203",
+          "name": "人工智能技术与应用",
+          "credit": 3.0,
+          "dept": "创意与艺木学院"
+        },
+        {
+          "code": "ARTS1422",
+          "name": "数据可视化",
+          "credit": 3.0,
+          "dept": "创意与艺术学院"
+        },
+        {
+          "code": "SMRT1204",
+          "name": "具身智能",
+          "credit": 3.0,
+          "dept": "创意与艺术学院"
+        }
+      ]
+    },
+    {
+      "name": "思想政治理论课-选修",
+      "required_credits": 9.0,
+      "compulsory_courses": [
+        {
+          "code": "CLEC1003",
+          "name": "军事理论",
+          "credit": 2.0,
+          "semesters": [],
+          "dept": "上道书院上道书院",
+          "notes": ""
+        },
+        {
+          "code": "CLPS1003",
+          "name": "大学生心理健康",
+          "credit": 2.0,
+          "semesters": [],
+          "dept": "课，最后上道书院课程学分",
+          "notes": "合成为该"
+        },
+        {
+          "code": "MT1030",
+          "name": "国家安全教育",
+          "credit": 1.0,
+          "semesters": [
+            3
+          ],
+          "dept": "思想政治理论课教研部",
+          "notes": ""
+        },
+        {
+          "code": "GEHA1302",
+          "name": "中华文明通论",
+          "credit": 2.0,
+          "semesters": [],
+          "dept": "人文科学研究院",
+          "notes": ""
+        },
+        {
+          "code": "ECON1014",
+          "name": "经济学导论",
+          "credit": 2.0,
+          "semesters": [
+            4
+          ],
+          "dept": "创业与管理学院",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "GEHA1101",
+          "name": "丝绸之路与东西文化交流",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "GESS1026",
+          "name": "中国经济发展和改革",
+          "credit": 2.0,
+          "dept": "思想政治"
+        },
+        {
+          "code": "MT1013",
+          "name": "法治与社会",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1014",
+          "name": "人类命运共同体历史基础与当代实践",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1015",
+          "name": "《资本论》导读",
+          "credit": 2.0,
+          "dept": "理论课教研部"
+        },
+        {
+          "code": "MT1016",
+          "name": "科学技术与社会",
+          "credit": 1.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1017",
+          "name": "上海城市史",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1018",
+          "name": "红色上海史",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1019",
+          "name": "細整目不",
+          "credit": 1.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1029",
+          "name": "论",
+          "credit": 2.0,
+          "dept": "理论课教思想政治研部"
+        },
+        {
+          "code": "MT1031",
+          "name": "领土争端与地区安全",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1032",
+          "name": "中华优秀传统文化",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "MT1033",
+          "name": "大国博弈与全球治理",
+          "credit": 2.0,
+          "dept": "理论课教思想政治研部"
+        },
+        {
+          "code": "MT1034",
+          "name": "王亚新与太王味利音业暑重要",
+          "credit": 2.0,
+          "dept": "思想政治理论课教研部"
+        },
+        {
+          "code": "GEHA1254",
+          "name": "哲学导论B",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1003",
+          "name": "世界文明通论",
+          "credit": 2.0,
+          "dept": "人文科学研究院/科通，三选一"
+        },
+        {
+          "code": "GEHA1004",
+          "name": "科技文明通论",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1165",
+          "name": "基础英语1-人文阅读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1173",
+          "name": "基础英语I-公共演讲",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        }
+      ]
+    },
+    {
+      "name": "通识选修-大学英语",
+      "required_credits": 1.0,
+      "compulsory_courses": [
+        {
+          "code": "CLPE1001",
+          "name": "游泳运动与健康43科学健身与田径运",
+          "credit": 1.0,
+          "semesters": [],
+          "dept": "上道书院",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "GEHA1132",
+          "name": "基础英语I-人文阅读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1150",
+          "name": "基础英语11-写作",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1303",
+          "name": "年到1920年间的美国史",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1304",
+          "name": "数字人文：英国小说的兴起",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1305",
+          "name": "现代诗歌阅读",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1306",
+          "name": "启蒙时代：现代世界的诞生",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1307",
+          "name": "莎士比亚《李尔王",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1308",
+          "name": "大学制度变革史",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1309",
+          "name": "全球视野下科技进步",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1310",
+          "name": "技术哲学与虚拟世界导论",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        }
+      ]
+    },
+    {
+      "name": "通识选修-大学体育",
+      "required_credits": 2.0,
+      "compulsory_courses": [
+        {
+          "code": "CLPE1002",
+          "name": "科学健身与田径运动",
+          "credit": 1.0,
+          "semesters": [
+            1
+          ],
+          "dept": "上道书院",
+          "notes": ""
+        },
+        {
+          "code": "CLPE1048",
+          "name": "健康体适能",
+          "credit": 1.0,
+          "semesters": [],
+          "dept": "上道书院",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "GEPE1007",
+          "name": "击剑与防卫I45健美操I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1009",
+          "name": "健美操I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1011",
+          "name": "盤球！47乒乓球I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1015",
+          "name": "乒乓球I48拳击与塑形I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1017",
+          "name": "拳击与塑形I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1019",
+          "name": "跆拳道I",
+          "credit": 0.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1023",
+          "name": "网球I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1025",
+          "name": "游泳I",
+          "credit": 0.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1028",
+          "name": "羽毛球！",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1030",
+          "name": "足球I",
+          "credit": 0.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1032",
+          "name": "武术1",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1042",
+          "name": "基础瑜伽I",
+          "credit": 0.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1046",
+          "name": "匹克球I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1047",
+          "name": "赛艇I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1008",
+          "name": "击剑与防卫I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1010",
+          "name": "健美操！！",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1012",
+          "name": "篮球II61 乒乓球II",
+          "credit": 0.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1016",
+          "name": "乒乓球II62 拳击与塑形I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1018",
+          "name": "拳击与塑形I63跆拳道I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1020",
+          "name": "跆拳道I",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1024",
+          "name": "网球II",
+          "credit": 0.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1026",
+          "name": "游冰166羽毛球I1",
+          "credit": 0.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "GEPE1029",
+          "name": "游冰166羽毛球I1",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1031",
+          "name": "足球II",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1033",
+          "name": "武术I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1043",
+          "name": "基础瑜伽II",
+          "credit": 0.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1048",
+          "name": "匹克球II",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEPE1049",
+          "name": "赛艇I",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1049",
+          "name": "击剑运动73健美操运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1050",
+          "name": "健美操运动",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "CLPE1051",
+          "name": "篮球运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1052",
+          "name": "乒乓球运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1053",
+          "name": "拳击运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1054",
+          "name": "跆拳道运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1055",
+          "name": "网球运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1056",
+          "name": "游泳运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1057",
+          "name": "羽毛球运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1058",
+          "name": "足球运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1059",
+          "name": "武术运动",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "CLPE1060",
+          "name": "瑜伽运动84 匹克球运动",
+          "credit": 1.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "CLPE1061",
+          "name": "匹克球运动85赛艇运动",
+          "credit": 0.0,
+          "dept": "上道书院上道书院"
+        },
+        {
+          "code": "CLPE1062",
+          "name": "赛艇运动应修学分",
+          "credit": 1.0,
+          "dept": "上道书院"
+        },
+        {
+          "code": "GEHA1123",
+          "name": "说理写作",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1124",
+          "name": "小说阅读与批评",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1125",
+          "name": "中国古代文学与现代风华",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1126",
+          "name": "唐前诗文之美",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        }
+      ]
+    },
+    {
+      "name": "通识选修-文学与写作",
+      "required_credits": 3.0,
+      "compulsory_courses": [],
+      "elective_pool": [
+        {
+          "code": "GEHA1128",
+          "name": "中国现代文学选读",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1151",
+          "name": "武侠小说与宋元历史",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1152",
+          "name": "唐宋文学精华",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1153",
+          "name": "港台文学与电影",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1154",
+          "name": "文学中的“空间”",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1155",
+          "name": "阅读城市：小说与",
+          "credit": 3.0,
+          "dept": "人文科学"
+        },
+        {
+          "code": "GEHA1156",
+          "name": "海派文学与文化",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1157",
+          "name": "与电影98性别视角下文学",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1158",
+          "name": "论证与写作",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1177",
+          "name": "叙事与伦理",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1193",
+          "name": "非虚构写作导论",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1195",
+          "name": "昆曲文本与艺术",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1196",
+          "name": "现代文学中的情爱叙事",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1197",
+          "name": "中国的历史叙事",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1220",
+          "name": "中日“武”传统",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1233",
+          "name": "从小说到电影",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1234",
+          "name": "世界文学名著导读",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1235",
+          "name": "电影中的东亚传统戏剧",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1236",
+          "name": "古代散文叙事与思辨",
+          "credit": 3.0,
+          "dept": "人文科学佌究院"
+        },
+        {
+          "code": "GEHA1260",
+          "name": "哲学思辨与写作",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1261",
+          "name": "比较视域中的叙事艺术",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1271",
+          "name": "“家”故事：从传统到现代",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1295",
+          "name": "社会科学写作",
+          "credit": 3.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1046",
+          "name": "《史记》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1047",
+          "name": "《资治通鉴》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1074",
+          "name": "《周易》与文化",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1087",
+          "name": "柏拉图《理想国》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1117",
+          "name": "宋词导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        }
+      ]
+    },
+    {
+      "name": "通识选修-文明经典导读",
+      "required_credits": 2.0,
+      "compulsory_courses": [],
+      "elective_pool": [
+        {
+          "code": "GEHA1183",
+          "name": "古希腊悲剧导读",
+          "credit": 1.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1199",
+          "name": "《尼各马可伦理学》 导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1217",
+          "name": "鲁迅《故事新编》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1218",
+          "name": "《孟子》精读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1219",
+          "name": "波伏娃《第二性》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1230",
+          "name": "《传习录》解读一一现代视野下王阳明思想",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1262",
+          "name": "《想象共同体》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1268",
+          "name": "《论语》导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1282",
+          "name": "西方政治哲学经典导读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1290",
+          "name": "《论人类不平等的起源和基础》精读",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        },
+        {
+          "code": "GEHA1296",
+          "name": "《老子》与中国哲学",
+          "credit": 2.0,
+          "dept": "人文科学研究院"
+        }
+      ]
+    },
+    {
+      "name": "通识选修-创意与艺术",
+      "required_credits": 2.0,
+      "compulsory_courses": [
+        {
+          "code": "ARTS1405",
+          "name": "现代艺术导论",
+          "credit": 2.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "BHSC1301",
+          "name": "领导力与团队合作",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "BHSC1302",
+          "name": "谈判",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "BHSC1303",
+          "name": "消费者心理学",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "BHSC1304",
+          "name": "决策心理学",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "CLGE1304",
+          "name": "管理沟通与商业说服力",
+          "credit": 2.0,
+          "dept": "大道书院"
+        },
+        {
+          "code": "ECON1013",
+          "name": "数据与社会",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "ENTR1006",
+          "name": "商业决策和技术创新",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "ENTR1009",
+          "name": "创业企业融资",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        }
+      ]
+    },
+    {
+      "name": "通识选修-创新创业",
+      "required_credits": 6.0,
+      "compulsory_courses": [
+        {
+          "code": "MATH1255",
+          "name": "线性代数及其应用",
+          "credit": 3.0,
+          "semesters": [
+            4
+          ],
+          "dept": "数学科学研究所",
+          "notes": ""
+        },
+        {
+          "code": "GEMA1201",
+          "name": "概率论与数理统计及其应用",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "数学科学研究所",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "ENTR1305",
+          "name": "商业计划",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "ENTR2001",
+          "name": "创业管理",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "ENTR2002",
+          "name": "与决策142高科技创业：理论",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "ENTR2004",
+          "name": "创新创业工具及人工智能的运用",
+          "credit": 1.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "SEMI1016",
+          "name": "创新管理",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        },
+        {
+          "code": "SEMI1301",
+          "name": "创新科学：认知原理与市场应用",
+          "credit": 2.0,
+          "dept": "创业与管理学院"
+        }
+      ]
+    },
+    {
+      "name": "自然科学基础",
+      "required_credits": 33.0,
+      "compulsory_courses": [
+        {
+          "code": "GEMA1001",
+          "name": "高等数学I",
+          "credit": 4.0,
+          "semesters": [
+            1
+          ],
+          "dept": "数学科学研究所",
+          "notes": ""
+        },
+        {
+          "code": "GEMA1003",
+          "name": "高等数学II",
+          "credit": 4.0,
+          "semesters": [
+            2
+          ],
+          "dept": "数学科学研究所",
+          "notes": ""
+        },
+        {
+          "code": "PHYS1181",
+          "name": "普通物理I",
+          "credit": 3.0,
+          "semesters": [
+            5
+          ],
+          "dept": "物质科学与技术学院",
+          "notes": ""
+        },
+        {
+          "code": "SI100B",
+          "name": "信息科学技术导论",
+          "credit": 4.0,
+          "semesters": [
+            2
+          ],
+          "dept": "信息科学与技术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1139",
+          "name": "设计史论",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1142",
+          "name": "创意构建与表达（含实验）",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺木学院",
+          "notes": ""
+        },
+        {
+          "code": "ENT1127",
+          "name": "故事与影像（含实验）",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1140",
+          "name": "视觉与传达（含实验）",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1131",
+          "name": "物联网与应用",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1141",
+          "name": "材料与工艺（含实险）",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺木学院",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "BIO1015",
+          "name": "现代生命科学导论",
+          "credit": 2.0,
+          "dept": "生命科学与技术学院"
+        },
+        {
+          "code": "CHEM1120",
+          "name": "大学化学",
+          "credit": 2.0,
+          "dept": "物质科学与技术学院"
+        }
+      ]
+    },
+    {
+      "name": "专业必修",
+      "required_credits": 18.0,
+      "compulsory_courses": [
+        {
+          "code": "SMRT1306",
+          "name": "综合设计1：形态设计（含实验）",
+          "credit": 4.0,
+          "semesters": [
+            4
+          ],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1135",
+          "name": "人因工学与多感官设计",
+          "credit": 3.0,
+          "semesters": [
+            5
+          ],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1130",
+          "name": "Al+设计研究",
+          "credit": 2.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1136",
+          "name": "设计管理",
+          "credit": 3.0,
+          "semesters": [],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        },
+        {
+          "code": "SMRT1401",
+          "name": "毕业设计",
+          "credit": 6.0,
+          "semesters": [
+            11
+          ],
+          "dept": "创意与艺术学院",
+          "notes": ""
+        }
+      ],
+      "elective_pool": [
+        {
+          "code": "ENT1135",
+          "name": "综合设计I：品牌设计",
+          "credit": 3.0,
+          "dept": "创意与艺术学院综合设计"
+        },
+        {
+          "code": "SMRT1133",
+          "name": "综合设计I1：产品设计",
+          "credit": 3.0,
+          "dept": "创意与艺1，二选术学院"
+        },
+        {
+          "code": "ENT1136",
+          "name": "综合设计I：跨媒介",
+          "credit": 3.0,
+          "dept": "创意与艺术学院综合设计"
+        },
+        {
+          "code": "SMRT1134",
+          "name": "综合设计I：交互设计",
+          "credit": 3.0,
+          "dept": "创意与艺皿，二选术学院"
+        },
+        {
+          "code": "ENT1137",
+          "name": "综合设计IV：混合现实",
+          "credit": 3.0,
+          "dept": "创意与艺术学院综合设计IV，二选"
+        },
+        {
+          "code": "SMRT1137",
+          "name": "综合设计IV：情感设计",
+          "credit": 3.0,
+          "dept": "创意与艺IV，二选术学院"
+        },
+        {
+          "code": "ENT1138",
+          "name": "综合设计V：综合游戏",
+          "credit": 3.0,
+          "dept": "创意与艺术学院综合设计"
+        }
+      ]
+    }
+  ],
+  "semester_roadmap": {
+    "1": [
+      {
+        "code": "GEHA1254",
+        "name": "哲学导论B",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 851,
+          "official_name": "哲学导论B",
+          "score_quality": 3.73,
+          "score_workload": 4.09,
+          "score_difficulty": 4.45,
+          "score_grade": 3.55,
+          "comment_num": 11,
+          "teachers": "孙斌, 王寅丽, 聂保平, 聂清",
+          "latest_semester": 202602,
+          "semesters_history": "202401,202402,202501,202502,202602"
+        }
+      },
+      {
+        "code": "GEHA1173",
+        "name": "基础英语I-公共演讲",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 774,
+          "official_name": "基础英语I-公共演讲",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "Lee Curry",
+          "latest_semester": 202302,
+          "semesters_history": "202302"
+        }
+      },
+      {
+        "code": "CLPE1002",
+        "name": "科学健身与田径运动",
+        "credit": 1.0,
+        "is_compulsory": true,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 83,
+          "official_name": "科学健身与田径运动",
+          "score_quality": 4.5,
+          "score_workload": 5.0,
+          "score_difficulty": 3.3,
+          "score_grade": 3.75,
+          "comment_num": 20,
+          "teachers": "刘鹏, 周长敬, 唐军, 李斐, 李玉章, 王然, 陈超",
+          "latest_semester": 202602,
+          "semesters_history": "201901,202001,202101,202102,202201,202202,202301,202401,202402,202501,202502,202602"
+        }
+      },
+      {
+        "code": "GEHA1123",
+        "name": "说理写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 400,
+          "official_name": "说理写作",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1124",
+        "name": "小说阅读与批评",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 170,
+          "official_name": "小说阅读与批评",
+          "score_quality": 4.6,
+          "score_workload": 3.8,
+          "score_difficulty": 4.0,
+          "score_grade": 3.8,
+          "comment_num": 5,
+          "teachers": "张蕴贤, 杜心源",
+          "latest_semester": 202402,
+          "semesters_history": "202202,202301,202402"
+        }
+      },
+      {
+        "code": "GEHA1125",
+        "name": "中国古代文学与现代风华",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 171,
+          "official_name": "中国古代文学与现代风华",
+          "score_quality": 5.0,
+          "score_workload": 4.0,
+          "score_difficulty": 4.5,
+          "score_grade": 4.5,
+          "comment_num": 2,
+          "teachers": "陈娅妮",
+          "latest_semester": 202301,
+          "semesters_history": "202201,202301"
+        }
+      },
+      {
+        "code": "GEHA1126",
+        "name": "唐前诗文之美",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 172,
+          "official_name": "唐前诗文之美",
+          "score_quality": 5.0,
+          "score_workload": 4.5,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "陈娅妮",
+          "latest_semester": 202401,
+          "semesters_history": "202102,202401"
+        }
+      },
+      {
+        "code": "GEHA1128",
+        "name": "中国现代文学选读",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 174,
+          "official_name": "中国现代文学选读",
+          "score_quality": 3.0,
+          "score_workload": 3.0,
+          "score_difficulty": 2.0,
+          "score_grade": 2.0,
+          "comment_num": 1,
+          "teachers": "毛佩洁",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEHA1151",
+        "name": "武侠小说与宋元历史",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 402,
+          "official_name": "武侠小说与宋元历史",
+          "score_quality": 5.0,
+          "score_workload": 4.8,
+          "score_difficulty": 5.0,
+          "score_grade": 4.6,
+          "comment_num": 10,
+          "teachers": "刘海威",
+          "latest_semester": 202401,
+          "semesters_history": "202201,202301,202302,202401"
+        }
+      },
+      {
+        "code": "GEHA1152",
+        "name": "唐宋文学精华",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 403,
+          "official_name": "唐宋文学精华",
+          "score_quality": 5.0,
+          "score_workload": 4.67,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 6,
+          "teachers": "陈娅妮",
+          "latest_semester": 202402,
+          "semesters_history": "202201,202302,202402"
+        }
+      },
+      {
+        "code": "GEHA1153",
+        "name": "港台文学与电影",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 404,
+          "official_name": "港台文学与电影",
+          "score_quality": 5.0,
+          "score_workload": 4.25,
+          "score_difficulty": 4.75,
+          "score_grade": 4.75,
+          "comment_num": 4,
+          "teachers": "祁玥",
+          "latest_semester": 202402,
+          "semesters_history": "202302,202401,202402"
+        }
+      },
+      {
+        "code": "GEHA1154",
+        "name": "文学中的“空间”",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 405,
+          "official_name": "文学中的“空间”",
+          "score_quality": 5.0,
+          "score_workload": 4.57,
+          "score_difficulty": 4.86,
+          "score_grade": 4.43,
+          "comment_num": 7,
+          "teachers": "祁玥",
+          "latest_semester": 202302,
+          "semesters_history": "202201,202202,202301,202302"
+        }
+      },
+      {
+        "code": "GEHA1155",
+        "name": "阅读城市：小说与",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 406,
+          "official_name": "阅读城市：小说与电影",
+          "score_quality": 5.0,
+          "score_workload": 4.4,
+          "score_difficulty": 5.0,
+          "score_grade": 4.6,
+          "comment_num": 5,
+          "teachers": "祁玥",
+          "latest_semester": 202503,
+          "semesters_history": "202301,202401,202402,202502,202503"
+        }
+      },
+      {
+        "code": "GEHA1156",
+        "name": "海派文学与文化",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 407,
+          "official_name": "海派文学与文化",
+          "score_quality": 4.0,
+          "score_workload": 3.0,
+          "score_difficulty": 2.5,
+          "score_grade": 3.0,
+          "comment_num": 4,
+          "teachers": "毛佩洁",
+          "latest_semester": 202302,
+          "semesters_history": "202201,202302"
+        }
+      },
+      {
+        "code": "GEHA1158",
+        "name": "论证与写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 409,
+          "official_name": "论证与写作",
+          "score_quality": 3.33,
+          "score_workload": 4.0,
+          "score_difficulty": 4.67,
+          "score_grade": 3.0,
+          "comment_num": 3,
+          "teachers": "王强",
+          "latest_semester": 202502,
+          "semesters_history": "202301,202502"
+        }
+      },
+      {
+        "code": "GEHA1195",
+        "name": "昆曲文本与艺术",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": null
+      },
+      {
+        "code": "GEHA1196",
+        "name": "现代文学中的情爱叙事",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 663,
+          "official_name": "现代文学中的情爱叙事",
+          "score_quality": 5.0,
+          "score_workload": 4.33,
+          "score_difficulty": 4.67,
+          "score_grade": 5.0,
+          "comment_num": 3,
+          "teachers": "毛佩洁",
+          "latest_semester": 202402,
+          "semesters_history": "202301,202402"
+        }
+      },
+      {
+        "code": "GEHA1197",
+        "name": "中国的历史叙事",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 664,
+          "official_name": "中国的历史叙事",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 4.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "方圆",
+          "latest_semester": 202602,
+          "semesters_history": "202602"
+        }
+      },
+      {
+        "code": "GEHA1233",
+        "name": "从小说到电影",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 779,
+          "official_name": "从小说到电影",
+          "score_quality": 5.0,
+          "score_workload": 3.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "张蕴贤",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEHA1234",
+        "name": "世界文学名著导读",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 780,
+          "official_name": "世界文学名著导读",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1235",
+        "name": "电影中的东亚传统戏剧",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 781,
+          "official_name": "电影中的东亚传统戏剧",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1236",
+        "name": "古代散文叙事与思辨",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 782,
+          "official_name": "古代散文的叙事与思辨",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "张璟",
+          "latest_semester": 202502,
+          "semesters_history": "202502"
+        }
+      },
+      {
+        "code": "GEHA1260",
+        "name": "哲学思辨与写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 857,
+          "official_name": "哲学思辨与写作",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1261",
+        "name": "比较视域中的叙事艺术",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 858,
+          "official_name": "比较视域中的叙事艺术",
+          "score_quality": 5.0,
+          "score_workload": 3.5,
+          "score_difficulty": 4.5,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "张蕴贤",
+          "latest_semester": 202502,
+          "semesters_history": "202502"
+        }
+      },
+      {
+        "code": "GEHA1271",
+        "name": "“家”故事：从传统到现代",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 1094,
+          "official_name": "“家”的故事：从传统到现代",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1295",
+        "name": "社会科学写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": null
+      },
+      {
+        "code": "GEMA1001",
+        "name": "高等数学I",
+        "credit": 4.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 927,
+          "official_name": "高等数学I",
+          "score_quality": 3.78,
+          "score_workload": 2.89,
+          "score_difficulty": 3.56,
+          "score_grade": 3.78,
+          "comment_num": 9,
+          "teachers": "段炼, 王强, 董俊斌, 课程助教, 陈浩, 马骐骁",
+          "latest_semester": 202501,
+          "semesters_history": "202301,202401,202501"
+        }
+      },
+      {
+        "code": "BIO1015",
+        "name": "现代生命科学导论",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 879,
+          "official_name": "现代生命科学导论D",
+          "score_quality": 2.0,
+          "score_workload": 5.0,
+          "score_difficulty": 5.0,
+          "score_grade": 2.5,
+          "comment_num": 2,
+          "teachers": "李洪杰",
+          "latest_semester": 202602,
+          "semesters_history": "202501,202602"
+        }
+      },
+      {
+        "code": "SMRT1139",
+        "name": "设计史论",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 1195,
+          "official_name": "设计史论",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "MT1024",
+        "name": "形势与政策",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "通识必修",
+        "coursebench": {
+          "coursebench_id": 931,
+          "official_name": "形势与政策",
+          "score_quality": 1.0,
+          "score_workload": 1.0,
+          "score_difficulty": 1.0,
+          "score_grade": 1.0,
+          "comment_num": 1,
+          "teachers": "",
+          "latest_semester": 202501,
+          "semesters_history": "202501"
+        }
+      },
+      {
+        "code": "GESS1028",
+        "name": "思想道德与法洽",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "通识必修",
+        "coursebench": {
+          "coursebench_id": 193,
+          "official_name": "思想道德与法治",
+          "score_quality": 2.34,
+          "score_workload": 4.7,
+          "score_difficulty": 3.26,
+          "score_grade": 2.58,
+          "comment_num": 53,
+          "teachers": "曾誉铭",
+          "latest_semester": 202602,
+          "semesters_history": "202001,202101,202102,202201,202202,202301,202302,202401,202402,202501,202502,202503,202602"
+        }
+      },
+      {
+        "code": "CLEC1003",
+        "name": "军事理论",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 1077,
+          "official_name": "军事理论",
+          "score_quality": 2.0,
+          "score_workload": 2.5,
+          "score_difficulty": 3.75,
+          "score_grade": 3.0,
+          "comment_num": 4,
+          "teachers": "张国清, 竺莉莉",
+          "latest_semester": 202501,
+          "semesters_history": "202201,202401,202501"
+        }
+      },
+      {
+        "code": "CLPS1003",
+        "name": "大学生心理健康",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 1082,
+          "official_name": "大学生心理健康（1）",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1165",
+        "name": "基础英语1-人文阅读",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 773,
+          "official_name": "基础英语I-人文阅读",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "CLPE1001",
+        "name": "游泳运动与健康43科学健身与田径运",
+        "credit": 1.0,
+        "is_compulsory": true,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 722,
+          "official_name": "游泳运动与健康",
+          "score_quality": 5.0,
+          "score_workload": 4.83,
+          "score_difficulty": 4.62,
+          "score_grade": 4.5,
+          "comment_num": 24,
+          "teachers": "季丽萍, 林振敢, 潘黎君, 郭叶舟, 黄卫",
+          "latest_semester": 202602,
+          "semesters_history": "202301,202302,202401,202402,202502,202602"
+        }
+      }
+    ],
+    "2": [
+      {
+        "code": "GEHA1157",
+        "name": "与电影98性别视角下文学",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 408,
+          "official_name": "性别视角下的文学与电影",
+          "score_quality": 4.0,
+          "score_workload": 3.33,
+          "score_difficulty": 3.67,
+          "score_grade": 4.0,
+          "comment_num": 3,
+          "teachers": "张蕴贤, 魏泉",
+          "latest_semester": 202602,
+          "semesters_history": "202301,202401,202602"
+        }
+      },
+      {
+        "code": "GEMA1003",
+        "name": "高等数学II",
+        "credit": 4.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 186,
+          "official_name": "高等数学II",
+          "score_quality": 4.21,
+          "score_workload": 2.82,
+          "score_difficulty": 2.79,
+          "score_grade": 3.71,
+          "comment_num": 28,
+          "teachers": "朱佐农, 李铮, 李龙, 段炼, 王强, 皇甫振国, 董俊斌, 课程助教, 赵俐俐, 陈浩, 马骐骁",
+          "latest_semester": 202602,
+          "semesters_history": "202202,202301,202302,202402,202502,202602"
+        }
+      },
+      {
+        "code": "SI100B",
+        "name": "信息科学技术导论",
+        "credit": 4.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 601,
+          "official_name": "信息科学技术导论",
+          "score_quality": 2.32,
+          "score_workload": 1.79,
+          "score_difficulty": 2.15,
+          "score_grade": 2.82,
+          "comment_num": 66,
+          "teachers": "于奕, 何旭明, 刘闯, 娄鑫, 屠可伟, 徐剑锋, 李正浩, 林竹雨, 梁俊睿, 王浩宇, 范睿, 邱越, 郑锐, 陆林燕, 马延航, 高盛华",
+          "latest_semester": 202602,
+          "semesters_history": "201802,201902,202001,202002,202101,202102,202201,202202,202301,202302,202401,202402,202501,202502,202602"
+        }
+      },
+      {
+        "code": "SMRT1205",
+        "name": "创意思维",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "专业选修",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1142",
+        "name": "创意构建与表达（含实验）",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 1133,
+          "official_name": "创意构建与表达",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "ENT1127",
+        "name": "故事与影像（含实验）",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1140",
+        "name": "视觉与传达（含实验）",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 1196,
+          "official_name": "视觉与传达（含实验）",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1132",
+        "name": "基础英语I-人文阅读",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 175,
+          "official_name": "基础英语II-人文阅读",
+          "score_quality": 4.44,
+          "score_workload": 5.0,
+          "score_difficulty": 4.44,
+          "score_grade": 4.78,
+          "comment_num": 9,
+          "teachers": "Steven Lydon, Szidonia Haragos, Zainab Mahmood, 邬竞越, 龚振",
+          "latest_semester": 202402,
+          "semesters_history": "202202,202302,202401,202402"
+        }
+      },
+      {
+        "code": "GEHA1150",
+        "name": "基础英语11-写作",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 185,
+          "official_name": "基础英语II-写作",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1302",
+        "name": "中华文明通论",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 603,
+          "official_name": "中华文明通论",
+          "score_quality": 4.02,
+          "score_workload": 4.57,
+          "score_difficulty": 3.64,
+          "score_grade": 3.26,
+          "comment_num": 42,
+          "teachers": "刘勋, 刘海威, 张璟, 徐芃, 方圆, 施阳九, 杜雨晴, 王路曼, 白云, 聂保平, 聂清, 邹亚文, 陈娅妮",
+          "latest_semester": 202602,
+          "semesters_history": "201901,202001,202002,202101,202102,202201,202301,202302,202401,202402,202502,202602"
+        }
+      },
+      {
+        "code": "CLPE1002",
+        "name": "科学健身与田径运动",
+        "credit": 1.0,
+        "is_compulsory": true,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 83,
+          "official_name": "科学健身与田径运动",
+          "score_quality": 4.5,
+          "score_workload": 5.0,
+          "score_difficulty": 3.3,
+          "score_grade": 3.75,
+          "comment_num": 20,
+          "teachers": "刘鹏, 周长敬, 唐军, 李斐, 李玉章, 王然, 陈超",
+          "latest_semester": 202602,
+          "semesters_history": "201901,202001,202101,202102,202201,202202,202301,202401,202402,202501,202502,202602"
+        }
+      }
+    ],
+    "3": [
+      {
+        "code": "MT1030",
+        "name": "国家安全教育",
+        "credit": 1.0,
+        "is_compulsory": true,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 1063,
+          "official_name": "国家安全教育",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      }
+    ],
+    "4": [
+      {
+        "code": "MT1024",
+        "name": "形势与政策",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "通识必修",
+        "coursebench": {
+          "coursebench_id": 931,
+          "official_name": "形势与政策",
+          "score_quality": 1.0,
+          "score_workload": 1.0,
+          "score_difficulty": 1.0,
+          "score_grade": 1.0,
+          "comment_num": 1,
+          "teachers": "",
+          "latest_semester": 202501,
+          "semesters_history": "202501"
+        }
+      },
+      {
+        "code": "GESS1018",
+        "name": "中国近现代史纲要",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "专业选修",
+        "coursebench": {
+          "coursebench_id": 189,
+          "official_name": "中国近现代史纲要",
+          "score_quality": 2.69,
+          "score_workload": 4.71,
+          "score_difficulty": 3.49,
+          "score_grade": 2.2,
+          "comment_num": 35,
+          "teachers": "陈茂华",
+          "latest_semester": 202602,
+          "semesters_history": "201403,202101,202102,202201,202202,202301,202302,202401,202402,202501,202602"
+        }
+      },
+      {
+        "code": "MT1023",
+        "name": "毛泽东思想和中国特色社会主义理论体系概论",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "专业选修",
+        "coursebench": {
+          "coursebench_id": 190,
+          "official_name": "毛泽东思想和中国特色社会主义理论体系概论（理论课）",
+          "score_quality": 4.62,
+          "score_workload": 4.75,
+          "score_difficulty": 4.44,
+          "score_grade": 4.38,
+          "comment_num": 16,
+          "teachers": "徐大慰, 施阳九, 陈祥勤",
+          "latest_semester": 202502,
+          "semesters_history": "202001,202201,202301,202401,202402,202501,202502"
+        }
+      },
+      {
+        "code": "ECON1014",
+        "name": "经济学导论",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 110,
+          "official_name": "经济学导论",
+          "score_quality": 4.83,
+          "score_workload": 4.55,
+          "score_difficulty": 4.31,
+          "score_grade": 4.52,
+          "comment_num": 29,
+          "teachers": "Soojin Kim, 何晨, 吴文豪, 徐剑锋, 杨乔, 杨锡怡, 申培垚, 陈劼",
+          "latest_semester": 202602,
+          "semesters_history": "202001,202101,202102,202201,202202,202301,202302,202401,202402,202501,202602"
+        }
+      },
+      {
+        "code": "GEHA1003",
+        "name": "世界文明通论",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 155,
+          "official_name": "世界文明通论",
+          "score_quality": 4.8,
+          "score_workload": 4.65,
+          "score_difficulty": 4.5,
+          "score_grade": 4.25,
+          "comment_num": 20,
+          "teachers": "Igor Fedyukin, 刘禹汐, 王路曼",
+          "latest_semester": 202602,
+          "semesters_history": "202101,202201,202202,202301,202302,202402,202501,202502,202602"
+        }
+      },
+      {
+        "code": "GEHA1004",
+        "name": "科技文明通论",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "思想政治理论课-选修",
+        "coursebench": {
+          "coursebench_id": 156,
+          "official_name": "科技文明通论",
+          "score_quality": 4.26,
+          "score_workload": 4.84,
+          "score_difficulty": 4.89,
+          "score_grade": 4.05,
+          "comment_num": 19,
+          "teachers": "邹亚文",
+          "latest_semester": 202402,
+          "semesters_history": "202101,202201,202202,202301,202302,202401,202402"
+        }
+      },
+      {
+        "code": "GEHA1303",
+        "name": "年到1920年间的美国史",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 398,
+          "official_name": "1770年到1920年间的美国史",
+          "score_quality": 4.45,
+          "score_workload": 2.64,
+          "score_difficulty": 3.27,
+          "score_grade": 2.82,
+          "comment_num": 11,
+          "teachers": "Goodin Brett Garrett",
+          "latest_semester": 202301,
+          "semesters_history": "202101,202201,202202,202301"
+        }
+      },
+      {
+        "code": "GEHA1304",
+        "name": "数字人文：英国小说的兴起",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": null
+      },
+      {
+        "code": "GEHA1305",
+        "name": "现代诗歌阅读",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 598,
+          "official_name": "现代诗歌阅读",
+          "score_quality": 4.5,
+          "score_workload": 3.0,
+          "score_difficulty": 3.0,
+          "score_grade": 4.0,
+          "comment_num": 2,
+          "teachers": "Dominic Hubert Gavin",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEHA1306",
+        "name": "启蒙时代：现代世界的诞生",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 674,
+          "official_name": "启蒙时代：现代世界的诞生",
+          "score_quality": 3.0,
+          "score_workload": 3.0,
+          "score_difficulty": 2.5,
+          "score_grade": 1.5,
+          "comment_num": 2,
+          "teachers": "Igor Fedyukin",
+          "latest_semester": 202502,
+          "semesters_history": "202402,202502"
+        }
+      },
+      {
+        "code": "GEHA1307",
+        "name": "莎士比亚《李尔王",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 1167,
+          "official_name": "莎士比亚《李尔王》",
+          "score_quality": 5.0,
+          "score_workload": 3.5,
+          "score_difficulty": 3.5,
+          "score_grade": 4.5,
+          "comment_num": 2,
+          "teachers": "龚振",
+          "latest_semester": 202602,
+          "semesters_history": "202602"
+        }
+      },
+      {
+        "code": "GEHA1308",
+        "name": "大学制度变革史",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 784,
+          "official_name": "大学制度变革史",
+          "score_quality": 4.0,
+          "score_workload": 4.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "Igor Fedyukin",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEHA1309",
+        "name": "全球视野下科技进步",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": null
+      },
+      {
+        "code": "GEHA1310",
+        "name": "技术哲学与虚拟世界导论",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学英语",
+        "coursebench": {
+          "coursebench_id": 1097,
+          "official_name": "技术哲学与虚拟世界导论",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEPE1007",
+        "name": "击剑与防卫I45健美操I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 418,
+          "official_name": "击剑与防卫 I",
+          "score_quality": 3.0,
+          "score_workload": 4.0,
+          "score_difficulty": 3.5,
+          "score_grade": 3.0,
+          "comment_num": 2,
+          "teachers": "费正伟",
+          "latest_semester": 202201,
+          "semesters_history": "202201"
+        }
+      },
+      {
+        "code": "GEPE1009",
+        "name": "健美操I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 419,
+          "official_name": "健美操I",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEPE1015",
+        "name": "乒乓球I48拳击与塑形I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 421,
+          "official_name": "乒乓球 I",
+          "score_quality": 4.67,
+          "score_workload": 5.0,
+          "score_difficulty": 3.67,
+          "score_grade": 4.33,
+          "comment_num": 3,
+          "teachers": "",
+          "latest_semester": 202401,
+          "semesters_history": "202301,202401"
+        }
+      },
+      {
+        "code": "GEPE1017",
+        "name": "拳击与塑形I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 422,
+          "official_name": "拳击与塑形 I",
+          "score_quality": 3.67,
+          "score_workload": 5.0,
+          "score_difficulty": 4.67,
+          "score_grade": 2.0,
+          "comment_num": 3,
+          "teachers": "张震",
+          "latest_semester": 202301,
+          "semesters_history": "201801,202201,202301"
+        }
+      },
+      {
+        "code": "GEPE1019",
+        "name": "跆拳道I",
+        "credit": 0.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 423,
+          "official_name": "跆拳道 I",
+          "score_quality": 3.0,
+          "score_workload": 5.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "朱定煌",
+          "latest_semester": 202501,
+          "semesters_history": "202501"
+        }
+      },
+      {
+        "code": "GEPE1023",
+        "name": "网球I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 424,
+          "official_name": "网球I",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 3.0,
+          "score_grade": 2.0,
+          "comment_num": 1,
+          "teachers": "钟建荣",
+          "latest_semester": 202201,
+          "semesters_history": "202201"
+        }
+      },
+      {
+        "code": "GEPE1025",
+        "name": "游泳I",
+        "credit": 0.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 425,
+          "official_name": "游泳 I",
+          "score_quality": 4.0,
+          "score_workload": 4.5,
+          "score_difficulty": 3.25,
+          "score_grade": 2.5,
+          "comment_num": 4,
+          "teachers": "郭叶舟",
+          "latest_semester": 202301,
+          "semesters_history": "202001,202101,202201,202301"
+        }
+      },
+      {
+        "code": "GEPE1028",
+        "name": "羽毛球！",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 426,
+          "official_name": "羽毛球 I",
+          "score_quality": 4.78,
+          "score_workload": 5.0,
+          "score_difficulty": 4.56,
+          "score_grade": 4.33,
+          "comment_num": 9,
+          "teachers": "卢志泉, 陈周业",
+          "latest_semester": 202501,
+          "semesters_history": "202101,202301,202401,202501"
+        }
+      },
+      {
+        "code": "GEPE1030",
+        "name": "足球I",
+        "credit": 0.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 427,
+          "official_name": "足球 I",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 4.25,
+          "score_grade": 4.0,
+          "comment_num": 4,
+          "teachers": "李震, 郑鹭宾",
+          "latest_semester": 202401,
+          "semesters_history": "201901,202301,202401"
+        }
+      },
+      {
+        "code": "GEPE1032",
+        "name": "武术1",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 428,
+          "official_name": "武术 I",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "",
+          "latest_semester": 202301,
+          "semesters_history": "202301"
+        }
+      },
+      {
+        "code": "GEPE1042",
+        "name": "基础瑜伽I",
+        "credit": 0.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 429,
+          "official_name": "基础瑜伽I",
+          "score_quality": 5.0,
+          "score_workload": 4.67,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 3,
+          "teachers": "陆莉萍",
+          "latest_semester": 202502,
+          "semesters_history": "202201,202401,202502"
+        }
+      },
+      {
+        "code": "GEPE1046",
+        "name": "匹克球I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 789,
+          "official_name": "匹克球 I",
+          "score_quality": 4.8,
+          "score_workload": 5.0,
+          "score_difficulty": 4.2,
+          "score_grade": 4.0,
+          "comment_num": 5,
+          "teachers": "钟建荣",
+          "latest_semester": 202501,
+          "semesters_history": "202401,202501"
+        }
+      },
+      {
+        "code": "GEHA1123",
+        "name": "说理写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 400,
+          "official_name": "说理写作",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1124",
+        "name": "小说阅读与批评",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 170,
+          "official_name": "小说阅读与批评",
+          "score_quality": 4.6,
+          "score_workload": 3.8,
+          "score_difficulty": 4.0,
+          "score_grade": 3.8,
+          "comment_num": 5,
+          "teachers": "张蕴贤, 杜心源",
+          "latest_semester": 202402,
+          "semesters_history": "202202,202301,202402"
+        }
+      },
+      {
+        "code": "GEHA1125",
+        "name": "中国古代文学与现代风华",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 171,
+          "official_name": "中国古代文学与现代风华",
+          "score_quality": 5.0,
+          "score_workload": 4.0,
+          "score_difficulty": 4.5,
+          "score_grade": 4.5,
+          "comment_num": 2,
+          "teachers": "陈娅妮",
+          "latest_semester": 202301,
+          "semesters_history": "202201,202301"
+        }
+      },
+      {
+        "code": "GEHA1126",
+        "name": "唐前诗文之美",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 172,
+          "official_name": "唐前诗文之美",
+          "score_quality": 5.0,
+          "score_workload": 4.5,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "陈娅妮",
+          "latest_semester": 202401,
+          "semesters_history": "202102,202401"
+        }
+      },
+      {
+        "code": "GEHA1128",
+        "name": "中国现代文学选读",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 174,
+          "official_name": "中国现代文学选读",
+          "score_quality": 3.0,
+          "score_workload": 3.0,
+          "score_difficulty": 2.0,
+          "score_grade": 2.0,
+          "comment_num": 1,
+          "teachers": "毛佩洁",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEHA1151",
+        "name": "武侠小说与宋元历史",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 402,
+          "official_name": "武侠小说与宋元历史",
+          "score_quality": 5.0,
+          "score_workload": 4.8,
+          "score_difficulty": 5.0,
+          "score_grade": 4.6,
+          "comment_num": 10,
+          "teachers": "刘海威",
+          "latest_semester": 202401,
+          "semesters_history": "202201,202301,202302,202401"
+        }
+      },
+      {
+        "code": "GEHA1152",
+        "name": "唐宋文学精华",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 403,
+          "official_name": "唐宋文学精华",
+          "score_quality": 5.0,
+          "score_workload": 4.67,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 6,
+          "teachers": "陈娅妮",
+          "latest_semester": 202402,
+          "semesters_history": "202201,202302,202402"
+        }
+      },
+      {
+        "code": "GEHA1153",
+        "name": "港台文学与电影",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 404,
+          "official_name": "港台文学与电影",
+          "score_quality": 5.0,
+          "score_workload": 4.25,
+          "score_difficulty": 4.75,
+          "score_grade": 4.75,
+          "comment_num": 4,
+          "teachers": "祁玥",
+          "latest_semester": 202402,
+          "semesters_history": "202302,202401,202402"
+        }
+      },
+      {
+        "code": "GEHA1154",
+        "name": "文学中的“空间”",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 405,
+          "official_name": "文学中的“空间”",
+          "score_quality": 5.0,
+          "score_workload": 4.57,
+          "score_difficulty": 4.86,
+          "score_grade": 4.43,
+          "comment_num": 7,
+          "teachers": "祁玥",
+          "latest_semester": 202302,
+          "semesters_history": "202201,202202,202301,202302"
+        }
+      },
+      {
+        "code": "GEHA1155",
+        "name": "阅读城市：小说与",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 406,
+          "official_name": "阅读城市：小说与电影",
+          "score_quality": 5.0,
+          "score_workload": 4.4,
+          "score_difficulty": 5.0,
+          "score_grade": 4.6,
+          "comment_num": 5,
+          "teachers": "祁玥",
+          "latest_semester": 202503,
+          "semesters_history": "202301,202401,202402,202502,202503"
+        }
+      },
+      {
+        "code": "GEHA1156",
+        "name": "海派文学与文化",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 407,
+          "official_name": "海派文学与文化",
+          "score_quality": 4.0,
+          "score_workload": 3.0,
+          "score_difficulty": 2.5,
+          "score_grade": 3.0,
+          "comment_num": 4,
+          "teachers": "毛佩洁",
+          "latest_semester": 202302,
+          "semesters_history": "202201,202302"
+        }
+      },
+      {
+        "code": "GEHA1157",
+        "name": "与电影98性别视角下文学",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 408,
+          "official_name": "性别视角下的文学与电影",
+          "score_quality": 4.0,
+          "score_workload": 3.33,
+          "score_difficulty": 3.67,
+          "score_grade": 4.0,
+          "comment_num": 3,
+          "teachers": "张蕴贤, 魏泉",
+          "latest_semester": 202602,
+          "semesters_history": "202301,202401,202602"
+        }
+      },
+      {
+        "code": "GEHA1158",
+        "name": "论证与写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 409,
+          "official_name": "论证与写作",
+          "score_quality": 3.33,
+          "score_workload": 4.0,
+          "score_difficulty": 4.67,
+          "score_grade": 3.0,
+          "comment_num": 3,
+          "teachers": "王强",
+          "latest_semester": 202502,
+          "semesters_history": "202301,202502"
+        }
+      },
+      {
+        "code": "GEHA1177",
+        "name": "叙事与伦理",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 557,
+          "official_name": "叙事与伦理",
+          "score_quality": 4.0,
+          "score_workload": 3.5,
+          "score_difficulty": 4.0,
+          "score_grade": 3.0,
+          "comment_num": 2,
+          "teachers": "王寅丽",
+          "latest_semester": 202301,
+          "semesters_history": "202301"
+        }
+      },
+      {
+        "code": "GEHA1193",
+        "name": "非虚构写作导论",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 661,
+          "official_name": "非虚构写作导论",
+          "score_quality": 5.0,
+          "score_workload": 4.83,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 6,
+          "teachers": "杜雨晴",
+          "latest_semester": 202602,
+          "semesters_history": "202401,202402,202501,202502,202602"
+        }
+      },
+      {
+        "code": "GEHA1195",
+        "name": "昆曲文本与艺术",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": null
+      },
+      {
+        "code": "GEHA1196",
+        "name": "现代文学中的情爱叙事",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 663,
+          "official_name": "现代文学中的情爱叙事",
+          "score_quality": 5.0,
+          "score_workload": 4.33,
+          "score_difficulty": 4.67,
+          "score_grade": 5.0,
+          "comment_num": 3,
+          "teachers": "毛佩洁",
+          "latest_semester": 202402,
+          "semesters_history": "202301,202402"
+        }
+      },
+      {
+        "code": "GEHA1197",
+        "name": "中国的历史叙事",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 664,
+          "official_name": "中国的历史叙事",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 4.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "方圆",
+          "latest_semester": 202602,
+          "semesters_history": "202602"
+        }
+      },
+      {
+        "code": "GEHA1220",
+        "name": "中日“武”传统",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 678,
+          "official_name": "中日“武”传统",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1233",
+        "name": "从小说到电影",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 779,
+          "official_name": "从小说到电影",
+          "score_quality": 5.0,
+          "score_workload": 3.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "张蕴贤",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEHA1234",
+        "name": "世界文学名著导读",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 780,
+          "official_name": "世界文学名著导读",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1235",
+        "name": "电影中的东亚传统戏剧",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 781,
+          "official_name": "电影中的东亚传统戏剧",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1236",
+        "name": "古代散文叙事与思辨",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 782,
+          "official_name": "古代散文的叙事与思辨",
+          "score_quality": 5.0,
+          "score_workload": 5.0,
+          "score_difficulty": 5.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "张璟",
+          "latest_semester": 202502,
+          "semesters_history": "202502"
+        }
+      },
+      {
+        "code": "GEHA1260",
+        "name": "哲学思辨与写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 857,
+          "official_name": "哲学思辨与写作",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1261",
+        "name": "比较视域中的叙事艺术",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 858,
+          "official_name": "比较视域中的叙事艺术",
+          "score_quality": 5.0,
+          "score_workload": 3.5,
+          "score_difficulty": 4.5,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "张蕴贤",
+          "latest_semester": 202502,
+          "semesters_history": "202502"
+        }
+      },
+      {
+        "code": "GEHA1271",
+        "name": "“家”故事：从传统到现代",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": {
+          "coursebench_id": 1094,
+          "official_name": "“家”的故事：从传统到现代",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEHA1295",
+        "name": "社会科学写作",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "通识选修-文学与写作",
+        "coursebench": null
+      },
+      {
+        "code": "MATH1255",
+        "name": "线性代数及其应用",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "通识选修-创新创业",
+        "coursebench": {
+          "coursebench_id": 1104,
+          "official_name": "线性代数及其应用",
+          "score_quality": 5.0,
+          "score_workload": 3.5,
+          "score_difficulty": 4.0,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "Boris Houska",
+          "latest_semester": 202501,
+          "semesters_history": "202501"
+        }
+      },
+      {
+        "code": "SMRT1306",
+        "name": "综合设计1：形态设计（含实验）",
+        "credit": 4.0,
+        "is_compulsory": true,
+        "module": "专业必修",
+        "coursebench": {
+          "coursebench_id": 613,
+          "official_name": "综合设计I：形态设计（含实验）",
+          "score_quality": 5.0,
+          "score_workload": 2.0,
+          "score_difficulty": 3.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "",
+          "latest_semester": 202402,
+          "semesters_history": "202402"
+        }
+      },
+      {
+        "code": "ENT1128",
+        "name": "角色表现",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "专业选修",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1131",
+        "name": "物联网与应用",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1141",
+        "name": "材料与工艺（含实险）",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 1197,
+          "official_name": "材料与工艺（含实验）",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      }
+    ],
+    "5": [
+      {
+        "code": "GEPE1047",
+        "name": "赛艇I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 790,
+          "official_name": "赛艇 I",
+          "score_quality": 5.0,
+          "score_workload": 4.5,
+          "score_difficulty": 4.0,
+          "score_grade": 5.0,
+          "comment_num": 2,
+          "teachers": "周意男",
+          "latest_semester": 202401,
+          "semesters_history": "202401"
+        }
+      },
+      {
+        "code": "GEPE1008",
+        "name": "击剑与防卫I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 560,
+          "official_name": "击剑与防卫 II",
+          "score_quality": 1.83,
+          "score_workload": 3.0,
+          "score_difficulty": 1.67,
+          "score_grade": 1.33,
+          "comment_num": 6,
+          "teachers": "费正伟",
+          "latest_semester": 202302,
+          "semesters_history": "202302"
+        }
+      },
+      {
+        "code": "GEPE1018",
+        "name": "拳击与塑形I63跆拳道I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 564,
+          "official_name": "拳击与塑形 II",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEPE1020",
+        "name": "跆拳道I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 565,
+          "official_name": "跆拳道 II",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "GEPE1033",
+        "name": "武术I",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 570,
+          "official_name": "武术 II",
+          "score_quality": 4.0,
+          "score_workload": 4.0,
+          "score_difficulty": 2.0,
+          "score_grade": 2.0,
+          "comment_num": 1,
+          "teachers": "",
+          "latest_semester": 202402,
+          "semesters_history": "202402"
+        }
+      },
+      {
+        "code": "GEPE1043",
+        "name": "基础瑜伽II",
+        "credit": 0.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 571,
+          "official_name": "基础瑜伽II",
+          "score_quality": 0.0,
+          "score_workload": 0.0,
+          "score_difficulty": 0.0,
+          "score_grade": 0.0,
+          "comment_num": 0,
+          "teachers": "",
+          "latest_semester": "",
+          "semesters_history": ""
+        }
+      },
+      {
+        "code": "PHYS1181",
+        "name": "普通物理I",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "自然科学基础",
+        "coursebench": {
+          "coursebench_id": 233,
+          "official_name": "普通物理I",
+          "score_quality": 3.24,
+          "score_workload": 4.15,
+          "score_difficulty": 4.0,
+          "score_grade": 3.71,
+          "comment_num": 41,
+          "teachers": "周家瑞, 孙兆茹, 彭鹏, 李润泽, 王文波, 翟晓芳, 蒋易凡, 课程助教, 赵爱迪, 邓昊, 齐彦鹏",
+          "latest_semester": 202602,
+          "semesters_history": "202002,202101,202201,202202,202301,202302,202401,202402,202501,202502,202602"
+        }
+      },
+      {
+        "code": "SMRT1135",
+        "name": "人因工学与多感官设计",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "专业必修",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1133",
+        "name": "综合设计I1：产品设计",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "专业必修",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1306",
+        "name": "综合设计1：形态设计（含实验）",
+        "credit": 4.0,
+        "is_compulsory": true,
+        "module": "专业必修",
+        "coursebench": {
+          "coursebench_id": 613,
+          "official_name": "综合设计I：形态设计（含实验）",
+          "score_quality": 5.0,
+          "score_workload": 2.0,
+          "score_difficulty": 3.0,
+          "score_grade": 5.0,
+          "comment_num": 1,
+          "teachers": "",
+          "latest_semester": 202402,
+          "semesters_history": "202402"
+        }
+      },
+      {
+        "code": "MT1023",
+        "name": "毛泽东思想和中国特色社会主义理论体系概论",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "专业选修",
+        "coursebench": {
+          "coursebench_id": 190,
+          "official_name": "毛泽东思想和中国特色社会主义理论体系概论（理论课）",
+          "score_quality": 4.62,
+          "score_workload": 4.75,
+          "score_difficulty": 4.44,
+          "score_grade": 4.38,
+          "comment_num": 16,
+          "teachers": "徐大慰, 施阳九, 陈祥勤",
+          "latest_semester": 202502,
+          "semesters_history": "202001,202201,202301,202401,202402,202501,202502"
+        }
+      }
+    ],
+    "6": [],
+    "7": [
+      {
+        "code": "GESS1027",
+        "name": "马克思主义基本原理",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "专业选修",
+        "coursebench": {
+          "coursebench_id": 192,
+          "official_name": "马克思主义基本原理",
+          "score_quality": 4.5,
+          "score_workload": 4.5,
+          "score_difficulty": 4.42,
+          "score_grade": 3.92,
+          "comment_num": 12,
+          "teachers": "乔戈, 张小霞",
+          "latest_semester": 202601,
+          "semesters_history": "202001,202201,202202,202301,202302,202401,202501,202601"
+        }
+      },
+      {
+        "code": "CLPE1049",
+        "name": "击剑运动73健美操运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1050",
+        "name": "健美操运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1051",
+        "name": "篮球运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1052",
+        "name": "乒乓球运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1053",
+        "name": "拳击运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1054",
+        "name": "跆拳道运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1055",
+        "name": "网球运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1056",
+        "name": "游泳运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": {
+          "coursebench_id": 722,
+          "official_name": "游泳运动与健康",
+          "score_quality": 5.0,
+          "score_workload": 4.83,
+          "score_difficulty": 4.62,
+          "score_grade": 4.5,
+          "comment_num": 24,
+          "teachers": "季丽萍, 林振敢, 潘黎君, 郭叶舟, 黄卫",
+          "latest_semester": 202602,
+          "semesters_history": "202301,202302,202401,202402,202502,202602"
+        }
+      },
+      {
+        "code": "CLPE1057",
+        "name": "羽毛球运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1058",
+        "name": "足球运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1059",
+        "name": "武术运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1060",
+        "name": "瑜伽运动84 匹克球运动",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1061",
+        "name": "匹克球运动85赛艇运动",
+        "credit": 0.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "CLPE1062",
+        "name": "赛艇运动应修学分",
+        "credit": 1.0,
+        "is_compulsory": false,
+        "module": "通识选修-大学体育",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1134",
+        "name": "综合设计I：交互设计",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "专业必修",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1130",
+        "name": "Al+设计研究",
+        "credit": 2.0,
+        "is_compulsory": true,
+        "module": "专业必修",
+        "coursebench": null
+      },
+      {
+        "code": "SMRT1136",
+        "name": "设计管理",
+        "credit": 3.0,
+        "is_compulsory": true,
+        "module": "专业必修",
+        "coursebench": null
+      }
+    ],
+    "8": [
+      {
+        "code": "ENT1137",
+        "name": "综合设计IV：混合现实",
+        "credit": 3.0,
+        "is_compulsory": false,
+        "module": "专业必修",
+        "coursebench": null
+      },
+      {
+        "code": "ENT1139",
+        "name": "电子游戏设计",
+        "credit": 2.0,
+        "is_compulsory": false,
+        "module": "专业选修",
+        "coursebench": null
+      }
+    ]
+  },
+  "all_courses": [
+    {
+      "code": "MT1024",
+      "name": "形势与政策",
+      "credit": 2.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": true,
+      "dept": "思想政治需按规定理论课教研部参加形势",
+      "raw_module": "通识必修",
+      "module": "通识必修",
+      "notes": "与政策课",
+      "coursebench": {
+        "coursebench_id": 931,
+        "official_name": "形势与政策",
+        "score_quality": 1.0,
+        "score_workload": 1.0,
+        "score_difficulty": 1.0,
+        "score_grade": 1.0,
+        "comment_num": 1,
+        "teachers": "",
+        "latest_semester": 202501,
+        "semesters_history": "202501"
+      }
+    },
+    {
+      "code": "GESS1028",
+      "name": "思想道德与法洽",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": true,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "通识必修",
+      "module": "通识必修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 193,
+        "official_name": "思想道德与法治",
+        "score_quality": 2.34,
+        "score_workload": 4.7,
+        "score_difficulty": 3.26,
+        "score_grade": 2.58,
+        "comment_num": 53,
+        "teachers": "曾誉铭",
+        "latest_semester": 202602,
+        "semesters_history": "202001,202101,202102,202201,202202,202301,202302,202401,202402,202501,202502,202503,202602"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "MT1021",
+      "name": "色社会主义思想概论3 习近平新时代中国特",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": true,
+      "dept": "理论课教思想政治政部开设论课（思研部） +1学分",
+      "raw_module": "通识必修",
+      "module": "通识必修",
+      "notes": ""
+    },
+    {
+      "code": "GESS1018",
+      "name": "中国近现代史纲要",
+      "credit": 2.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": true,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "人文社科通识思政理课程论课",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 189,
+        "official_name": "中国近现代史纲要",
+        "score_quality": 2.69,
+        "score_workload": 4.71,
+        "score_difficulty": 3.49,
+        "score_grade": 2.2,
+        "comment_num": 35,
+        "teachers": "陈茂华",
+        "latest_semester": 202602,
+        "semesters_history": "201403,202101,202102,202201,202202,202301,202302,202401,202402,202501,202602"
+      }
+    },
+    {
+      "code": "MT1023",
+      "name": "毛泽东思想和中国特色社会主义理论体系概论",
+      "credit": 3.0,
+      "semesters": [
+        4,
+        5
+      ],
+      "is_compulsory": true,
+      "dept": "理论课教一思想政治论课（思政部开设研部） +1学分",
+      "raw_module": "人文社科通识思政理课程论课",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 190,
+        "official_name": "毛泽东思想和中国特色社会主义理论体系概论（理论课）",
+        "score_quality": 4.62,
+        "score_workload": 4.75,
+        "score_difficulty": 4.44,
+        "score_grade": 4.38,
+        "comment_num": 16,
+        "teachers": "徐大慰, 施阳九, 陈祥勤",
+        "latest_semester": 202502,
+        "semesters_history": "202001,202201,202301,202401,202402,202501,202502"
+      }
+    },
+    {
+      "code": "GESS1027",
+      "name": "马克思主义基本原理",
+      "credit": 3.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": true,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "人文社科通识思政理课程论课",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 192,
+        "official_name": "马克思主义基本原理",
+        "score_quality": 4.5,
+        "score_workload": 4.5,
+        "score_difficulty": 4.42,
+        "score_grade": 3.92,
+        "comment_num": 12,
+        "teachers": "乔戈, 张小霞",
+        "latest_semester": 202601,
+        "semesters_history": "202001,202201,202202,202301,202302,202401,202501,202601"
+      }
+    },
+    {
+      "code": "GEHA1101",
+      "name": "丝绸之路与东西文化交流",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 397,
+        "official_name": "丝绸之路与东西文化交流",
+        "score_quality": 4.44,
+        "score_workload": 4.67,
+        "score_difficulty": 4.56,
+        "score_grade": 4.22,
+        "comment_num": 9,
+        "teachers": "刘海威",
+        "latest_semester": 202402,
+        "semesters_history": "202301,202302,202401,202402"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GESS1026",
+      "name": "中国经济发展和改革",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 191,
+        "official_name": "中国经济发展和改革进程",
+        "score_quality": 4.9,
+        "score_workload": 5.0,
+        "score_difficulty": 4.7,
+        "score_grade": 4.7,
+        "comment_num": 10,
+        "teachers": "杨锡怡, 陆丁",
+        "latest_semester": 202602,
+        "semesters_history": "202002,202101,202102,202202,202301,202602"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "MT1013",
+      "name": "法治与社会",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 227,
+        "official_name": "法治与社会",
+        "score_quality": 4.71,
+        "score_workload": 4.43,
+        "score_difficulty": 4.86,
+        "score_grade": 2.57,
+        "comment_num": 7,
+        "teachers": "孙大伟",
+        "latest_semester": 202503,
+        "semesters_history": "202302,202303,202401,202403,202503"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "MT1014",
+      "name": "人类命运共同体历史基础与当代实践",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 228,
+        "official_name": "人类命运共同体的历史基础与当代实践",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 4.0,
+        "comment_num": 2,
+        "teachers": "李磊",
+        "latest_semester": 202301,
+        "semesters_history": "202301"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "MT1015",
+      "name": "《资本论》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 584,
+        "official_name": "《资本论》导读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MT1016",
+      "name": "科学技术与社会",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1061,
+        "official_name": "科学技术与社会",
+        "score_quality": 5.0,
+        "score_workload": 4.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "王健",
+        "latest_semester": 202603,
+        "semesters_history": "202603"
+      },
+      "inferred_terms": [
+        2
+      ]
+    },
+    {
+      "code": "MT1017",
+      "name": "上海城市史",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 807,
+        "official_name": "上海城市史",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MT1018",
+      "name": "红色上海史",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 706,
+        "official_name": "红色上海史",
+        "score_quality": 3.67,
+        "score_workload": 4.33,
+        "score_difficulty": 3.67,
+        "score_grade": 3.33,
+        "comment_num": 3,
+        "teachers": "徐光寿",
+        "latest_semester": 202503,
+        "semesters_history": "202401,202501,202503"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "MT1019",
+      "name": "細整目不",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1062,
+        "official_name": "新时代中国科技自立自强战略",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MT1029",
+      "name": "论",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "理论课教思想政治研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 873,
+        "official_name": "中华民族共同体概论",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MT1031",
+      "name": "领土争端与地区安全",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1188,
+        "official_name": "领土争端与地区安全",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MT1032",
+      "name": "中华优秀传统文化",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": ""
+    },
+    {
+      "code": "MT1033",
+      "name": "大国博弈与全球治理",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "理论课教思想政治研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": ""
+    },
+    {
+      "code": "MT1034",
+      "name": "王亚新与太王味利音业暑重要",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": ""
+    },
+    {
+      "code": "CLEC1003",
+      "name": "军事理论",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": true,
+      "dept": "上道书院上道书院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1077,
+        "official_name": "军事理论",
+        "score_quality": 2.0,
+        "score_workload": 2.5,
+        "score_difficulty": 3.75,
+        "score_grade": 3.0,
+        "comment_num": 4,
+        "teachers": "张国清, 竺莉莉",
+        "latest_semester": 202501,
+        "semesters_history": "202201,202401,202501"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "CLPS1003",
+      "name": "大学生心理健康",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": true,
+      "dept": "课，最后上道书院课程学分",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "合成为该",
+      "coursebench": {
+        "coursebench_id": 1082,
+        "official_name": "大学生心理健康（1）",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MT1030",
+      "name": "国家安全教育",
+      "credit": 1.0,
+      "semesters": [
+        3
+      ],
+      "is_compulsory": true,
+      "dept": "思想政治理论课教研部",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1063,
+        "official_name": "国家安全教育",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1302",
+      "name": "中华文明通论",
+      "credit": 2.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "人文科学研究院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 603,
+        "official_name": "中华文明通论",
+        "score_quality": 4.02,
+        "score_workload": 4.57,
+        "score_difficulty": 3.64,
+        "score_grade": 3.26,
+        "comment_num": 42,
+        "teachers": "刘勋, 刘海威, 张璟, 徐芃, 方圆, 施阳九, 杜雨晴, 王路曼, 白云, 聂保平, 聂清, 邹亚文, 陈娅妮",
+        "latest_semester": 202602,
+        "semesters_history": "201901,202001,202002,202101,202102,202201,202301,202302,202401,202402,202502,202602"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "ECON1014",
+      "name": "经济学导论",
+      "credit": 2.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": true,
+      "dept": "创业与管理学院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 110,
+        "official_name": "经济学导论",
+        "score_quality": 4.83,
+        "score_workload": 4.55,
+        "score_difficulty": 4.31,
+        "score_grade": 4.52,
+        "comment_num": 29,
+        "teachers": "Soojin Kim, 何晨, 吴文豪, 徐剑锋, 杨乔, 杨锡怡, 申培垚, 陈劼",
+        "latest_semester": 202602,
+        "semesters_history": "202001,202101,202102,202201,202202,202301,202302,202401,202402,202501,202602"
+      }
+    },
+    {
+      "code": "GEHA1254",
+      "name": "哲学导论B",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "哲导/世通",
+      "coursebench": {
+        "coursebench_id": 851,
+        "official_name": "哲学导论B",
+        "score_quality": 3.73,
+        "score_workload": 4.09,
+        "score_difficulty": 4.45,
+        "score_grade": 3.55,
+        "comment_num": 11,
+        "teachers": "孙斌, 王寅丽, 聂保平, 聂清",
+        "latest_semester": 202602,
+        "semesters_history": "202401,202402,202501,202502,202602"
+      }
+    },
+    {
+      "code": "GEHA1003",
+      "name": "世界文明通论",
+      "credit": 2.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院/科通，三选一",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "哲导/世通",
+      "coursebench": {
+        "coursebench_id": 155,
+        "official_name": "世界文明通论",
+        "score_quality": 4.8,
+        "score_workload": 4.65,
+        "score_difficulty": 4.5,
+        "score_grade": 4.25,
+        "comment_num": 20,
+        "teachers": "Igor Fedyukin, 刘禹汐, 王路曼",
+        "latest_semester": 202602,
+        "semesters_history": "202101,202201,202202,202301,202302,202402,202501,202502,202602"
+      }
+    },
+    {
+      "code": "GEHA1004",
+      "name": "科技文明通论",
+      "credit": 2.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 156,
+        "official_name": "科技文明通论",
+        "score_quality": 4.26,
+        "score_workload": 4.84,
+        "score_difficulty": 4.89,
+        "score_grade": 4.05,
+        "comment_num": 19,
+        "teachers": "邹亚文",
+        "latest_semester": 202402,
+        "semesters_history": "202101,202201,202202,202301,202302,202401,202402"
+      }
+    },
+    {
+      "code": "GEHA1165",
+      "name": "基础英语1-人文阅读",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 773,
+        "official_name": "基础英语I-人文阅读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1173",
+      "name": "基础英语I-公共演讲",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "思政选修课",
+      "module": "思想政治理论课-选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 774,
+        "official_name": "基础英语I-公共演讲",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "Lee Curry",
+        "latest_semester": 202302,
+        "semesters_history": "202302"
+      }
+    },
+    {
+      "code": "GEHA1132",
+      "name": "基础英语I-人文阅读",
+      "credit": 2.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "基础英语",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 175,
+        "official_name": "基础英语II-人文阅读",
+        "score_quality": 4.44,
+        "score_workload": 5.0,
+        "score_difficulty": 4.44,
+        "score_grade": 4.78,
+        "comment_num": 9,
+        "teachers": "Steven Lydon, Szidonia Haragos, Zainab Mahmood, 邬竞越, 龚振",
+        "latest_semester": 202402,
+        "semesters_history": "202202,202302,202401,202402"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1150",
+      "name": "基础英语11-写作",
+      "credit": 2.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "基础英语",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 185,
+        "official_name": "基础英语II-写作",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1303",
+      "name": "年到1920年间的美国史",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "基础英语",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 398,
+        "official_name": "1770年到1920年间的美国史",
+        "score_quality": 4.45,
+        "score_workload": 2.64,
+        "score_difficulty": 3.27,
+        "score_grade": 2.82,
+        "comment_num": 11,
+        "teachers": "Goodin Brett Garrett",
+        "latest_semester": 202301,
+        "semesters_history": "202101,202201,202202,202301"
+      }
+    },
+    {
+      "code": "GEHA1304",
+      "name": "数字人文：英国小说的兴起",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "基础英语",
+      "module": "通识选修-大学英语",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1305",
+      "name": "现代诗歌阅读",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "基础英语",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 598,
+        "official_name": "现代诗歌阅读",
+        "score_quality": 4.5,
+        "score_workload": 3.0,
+        "score_difficulty": 3.0,
+        "score_grade": 4.0,
+        "comment_num": 2,
+        "teachers": "Dominic Hubert Gavin",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      }
+    },
+    {
+      "code": "GEHA1306",
+      "name": "启蒙时代：现代世界的诞生",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "基础英语",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 674,
+        "official_name": "启蒙时代：现代世界的诞生",
+        "score_quality": 3.0,
+        "score_workload": 3.0,
+        "score_difficulty": 2.5,
+        "score_grade": 1.5,
+        "comment_num": 2,
+        "teachers": "Igor Fedyukin",
+        "latest_semester": 202502,
+        "semesters_history": "202402,202502"
+      }
+    },
+    {
+      "code": "GEHA1307",
+      "name": "莎士比亚《李尔王",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "大学英语语人文英",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1167,
+        "official_name": "莎士比亚《李尔王》",
+        "score_quality": 5.0,
+        "score_workload": 3.5,
+        "score_difficulty": 3.5,
+        "score_grade": 4.5,
+        "comment_num": 2,
+        "teachers": "龚振",
+        "latest_semester": 202602,
+        "semesters_history": "202602"
+      }
+    },
+    {
+      "code": "GEHA1308",
+      "name": "大学制度变革史",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "大学英语语人文英",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 784,
+        "official_name": "大学制度变革史",
+        "score_quality": 4.0,
+        "score_workload": 4.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "Igor Fedyukin",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      }
+    },
+    {
+      "code": "GEHA1309",
+      "name": "全球视野下科技进步",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "大学英语语人文英",
+      "module": "通识选修-大学英语",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1310",
+      "name": "技术哲学与虚拟世界导论",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "大学英语语人文英",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1097,
+        "official_name": "技术哲学与虚拟世界导论",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "CLPE1001",
+      "name": "游泳运动与健康43科学健身与田径运",
+      "credit": 1.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": true,
+      "dept": "上道书院",
+      "raw_module": "大学英语语人文英",
+      "module": "通识选修-大学英语",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 722,
+        "official_name": "游泳运动与健康",
+        "score_quality": 5.0,
+        "score_workload": 4.83,
+        "score_difficulty": 4.62,
+        "score_grade": 4.5,
+        "comment_num": 24,
+        "teachers": "季丽萍, 林振敢, 潘黎君, 郭叶舟, 黄卫",
+        "latest_semester": 202602,
+        "semesters_history": "202301,202302,202401,202402,202502,202602"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "CLPE1002",
+      "name": "科学健身与田径运动",
+      "credit": 1.0,
+      "semesters": [
+        1,
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "上道书院",
+      "raw_module": "体育基础",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 83,
+        "official_name": "科学健身与田径运动",
+        "score_quality": 4.5,
+        "score_workload": 5.0,
+        "score_difficulty": 3.3,
+        "score_grade": 3.75,
+        "comment_num": 20,
+        "teachers": "刘鹏, 周长敬, 唐军, 李斐, 李玉章, 王然, 陈超",
+        "latest_semester": 202602,
+        "semesters_history": "201901,202001,202101,202102,202201,202202,202301,202401,202402,202501,202502,202602"
+      }
+    },
+    {
+      "code": "GEPE1007",
+      "name": "击剑与防卫I45健美操I",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育基础",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 418,
+        "official_name": "击剑与防卫 I",
+        "score_quality": 3.0,
+        "score_workload": 4.0,
+        "score_difficulty": 3.5,
+        "score_grade": 3.0,
+        "comment_num": 2,
+        "teachers": "费正伟",
+        "latest_semester": 202201,
+        "semesters_history": "202201"
+      }
+    },
+    {
+      "code": "GEPE1009",
+      "name": "健美操I",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育基础",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 419,
+        "official_name": "健美操I",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1011",
+      "name": "盤球！47乒乓球I",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育基础",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 420,
+        "official_name": "篮球 I",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1015",
+      "name": "乒乓球I48拳击与塑形I",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育基础",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 421,
+        "official_name": "乒乓球 I",
+        "score_quality": 4.67,
+        "score_workload": 5.0,
+        "score_difficulty": 3.67,
+        "score_grade": 4.33,
+        "comment_num": 3,
+        "teachers": "",
+        "latest_semester": 202401,
+        "semesters_history": "202301,202401"
+      }
+    },
+    {
+      "code": "GEPE1017",
+      "name": "拳击与塑形I",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "大学体育",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 422,
+        "official_name": "拳击与塑形 I",
+        "score_quality": 3.67,
+        "score_workload": 5.0,
+        "score_difficulty": 4.67,
+        "score_grade": 2.0,
+        "comment_num": 3,
+        "teachers": "张震",
+        "latest_semester": 202301,
+        "semesters_history": "201801,202201,202301"
+      }
+    },
+    {
+      "code": "GEPE1019",
+      "name": "跆拳道I",
+      "credit": 0.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "育体育专",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 423,
+        "official_name": "跆拳道 I",
+        "score_quality": 3.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "朱定煌",
+        "latest_semester": 202501,
+        "semesters_history": "202501"
+      }
+    },
+    {
+      "code": "GEPE1023",
+      "name": "网球I",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 424,
+        "official_name": "网球I",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 3.0,
+        "score_grade": 2.0,
+        "comment_num": 1,
+        "teachers": "钟建荣",
+        "latest_semester": 202201,
+        "semesters_history": "202201"
+      }
+    },
+    {
+      "code": "GEPE1025",
+      "name": "游泳I",
+      "credit": 0.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 425,
+        "official_name": "游泳 I",
+        "score_quality": 4.0,
+        "score_workload": 4.5,
+        "score_difficulty": 3.25,
+        "score_grade": 2.5,
+        "comment_num": 4,
+        "teachers": "郭叶舟",
+        "latest_semester": 202301,
+        "semesters_history": "202001,202101,202201,202301"
+      }
+    },
+    {
+      "code": "GEPE1028",
+      "name": "羽毛球！",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 426,
+        "official_name": "羽毛球 I",
+        "score_quality": 4.78,
+        "score_workload": 5.0,
+        "score_difficulty": 4.56,
+        "score_grade": 4.33,
+        "comment_num": 9,
+        "teachers": "卢志泉, 陈周业",
+        "latest_semester": 202501,
+        "semesters_history": "202101,202301,202401,202501"
+      }
+    },
+    {
+      "code": "GEPE1030",
+      "name": "足球I",
+      "credit": 0.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 427,
+        "official_name": "足球 I",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 4.25,
+        "score_grade": 4.0,
+        "comment_num": 4,
+        "teachers": "李震, 郑鹭宾",
+        "latest_semester": 202401,
+        "semesters_history": "201901,202301,202401"
+      }
+    },
+    {
+      "code": "GEPE1032",
+      "name": "武术1",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 428,
+        "official_name": "武术 I",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "",
+        "latest_semester": 202301,
+        "semesters_history": "202301"
+      }
+    },
+    {
+      "code": "GEPE1042",
+      "name": "基础瑜伽I",
+      "credit": 0.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 429,
+        "official_name": "基础瑜伽I",
+        "score_quality": 5.0,
+        "score_workload": 4.67,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 3,
+        "teachers": "陆莉萍",
+        "latest_semester": 202502,
+        "semesters_history": "202201,202401,202502"
+      }
+    },
+    {
+      "code": "GEPE1046",
+      "name": "匹克球I",
+      "credit": 1.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 789,
+        "official_name": "匹克球 I",
+        "score_quality": 4.8,
+        "score_workload": 5.0,
+        "score_difficulty": 4.2,
+        "score_grade": 4.0,
+        "comment_num": 5,
+        "teachers": "钟建荣",
+        "latest_semester": 202501,
+        "semesters_history": "202401,202501"
+      }
+    },
+    {
+      "code": "GEPE1047",
+      "name": "赛艇I",
+      "credit": 1.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 790,
+        "official_name": "赛艇 I",
+        "score_quality": 5.0,
+        "score_workload": 4.5,
+        "score_difficulty": 4.0,
+        "score_grade": 5.0,
+        "comment_num": 2,
+        "teachers": "周意男",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      }
+    },
+    {
+      "code": "GEPE1008",
+      "name": "击剑与防卫I",
+      "credit": 1.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 560,
+        "official_name": "击剑与防卫 II",
+        "score_quality": 1.83,
+        "score_workload": 3.0,
+        "score_difficulty": 1.67,
+        "score_grade": 1.33,
+        "comment_num": 6,
+        "teachers": "费正伟",
+        "latest_semester": 202302,
+        "semesters_history": "202302"
+      }
+    },
+    {
+      "code": "GEPE1010",
+      "name": "健美操！！",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 561,
+        "official_name": "健美操II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1012",
+      "name": "篮球II61 乒乓球II",
+      "credit": 0.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 562,
+        "official_name": "篮球 II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1016",
+      "name": "乒乓球II62 拳击与塑形I",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 563,
+        "official_name": "乒乓球 II",
+        "score_quality": 4.5,
+        "score_workload": 5.0,
+        "score_difficulty": 4.5,
+        "score_grade": 4.0,
+        "comment_num": 2,
+        "teachers": "朱玲",
+        "latest_semester": 202402,
+        "semesters_history": "202402"
+      },
+      "inferred_terms": [
+        2
+      ]
+    },
+    {
+      "code": "GEPE1018",
+      "name": "拳击与塑形I63跆拳道I",
+      "credit": 1.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 564,
+        "official_name": "拳击与塑形 II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1020",
+      "name": "跆拳道I",
+      "credit": 1.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 565,
+        "official_name": "跆拳道 II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1024",
+      "name": "网球II",
+      "credit": 0.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 566,
+        "official_name": "网球II",
+        "score_quality": 2.33,
+        "score_workload": 5.0,
+        "score_difficulty": 3.33,
+        "score_grade": 1.33,
+        "comment_num": 3,
+        "teachers": "钟建荣",
+        "latest_semester": 202602,
+        "semesters_history": "202402,202501,202602"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEPE1026",
+      "name": "游冰166羽毛球I1",
+      "credit": 0.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 567,
+        "official_name": "游泳 II",
+        "score_quality": 4.67,
+        "score_workload": 5.0,
+        "score_difficulty": 4.17,
+        "score_grade": 4.67,
+        "comment_num": 6,
+        "teachers": "郭叶舟",
+        "latest_semester": 202402,
+        "semesters_history": "202102,202302,202402"
+      },
+      "inferred_terms": [
+        2
+      ]
+    },
+    {
+      "code": "GEPE1029",
+      "name": "游冰166羽毛球I1",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 568,
+        "official_name": "羽毛球 II",
+        "score_quality": 4.82,
+        "score_workload": 5.0,
+        "score_difficulty": 4.18,
+        "score_grade": 4.36,
+        "comment_num": 11,
+        "teachers": "卢志泉, 陈周业",
+        "latest_semester": 202602,
+        "semesters_history": "202202,202402,202502,202602"
+      },
+      "inferred_terms": [
+        2
+      ]
+    },
+    {
+      "code": "GEPE1031",
+      "name": "足球II",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 569,
+        "official_name": "足球 II",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 4.25,
+        "score_grade": 5.0,
+        "comment_num": 4,
+        "teachers": "李震, 郑鹭宾",
+        "latest_semester": 202502,
+        "semesters_history": "202002,202402,202502"
+      },
+      "inferred_terms": [
+        2
+      ]
+    },
+    {
+      "code": "GEPE1033",
+      "name": "武术I",
+      "credit": 1.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 570,
+        "official_name": "武术 II",
+        "score_quality": 4.0,
+        "score_workload": 4.0,
+        "score_difficulty": 2.0,
+        "score_grade": 2.0,
+        "comment_num": 1,
+        "teachers": "",
+        "latest_semester": 202402,
+        "semesters_history": "202402"
+      }
+    },
+    {
+      "code": "GEPE1043",
+      "name": "基础瑜伽II",
+      "credit": 0.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 571,
+        "official_name": "基础瑜伽II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1048",
+      "name": "匹克球II",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 861,
+        "official_name": "匹克球 II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEPE1049",
+      "name": "赛艇I",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 862,
+        "official_name": "赛艇 II",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "CLPE1049",
+      "name": "击剑运动73健美操运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1050",
+      "name": "健美操运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1051",
+      "name": "篮球运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1052",
+      "name": "乒乓球运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1053",
+      "name": "拳击运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1054",
+      "name": "跆拳道运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育专项",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1055",
+      "name": "网球运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育兴",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1056",
+      "name": "游泳运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 722,
+        "official_name": "游泳运动与健康",
+        "score_quality": 5.0,
+        "score_workload": 4.83,
+        "score_difficulty": 4.62,
+        "score_grade": 4.5,
+        "comment_num": 24,
+        "teachers": "季丽萍, 林振敢, 潘黎君, 郭叶舟, 黄卫",
+        "latest_semester": 202602,
+        "semesters_history": "202301,202302,202401,202402,202502,202602"
+      }
+    },
+    {
+      "code": "CLPE1057",
+      "name": "羽毛球运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1058",
+      "name": "足球运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1059",
+      "name": "武术运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1060",
+      "name": "瑜伽运动84 匹克球运动",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1061",
+      "name": "匹克球运动85赛艇运动",
+      "credit": 0.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1062",
+      "name": "赛艇运动应修学分",
+      "credit": 1.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "上道书院",
+      "raw_module": "体育兴趣",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "CLPE1048",
+      "name": "健康体适能",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": true,
+      "dept": "上道书院",
+      "raw_module": "体育健康",
+      "module": "通识选修-大学体育",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1123",
+      "name": "说理写作",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "体育健康",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 400,
+        "official_name": "说理写作",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1124",
+      "name": "小说阅读与批评",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "体育健康",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 170,
+        "official_name": "小说阅读与批评",
+        "score_quality": 4.6,
+        "score_workload": 3.8,
+        "score_difficulty": 4.0,
+        "score_grade": 3.8,
+        "comment_num": 5,
+        "teachers": "张蕴贤, 杜心源",
+        "latest_semester": 202402,
+        "semesters_history": "202202,202301,202402"
+      }
+    },
+    {
+      "code": "GEHA1125",
+      "name": "中国古代文学与现代风华",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "体育健康",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 171,
+        "official_name": "中国古代文学与现代风华",
+        "score_quality": 5.0,
+        "score_workload": 4.0,
+        "score_difficulty": 4.5,
+        "score_grade": 4.5,
+        "comment_num": 2,
+        "teachers": "陈娅妮",
+        "latest_semester": 202301,
+        "semesters_history": "202201,202301"
+      }
+    },
+    {
+      "code": "GEHA1126",
+      "name": "唐前诗文之美",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "体育健康",
+      "module": "通识选修-大学体育",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 172,
+        "official_name": "唐前诗文之美",
+        "score_quality": 5.0,
+        "score_workload": 4.5,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 2,
+        "teachers": "陈娅妮",
+        "latest_semester": 202401,
+        "semesters_history": "202102,202401"
+      }
+    },
+    {
+      "code": "GEHA1128",
+      "name": "中国现代文学选读",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 174,
+        "official_name": "中国现代文学选读",
+        "score_quality": 3.0,
+        "score_workload": 3.0,
+        "score_difficulty": 2.0,
+        "score_grade": 2.0,
+        "comment_num": 1,
+        "teachers": "毛佩洁",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      }
+    },
+    {
+      "code": "GEHA1151",
+      "name": "武侠小说与宋元历史",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 402,
+        "official_name": "武侠小说与宋元历史",
+        "score_quality": 5.0,
+        "score_workload": 4.8,
+        "score_difficulty": 5.0,
+        "score_grade": 4.6,
+        "comment_num": 10,
+        "teachers": "刘海威",
+        "latest_semester": 202401,
+        "semesters_history": "202201,202301,202302,202401"
+      }
+    },
+    {
+      "code": "GEHA1152",
+      "name": "唐宋文学精华",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 403,
+        "official_name": "唐宋文学精华",
+        "score_quality": 5.0,
+        "score_workload": 4.67,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 6,
+        "teachers": "陈娅妮",
+        "latest_semester": 202402,
+        "semesters_history": "202201,202302,202402"
+      }
+    },
+    {
+      "code": "GEHA1153",
+      "name": "港台文学与电影",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 404,
+        "official_name": "港台文学与电影",
+        "score_quality": 5.0,
+        "score_workload": 4.25,
+        "score_difficulty": 4.75,
+        "score_grade": 4.75,
+        "comment_num": 4,
+        "teachers": "祁玥",
+        "latest_semester": 202402,
+        "semesters_history": "202302,202401,202402"
+      }
+    },
+    {
+      "code": "GEHA1154",
+      "name": "文学中的“空间”",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 405,
+        "official_name": "文学中的“空间”",
+        "score_quality": 5.0,
+        "score_workload": 4.57,
+        "score_difficulty": 4.86,
+        "score_grade": 4.43,
+        "comment_num": 7,
+        "teachers": "祁玥",
+        "latest_semester": 202302,
+        "semesters_history": "202201,202202,202301,202302"
+      }
+    },
+    {
+      "code": "GEHA1155",
+      "name": "阅读城市：小说与",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 406,
+        "official_name": "阅读城市：小说与电影",
+        "score_quality": 5.0,
+        "score_workload": 4.4,
+        "score_difficulty": 5.0,
+        "score_grade": 4.6,
+        "comment_num": 5,
+        "teachers": "祁玥",
+        "latest_semester": 202503,
+        "semesters_history": "202301,202401,202402,202502,202503"
+      }
+    },
+    {
+      "code": "GEHA1156",
+      "name": "海派文学与文化",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 407,
+        "official_name": "海派文学与文化",
+        "score_quality": 4.0,
+        "score_workload": 3.0,
+        "score_difficulty": 2.5,
+        "score_grade": 3.0,
+        "comment_num": 4,
+        "teachers": "毛佩洁",
+        "latest_semester": 202302,
+        "semesters_history": "202201,202302"
+      }
+    },
+    {
+      "code": "GEHA1157",
+      "name": "与电影98性别视角下文学",
+      "credit": 3.0,
+      "semesters": [
+        2,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 408,
+        "official_name": "性别视角下的文学与电影",
+        "score_quality": 4.0,
+        "score_workload": 3.33,
+        "score_difficulty": 3.67,
+        "score_grade": 4.0,
+        "comment_num": 3,
+        "teachers": "张蕴贤, 魏泉",
+        "latest_semester": 202602,
+        "semesters_history": "202301,202401,202602"
+      }
+    },
+    {
+      "code": "GEHA1158",
+      "name": "论证与写作",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 409,
+        "official_name": "论证与写作",
+        "score_quality": 3.33,
+        "score_workload": 4.0,
+        "score_difficulty": 4.67,
+        "score_grade": 3.0,
+        "comment_num": 3,
+        "teachers": "王强",
+        "latest_semester": 202502,
+        "semesters_history": "202301,202502"
+      }
+    },
+    {
+      "code": "GEHA1177",
+      "name": "叙事与伦理",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 557,
+        "official_name": "叙事与伦理",
+        "score_quality": 4.0,
+        "score_workload": 3.5,
+        "score_difficulty": 4.0,
+        "score_grade": 3.0,
+        "comment_num": 2,
+        "teachers": "王寅丽",
+        "latest_semester": 202301,
+        "semesters_history": "202301"
+      }
+    },
+    {
+      "code": "GEHA1193",
+      "name": "非虚构写作导论",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 661,
+        "official_name": "非虚构写作导论",
+        "score_quality": 5.0,
+        "score_workload": 4.83,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 6,
+        "teachers": "杜雨晴",
+        "latest_semester": 202602,
+        "semesters_history": "202401,202402,202501,202502,202602"
+      }
+    },
+    {
+      "code": "GEHA1195",
+      "name": "昆曲文本与艺术",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1196",
+      "name": "现代文学中的情爱叙事",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 663,
+        "official_name": "现代文学中的情爱叙事",
+        "score_quality": 5.0,
+        "score_workload": 4.33,
+        "score_difficulty": 4.67,
+        "score_grade": 5.0,
+        "comment_num": 3,
+        "teachers": "毛佩洁",
+        "latest_semester": 202402,
+        "semesters_history": "202301,202402"
+      }
+    },
+    {
+      "code": "GEHA1197",
+      "name": "中国的历史叙事",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 664,
+        "official_name": "中国的历史叙事",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 4.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "方圆",
+        "latest_semester": 202602,
+        "semesters_history": "202602"
+      }
+    },
+    {
+      "code": "GEHA1220",
+      "name": "中日“武”传统",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 678,
+        "official_name": "中日“武”传统",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1233",
+      "name": "从小说到电影",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 779,
+        "official_name": "从小说到电影",
+        "score_quality": 5.0,
+        "score_workload": 3.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 2,
+        "teachers": "张蕴贤",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      }
+    },
+    {
+      "code": "GEHA1234",
+      "name": "世界文学名著导读",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 780,
+        "official_name": "世界文学名著导读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1235",
+      "name": "电影中的东亚传统戏剧",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 781,
+        "official_name": "电影中的东亚传统戏剧",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1236",
+      "name": "古代散文叙事与思辨",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学佌究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 782,
+        "official_name": "古代散文的叙事与思辨",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "张璟",
+        "latest_semester": 202502,
+        "semesters_history": "202502"
+      }
+    },
+    {
+      "code": "GEHA1260",
+      "name": "哲学思辨与写作",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 857,
+        "official_name": "哲学思辨与写作",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1261",
+      "name": "比较视域中的叙事艺术",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 858,
+        "official_name": "比较视域中的叙事艺术",
+        "score_quality": 5.0,
+        "score_workload": 3.5,
+        "score_difficulty": 4.5,
+        "score_grade": 5.0,
+        "comment_num": 2,
+        "teachers": "张蕴贤",
+        "latest_semester": 202502,
+        "semesters_history": "202502"
+      }
+    },
+    {
+      "code": "GEHA1271",
+      "name": "“家”故事：从传统到现代",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1094,
+        "official_name": "“家”的故事：从传统到现代",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1295",
+      "name": "社会科学写作",
+      "credit": 3.0,
+      "semesters": [
+        1,
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1046",
+      "name": "《史记》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1047",
+      "name": "《资治通鉴》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1165,
+        "official_name": "《资治通鉴》导读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1074",
+      "name": "《周易》与文化",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 160,
+        "official_name": "《周易》与文化",
+        "score_quality": 4.44,
+        "score_workload": 4.67,
+        "score_difficulty": 4.44,
+        "score_grade": 4.0,
+        "comment_num": 9,
+        "teachers": "邓辉",
+        "latest_semester": 202403,
+        "semesters_history": "202202,202301,202401,202402,202403"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1087",
+      "name": "柏拉图《理想国》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 164,
+        "official_name": "柏拉图《理想国》导读",
+        "score_quality": 4.38,
+        "score_workload": 4.75,
+        "score_difficulty": 4.5,
+        "score_grade": 3.88,
+        "comment_num": 8,
+        "teachers": "高桦",
+        "latest_semester": 202502,
+        "semesters_history": "202001,202101,202202,202301,202402,202501,202502"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1117",
+      "name": "宋词导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "人文写作课程群",
+      "module": "通识选修-文学与写作",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 659,
+        "official_name": "宋词导读",
+        "score_quality": 4.0,
+        "score_workload": 4.5,
+        "score_difficulty": 3.5,
+        "score_grade": 3.75,
+        "comment_num": 4,
+        "teachers": "陈娅妮",
+        "latest_semester": 202401,
+        "semesters_history": "202301,202401"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1183",
+      "name": "古希腊悲剧导读",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1199",
+      "name": "《尼各马可伦理学》 导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 776,
+        "official_name": "《尼各马可伦理学》导读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1217",
+      "name": "鲁迅《故事新编》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 777,
+        "official_name": "鲁迅《故事新编》导读",
+        "score_quality": 5.0,
+        "score_workload": 4.5,
+        "score_difficulty": 4.75,
+        "score_grade": 4.75,
+        "comment_num": 4,
+        "teachers": "方圆",
+        "latest_semester": 202502,
+        "semesters_history": "202401,202502"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1218",
+      "name": "《孟子》精读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 677,
+        "official_name": "《孟子》精读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1219",
+      "name": "波伏娃《第二性》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 850,
+        "official_name": "波伏娃《第二性》导读",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "GEHA1230",
+      "name": "《传习录》解读一一现代视野下王阳明思想",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 778,
+        "official_name": "《传习录》解读——现代视野下的王阳明思想",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "聂清",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1262",
+      "name": "《想象共同体》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 859,
+        "official_name": "《想象的共同体》导读",
+        "score_quality": 5.0,
+        "score_workload": 4.75,
+        "score_difficulty": 4.75,
+        "score_grade": 4.5,
+        "comment_num": 4,
+        "teachers": "杜雨晴",
+        "latest_semester": 202502,
+        "semesters_history": "202501,202502"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "GEHA1268",
+      "name": "《论语》导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1282",
+      "name": "西方政治哲学经典导读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1290",
+      "name": "《论人类不平等的起源和基础》精读",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": ""
+    },
+    {
+      "code": "GEHA1296",
+      "name": "《老子》与中国哲学",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "人文科学研究院",
+      "raw_module": "文明经典导读课程群",
+      "module": "通识选修-文明经典导读",
+      "notes": ""
+    },
+    {
+      "code": "ARTS1405",
+      "name": "现代艺术导论",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 502,
+        "official_name": "现代艺术导论",
+        "score_quality": 5.0,
+        "score_workload": 4.88,
+        "score_difficulty": 4.88,
+        "score_grade": 4.75,
+        "comment_num": 8,
+        "teachers": "王受之, 王颉",
+        "latest_semester": 202502,
+        "semesters_history": "202201,202401,202402,202502"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "BHSC1301",
+      "name": "领导力与团队合作",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 22,
+        "official_name": "领导力与团队合作",
+        "score_quality": 5.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 4.0,
+        "comment_num": 1,
+        "teachers": "谢文心",
+        "latest_semester": 202302,
+        "semesters_history": "202302"
+      },
+      "inferred_terms": [
+        2
+      ]
+    },
+    {
+      "code": "BHSC1302",
+      "name": "谈判",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 23,
+        "official_name": "谈判",
+        "score_quality": 5.0,
+        "score_workload": 4.6,
+        "score_difficulty": 5.0,
+        "score_grade": 4.6,
+        "comment_num": 5,
+        "teachers": "杨宇",
+        "latest_semester": 202502,
+        "semesters_history": "202201,202202,202402,202502"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "BHSC1303",
+      "name": "消费者心理学",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 728,
+        "official_name": "消费者心理学",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "BHSC1304",
+      "name": "决策心理学",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1036,
+        "official_name": "决策心理学",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "CLGE1304",
+      "name": "管理沟通与商业说服力",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "大道书院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": ""
+    },
+    {
+      "code": "ECON1013",
+      "name": "数据与社会",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 113,
+        "official_name": "数据与社会",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENTR1006",
+      "name": "商业决策和技术创新",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 770,
+        "official_name": "商业决策和技术创新",
+        "score_quality": 4.5,
+        "score_workload": 2.5,
+        "score_difficulty": 3.5,
+        "score_grade": 3.5,
+        "comment_num": 2,
+        "teachers": "郑雯",
+        "latest_semester": 202502,
+        "semesters_history": "202401,202502"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "ENTR1009",
+      "name": "创业企业融资",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创意与艺术课程群",
+      "module": "通识选修-创意与艺术",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 385,
+        "official_name": "创业企业融资",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENTR1305",
+      "name": "商业计划",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 386,
+        "official_name": "商业计划",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENTR2001",
+      "name": "创业管理",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 849,
+        "official_name": "创业管理",
+        "score_quality": 3.0,
+        "score_workload": 1.0,
+        "score_difficulty": 3.0,
+        "score_grade": 1.0,
+        "comment_num": 1,
+        "teachers": "毛基业",
+        "latest_semester": 202501,
+        "semesters_history": "202501"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "ENTR2002",
+      "name": "与决策142高科技创业：理论",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1054,
+        "official_name": "高科技创业：理论与决策",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENTR2004",
+      "name": "创新创业工具及人工智能的运用",
+      "credit": 1.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1089,
+        "official_name": "创新创业工具及人工智能的运用",
+        "score_quality": 4.5,
+        "score_workload": 4.5,
+        "score_difficulty": 5.0,
+        "score_grade": 5.0,
+        "comment_num": 2,
+        "teachers": "李英",
+        "latest_semester": 202501,
+        "semesters_history": "202501"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "SEMI1016",
+      "name": "创新管理",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 816,
+        "official_name": "创新管理",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "SEMI1301",
+      "name": "创新科学：认知原理与市场应用",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创业与管理学院",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 493,
+        "official_name": "创新科学：认知原理与市场应用",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "MATH1255",
+      "name": "线性代数及其应用",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": true,
+      "dept": "数学科学研究所",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1104,
+        "official_name": "线性代数及其应用",
+        "score_quality": 5.0,
+        "score_workload": 3.5,
+        "score_difficulty": 4.0,
+        "score_grade": 5.0,
+        "comment_num": 2,
+        "teachers": "Boris Houska",
+        "latest_semester": 202501,
+        "semesters_history": "202501"
+      }
+    },
+    {
+      "code": "GEMA1201",
+      "name": "概率论与数理统计及其应用",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": true,
+      "dept": "数学科学研究所",
+      "raw_module": "创新创业课程群",
+      "module": "通识选修-创新创业",
+      "notes": ""
+    },
+    {
+      "code": "GEMA1001",
+      "name": "高等数学I",
+      "credit": 4.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": true,
+      "dept": "数学科学研究所",
+      "raw_module": "数学课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 927,
+        "official_name": "高等数学I",
+        "score_quality": 3.78,
+        "score_workload": 2.89,
+        "score_difficulty": 3.56,
+        "score_grade": 3.78,
+        "comment_num": 9,
+        "teachers": "段炼, 王强, 董俊斌, 课程助教, 陈浩, 马骐骁",
+        "latest_semester": 202501,
+        "semesters_history": "202301,202401,202501"
+      }
+    },
+    {
+      "code": "GEMA1003",
+      "name": "高等数学II",
+      "credit": 4.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "数学科学研究所",
+      "raw_module": "数学课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 186,
+        "official_name": "高等数学II",
+        "score_quality": 4.21,
+        "score_workload": 2.82,
+        "score_difficulty": 2.79,
+        "score_grade": 3.71,
+        "comment_num": 28,
+        "teachers": "朱佐农, 李铮, 李龙, 段炼, 王强, 皇甫振国, 董俊斌, 课程助教, 赵俐俐, 陈浩, 马骐骁",
+        "latest_semester": 202602,
+        "semesters_history": "202202,202301,202302,202402,202502,202602"
+      }
+    },
+    {
+      "code": "PHYS1181",
+      "name": "普通物理I",
+      "credit": 3.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": true,
+      "dept": "物质科学与技术学院",
+      "raw_module": "物理课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 233,
+        "official_name": "普通物理I",
+        "score_quality": 3.24,
+        "score_workload": 4.15,
+        "score_difficulty": 4.0,
+        "score_grade": 3.71,
+        "comment_num": 41,
+        "teachers": "周家瑞, 孙兆茹, 彭鹏, 李润泽, 王文波, 翟晓芳, 蒋易凡, 课程助教, 赵爱迪, 邓昊, 齐彦鹏",
+        "latest_semester": 202602,
+        "semesters_history": "202002,202101,202201,202202,202301,202302,202401,202402,202501,202502,202602"
+      }
+    },
+    {
+      "code": "SI100B",
+      "name": "信息科学技术导论",
+      "credit": 4.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "信息科学与技术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 601,
+        "official_name": "信息科学技术导论",
+        "score_quality": 2.32,
+        "score_workload": 1.79,
+        "score_difficulty": 2.15,
+        "score_grade": 2.82,
+        "comment_num": 66,
+        "teachers": "于奕, 何旭明, 刘闯, 娄鑫, 屠可伟, 徐剑锋, 李正浩, 林竹雨, 梁俊睿, 王浩宇, 范睿, 邱越, 郑锐, 陆林燕, 马延航, 高盛华",
+        "latest_semester": 202602,
+        "semesters_history": "201802,201902,202001,202002,202101,202102,202201,202202,202301,202302,202401,202402,202501,202502,202602"
+      }
+    },
+    {
+      "code": "BIO1015",
+      "name": "现代生命科学导论",
+      "credit": 2.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": false,
+      "dept": "生命科学与技术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 879,
+        "official_name": "现代生命科学导论D",
+        "score_quality": 2.0,
+        "score_workload": 5.0,
+        "score_difficulty": 5.0,
+        "score_grade": 2.5,
+        "comment_num": 2,
+        "teachers": "李洪杰",
+        "latest_semester": 202602,
+        "semesters_history": "202501,202602"
+      }
+    },
+    {
+      "code": "CHEM1120",
+      "name": "大学化学",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "物质科学与技术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 753,
+        "official_name": "大学化学",
+        "score_quality": 5.0,
+        "score_workload": 4.0,
+        "score_difficulty": 4.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "纪清清",
+        "latest_semester": 202401,
+        "semesters_history": "202401"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "SMRT1139",
+      "name": "设计史论",
+      "credit": 3.0,
+      "semesters": [
+        1
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1195,
+        "official_name": "设计史论",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "SMRT1142",
+      "name": "创意构建与表达（含实验）",
+      "credit": 3.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺木学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1133,
+        "official_name": "创意构建与表达",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1127",
+      "name": "故事与影像（含实验）",
+      "credit": 3.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1140",
+      "name": "视觉与传达（含实验）",
+      "credit": 3.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1196,
+        "official_name": "视觉与传达（含实验）",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "SMRT1131",
+      "name": "物联网与应用",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1141",
+      "name": "材料与工艺（含实险）",
+      "credit": 3.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺木学院",
+      "raw_module": "信息课程群",
+      "module": "自然科学基础",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1197,
+        "official_name": "材料与工艺（含实验）",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "SMRT1306",
+      "name": "综合设计1：形态设计（含实验）",
+      "credit": 4.0,
+      "semesters": [
+        4,
+        5
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 613,
+        "official_name": "综合设计I：形态设计（含实验）",
+        "score_quality": 5.0,
+        "score_workload": 2.0,
+        "score_difficulty": 3.0,
+        "score_grade": 5.0,
+        "comment_num": 1,
+        "teachers": "",
+        "latest_semester": 202402,
+        "semesters_history": "202402"
+      }
+    },
+    {
+      "code": "SMRT1135",
+      "name": "人因工学与多感官设计",
+      "credit": 3.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1130",
+      "name": "Al+设计研究",
+      "credit": 2.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1136",
+      "name": "设计管理",
+      "credit": 3.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1401",
+      "name": "毕业设计",
+      "credit": 6.0,
+      "semesters": [
+        11
+      ],
+      "is_compulsory": true,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "ENT1135",
+      "name": "综合设计I：品牌设计",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院综合设计",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1133",
+      "name": "综合设计I1：产品设计",
+      "credit": 3.0,
+      "semesters": [
+        5
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺1，二选术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "ENT1136",
+      "name": "综合设计I：跨媒介",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院综合设计",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1134",
+      "name": "综合设计I：交互设计",
+      "credit": 3.0,
+      "semesters": [
+        7
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺皿，二选术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "ENT1137",
+      "name": "综合设计IV：混合现实",
+      "credit": 3.0,
+      "semesters": [
+        8
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院综合设计IV，二选",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1137",
+      "name": "综合设计IV：情感设计",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺IV，二选术学院",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 973,
+        "official_name": "综合设计IV：情感设计（含实验）",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1138",
+      "name": "综合设计V：综合游戏",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院综合设计",
+      "raw_module": "专业必修",
+      "module": "专业必修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1138",
+      "name": "综合设计V：系统设计",
+      "credit": 3.0,
+      "semesters": [
+        10
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺V，二选木学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1032,
+        "official_name": "综合设计V：系统设计（含实验）",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1105",
+      "name": "色彩理论与应用",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 604,
+        "official_name": "色彩理论与应用",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "SMRT1205",
+      "name": "创意思维",
+      "credit": 2.0,
+      "semesters": [
+        2
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺木学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "ENT1103",
+      "name": "造型原理",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1087,
+        "official_name": "造型原理",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1128",
+      "name": "角色表现",
+      "credit": 2.0,
+      "semesters": [
+        4
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "ENT1132",
+      "name": "中国传统文化符号",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1124",
+      "name": "用户界面设计",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1029,
+        "official_name": "用户界面设计",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1133",
+      "name": "虚拟引擎应用与设辻",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "ENT1114",
+      "name": "设计案例研究",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺木学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 1158,
+        "official_name": "设计案例研究",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1134",
+      "name": "游戏机制研究",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺木学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1209",
+      "name": "服务设计",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 971,
+        "official_name": "服务设计",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1118",
+      "name": "当代艺术研究",
+      "credit": 2.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 920,
+        "official_name": "当代艺术研究",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    },
+    {
+      "code": "ENT1139",
+      "name": "电子游戏设计",
+      "credit": 2.0,
+      "semesters": [
+        8
+      ],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "SMRT1203",
+      "name": "人工智能技术与应用",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺木学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": ""
+    },
+    {
+      "code": "ARTS1422",
+      "name": "数据可视化",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 12,
+        "official_name": "数据可视化",
+        "score_quality": 5.0,
+        "score_workload": 2.0,
+        "score_difficulty": 4.67,
+        "score_grade": 5.0,
+        "comment_num": 3,
+        "teachers": "李权",
+        "latest_semester": 202402,
+        "semesters_history": "202201,202202,202402"
+      },
+      "inferred_terms": [
+        1,
+        2
+      ]
+    },
+    {
+      "code": "SMRT1204",
+      "name": "具身智能",
+      "credit": 3.0,
+      "semesters": [],
+      "is_compulsory": false,
+      "dept": "创意与艺术学院",
+      "raw_module": "专业选修",
+      "module": "专业选修",
+      "notes": "",
+      "coursebench": {
+        "coursebench_id": 843,
+        "official_name": "具身智能",
+        "score_quality": 0.0,
+        "score_workload": 0.0,
+        "score_difficulty": 0.0,
+        "score_grade": 0.0,
+        "comment_num": 0,
+        "teachers": "",
+        "latest_semester": "",
+        "semesters_history": ""
+      }
+    }
+  ]
+}
