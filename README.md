@@ -113,7 +113,7 @@ python3 scripts/senior.py search "体系结构"
 
 | 微信支付 (WeChat Pay) | 支付宝 (Alipay) |
 | :---: | :---: |
-| <img src="./assets/wechat.jpg" width="230" alt="微信支付收款码" /> | <img src="./assets/alipay.png" width="230" alt="支付宝收款码" /> |
+| <img src="./assets/wechat.jpg" width="230" alt="微信支付收款码" /> | <img src="./assets/alipay.jpg" width="230" alt="支付宝收款码" /> |
 
 ## 📄 开源许可证 (License)
 
