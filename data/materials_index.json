@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "total_courses_with_materials": 118,
+    "total_courses_with_materials": 120,
     "sources": {
       "itechx": {
         "name": "iTechX 课程资源库",
@@ -562,6 +562,11 @@
           "total_files": 5,
           "exams": [
             {
+              "name": "quiz1.docx",
+              "rel_path": "细胞生物学/quiz1.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6/quiz1.docx"
+            },
+            {
               "name": "细胞生物学期末卷子CB20220620.pdf",
               "rel_path": "细胞生物学/细胞生物学期末卷子CB20220620.pdf",
               "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6/%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%8D%B7%E5%AD%90CB20220620.pdf"
@@ -599,14 +604,49 @@
           "total_files": 9,
           "exams": [
             {
+              "name": "quiz 5 with answer.docx",
+              "rel_path": "分子生物学/quiz 5 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%205%20with%20answer.docx"
+            },
+            {
+              "name": "quiz 1 with answer.docx",
+              "rel_path": "分子生物学/quiz 1 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%201%20with%20answer.docx"
+            },
+            {
               "name": "2022分子生物学期末密码981227.pdf",
               "rel_path": "分子生物学/2022分子生物学期末密码981227.pdf",
               "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/2022%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%AF%86%E7%A0%81981227.pdf"
             },
             {
+              "name": "quiz 4 with answer.docx",
+              "rel_path": "分子生物学/quiz 4 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%204%20with%20answer.docx"
+            },
+            {
               "name": "2021 Midterm Exam with answers(11.08).docx",
               "rel_path": "分子生物学/2021 Midterm Exam with answers(11.08).docx",
               "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/2021%20Midterm%20Exam%20with%20answers%2811.08%29.docx"
+            },
+            {
+              "name": "quiz 7 with answer.docx",
+              "rel_path": "分子生物学/quiz 7 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%207%20with%20answer.docx"
+            },
+            {
+              "name": "quiz 8 with answer.docx",
+              "rel_path": "分子生物学/quiz 8 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%208%20with%20answer.docx"
+            },
+            {
+              "name": "quiz 6 with answer.docx",
+              "rel_path": "分子生物学/quiz 6 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%206%20with%20answer.docx"
+            },
+            {
+              "name": "quiz 2 with answer.docx",
+              "rel_path": "分子生物学/quiz 2 with answer.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/quiz%202%20with%20answer.docx"
             }
           ],
           "solutions": [],
@@ -8429,6 +8469,48 @@
         }
       }
     },
+    "EE140": {
+      "code": "EE140",
+      "name_zh": "通信原理",
+      "name_en": "",
+      "institute": "信息科学与技术学院",
+      "credit": 4.0,
+      "cb_scores": {
+        "quality": 4.666666666666667,
+        "workload": 4.0,
+        "difficulty": 4.0,
+        "grade": 4.0
+      },
+      "aliases": [
+        "Comm",
+        "EE140",
+        "Principle of Communication",
+        "comm",
+        "ee140",
+        "principle of communication",
+        "通信",
+        "通信原理",
+        "通原"
+      ],
+      "resources": {
+        "xiongwenye": {
+          "available": true,
+          "folder_name": "通信原理",
+          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86",
+          "total_files": 1,
+          "exams": [
+            {
+              "name": "EE140_Final_Cheat_Sheet_V2.pdf",
+              "rel_path": "通信原理/EE140_Final_Cheat_Sheet_V2.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/EE140_Final_Cheat_Sheet_V2.pdf"
+            }
+          ],
+          "solutions": [],
+          "slides_notes": [],
+          "labs": []
+        }
+      }
+    },
     "EE142": {
       "code": "EE142",
       "name_zh": "基础信息论",
@@ -8733,8 +8815,13 @@
           "available": true,
           "folder_name": "信号与系统",
           "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F",
-          "total_files": 72,
+          "total_files": 73,
           "exams": [
+            {
+              "name": "EE150_Final_Cheat_Sheet_Template.pdf",
+              "rel_path": "信号与系统/EE150_Final_Cheat_Sheet_Template.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/EE150_Final_Cheat_Sheet_Template.pdf"
+            },
             {
               "name": "3F1_2022_EXAM_FINAL.pdf",
               "rel_path": "信号与系统/Cambridge/3F1_2022_EXAM_FINAL.pdf",
@@ -8804,11 +8891,6 @@
               "name": "('Ramchandran', 'Midterm 1', '') Spring 2005.pdf",
               "rel_path": "信号与系统/UCB/('Ramchandran', 'Midterm 1', '') Spring 2005.pdf",
               "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/UCB/%28%27Ramchandran%27%2C%20%27Midterm%201%27%2C%20%27%27%29%20Spring%202005.pdf"
-            },
-            {
-              "name": "('Ayazifar', 'Final', '') Spring 2006.pdf",
-              "rel_path": "信号与系统/UCB/('Ayazifar', 'Final', '') Spring 2006.pdf",
-              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/UCB/%28%27Ayazifar%27%2C%20%27Final%27%2C%20%27%27%29%20Spring%202006.pdf"
             }
           ],
           "solutions": [
@@ -8997,8 +9079,12 @@
       },
       "aliases": [
         "EE160",
+        "Feedback Control",
         "ee160",
-        "控制原理"
+        "feedback control",
+        "控制",
+        "控制原理",
+        "控原"
       ],
       "resources": {
         "itechx": {
@@ -9159,6 +9245,22 @@
               "url": "https://github.com/i-TechX/iTechX/blob/file-base/courses/EE160/EE160.01_Spring_2022/Exam%20%E8%80%83%E8%AF%95/final_exam_solution.pdf"
             }
           ]
+        },
+        "xiongwenye": {
+          "available": true,
+          "folder_name": "控制原理",
+          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86",
+          "total_files": 1,
+          "exams": [
+            {
+              "name": "EE160_Final_Cheat_Sheet_V2.pdf",
+              "rel_path": "控制原理/EE160_Final_Cheat_Sheet_V2.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/EE160_Final_Cheat_Sheet_V2.pdf"
+            }
+          ],
+          "solutions": [],
+          "slides_notes": [],
+          "labs": []
         }
       }
     },
@@ -9185,8 +9287,13 @@
           "available": true,
           "folder_name": "世界文明通论",
           "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E4%B8%96%E7%95%8C%E6%96%87%E6%98%8E%E9%80%9A%E8%AE%BA",
-          "total_files": 1,
+          "total_files": 2,
           "exams": [
+            {
+              "name": "GEHA1003_Quiz1_Cheatsheet_A4_2pages.pdf",
+              "rel_path": "世界文明通论/GEHA1003_Quiz1_Cheatsheet_A4_2pages.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E4%B8%96%E7%95%8C%E6%96%87%E6%98%8E%E9%80%9A%E8%AE%BA/GEHA1003_Quiz1_Cheatsheet_A4_2pages.pdf"
+            },
             {
               "name": "2021世界文明通论试卷-6月6日-A.docx",
               "rel_path": "世界文明通论/2021世界文明通论试卷-6月6日-A.docx",
@@ -9290,7 +9397,13 @@
           "folder_name": "中华文明通论",
           "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E9%80%9A%E8%AE%BA",
           "total_files": 1,
-          "exams": [],
+          "exams": [
+            {
+              "name": "中通Cheatsheet.pdf",
+              "rel_path": "中华文明通论/中通Cheatsheet.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E9%80%9A%E8%AE%BA/%E4%B8%AD%E9%80%9ACheatsheet.pdf"
+            }
+          ],
           "solutions": [],
           "slides_notes": [],
           "labs": []
@@ -9898,6 +10011,92 @@
         }
       }
     },
+    "GESS1028": {
+      "code": "GESS1028",
+      "name_zh": "思想道德与法治",
+      "name_en": "",
+      "institute": "思想政治理论课教研部",
+      "credit": 2.0,
+      "cb_scores": {
+        "quality": 2.339622641509434,
+        "workload": 4.69811320754717,
+        "difficulty": 3.2641509433962264,
+        "grade": 2.5849056603773586
+      },
+      "aliases": [
+        "Ethics and Law",
+        "GESS1028",
+        "ethics and law",
+        "gess1028",
+        "思修",
+        "思想道德与法治",
+        "思政",
+        "道德与法治"
+      ],
+      "resources": {
+        "xiongwenye": {
+          "available": true,
+          "folder_name": "思想道德与法治",
+          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB",
+          "total_files": 11,
+          "exams": [],
+          "solutions": [],
+          "slides_notes": [
+            {
+              "name": "二十大报告中与“思想道德与法治”相关的论述(1).pptx",
+              "rel_path": "思想道德与法治/2022 课件讲义/二十大报告中与“思想道德与法治”相关的论述(1).pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2022%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E4%BA%8C%E5%8D%81%E5%A4%A7%E6%8A%A5%E5%91%8A%E4%B8%AD%E4%B8%8E%E2%80%9C%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB%E2%80%9D%E7%9B%B8%E5%85%B3%E7%9A%84%E8%AE%BA%E8%BF%B0%281%29.pptx"
+            },
+            {
+              "name": "国、家、友爱问题.pptx",
+              "rel_path": "思想道德与法治/2022 课件讲义/国、家、友爱问题.pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2022%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E5%9B%BD%E3%80%81%E5%AE%B6%E3%80%81%E5%8F%8B%E7%88%B1%E9%97%AE%E9%A2%98.pptx"
+            },
+            {
+              "name": "自我同一性与批判性思维.pptx",
+              "rel_path": "思想道德与法治/2022 课件讲义/自我同一性与批判性思维.pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2022%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E8%87%AA%E6%88%91%E5%90%8C%E4%B8%80%E6%80%A7%E4%B8%8E%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4.pptx"
+            },
+            {
+              "name": "中国传统美德.ppt",
+              "rel_path": "思想道德与法治/2022 课件讲义/中国传统美德.ppt",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2022%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E7%BE%8E%E5%BE%B7.ppt"
+            },
+            {
+              "name": "社会主义法律.pptx",
+              "rel_path": "思想道德与法治/2024秋 课件讲义/社会主义法律.pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2024%E7%A7%8B%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%B3%95%E5%BE%8B.pptx"
+            },
+            {
+              "name": "理想信念.pptx",
+              "rel_path": "思想道德与法治/2024秋 课件讲义/理想信念.pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2024%E7%A7%8B%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E7%90%86%E6%83%B3%E4%BF%A1%E5%BF%B5.pptx"
+            },
+            {
+              "name": "话语形态与自我同一性(修订版).pptx",
+              "rel_path": "思想道德与法治/2024秋 课件讲义/话语形态与自我同一性(修订版).pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2024%E7%A7%8B%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E8%AF%9D%E8%AF%AD%E5%BD%A2%E6%80%81%E4%B8%8E%E8%87%AA%E6%88%91%E5%90%8C%E4%B8%80%E6%80%A7%28%E4%BF%AE%E8%AE%A2%E7%89%88%29.pptx"
+            },
+            {
+              "name": "道德基本问题引论.pptx",
+              "rel_path": "思想道德与法治/2024秋 课件讲义/道德基本问题引论.pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2024%E7%A7%8B%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E9%81%93%E5%BE%B7%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98%E5%BC%95%E8%AE%BA.pptx"
+            },
+            {
+              "name": "国、家、友爱问题.pptx",
+              "rel_path": "思想道德与法治/2024秋 课件讲义/国、家、友爱问题.pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2024%E7%A7%8B%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E5%9B%BD%E3%80%81%E5%AE%B6%E3%80%81%E5%8F%8B%E7%88%B1%E9%97%AE%E9%A2%98.pptx"
+            },
+            {
+              "name": "中国传统美德(2).pptx",
+              "rel_path": "思想道德与法治/2024秋 课件讲义/中国传统美德(2).pptx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/2024%E7%A7%8B%20%E8%AF%BE%E4%BB%B6%E8%AE%B2%E4%B9%89/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E7%BE%8E%E5%BE%B7%282%29.pptx"
+            }
+          ],
+          "labs": []
+        }
+      }
+    },
     "MATH1112": {
       "code": "MATH1112",
       "name_zh": "线性代数I",
@@ -10460,9 +10659,14 @@
         "grade": 2.8181818181818183
       },
       "aliases": [
+        "Intro to IST",
         "SI100B",
+        "intro to ist",
         "introduction to information science and technology",
         "si100b",
+        "信导",
+        "信息导论",
+        "信息科学与技术导论",
         "信息科学技术导论"
       ],
       "resources": {
@@ -10554,6 +10758,22 @@
             "others": []
           },
           "key_files": []
+        },
+        "xiongwenye": {
+          "available": true,
+          "folder_name": "信息科学技术导论",
+          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E4%BF%A1%E6%81%AF%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%AF%BC%E8%AE%BA",
+          "total_files": 1,
+          "exams": [
+            {
+              "name": "SI100B 2025midterm.pdf",
+              "rel_path": "信息科学技术导论/SI100B 2025midterm.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E4%BF%A1%E6%81%AF%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%AF%BC%E8%AE%BA/SI100B%202025midterm.pdf"
+            }
+          ],
+          "solutions": [],
+          "slides_notes": [],
+          "labs": []
         },
         "zsc2003": {
           "available": true,
@@ -10672,6 +10892,11 @@
               "name": "SI120_Finalterm_v1_ans.pdf",
               "rel_path": "离散数学/SI120_Finalterm_v1_ans.pdf",
               "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/SI120_Finalterm_v1_ans.pdf"
+            },
+            {
+              "name": "Dcheatsheet.markdown",
+              "rel_path": "离散数学/期中cheatsheet/Dcheatsheet.markdown",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/%E6%9C%9F%E4%B8%ADcheatsheet/Dcheatsheet.markdown"
             }
           ],
           "solutions": [],
@@ -13037,6 +13262,24 @@
     "电磁学": [
       "EE130"
     ],
+    "comm": [
+      "EE140"
+    ],
+    "ee140": [
+      "EE140"
+    ],
+    "principle of communication": [
+      "EE140"
+    ],
+    "通信": [
+      "EE140"
+    ],
+    "通信原理": [
+      "EE140"
+    ],
+    "通原": [
+      "EE140"
+    ],
     "ee142": [
       "EE142"
     ],
@@ -13070,7 +13313,16 @@
     "ee160": [
       "EE160"
     ],
+    "feedback control": [
+      "EE160"
+    ],
+    "控制": [
+      "EE160"
+    ],
     "控制原理": [
+      "EE160"
+    ],
+    "控原": [
       "EE160"
     ],
     "geha1003": [
@@ -13144,6 +13396,24 @@
     ],
     "数学分析ii": [
       "GEMA1010"
+    ],
+    "ethics and law": [
+      "GESS1028"
+    ],
+    "gess1028": [
+      "GESS1028"
+    ],
+    "思修": [
+      "GESS1028"
+    ],
+    "思想道德与法治": [
+      "GESS1028"
+    ],
+    "思政": [
+      "GESS1028"
+    ],
+    "道德与法治": [
+      "GESS1028"
     ],
     "linear algebra": [
       "MATH1112"
@@ -13239,10 +13509,22 @@
     "广义相对论与宇宙学": [
       "PHYS2517"
     ],
+    "intro to ist": [
+      "SI100B"
+    ],
     "si100b": [
       "SI100B"
     ],
     "introduction to information science and technology": [
+      "SI100B"
+    ],
+    "信导": [
+      "SI100B"
+    ],
+    "信息导论": [
+      "SI100B"
+    ],
+    "信息科学与技术导论": [
       "SI100B"
     ],
     "信息科学技术导论": [

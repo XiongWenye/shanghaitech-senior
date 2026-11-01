@@ -110,7 +110,13 @@ def format_markdown_report(course):
     xw = res.get("xiongwenye")
     if xw and xw.get("exams"):
         for ex in xw["exams"]:
-            lines.append(f"- 📄 **真题卷**：[{ex['name']}]({ex['url']})")
+            fl = ex['name'].lower()
+            if any(k in fl for k in ["cheatsheet", "cheat_sheet", "cheat sheet", "速查"]):
+                lines.append(f"- 📑 **考前速查 / Cheat Sheet**：[{ex['name']}]({ex['url']})")
+            elif any(k in fl for k in ["quiz", "小测", "测验"]):
+                lines.append(f"- 📝 **随堂测验 / Quiz**：[{ex['name']}]({ex['url']})")
+            else:
+                lines.append(f"- 📄 **真题卷**：[{ex['name']}]({ex['url']})")
             has_exam = True
     if xw and xw.get("solutions"):
         for sol in xw["solutions"]:

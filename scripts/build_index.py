@@ -284,7 +284,11 @@ COLLOQUIAL_ALIASES = {
     "SI152": ["数值优化", "数值最优化"],
     "SI251": ["凸优化", "Convex Optimization"],
     "SI151A": ["信息科学中的凸优化", "凸优化应用"],
-    "SI199": ["毕业论文", "本科毕业设计", "毕设", "Thesis"]
+    "SI199": ["毕业论文", "本科毕业设计", "毕设", "Thesis"],
+    "EE140": ["通原", "通信原理", "通信", "Principle of Communication", "Comm"],
+    "EE160": ["控原", "控制原理", "控制", "Feedback Control"],
+    "SI100B": ["信导", "信息导论", "信息科学技术导论", "信息科学与技术导论", "Intro to IST"],
+    "GESS1028": ["思修", "思想道德与法治", "思政", "道德与法治", "Ethics and Law"]
 }
 
 # Chinese course name to Code resolver
@@ -299,6 +303,12 @@ ZH_TO_CODE = {
     "计算机视觉": "CS172",
     "人工智能I": "CS181",
     "机器学习引论": "CS182",
+    "通信原理": "EE140",
+    "控制原理": "EE160",
+    "信息科学技术导论": "SI100B",
+    "信息科学与技术导论": "SI100B",
+    "思想道德与法治": "GESS1028",
+    "思修": "GESS1028",
     "数学分析I": "GEMA1009",
     "数学分析II": "GEMA1010",
     "高等数学I": "GEMA1001",
@@ -504,7 +514,7 @@ def parse_xiongwenye():
             }
             
             fl = f.lower()
-            if any(k in fl for k in ["期末", "期中", "试卷", "midterm", "final", "exam", "考试", "真题", "中大题", "选填"]):
+            if any(k in fl for k in ["期末", "期中", "试卷", "midterm", "final", "exam", "考试", "真题", "中大题", "选填", "quiz", "小测", "测验", "cheatsheet", "cheat_sheet", "cheat sheet", "速查"]):
                 if any(k in fl for k in ["答案", "解析", "solution", "key", "评分标准"]):
                     item["solutions"].append(file_info)
                 else:
