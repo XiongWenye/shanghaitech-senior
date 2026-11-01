@@ -1,0 +1,1451 @@
+[
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a052613dad82b0183d3a78aca94e624acc090ea",
+    "size": 1208,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9a052613dad82b0183d3a78aca94e624acc090ea"
+  },
+  {
+    "path": "bot.py",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f1af6e0a1442ed9ecfb10a33aae07de3de1dc823",
+    "size": 23275,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/f1af6e0a1442ed9ecfb10a33aae07de3de1dc823"
+  },
+  {
+    "path": "history.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ff648859f0f0cc8fa08ef42970ccd4e75e518d5c",
+    "size": 115116,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ff648859f0f0cc8fa08ef42970ccd4e75e518d5c"
+  },
+  {
+    "path": "l0",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f6b0219954f8933f9787b60b62d78630b1d17f90",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/f6b0219954f8933f9787b60b62d78630b1d17f90"
+  },
+  {
+    "path": "l0/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "07378af1ec8001ac9e3604d51ae3b36d534d2703",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/07378af1ec8001ac9e3604d51ae3b36d534d2703"
+  },
+  {
+    "path": "l0/img/aplusb_godbolt.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "32fed7ca53a371fa94481404180651743e9b384c",
+    "size": 161678,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/32fed7ca53a371fa94481404180651743e9b384c"
+  },
+  {
+    "path": "l0/img/languages.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3aa11a73b2c47b40286ca60264afd196798d44a8",
+    "size": 37503,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/3aa11a73b2c47b40286ca60264afd196798d44a8"
+  },
+  {
+    "path": "l0/img/machine_code.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ba78d63afba3045a05d80b74eee59d923fd9ed74",
+    "size": 52828,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ba78d63afba3045a05d80b74eee59d923fd9ed74"
+  },
+  {
+    "path": "l0/l0.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "612c9632faf954d8f639d97a208708d51964acee",
+    "size": 9865,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/612c9632faf954d8f639d97a208708d51964acee"
+  },
+  {
+    "path": "l0/l0.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b10be2e7b825af167807e05174882f753e3effdd",
+    "size": 323122,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/b10be2e7b825af167807e05174882f753e3effdd"
+  },
+  {
+    "path": "l1",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a39c39505c5fcd046105d537504c9cb6e4639f36",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/a39c39505c5fcd046105d537504c9cb6e4639f36"
+  },
+  {
+    "path": "l1/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "be3dbba834aa3fb97bd56351ef7806b09c73e7cf",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/be3dbba834aa3fb97bd56351ef7806b09c73e7cf"
+  },
+  {
+    "path": "l1/img/Dennis_Retchie.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea77fcb9685eac5369d5a3bf30643470aa88a2ba",
+    "size": 113277,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ea77fcb9685eac5369d5a3bf30643470aa88a2ba"
+  },
+  {
+    "path": "l1/img/a_plus_b.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6c35fda98a0f1089e2ec681756214f40c4a339df",
+    "size": 30020,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/6c35fda98a0f1089e2ec681756214f40c4a339df"
+  },
+  {
+    "path": "l1/img/prompts.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9152d489c4412f0523691d24d8e50edefb73707",
+    "size": 6941,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/d9152d489c4412f0523691d24d8e50edefb73707"
+  },
+  {
+    "path": "l1/img/return_negative1.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "332e7ec8b7bd3270b10ddbf41873684ce3fa75a6",
+    "size": 9486,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/332e7ec8b7bd3270b10ddbf41873684ce3fa75a6"
+  },
+  {
+    "path": "l1/img/return_zero.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "68270d4478f487106517910ddf244a84c3af77fe",
+    "size": 45416,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/68270d4478f487106517910ddf244a84c3af77fe"
+  },
+  {
+    "path": "l1/img/separate.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "127fe8eb8a0000985a0a2c23471a1b62b5ac184a",
+    "size": 15413,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/127fe8eb8a0000985a0a2c23471a1b62b5ac184a"
+  },
+  {
+    "path": "l1/img/thecpl.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "07f510b45f6de16668d94c32de9bc4e1d5ed2ddb",
+    "size": 49607,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/07f510b45f6de16668d94c32de9bc4e1d5ed2ddb"
+  },
+  {
+    "path": "l1/l1.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "de30ad8242d4aaf9e31da0b31754ab706a48611c",
+    "size": 10106,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/de30ad8242d4aaf9e31da0b31754ab706a48611c"
+  },
+  {
+    "path": "l1/l1.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9adc7682954515834e46eac62e2d81a66c6afe76",
+    "size": 488156,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9adc7682954515834e46eac62e2d81a66c6afe76"
+  },
+  {
+    "path": "l1/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7f4baaef138dd4e7ba37da8ac8cb6ca646409cde",
+    "size": 3829,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/7f4baaef138dd4e7ba37da8ac8cb6ca646409cde"
+  },
+  {
+    "path": "l10",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "87c667477838b5f3babcf0b0228ffe677e5b721a",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/87c667477838b5f3babcf0b0228ffe677e5b721a"
+  },
+  {
+    "path": "l10/Vector.c",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67a20f6a228d6e8b2264df924aacb9478ed55a8b",
+    "size": 2512,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/67a20f6a228d6e8b2264df924aacb9478ed55a8b"
+  },
+  {
+    "path": "l10/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "06708bd18c8083033e89e0ffd5925cb219742c55",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/06708bd18c8083033e89e0ffd5925cb219742c55"
+  },
+  {
+    "path": "l10/img/arithmetic_types.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9694df98856fbde8dc1481a8b6f45a21b91c40d1",
+    "size": 78829,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9694df98856fbde8dc1481a8b6f45a21b91c40d1"
+  },
+  {
+    "path": "l10/img/ptradd.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9421d0588d5b3ca30ce35d03ed486a02bc24252d",
+    "size": 4389,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9421d0588d5b3ca30ce35d03ed486a02bc24252d"
+  },
+  {
+    "path": "l10/img/scopes.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed8d880272644f98784980c72788499f21320682",
+    "size": 90266,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ed8d880272644f98784980c72788499f21320682"
+  },
+  {
+    "path": "l10/l10.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1989d8364487bbc29f7d526ced4628d8826a9a9d",
+    "size": 15811,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/1989d8364487bbc29f7d526ced4628d8826a9a9d"
+  },
+  {
+    "path": "l10/l10.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "71e321b739f69fbeffe7656cd347b68cf621faff",
+    "size": 423249,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/71e321b739f69fbeffe7656cd347b68cf621faff"
+  },
+  {
+    "path": "l11",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2d99f36d25ac644f6d6ce72c8f1baa03ab392bb7",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/2d99f36d25ac644f6d6ce72c8f1baa03ab392bb7"
+  },
+  {
+    "path": "l11/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "dc15ef0573f66fb910ae3c2281c7d73832af97c8",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/dc15ef0573f66fb910ae3c2281c7d73832af97c8"
+  },
+  {
+    "path": "l11/img/bell_labs.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b8767ad7f06878f50c85c78da20c135a4c98b511",
+    "size": 1472636,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/b8767ad7f06878f50c85c78da20c135a4c98b511"
+  },
+  {
+    "path": "l11/l11.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e594bfe921c59d033ddb9ac09c1d53abeaa20dfe",
+    "size": 14306,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e594bfe921c59d033ddb9ac09c1d53abeaa20dfe"
+  },
+  {
+    "path": "l11/l11.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7d08372f2b31779bc54333271da61a4378d1f5d1",
+    "size": 2362676,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/7d08372f2b31779bc54333271da61a4378d1f5d1"
+  },
+  {
+    "path": "l11/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "27215d4d46df29a10297c1696a02b28a1c2b752d",
+    "size": 1438,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/27215d4d46df29a10297c1696a02b28a1c2b752d"
+  },
+  {
+    "path": "l12",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5551d020c96df504d355a2ed88b75730b47dbce3",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/5551d020c96df504d355a2ed88b75730b47dbce3"
+  },
+  {
+    "path": "l12/l12.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4d8f72d2514392cac27dd5c4ecc3ebb3906f9f15",
+    "size": 21303,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/4d8f72d2514392cac27dd5c4ecc3ebb3906f9f15"
+  },
+  {
+    "path": "l12/l12.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "efd8c0830c94cce506ed5708f3480fc6e98c74da",
+    "size": 298680,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/efd8c0830c94cce506ed5708f3480fc6e98c74da"
+  },
+  {
+    "path": "l12/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4d75e16530b1afabd39424e5927aa2ef57617811",
+    "size": 290,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/4d75e16530b1afabd39424e5927aa2ef57617811"
+  },
+  {
+    "path": "l13",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1957dd5e3606b23b791ba45f8d630d9fb3c0450a",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/1957dd5e3606b23b791ba45f8d630d9fb3c0450a"
+  },
+  {
+    "path": "l13/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d8decba100dbd48f06cf3a4e6f2e69814f635c59",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/d8decba100dbd48f06cf3a4e6f2e69814f635c59"
+  },
+  {
+    "path": "l13/img/vscode_show_auto.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d3724e084ea3335f9e7f67e65c5df6fbeaa21f76",
+    "size": 2698,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/d3724e084ea3335f9e7f67e65c5df6fbeaa21f76"
+  },
+  {
+    "path": "l13/l13.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a1934fe20866caefd9e57b772fd74aeeea057dfa",
+    "size": 19951,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a1934fe20866caefd9e57b772fd74aeeea057dfa"
+  },
+  {
+    "path": "l13/l13.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a73310965d8cbab19d88fcc6c4b5ced42c5f7be3",
+    "size": 276465,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a73310965d8cbab19d88fcc6c4b5ced42c5f7be3"
+  },
+  {
+    "path": "l13/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "89e3e5781d5de8efbb1245da5416e1ee9dae3087",
+    "size": 2968,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/89e3e5781d5de8efbb1245da5416e1ee9dae3087"
+  },
+  {
+    "path": "l14",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "58c9e61b3de3e05103567ea1fa8ed4532ccb6ee3",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/58c9e61b3de3e05103567ea1fa8ed4532ccb6ee3"
+  },
+  {
+    "path": "l14/l14.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f00613094e390144b00ab1f20d3644aa37530517",
+    "size": 20347,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/f00613094e390144b00ab1f20d3644aa37530517"
+  },
+  {
+    "path": "l14/l14.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2bb6096dd5cb6f83cfa4a8b8abcf5dbdb2ddc60",
+    "size": 249063,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/c2bb6096dd5cb6f83cfa4a8b8abcf5dbdb2ddc60"
+  },
+  {
+    "path": "l14/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c83b040fca5d6cf7ef43892412aa9381b2e8495b",
+    "size": 4721,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/c83b040fca5d6cf7ef43892412aa9381b2e8495b"
+  },
+  {
+    "path": "l15",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "28defda96d7b4dbf662b5ca3708692fdf413317a",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/28defda96d7b4dbf662b5ca3708692fdf413317a"
+  },
+  {
+    "path": "l15/l15.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4a8424ad40ecb855cc38cfe5d97dd1b421abf0ac",
+    "size": 18245,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/4a8424ad40ecb855cc38cfe5d97dd1b421abf0ac"
+  },
+  {
+    "path": "l15/l15.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d0d14ec99566f25020b8b60ee3cf32d7f20f1253",
+    "size": 221182,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/d0d14ec99566f25020b8b60ee3cf32d7f20f1253"
+  },
+  {
+    "path": "l16",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "828eec27ba896444d327e3aeb06fe616999146e5",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/828eec27ba896444d327e3aeb06fe616999146e5"
+  },
+  {
+    "path": "l16/l16.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5f8599d4f415cd6e8e16b9c1fc77ec1e92f2d928",
+    "size": 18490,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/5f8599d4f415cd6e8e16b9c1fc77ec1e92f2d928"
+  },
+  {
+    "path": "l16/l16.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d04da1196872434fd59d6d8c1ef44432c6e13e7",
+    "size": 261954,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/2d04da1196872434fd59d6d8c1ef44432c6e13e7"
+  },
+  {
+    "path": "l17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fcffecfc88ff7771553eb09479376c08d4955342",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/fcffecfc88ff7771553eb09479376c08d4955342"
+  },
+  {
+    "path": "l17/l17.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "852e920bd9a8e9dee19cf1f5c7239a8934026e6e",
+    "size": 18704,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/852e920bd9a8e9dee19cf1f5c7239a8934026e6e"
+  },
+  {
+    "path": "l17/l17.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78bd0866a7a11181185e9de2ad76475e0d137194",
+    "size": 217708,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/78bd0866a7a11181185e9de2ad76475e0d137194"
+  },
+  {
+    "path": "l18",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d3fe1a00a4fd6400da61e806ddbb8da166e320b4",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/d3fe1a00a4fd6400da61e806ddbb8da166e320b4"
+  },
+  {
+    "path": "l18/l18.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "54d3cb2c3eddbbd10a317e90859dfe55a88df3e2",
+    "size": 21969,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/54d3cb2c3eddbbd10a317e90859dfe55a88df3e2"
+  },
+  {
+    "path": "l18/l18.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "41431f3f2ccbd63d61cff4b7b50de4a753b3cac4",
+    "size": 288605,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/41431f3f2ccbd63d61cff4b7b50de4a753b3cac4"
+  },
+  {
+    "path": "l19",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cf13e429ae155c00c367d2f1f74f244dd621ae45",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/cf13e429ae155c00c367d2f1f74f244dd621ae45"
+  },
+  {
+    "path": "l19/l19.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "318cb3377486074e18d68d3a5c9890516e87ffae",
+    "size": 22627,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/318cb3377486074e18d68d3a5c9890516e87ffae"
+  },
+  {
+    "path": "l19/l19.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a67be99596581dacb0cab079b0eeb6987a400d0c",
+    "size": 309236,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a67be99596581dacb0cab079b0eeb6987a400d0c"
+  },
+  {
+    "path": "l19/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d6b5236a3be352ed64fed49548c34b4e040632ef",
+    "size": 1189,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/d6b5236a3be352ed64fed49548c34b4e040632ef"
+  },
+  {
+    "path": "l2",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e1ee85389ade3439266a8777fc378e7cb3247ff5",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/e1ee85389ade3439266a8777fc378e7cb3247ff5"
+  },
+  {
+    "path": "l2/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "25f5a57570d79eaee7f6d9952be295a474a7c17c",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/25f5a57570d79eaee7f6d9952be295a474a7c17c"
+  },
+  {
+    "path": "l2/img/32bitint.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "37946fae4e9c864586c33adc645d8c2e51fe4ab3",
+    "size": 11957,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/37946fae4e9c864586c33adc645d8c2e51fe4ab3"
+  },
+  {
+    "path": "l2/img/all_int_types_and_z.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6ba46b8472db4dfe416818fb06e7fa5452a6815d",
+    "size": 82917,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/6ba46b8472db4dfe416818fb06e7fa5452a6815d"
+  },
+  {
+    "path": "l2/img/all_types.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9694df98856fbde8dc1481a8b6f45a21b91c40d1",
+    "size": 78829,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9694df98856fbde8dc1481a8b6f45a21b91c40d1"
+  },
+  {
+    "path": "l2/img/ascii_char.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa38e48f88874493467976055573a99af7217f7b",
+    "size": 70269,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/fa38e48f88874493467976055573a99af7217f7b"
+  },
+  {
+    "path": "l2/img/ascii_table.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ccb1041b122ff2c771c4f8bf653eb9bf82df36c8",
+    "size": 268672,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ccb1041b122ff2c771c4f8bf653eb9bf82df36c8"
+  },
+  {
+    "path": "l2/img/int_types.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a4931cc696c9f9523e66b37163e9359f1afd86ea",
+    "size": 42074,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a4931cc696c9f9523e66b37163e9359f1afd86ea"
+  },
+  {
+    "path": "l2/img/int_types_arrows.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "79a832919fdda891c2fa9433073bbea208ffce09",
+    "size": 57122,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/79a832919fdda891c2fa9433073bbea208ffce09"
+  },
+  {
+    "path": "l2/img/russian_hello.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7421d7d767b1266e96708ca8f02582237887af25",
+    "size": 640318,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/7421d7d767b1266e96708ca8f02582237887af25"
+  },
+  {
+    "path": "l2/img/unicode.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e6869204b89fa12c74f95ef872ed104dd5a59619",
+    "size": 864580,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e6869204b89fa12c74f95ef872ed104dd5a59619"
+  },
+  {
+    "path": "l2/l2.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "59e4f8b72f8cae9edb09dcc515f51e53f6457726",
+    "size": 20142,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/59e4f8b72f8cae9edb09dcc515f51e53f6457726"
+  },
+  {
+    "path": "l2/l2.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "531f1be42a1e48e0c982e14d44f58e2bfb8d1dec",
+    "size": 2405559,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/531f1be42a1e48e0c982e14d44f58e2bfb8d1dec"
+  },
+  {
+    "path": "l2/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "079f624acb400551f44c3d5701473a865744c4ef",
+    "size": 4444,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/079f624acb400551f44c3d5701473a865744c4ef"
+  },
+  {
+    "path": "l20",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "292694781c9be624d72509a5eb657cd804b65ca2",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/292694781c9be624d72509a5eb657cd804b65ca2"
+  },
+  {
+    "path": "l20/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5b8ae665d2c802663beb07fbcf99f3f27602aef0",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/5b8ae665d2c802663beb07fbcf99f3f27602aef0"
+  },
+  {
+    "path": "l20/img/range-begin-end.svg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e2b2fb6cf56e4cba37cf28d7e871f76ba402da3",
+    "size": 14240,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/8e2b2fb6cf56e4cba37cf28d7e871f76ba402da3"
+  },
+  {
+    "path": "l20/l20.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "df4b548d5269fab1c4bf51b93c2cca1e7efafd1a",
+    "size": 21580,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/df4b548d5269fab1c4bf51b93c2cca1e7efafd1a"
+  },
+  {
+    "path": "l20/l20.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c3e0947f57d3dde4b908b26b77dd0654be5abd22",
+    "size": 344874,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/c3e0947f57d3dde4b908b26b77dd0654be5abd22"
+  },
+  {
+    "path": "l21",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "41d6c2fd349a587742558015085eb6d8b1971ebb",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/41d6c2fd349a587742558015085eb6d8b1971ebb"
+  },
+  {
+    "path": "l21/l21.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58b7a559fde7615e722a80b31514c0a2c972f9b1",
+    "size": 18864,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/58b7a559fde7615e722a80b31514c0a2c972f9b1"
+  },
+  {
+    "path": "l21/l21.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "582a1d653b22aaa548622daa8d6b81c8cf4177a1",
+    "size": 279962,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/582a1d653b22aaa548622daa8d6b81c8cf4177a1"
+  },
+  {
+    "path": "l22",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8830960d5f9752e6f3d813e85f54f9ee2c800113",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/8830960d5f9752e6f3d813e85f54f9ee2c800113"
+  },
+  {
+    "path": "l22/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9c2c461f0e23ba950bfb5e02dfe5d42c14312ccc",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/9c2c461f0e23ba950bfb5e02dfe5d42c14312ccc"
+  },
+  {
+    "path": "l22/img/shapes.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2b3f283f3f9c8fc57f1374282bf8c014f6eea0b5",
+    "size": 26467,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/2b3f283f3f9c8fc57f1374282bf8c014f6eea0b5"
+  },
+  {
+    "path": "l22/img/square-rectangle.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "30b7f5d04ec5c84cb809941e012e48692a125088",
+    "size": 6074,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/30b7f5d04ec5c84cb809941e012e48692a125088"
+  },
+  {
+    "path": "l22/l22.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cc5bb94f3b596131ade8ccb7e7d9543c4c13cc75",
+    "size": 17382,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/cc5bb94f3b596131ade8ccb7e7d9543c4c13cc75"
+  },
+  {
+    "path": "l22/l22.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "44856f42b9894b3ed426c89a29a4270fc22b3b49",
+    "size": 241493,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/44856f42b9894b3ed426c89a29a4270fc22b3b49"
+  },
+  {
+    "path": "l23",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1f45a5feaeeee5964091e7d1ad625aee04bcb40b",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/1f45a5feaeeee5964091e7d1ad625aee04bcb40b"
+  },
+  {
+    "path": "l23/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ab2891ea5de978dbc5d3bfcfad6a73a3c9d6120e",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/ab2891ea5de978dbc5d3bfcfad6a73a3c9d6120e"
+  },
+  {
+    "path": "l23/img/deque.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e1128a59d1679386a7c0582c048a0544a013a32",
+    "size": 2480,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/7e1128a59d1679386a7c0582c048a0544a013a32"
+  },
+  {
+    "path": "l23/img/forward_list.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a00c96fa95581af30790fd66d1468393e0ddba37",
+    "size": 1487,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a00c96fa95581af30790fd66d1468393e0ddba37"
+  },
+  {
+    "path": "l23/img/list.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "291a726e8c35deaf687a82a93de1acadcd550498",
+    "size": 1501,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/291a726e8c35deaf687a82a93de1acadcd550498"
+  },
+  {
+    "path": "l23/img/range-begin-end.svg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e2b2fb6cf56e4cba37cf28d7e871f76ba402da3",
+    "size": 14240,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/8e2b2fb6cf56e4cba37cf28d7e871f76ba402da3"
+  },
+  {
+    "path": "l23/img/vector.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "565fc3acae458516e7438eacc40ebd4224d20db5",
+    "size": 2362,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/565fc3acae458516e7438eacc40ebd4224d20db5"
+  },
+  {
+    "path": "l23/l23.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f2b1377d16f495019c58297643047144e2816119",
+    "size": 23546,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/f2b1377d16f495019c58297643047144e2816119"
+  },
+  {
+    "path": "l23/l23.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9174b17109e77cf27d8e2a622bbdc3cd8e184aa3",
+    "size": 422470,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9174b17109e77cf27d8e2a622bbdc3cd8e184aa3"
+  },
+  {
+    "path": "l23/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "48d19eb8f3a89fa26bf55bf750e5c3e7b501fb09",
+    "size": 982,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/48d19eb8f3a89fa26bf55bf750e5c3e7b501fb09"
+  },
+  {
+    "path": "l24",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c7e837994c8c0b93bb35083f8d0397da853c5c65",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/c7e837994c8c0b93bb35083f8d0397da853c5c65"
+  },
+  {
+    "path": "l24/cppenv.sty",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e5ef349cd602405299e93cc9e3d91f5adb508df3",
+    "size": 794,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e5ef349cd602405299e93cc9e3d91f5adb508df3"
+  },
+  {
+    "path": "l24/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9dbb91c91decd49874289b433cfbe8c62be2f55e",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/9dbb91c91decd49874289b433cfbe8c62be2f55e"
+  },
+  {
+    "path": "l24/img/ExceptionClasses.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "65ce9beba2a3f8326af4b458248049ca6a9b4605",
+    "size": 29879,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/65ce9beba2a3f8326af4b458248049ca6a9b4605"
+  },
+  {
+    "path": "l24/img/bad_array_new_length-inheritance.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4ec3d78e2cb7570621d356f0e1e69e16d25d85e3",
+    "size": 4546,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/4ec3d78e2cb7570621d356f0e1e69e16d25d85e3"
+  },
+  {
+    "path": "l24/l24.nav",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1d5ae61506df612e6d859f0ca814a179c586b646",
+    "size": 7901,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/1d5ae61506df612e6d859f0ca814a179c586b646"
+  },
+  {
+    "path": "l24/l24.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0c9f372b11469e7c224762b97a5bc8745a0e1a2f",
+    "size": 331783,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/0c9f372b11469e7c224762b97a5bc8745a0e1a2f"
+  },
+  {
+    "path": "l24/l24.snm",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "l24/l24.synctex.gz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1f21b900b1a7dd36aa5f1e76986b328a0ce03244",
+    "size": 357018,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/1f21b900b1a7dd36aa5f1e76986b328a0ce03244"
+  },
+  {
+    "path": "l24/l24.tex",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bdd706a15e66c3148b4fbf496d1d635d06bbda5a",
+    "size": 25007,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/bdd706a15e66c3148b4fbf496d1d635d06bbda5a"
+  },
+  {
+    "path": "l24/l24.vrb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "25a5ba6fdef4045d0568365c53a369001b5f008a",
+    "size": 706,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/25a5ba6fdef4045d0568365c53a369001b5f008a"
+  },
+  {
+    "path": "l24/recdefs.sty",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7ff83a74cf1fd58dd7cb2f86cfb19651dac14e2e",
+    "size": 836,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/7ff83a74cf1fd58dd7cb2f86cfb19651dac14e2e"
+  },
+  {
+    "path": "l25",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6d4acb6d31043e23ea112a0721e334b01e148158",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/6d4acb6d31043e23ea112a0721e334b01e148158"
+  },
+  {
+    "path": "l25/l25.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a19e0730cfacbd08a0e7ac8ca6dd7f785f309089",
+    "size": 19461,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a19e0730cfacbd08a0e7ac8ca6dd7f785f309089"
+  },
+  {
+    "path": "l25/l25.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "33df8720d4896d9fcf2d52b7a7fe3da75cfcbf09",
+    "size": 296824,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/33df8720d4896d9fcf2d52b7a7fe3da75cfcbf09"
+  },
+  {
+    "path": "l26",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "880bd622eb2af4c37e1c3309b52d3b7fdd65871d",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/880bd622eb2af4c37e1c3309b52d3b7fdd65871d"
+  },
+  {
+    "path": "l26/l26.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "20ac5b226088c2e1dbb0a15ff7f2280ab697f8da",
+    "size": 15504,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/20ac5b226088c2e1dbb0a15ff7f2280ab697f8da"
+  },
+  {
+    "path": "l26/l26.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "04ca593c2e77c0692b41eba0b51c0bccc0da343e",
+    "size": 200061,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/04ca593c2e77c0692b41eba0b51c0bccc0da343e"
+  },
+  {
+    "path": "l27",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "810aac78aa775f69db575cbd38de034a268192b2",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/810aac78aa775f69db575cbd38de034a268192b2"
+  },
+  {
+    "path": "l27/l27.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e5abfddd007b8fe7d9a17d0d439f37789c7c4cf1",
+    "size": 16760,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e5abfddd007b8fe7d9a17d0d439f37789c7c4cf1"
+  },
+  {
+    "path": "l27/l27.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "797816197ec02be3991317cb42911e343b2ff17b",
+    "size": 388237,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/797816197ec02be3991317cb42911e343b2ff17b"
+  },
+  {
+    "path": "l28",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ffc4eded560f6cd338fed10eb7e27277f74d9de9",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/ffc4eded560f6cd338fed10eb7e27277f74d9de9"
+  },
+  {
+    "path": "l28/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "87596183f10a4b910677930d53acd472da3eb98e",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/87596183f10a4b910677930d53acd472da3eb98e"
+  },
+  {
+    "path": "l28/img/metaclass_value.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c88983726abd83c2ae284b2bf152b8f27ed2b697",
+    "size": 173587,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/c88983726abd83c2ae284b2bf152b8f27ed2b697"
+  },
+  {
+    "path": "l28/img/ranges_sort_list.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9cbe89765cb87a2a76a221dbae61a383ac2b0667",
+    "size": 37959,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9cbe89765cb87a2a76a221dbae61a383ac2b0667"
+  },
+  {
+    "path": "l28/img/sort_list.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2af477d8c1fb3e188c81a583d56c4a3e441b496",
+    "size": 157910,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/c2af477d8c1fb3e188c81a583d56c4a3e441b496"
+  },
+  {
+    "path": "l28/l28.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fcae69de96f16f61800a137f1db78e29948cf7e1",
+    "size": 17332,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/fcae69de96f16f61800a137f1db78e29948cf7e1"
+  },
+  {
+    "path": "l28/l28.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e68e4b817cb8ac18b2053b4d29d6b9db139cfc5f",
+    "size": 361073,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e68e4b817cb8ac18b2053b4d29d6b9db139cfc5f"
+  },
+  {
+    "path": "l3",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8cc08d3158858adde0727e292d9df1005873e540",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/8cc08d3158858adde0727e292d9df1005873e540"
+  },
+  {
+    "path": "l3/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "208823f719a6946b145cbd2e37e348e219a7449c",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/208823f719a6946b145cbd2e37e348e219a7449c"
+  },
+  {
+    "path": "l3/img/arithmetic_op.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "371c3a8d6a52e31f8f1e973d542f5decda4d490a",
+    "size": 74318,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/371c3a8d6a52e31f8f1e973d542f5decda4d490a"
+  },
+  {
+    "path": "l3/img/for.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "565d6e33807365abaaabf06472f192b73c4c7027",
+    "size": 24978,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/565d6e33807365abaaabf06472f192b73c4c7027"
+  },
+  {
+    "path": "l3/img/while.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "042179083688c643204a8f724e147d3666de0bd6",
+    "size": 18374,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/042179083688c643204a8f724e147d3666de0bd6"
+  },
+  {
+    "path": "l3/l3.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81d2bd6c7f55d35f80355ae0aeb8b74ff13ec262",
+    "size": 20939,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/81d2bd6c7f55d35f80355ae0aeb8b74ff13ec262"
+  },
+  {
+    "path": "l3/l3.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f950a46a9b93b702d9d47855d958b43b3a4848dc",
+    "size": 556213,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/f950a46a9b93b702d9d47855d958b43b3a4848dc"
+  },
+  {
+    "path": "l3/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fae993afa0bdfa210467f59a93f68a19b0aaf217",
+    "size": 4132,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/fae993afa0bdfa210467f59a93f68a19b0aaf217"
+  },
+  {
+    "path": "l4",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "97f27cd42ad4f9857d9869a0796ae5fcac0da844",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/97f27cd42ad4f9857d9869a0796ae5fcac0da844"
+  },
+  {
+    "path": "l4/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b4ffa5c5a704cd57b1cbfaa287006e23824fcb67",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/b4ffa5c5a704cd57b1cbfaa287006e23824fcb67"
+  },
+  {
+    "path": "l4/img/do_while.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a465e20c3b4b4c32874dd262b2fbe9730b221023",
+    "size": 17903,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a465e20c3b4b4c32874dd262b2fbe9730b221023"
+  },
+  {
+    "path": "l4/img/scopes.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed8d880272644f98784980c72788499f21320682",
+    "size": 90266,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ed8d880272644f98784980c72788499f21320682"
+  },
+  {
+    "path": "l4/l4.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3d4e88ef25a606eb77d661fe8ad5a7fb847d95fd",
+    "size": 22334,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/3d4e88ef25a606eb77d661fe8ad5a7fb847d95fd"
+  },
+  {
+    "path": "l4/l4.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed74d7941fa737bef84b046683fc2fb0d650e69f",
+    "size": 430319,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ed74d7941fa737bef84b046683fc2fb0d650e69f"
+  },
+  {
+    "path": "l4/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a140e0b7efacaac98c2c05ae83388133fcc54721",
+    "size": 3749,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a140e0b7efacaac98c2c05ae83388133fcc54721"
+  },
+  {
+    "path": "l5",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ab08917102a9a54d33a2b1c9fa00b7c3e783e3e0",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/ab08917102a9a54d33a2b1c9fa00b7c3e783e3e0"
+  },
+  {
+    "path": "l5/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "70752d1df8f7eb3a4e35ff3432f147c9e3f27e1e",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/70752d1df8f7eb3a4e35ff3432f147c9e3f27e1e"
+  },
+  {
+    "path": "l5/img/call_by_pointer.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "20eae5ff79bf3cde2039d3364c99332a25715122",
+    "size": 27800,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/20eae5ff79bf3cde2039d3364c99332a25715122"
+  },
+  {
+    "path": "l5/img/call_by_value.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d0bc1d1eab617bc75dfcd829b63ea171140133d3",
+    "size": 20928,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/d0bc1d1eab617bc75dfcd829b63ea171140133d3"
+  },
+  {
+    "path": "l5/img/mdarray.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8fcf10fe8508102d84f08297d1e16604c22c1928",
+    "size": 4818,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/8fcf10fe8508102d84f08297d1e16604c22c1928"
+  },
+  {
+    "path": "l5/img/ptr_addr.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc146189822098bb33a63ee356c266b4222c4acd",
+    "size": 19805,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/fc146189822098bb33a63ee356c266b4222c4acd"
+  },
+  {
+    "path": "l5/l5.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ebcaf3913f5eea7f2924d39579f3a0da74f07795",
+    "size": 23836,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ebcaf3913f5eea7f2924d39579f3a0da74f07795"
+  },
+  {
+    "path": "l5/l5.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b26ccac86e30345acdabde3195b7ce6478e80540",
+    "size": 380382,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/b26ccac86e30345acdabde3195b7ce6478e80540"
+  },
+  {
+    "path": "l5/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a45d6e7905f517548cae4f5b65546539ccca9bb",
+    "size": 2546,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9a45d6e7905f517548cae4f5b65546539ccca9bb"
+  },
+  {
+    "path": "l6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1aa05642e1df04f500e7592c0dab0d7b1db4c62b",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/1aa05642e1df04f500e7592c0dab0d7b1db4c62b"
+  },
+  {
+    "path": "l6/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "230d73dfab37b4384ab623d79147b72d1009b685",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/230d73dfab37b4384ab623d79147b72d1009b685"
+  },
+  {
+    "path": "l6/img/p_plus_2.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4fd317f6f4dfac69229ca5f6c229b2a37f75b03b",
+    "size": 36932,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/4fd317f6f4dfac69229ca5f6c229b2a37f75b03b"
+  },
+  {
+    "path": "l6/img/ptr_addr.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc146189822098bb33a63ee356c266b4222c4acd",
+    "size": 19805,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/fc146189822098bb33a63ee356c266b4222c4acd"
+  },
+  {
+    "path": "l6/img/ptradd.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9421d0588d5b3ca30ce35d03ed486a02bc24252d",
+    "size": 4389,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/9421d0588d5b3ca30ce35d03ed486a02bc24252d"
+  },
+  {
+    "path": "l6/l6.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8300a1b86ed38e62e9af25b574286d266bde25c3",
+    "size": 18620,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/8300a1b86ed38e62e9af25b574286d266bde25c3"
+  },
+  {
+    "path": "l6/l6.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43c2f35965f9352657268b9e977f03336bcc0fcd",
+    "size": 358130,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/43c2f35965f9352657268b9e977f03336bcc0fcd"
+  },
+  {
+    "path": "l6/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8c83389e99fa18eddfe8e7ab66d1cf2d2b6a30df",
+    "size": 2451,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/8c83389e99fa18eddfe8e7ab66d1cf2d2b6a30df"
+  },
+  {
+    "path": "l7",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7dfc08d2cf736d8aad82100fcd3c8adec62f0062",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/7dfc08d2cf736d8aad82100fcd3c8adec62f0062"
+  },
+  {
+    "path": "l7/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "821034ece1b1f31ef565af54ebf9172419f2c273",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/821034ece1b1f31ef565af54ebf9172419f2c273"
+  },
+  {
+    "path": "l7/img/malloc2d.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58c0ccb8b9110ede5669719e4574150f2506e732",
+    "size": 6572,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/58c0ccb8b9110ede5669719e4574150f2506e732"
+  },
+  {
+    "path": "l7/img/stack_vs_heap.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab16b96d21bbef7dbea2a6f2617fe7439e57ff44",
+    "size": 27791,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ab16b96d21bbef7dbea2a6f2617fe7439e57ff44"
+  },
+  {
+    "path": "l7/img/translations.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "caafa95adf14a9e31a95a5460f411d599f610dc4",
+    "size": 10272,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/caafa95adf14a9e31a95a5460f411d599f610dc4"
+  },
+  {
+    "path": "l7/l7.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "41cca16154594de52b6dbbea8ab918e9cd88699a",
+    "size": 20931,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/41cca16154594de52b6dbbea8ab918e9cd88699a"
+  },
+  {
+    "path": "l7/l7.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "20e2cb9a48ff9cbb53e51d59cfae58c185100b0a",
+    "size": 371043,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/20e2cb9a48ff9cbb53e51d59cfae58c185100b0a"
+  },
+  {
+    "path": "l8",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cab7046a443270a4c3f4d1c189dd90a4ccd2a532",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/cab7046a443270a4c3f4d1c189dd90a4ccd2a532"
+  },
+  {
+    "path": "l8/demo.c",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a73bab52e1839b1ec5e8ae8825c888ab6a78b44b",
+    "size": 828,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a73bab52e1839b1ec5e8ae8825c888ab6a78b44b"
+  },
+  {
+    "path": "l8/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "61ba6df2b3d025240d3fffec8dd0fd405f1996ba",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/61ba6df2b3d025240d3fffec8dd0fd405f1996ba"
+  },
+  {
+    "path": "l8/img/argv.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3a1ae4d610c3f3a5f0aeb6b5b9b57770e81db789",
+    "size": 10424,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/3a1ae4d610c3f3a5f0aeb6b5b9b57770e81db789"
+  },
+  {
+    "path": "l8/img/malloc2d.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a9ddd1e038a9fc7fe2ebff1933c9cf83f2f52e23",
+    "size": 6412,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a9ddd1e038a9fc7fe2ebff1933c9cf83f2f52e23"
+  },
+  {
+    "path": "l8/img/stack_vs_heap.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab16b96d21bbef7dbea2a6f2617fe7439e57ff44",
+    "size": 27791,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/ab16b96d21bbef7dbea2a6f2617fe7439e57ff44"
+  },
+  {
+    "path": "l8/l8.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a35f068ebcd255e65044b3719cfdcd6e42833092",
+    "size": 10149,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/a35f068ebcd255e65044b3719cfdcd6e42833092"
+  },
+  {
+    "path": "l8/l8.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "701d94f6c12494e24153e751abb9da0d03831090",
+    "size": 249912,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/701d94f6c12494e24153e751abb9da0d03831090"
+  },
+  {
+    "path": "l9",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "58f838c29df83b8658c12aa89401a778fda4200c",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/58f838c29df83b8658c12aa89401a778fda4200c"
+  },
+  {
+    "path": "l9/img",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "85674de2bb8d6174c1c5b34aca28622a67621657",
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/trees/85674de2bb8d6174c1c5b34aca28622a67621657"
+  },
+  {
+    "path": "l9/img/factorial.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4dbf3c499e375848a7376044cfb2f0e3e8281250",
+    "size": 72809,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/4dbf3c499e375848a7376044cfb2f0e3e8281250"
+  },
+  {
+    "path": "l9/img/print.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3baaf067c2b11e802c58b69ee2be1aee93c11d5a",
+    "size": 45996,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/3baaf067c2b11e802c58b69ee2be1aee93c11d5a"
+  },
+  {
+    "path": "l9/l9.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23e6a68f77909b740b5361f28c4e73db783b2b56",
+    "size": 14468,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/23e6a68f77909b740b5361f28c4e73db783b2b56"
+  },
+  {
+    "path": "l9/l9.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dcaf8a530c43903c1f015c1b5307fbc38e339666",
+    "size": 383491,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/dcaf8a530c43903c1f015c1b5307fbc38e339666"
+  },
+  {
+    "path": "l9/notes.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9241969cc05332b4dc7c1798f993a67bff050d7",
+    "size": 1431,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/d9241969cc05332b4dc7c1798f993a67bff050d7"
+  },
+  {
+    "path": "summary.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e1e6d8689c043b49262927ed9c0dc31fa90c86f2",
+    "size": 27585,
+    "url": "https://api.github.com/repos/GKxxUCAS/ShanghaiTech-CS100-Slides/git/blobs/e1e6d8689c043b49262927ed9c0dc31fa90c86f2"
+  }
+]

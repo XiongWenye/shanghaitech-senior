@@ -1,0 +1,897 @@
+[
+  {
+    "path": ".gitattributes",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+    "size": 66,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7b43788ea1dc47e34867fd5eb381adf473fbaf72",
+    "size": 88,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/7b43788ea1dc47e34867fd5eb381adf473fbaf72"
+  },
+  {
+    "path": "实验10 三草酸根合铁酸钾的制备、性质和组成分析",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1b42aea3bcd5c7fb9ff408100a395f7bd5ea7287",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/1b42aea3bcd5c7fb9ff408100a395f7bd5ea7287"
+  },
+  {
+    "path": "实验10 三草酸根合铁酸钾的制备、性质和组成分析/实验8 三草酸根合铁酸钾的制备、性质和组成分析-钾鉴定.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "056f99a7a3bae62247e438e0c01df55c233ef08c",
+    "size": 210617,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/056f99a7a3bae62247e438e0c01df55c233ef08c"
+  },
+  {
+    "path": "实验10 三草酸根合铁酸钾的制备、性质和组成分析/实验8 三草酸根合铁酸钾的制备、性质和组成分析预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c0774d9675562b1ea333fde8be7be5fe03c50b73",
+    "size": 96831,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/c0774d9675562b1ea333fde8be7be5fe03c50b73"
+  },
+  {
+    "path": "实验10 三草酸根合铁酸钾的制备、性质和组成分析/实验十.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4def6da1ad20ae594865c2351bd96f01c5a5afed",
+    "size": 4173552,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/4def6da1ad20ae594865c2351bd96f01c5a5afed"
+  },
+  {
+    "path": "实验10 三草酸根合铁酸钾的制备、性质和组成分析/普通化学实验十 预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a7cc1ccc0a097a3edf97920b8cabf0373cdeb0f6",
+    "size": 2427132,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a7cc1ccc0a097a3edf97920b8cabf0373cdeb0f6"
+  },
+  {
+    "path": "实验11 粗食盐的提纯",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "68918189148f616514d979e306c5861766c4989a",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/68918189148f616514d979e306c5861766c4989a"
+  },
+  {
+    "path": "实验11 粗食盐的提纯/实验11 粗食盐的提纯.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1cc8ba0365170af4e3675aad8c34fc69dc360b46",
+    "size": 269298,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/1cc8ba0365170af4e3675aad8c34fc69dc360b46"
+  },
+  {
+    "path": "实验11 粗食盐的提纯/实验11 粗食盐的提纯预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ca538e1cf6a7740ba245c34a94b6c08e5a6bdee0",
+    "size": 55938,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/ca538e1cf6a7740ba245c34a94b6c08e5a6bdee0"
+  },
+  {
+    "path": "实验11 粗食盐的提纯/实验十一.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dd291f96a906aabba66311c553b826f6d85c4330",
+    "size": 4044187,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/dd291f96a906aabba66311c553b826f6d85c4330"
+  },
+  {
+    "path": "实验11 粗食盐的提纯/普通化学实验十一-预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "24fd5e4f33568b41f85ed1d2ed98e95c6522bf52",
+    "size": 2273299,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/24fd5e4f33568b41f85ed1d2ed98e95c6522bf52"
+  },
+  {
+    "path": "实验12 三氯化六氨合钴(III)的制备和性质",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "eb53152549282edba0e86d7b033ed985f33d9b9a",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/eb53152549282edba0e86d7b033ed985f33d9b9a"
+  },
+  {
+    "path": "实验12 三氯化六氨合钴(III)的制备和性质/实验12 三氯化六氨合钴(III)的制备和性质.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bda323410b633ae36f706d5329bde97df9965eb5",
+    "size": 210628,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/bda323410b633ae36f706d5329bde97df9965eb5"
+  },
+  {
+    "path": "实验12 三氯化六氨合钴(III)的制备和性质/实验12 三氯化六氨合钴(Ⅲ)的制备和性质预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "142846ea61c0463c776f1a29bed77f3516c1ca90",
+    "size": 106727,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/142846ea61c0463c776f1a29bed77f3516c1ca90"
+  },
+  {
+    "path": "实验12 三氯化六氨合钴(III)的制备和性质/普通化学实验十二---预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "318b42d570fc64a7885fa18af00812c9242ed48d",
+    "size": 1650868,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/318b42d570fc64a7885fa18af00812c9242ed48d"
+  },
+  {
+    "path": "实验13 CuInS2量子点的合成",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ab098b56c2327f2752fb002aaf9d3232a0594fee",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/ab098b56c2327f2752fb002aaf9d3232a0594fee"
+  },
+  {
+    "path": "实验13 CuInS2量子点的合成/实验13 CuInS2量子点的合成.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d76d9d38a9b82a32fb5e284251c95270a385061",
+    "size": 387328,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/2d76d9d38a9b82a32fb5e284251c95270a385061"
+  },
+  {
+    "path": "实验13 CuInS2量子点的合成/实验13 CuInS2量子点的合成预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "081b1133f47707fdac419697d2fc127ee73ad092",
+    "size": 101163,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/081b1133f47707fdac419697d2fc127ee73ad092"
+  },
+  {
+    "path": "实验13 CuInS2量子点的合成/普通化学实验十三-预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "057ad4f485ecc1cd1d9d0c86b8512cd4c4188923",
+    "size": 1722129,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/057ad4f485ecc1cd1d9d0c86b8512cd4c4188923"
+  },
+  {
+    "path": "实验13 CuInS2量子点的合成/普通化学实验十四预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d2f3d0bcf71bcb3187460f635df417d91aadc931",
+    "size": 2396329,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/d2f3d0bcf71bcb3187460f635df417d91aadc931"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "75ca4b6e7bb44d8140aa9f65d2c980553e7d8d9d",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/75ca4b6e7bb44d8140aa9f65d2c980553e7d8d9d"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/document.aux",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d03d2b944a882c04a6e584c4caa3aea17409c2c2",
+    "size": 588,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/d03d2b944a882c04a6e584c4caa3aea17409c2c2"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/document.log",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b8fa53db215998f27ed8a110eb1d0e6fe0cb3ed2",
+    "size": 26046,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b8fa53db215998f27ed8a110eb1d0e6fe0cb3ed2"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/document.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3a73ad1cc587d02f616cedabfcf9faaa1dd20486",
+    "size": 372174,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/3a73ad1cc587d02f616cedabfcf9faaa1dd20486"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/document.synctex.gz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3b433a118795de22e3b9fe1a7e2be72ccb61965f",
+    "size": 11875,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/3b433a118795de22e3b9fe1a7e2be72ccb61965f"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/document.tex",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "73488295de20d5bd6c88c708be5d9004dfd40e3d",
+    "size": 2985,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/73488295de20d5bd6c88c708be5d9004dfd40e3d"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/实验14 可见光发射光谱与吸收光谱的测定.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a63b4500f3ac4aba84dc83097f64ac19482840e",
+    "size": 976916,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/9a63b4500f3ac4aba84dc83097f64ac19482840e"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/实验14 可见光发射光谱与吸收光谱的测定预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "96c6dc6c7a3e036cdc04e4ea9df89415efde6d7f",
+    "size": 100286,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/96c6dc6c7a3e036cdc04e4ea9df89415efde6d7f"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/实验十四.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f482d373fd032b869b69218ad51f207cbd87f1ed",
+    "size": 4509134,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/f482d373fd032b869b69218ad51f207cbd87f1ed"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/实验数据记录表.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac7cf044200ee760ee7ef7bd43d526d3231e7425",
+    "size": 28518,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/ac7cf044200ee760ee7ef7bd43d526d3231e7425"
+  },
+  {
+    "path": "实验14 可见光发射光谱与吸收光谱的测定/实验数据记录表空白板.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cfaa398bbdf9c6d33a62bf06a080ccfa49dbe7e2",
+    "size": 28476,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/cfaa398bbdf9c6d33a62bf06a080ccfa49dbe7e2"
+  },
+  {
+    "path": "实验2 B-Z振荡反应",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "391ce5a847012d8fbbcdfabb75e066c9db792025",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/391ce5a847012d8fbbcdfabb75e066c9db792025"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/20240927化学实验预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1023660dfa5b76fa28d6ad780e9d7caebcd7ea8c",
+    "size": 2965135,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/1023660dfa5b76fa28d6ad780e9d7caebcd7ea8c"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/B-Z振荡反应 原始数据.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f8ad2fa15c0a548df199aa1e08cf3a5f96186fe6",
+    "size": 992574,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/f8ad2fa15c0a548df199aa1e08cf3a5f96186fe6"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/实验2 B-Z振荡反应(1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a78e8856b36c4c4cc2cc667c817b2cd30bf313a9",
+    "size": 195238,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a78e8856b36c4c4cc2cc667c817b2cd30bf313a9"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/实验2 B-Z振荡反应预习思考题(1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cf7b3cd34cb64ce996426ab621ab155302ef6a04",
+    "size": 96189,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/cf7b3cd34cb64ce996426ab621ab155302ef6a04"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/实验二.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c084ef8ee2905a42398a4b6c5c0f943086c913a0",
+    "size": 4411857,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/c084ef8ee2905a42398a4b6c5c0f943086c913a0"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/实验记录表（完整）.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c22c34e9ebf7b36ee91896c9c92453b08f6612c5",
+    "size": 37996,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/c22c34e9ebf7b36ee91896c9c92453b08f6612c5"
+  },
+  {
+    "path": "实验2 B-Z振荡反应/实验记录表（精简）.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6ad59db5d3ac09123cfdf0a2f341fea7c6a7f108",
+    "size": 30344,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/6ad59db5d3ac09123cfdf0a2f341fea7c6a7f108"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a234599c832f0b7df7ef5b77f9271af9547f46b3",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/a234599c832f0b7df7ef5b77f9271af9547f46b3"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/实验4 溶液中金银铜的提取与鉴定.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "892180c98cd5a90b3757d737d42d4b9079e9db33",
+    "size": 217634,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/892180c98cd5a90b3757d737d42d4b9079e9db33"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/实验4 溶液中金银铜的提取及鉴定预习思考题(1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5cc8264de83dbff1facb6b1eea868f090f90caae",
+    "size": 98561,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/5cc8264de83dbff1facb6b1eea868f090f90caae"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/实验三.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e12d121411b012443a41b6fa6f1323bb686ad860",
+    "size": 4758763,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/e12d121411b012443a41b6fa6f1323bb686ad860"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/实验记录表 -手写空白版.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "95189b7ca5a2d40514960fe1e49b1c3493073fdb",
+    "size": 18698,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/95189b7ca5a2d40514960fe1e49b1c3493073fdb"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/实验记录表.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "108f7f49418b1ce7d518455da3ce575788000181",
+    "size": 19602,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/108f7f49418b1ce7d518455da3ce575788000181"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/普化实验3-原始数据.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dc3b1051d0e0e71873cff45a35cd2cb5a013af2d",
+    "size": 1142180,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/dc3b1051d0e0e71873cff45a35cd2cb5a013af2d"
+  },
+  {
+    "path": "实验3 溶液中金银铜的提取与鉴定/溶液中金银铜的提取与鉴定预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d8782bcd25868c30242e7a2bf7b08d9dd2084469",
+    "size": 3217184,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/d8782bcd25868c30242e7a2bf7b08d9dd2084469"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "72632a3bc297f79cf170ff94020fc4d078de4165",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/72632a3bc297f79cf170ff94020fc4d078de4165"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/example.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "781915050c5b65b5107c30f092d960fdf9fd08ff",
+    "size": 22423,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/781915050c5b65b5107c30f092d960fdf9fd08ff"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/实验4 卤素及其含氧酸（盐）的性质-2024.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1f28f3edc3892176aa6aae134a346acd636e8a34",
+    "size": 221535,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/1f28f3edc3892176aa6aae134a346acd636e8a34"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/实验4 卤素及其含氧酸（盐）的性质-实验报告-建议A4双面打印-2024 (1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a1b53aeb00178751d7de9545d4b0ab415139884a",
+    "size": 166771,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a1b53aeb00178751d7de9545d4b0ab415139884a"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/实验5 卤素及其含氧酸（盐）的性质预习思考题(1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a630aba9f29b0dde72801ec0f00074f3683187ca",
+    "size": 100232,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a630aba9f29b0dde72801ec0f00074f3683187ca"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/实验四.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6a354c23e0244104e22f378f49b2a06a4c894b0e",
+    "size": 2614238,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/6a354c23e0244104e22f378f49b2a06a4c894b0e"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/普化实验4预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d34d855877c04338611b0d3f3111b1ee45e87ffe",
+    "size": 1045894,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/d34d855877c04338611b0d3f3111b1ee45e87ffe"
+  },
+  {
+    "path": "实验4 卤素及其含氧酸（盐）的性质/普化实验四原始数据.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "68c71a820d90dcfe58500372710e124debbe59d2",
+    "size": 1805513,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/68c71a820d90dcfe58500372710e124debbe59d2"
+  },
+  {
+    "path": "实验5 波函数及原子轨道",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ef011f3b384c0bf1ff08e60d5183d9176d69f7f6",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/ef011f3b384c0bf1ff08e60d5183d9176d69f7f6"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/Hydrogen_1s.m",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "808d78ac507ec95c662d5ab819a9fbd4f1a1bc37",
+    "size": 10076,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/808d78ac507ec95c662d5ab819a9fbd4f1a1bc37"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/Hydrogen_2p.m",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3487e8c8522183b2a404200b14fd03bcf91e44a2",
+    "size": 10627,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/3487e8c8522183b2a404200b14fd03bcf91e44a2"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/Hydrogen_3d.m",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1b5dcc85cf0386d34fbb4d938b83abf9f5be06c9",
+    "size": 10443,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/1b5dcc85cf0386d34fbb4d938b83abf9f5be06c9"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/Particle_In_A_Box.m",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "25e0386194a03286332a7d0d11252866251ba100",
+    "size": 2418,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/25e0386194a03286332a7d0d11252866251ba100"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/param.mat",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "912e1251b4b30bf8eed9b9f39001aa41726e4098",
+    "size": 227,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/912e1251b4b30bf8eed9b9f39001aa41726e4098"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/standing_wave.avi",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c81071c9ee79baa31b2796b0c7d25ba8c7e2068",
+    "size": 1265698,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/1c81071c9ee79baa31b2796b0c7d25ba8c7e2068"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/standing_wave2.avi",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ae818ab6d812469f62a4d7c9a8975eb10643a4f8",
+    "size": 1267614,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/ae818ab6d812469f62a4d7c9a8975eb10643a4f8"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/standing_wave_avi.m",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b130e5f3b07e510c787925257e892ffc7f8540a",
+    "size": 1429,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/5b130e5f3b07e510c787925257e892ffc7f8540a"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/traveling_wave.avi",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fd1d4d26fabbf244f1bfe704c7108157a7febc71",
+    "size": 1502630,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/fd1d4d26fabbf244f1bfe704c7108157a7febc71"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/traveling_wave2.avi",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b7b92315f285ffa3f6d03560e0b15730bf9d6d8d",
+    "size": 1444692,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b7b92315f285ffa3f6d03560e0b15730bf9d6d8d"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/traveling_wave_avi.m",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bc71b70901c9789db55dc0b346b6187821d49756",
+    "size": 1418,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/bc71b70901c9789db55dc0b346b6187821d49756"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/实验5 波函数及原子轨道.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "febd2c72da29b4a2874da3a9d280c443b47fe6e4",
+    "size": 1435806,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/febd2c72da29b4a2874da3a9d280c443b47fe6e4"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/实验6 波函数及原子轨道-实验报告-建议A4双面打印.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fa60ebef35f747a8ff2599a32ebce494234d9cc9",
+    "size": 315482,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/fa60ebef35f747a8ff2599a32ebce494234d9cc9"
+  },
+  {
+    "path": "实验5 波函数及原子轨道/实验五.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0626c058eaa3e7663e70ad74b843c707d0979bfe",
+    "size": 3096831,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/0626c058eaa3e7663e70ad74b843c707d0979bfe"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0eda10e71b0a47c16373c0628f8bfb96594af4d1",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/0eda10e71b0a47c16373c0628f8bfb96594af4d1"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/实验7 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较-实验报告-建议A4双面打印.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e3213ed0302899192a00e4431a8c7e76cd5359a8",
+    "size": 158943,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/e3213ed0302899192a00e4431a8c7e76cd5359a8"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/实验7 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "36e6cd7b3c9ef5ac4f5ce7b11478e4e5df574c47",
+    "size": 231443,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/36e6cd7b3c9ef5ac4f5ce7b11478e4e5df574c47"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/实验7 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5409df66464d5b748e92e870efbe14178fba47d1",
+    "size": 97824,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/5409df66464d5b748e92e870efbe14178fba47d1"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/实验7 prediction.doc",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4747245174c36db7055120f449bc58b5c5744d0f",
+    "size": 72192,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/4747245174c36db7055120f449bc58b5c5744d0f"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/实验六.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4fa48398b7dc87713139118bf38f8c3a234c52f3",
+    "size": 2581156,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/4fa48398b7dc87713139118bf38f8c3a234c52f3"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/普通化学实验6 原始数据.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f1b67954e07e57780b5ccd7ac49d402f969475b",
+    "size": 1401738,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/0f1b67954e07e57780b5ccd7ac49d402f969475b"
+  },
+  {
+    "path": "实验6 IV B族(Ti) 和IV A族(Sn、Si、C)元素性质的比较/普通化学实验6 预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7064bcb837ccc832badb9eb2813cdb733cd767a8",
+    "size": 1252004,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/7064bcb837ccc832badb9eb2813cdb733cd767a8"
+  },
+  {
+    "path": "实验7 有机玻璃(PMMA)的制备",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1b77559d7db52cb2b448886b446c5b1d79804d66",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/1b77559d7db52cb2b448886b446c5b1d79804d66"
+  },
+  {
+    "path": "实验7 有机玻璃(PMMA)的制备/实验7 有机玻璃(PMMA)的制备(1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d889747124e1f879a70dcf1515ca33968e4d1846",
+    "size": 300776,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/d889747124e1f879a70dcf1515ca33968e4d1846"
+  },
+  {
+    "path": "实验7 有机玻璃(PMMA)的制备/实验7 有机玻璃(PMMA)的制备预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b60ace12a15d3a209d092a30753512223df46234",
+    "size": 92178,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b60ace12a15d3a209d092a30753512223df46234"
+  },
+  {
+    "path": "实验7 有机玻璃(PMMA)的制备/实验七.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "046b715dda074e223fc0b36f88cadb2fbc1da8ab",
+    "size": 3078193,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/046b715dda074e223fc0b36f88cadb2fbc1da8ab"
+  },
+  {
+    "path": "实验7 有机玻璃(PMMA)的制备/普通化学实验7 预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "29b94d37fec34e1d58ab3d819e6f25e7570a5562",
+    "size": 1700362,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/29b94d37fec34e1d58ab3d819e6f25e7570a5562"
+  },
+  {
+    "path": "实验7 有机玻璃(PMMA)的制备/普通化学实验7-原始数据.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4459fa292e4fea5b00e37acbc7e65cdaca08721a",
+    "size": 766414,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/4459fa292e4fea5b00e37acbc7e65cdaca08721a"
+  },
+  {
+    "path": "实验8 乙酰水杨酸的制备",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "14a6fcfff88172cddc96b88db7a861a742e3c43c",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/14a6fcfff88172cddc96b88db7a861a742e3c43c"
+  },
+  {
+    "path": "实验8 乙酰水杨酸的制备/c9116632e2dd0f3281bd966f972fe39.jpg",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c05c0aa29a9000ce8a3129442d5bc90a657fac40",
+    "size": 3574100,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/c05c0aa29a9000ce8a3129442d5bc90a657fac40"
+  },
+  {
+    "path": "实验8 乙酰水杨酸的制备/实验9 乙酰水杨酸的制备.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6938e956c7e214777d55cc5ec9597a82220c7787",
+    "size": 200196,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/6938e956c7e214777d55cc5ec9597a82220c7787"
+  },
+  {
+    "path": "实验8 乙酰水杨酸的制备/实验9 乙酰水杨酸的制备预习思考题.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9c8a01ce9d059645e7ff1cec805b8c6cf989ae07",
+    "size": 98255,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/9c8a01ce9d059645e7ff1cec805b8c6cf989ae07"
+  },
+  {
+    "path": "实验8 乙酰水杨酸的制备/实验八.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f98865c2f7a09de1d09f929dfcc6aec9d893c1d2",
+    "size": 2398911,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/f98865c2f7a09de1d09f929dfcc6aec9d893c1d2"
+  },
+  {
+    "path": "实验8 乙酰水杨酸的制备/普通化学实验8-预习报告.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "29edad5c7f41403b1c973ce379df95a29f49eef6",
+    "size": 1599244,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/29edad5c7f41403b1c973ce379df95a29f49eef6"
+  },
+  {
+    "path": "实验9 分子轨道",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "78ce2bea8c320821370341f0cd8de338815994c1",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/78ce2bea8c320821370341f0cd8de338815994c1"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1b2d09d8a835cd0925a0f52de3e3efb2c300aee7",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/1b2d09d8a835cd0925a0f52de3e3efb2c300aee7"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "dad6879544b86d3189329508aa7d64e5ea7f7008",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/dad6879544b86d3189329508aa7d64e5ea7f7008"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS/Serial Number for GaussView5 Windows.rtf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a7d471cc8c6888b81f68a5c2c6ef1928c44f1687",
+    "size": 382,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a7d471cc8c6888b81f68a5c2c6ef1928c44f1687"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS/Serial Number for GaussView5 Windows.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "532a3f4aa2192d47100ed3b03ff4c88e316e8c66",
+    "size": 38,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/532a3f4aa2192d47100ed3b03ff4c88e316e8c66"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS/autorun.inf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f07afb3d3345ee28f58732dbb4165459d08710b1",
+    "size": 62,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/f07afb3d3345ee28f58732dbb4165459d08710b1"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS/gview.ico",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "724d5726ccc3b7424b84c865929bc15fc81ed5d5",
+    "size": 76798,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/724d5726ccc3b7424b84c865929bc15fc81ed5d5"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS/setup.exe",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b6e3caccc788a1a0edb6fbb21cb5ca5d37891ff8",
+    "size": 50770014,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b6e3caccc788a1a0edb6fbb21cb5ca5d37891ff8"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/Gauss View5 for WINDOWS/silent.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ff67598d9d081b26d9f332e24aea0226474885f2",
+    "size": 107,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/ff67598d9d081b26d9f332e24aea0226474885f2"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/__MACOSX",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c3987c6bb28abb3ecdfb40eea59af4385ed0c6cc",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/c3987c6bb28abb3ecdfb40eea59af4385ed0c6cc"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/__MACOSX/Gauss View5 for WINDOWS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4e2fe5d443a2f26f8053012dfd9c84ea88344382",
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/trees/4e2fe5d443a2f26f8053012dfd9c84ea88344382"
+  },
+  {
+    "path": "实验9 分子轨道/Gaussian_Gauss View5 for WINDOWS/__MACOSX/Gauss View5 for WINDOWS/._Serial Number for GaussView5 Windows.rtf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "94af966afb18362cd67cc13982307fb8d71dfc8e",
+    "size": 178,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/94af966afb18362cd67cc13982307fb8d71dfc8e"
+  },
+  {
+    "path": "实验9 分子轨道/H2+.gjf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b0aa8ffed7b8536f04d644919255f3270b5cf428",
+    "size": 176,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b0aa8ffed7b8536f04d644919255f3270b5cf428"
+  },
+  {
+    "path": "实验9 分子轨道/HF.gjf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b0fc34dd914d4cd5dde5ec48f8e4ed04d1b12189",
+    "size": 167,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b0fc34dd914d4cd5dde5ec48f8e4ed04d1b12189"
+  },
+  {
+    "path": "实验9 分子轨道/N2.gjf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "313cadc87509891d365cc58fd69d84753306f22e",
+    "size": 173,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/313cadc87509891d365cc58fd69d84753306f22e"
+  },
+  {
+    "path": "实验9 分子轨道/O2.LOG",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a34e5133f101fcbead32a7c96c08cced9b73be44",
+    "size": 21624,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a34e5133f101fcbead32a7c96c08cced9b73be44"
+  },
+  {
+    "path": "实验9 分子轨道/O2.chk",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "638085598982e3e50a84c90f8e5ac58d5d4797ed",
+    "size": 598016,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/638085598982e3e50a84c90f8e5ac58d5d4797ed"
+  },
+  {
+    "path": "实验9 分子轨道/O2.gjf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b485866b3ad7816c036554d2e3d13690c46212ea",
+    "size": 242,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/b485866b3ad7816c036554d2e3d13690c46212ea"
+  },
+  {
+    "path": "实验9 分子轨道/实验10 分子轨道-实验报告-建议A4双面打印.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f5f7dc0d7468f9df6895a27201cf9c8587ffdb3e",
+    "size": 227890,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/f5f7dc0d7468f9df6895a27201cf9c8587ffdb3e"
+  },
+  {
+    "path": "实验9 分子轨道/实验10 分子轨道.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2ec8866aa3229ec6223bc3b2cb4d26207ca878ec",
+    "size": 915168,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/2ec8866aa3229ec6223bc3b2cb4d26207ca878ec"
+  },
+  {
+    "path": "实验9 分子轨道/实验九.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d6f9ff6941ba3ffcd5adbcf54a64df504e8fb3bd",
+    "size": 2888568,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/d6f9ff6941ba3ffcd5adbcf54a64df504e8fb3bd"
+  },
+  {
+    "path": "普化I实验-zyy-云桌面账号+密码.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a042aa1623baa9813cbe49cfdc63f0705dbaf95b",
+    "size": 165224,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/a042aa1623baa9813cbe49cfdc63f0705dbaf95b"
+  },
+  {
+    "path": "普化实验报告纸模板(1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cd814b0ec01e74f89871b5a64c6df04719427a10",
+    "size": 90989,
+    "url": "https://api.github.com/repos/RulerFuhai/Shanghaitech-CHEM1100/git/blobs/cd814b0ec01e74f89871b5a64c6df04719427a10"
+  }
+]

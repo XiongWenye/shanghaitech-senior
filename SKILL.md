@@ -1,11 +1,11 @@
 ---
 name: shanghaitech-senior
-description: 上海科技大学本科老学长智能学业导师。融合 CourseBench 真实学生评价大数据、历届全校专业培养方案、以及 iTechX、XiongWenye、zsc2003 三大课程通关资料库。提供一站式课程口碑查询、授课教师风格与避坑、个性化修课选课路线推荐、EAMS 计划完成情况毕业预审诊断，以及全校核心课程历年期中期末真题回忆卷/解析、平时作业标准解答、课件讲义与高分通关代码的一键直达。
+description: 上海科技大学本科老学长智能学业导师。融合 CourseBench 真实学生评价大数据、历届全校专业培养方案、以及八大上科大课程通关资料库（iTechX、XiongWenye、zsc2003、skkk256、wutianyuan1、profetia、GKxxUCAS、RulerFuhai）。提供一站式课程口碑查询、授课教师风格与避坑、个性化修课选课路线推荐、EAMS 计划完成情况毕业预审诊断，以及全校核心课程历年期中期末真题回忆卷/解析、平时作业标准解答、课件讲义与高分通关代码的一键直达。
 ---
 
 # 上海科技大学本科老学长助手 (ShanghaiTech Senior Skill)
 
-本 Skill 是专为**上海科技大学 (ShanghaiTech)** 同学打造的**全能学业导师与通关伙伴**。集成了上海科技大学 CourseBench 真实评课大数据（1190+ 门课程、2300+ 条真实评价）、2026/2023 级全校专业官方培养方案知识库，以及三大公开资料库（iTechX、XiongWenye、zsc2003 学长通关库），覆盖本科生从**选课排课、日常作业排雷、考前刷真题提分、到毕业学分预审**的全生命周期。
+本 Skill 是专为**上海科技大学 (ShanghaiTech)** 同学打造的**全能学业导师与通关伙伴**。集成了上海科技大学 CourseBench 真实评课大数据（1190+ 门课程、2300+ 条真实评价）、2026/2023 级全校专业官方培养方案知识库，以及全网八大上科大课程通关资料库（iTechX、XiongWenye、zsc2003、skkk256、wutianyuan1、profetia、GKxxUCAS、RulerFuhai），覆盖本科生从**选课排课、日常作业排雷、考前刷真题提分、到毕业学分预审**的全生命周期。
 
 ---
 
@@ -25,7 +25,7 @@ description: 上海科技大学本科老学长智能学业导师。融合 Course
 flowchart TD
     Req["同学提出咨询需求"] --> Intent{"老学长意图识别"}
     
-    Intent -- "1. 询问某门具体课程<br/>(这门课怎么样/难不难/怎么学)" --> DualBriefing["调用 senior.py ask '<课名/课号>'<br/>全景输出：CourseBench口碑 + 三大库真题与作业 + 避坑锦囊"]
+    Intent -- "1. 询问某门具体课程<br/>(这门课怎么样/难不难/怎么学)" --> DualBriefing["调用 senior.py ask '<课名/课号>'<br/>全景输出：CourseBench口碑 + 八大库真题与作业 + 避坑锦囊"]
     
     Intent -- "2. 纯资料/真题/备考诉求<br/>(求期末卷/平时作业答案)" --> MaterialsOnly["调用 senior.py materials '<课名/课号>'<br/>输出历年真题、作业解答、课件讲义直达链接"]
     

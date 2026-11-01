@@ -3,11 +3,11 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![ShanghaiTech](https://img.shields.io/badge/University-ShanghaiTech-red.svg)](https://www.shanghaitech.edu.cn/)
-[![Courses Covered](https://img.shields.io/badge/Courses-118+-brightgreen.svg)]()
+[![Courses Covered](https://img.shields.io/badge/Courses-151+-brightgreen.svg)]()
 [![CourseBench Reviews](https://img.shields.io/badge/Reviews-2300+-orange.svg)]()
 
 > **“选课不踩坑，复习有真题，作业有答案，毕业不延毕。”**  
-> 专为上海科技大学（ShanghaiTech）本科生打造的**全能学业导师与通关伙伴**。融合 **CourseBench** 真实学生评价大数据、**全校 12 大本科专业官方培养方案**，以及三大开源课程资料库。
+> 专为上海科技大学（ShanghaiTech）本科生打造的**全能学业导师与通关伙伴**。融合 **CourseBench** 真实学生评价大数据、**全校 12 大本科专业官方培养方案**，以及全网八大开源课程资料库（iTechX、XiongWenye、zsc2003、skkk256、wutianyuan1、profetia、GKxxUCAS、RulerFuhai）。
 
 ---
 
@@ -19,7 +19,7 @@
 - 智能过滤：**年份近者优先**（2024/2025/2026 近期学期优先展示），自动剔除无实质分析的极端情绪化宣泄。
 
 ### 2. 📚 备考通关与资料秒级直达 (Test-Taking Engine)
-全面整合三大主流上科大课程资料共享库，已为全校 **118+ 门核心课程**建立倒排索引：
+全面整合全网八大上科大课程资料库，已为全校 **151+ 门核心与专业课程**建立极速倒排索引：\n- 🟢 **iTechX 课程资源库**：全校课程综合库，收录完整历年课件、作业与标准答案。\n- 🟠 **XiongWenye 上科大资料库**：数理核心、信院与大物独家期中期末真题回忆卷、考点速查与名师解析。\n- 🟣 **zsc2003 本硕通关仓库**：信院/数学专业核心课程高分代码、Recitation 教程与通关经验。\n- 🔵 **skkk256 全科修课资料库**：涵盖 SIST、创艺 SCA 设计、生医工 BME、通识社科等 50+ 门全流程资料。\n- 🟡 **wutianyuan1 课程与项目库**：操作系统 Pintos 完整报告、CS 体系结构、无机化学、设计思维、强化学习等代码与实验。\n- 🔴 **profetia 课程项目归档库**：并行计算、操作系统、数据可视化、生信开发等全套工程源码与文档。\n- 🔷 **GKxxUCAS CS100 课件精炼库**：CS100 计算机编程全套 29 讲高清课件、图解与核心知识点速查。\n- 🟤 **RulerFuhai 普化实验高分库**：CHEM1100 2024-2025 秋普化实验 13 个实验完整高分实验报告范本、预习思考题与报告纸模板。
 - **📝 历年期中期末真题**：收录 近至2025 最新考卷回忆版、试卷原题扫描件、答案解析与名师讲解视频（如 2025 数分I、2025 普物I、2025 线代I、CS100 2025 中期含答案）。包含其他高校试卷作为参考（交大，浙大，UCB，MIT等）
 - **💡 平时作业与官方解答**：各学期 Homework 题目、标准答案（Solutions）及配套测试用例包。
 - **🖥️ 讲义课件与复习提纲**：官方 PPT 课件、Recitation 习题课讲义、学长手写高分思维导图。

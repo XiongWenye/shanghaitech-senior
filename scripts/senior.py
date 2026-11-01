@@ -128,7 +128,7 @@ def cmd_ask(query):
         pass
 
     # 2. 备考通关资料库
-    print("## 📚 维度二：备考通关与资料直达包 (三大资料库)")
+    print("## 📚 维度二：备考通关与资料直达包 (八大资料库)")
     has_res = any(v.get("available") for v in res.values())
     if not has_res:
         print("*本课程暂未被三大核心公开资料库收录，建议咨询任课教师或课程 TA。*\n")
@@ -171,6 +171,14 @@ def cmd_ask(query):
     elif "MATH" in code or "GEMA" in code or any(k in name_zh for k in ["高等数学", "数学分析", "线性代数"]):
         tips.append("✍️ **数理基础必胜法**：吃透习题课 (Recitation) 讲义中的例题和自编答案，考前多练大题书写规范。")
 
+    if "CHEM" in code or "化" in name_zh:
+        tips.append("🥽 **普化与实验高分心得**：实验预习思考题一定要在进实验室前写好；参考 RulerFuhai 的高分实验报告范本规范书写原始数据记录与误差分析，格式严谨平时分保 A！")
+    elif code == "CS130" or "操作系统" in name_zh:
+        tips.append("⚙️ **操作系统通关建议**：Pintos Project 是挂科重灾区，参考 wutianyuan1 与 profetia 开源框架和报告，提前动手梳理 Thread / Userprog / VM 逻辑！")
+    elif "ARTS" in code or "设计" in name_zh:
+        tips.append("🎨 **创艺SCA课程心得**：期末大作业（游戏/交互原型/三维模型/用户体验方案）占比极高，参考 skkk256 与 profetia 优秀作品与排版！")
+    elif any(k in code for k in ["GEHA", "GESS", "CLGE"]) or any(k in name_zh for k in ["文明", "纲要", "马原", "毛概", "经导", "托克维尔"]):
+        tips.append("📖 **通识人文社科避坑指南**：马原/毛概/近纲/通识课考前务必背诵题库和历年回忆卷，大论文按学术格式规范引用！")
     if not tips:
         tips.append("按部就班紧跟任课老师教学节奏，课后及时整理 PPT 讲义与习题即可稳过！")
 
