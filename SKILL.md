@@ -123,14 +123,18 @@ flowchart TD
 
 | 命令 | 用途 | 示例 |
 | :--- | :--- | :--- |
-| `python3 scripts/senior.py ask <课号/名称>` | **老学长全景把脉**：CourseBench评分 + 真实评语 + 历年卷与作业解答 + 避坑心法 | `ask "CS100"` / `ask "普通物理I"` / `ask "线代"` |
-| `python3 scripts/senior.py materials <课号/名称>` | **备考通关资料包**：提取试卷、作业解答、课件、代码链接 | `materials "数学分析I"` / `materials "CS110"` |
+| `python3 scripts/senior.py ask <课号/名称>` | **老学长全景把脉**：CourseBench评分 + 真实评语 + 历年卷与作业解答 + 避坑心法（支持 `--refresh`） | `ask "CS100"` / `ask "普通物理I"` / `ask "线代"` |
+| `python3 scripts/senior.py materials <课号/名称>` | **备考通关资料包**：提取试卷、作业解答、课件、代码链接（支持 `--refresh`） | `materials "数学分析I"` / `materials "CS110"` |
+| `python3 scripts/senior.py sync` | **动态同步课程资料库**：静默检查并拉取 GitHub 最新资料库索引，资料库更新后无需更新 skill | `sync` / `sync --force` |
 | `python3 scripts/senior.py review <课号/名称>` | **CourseBench 口碑查询**：查看教学、负担、难度、给分与评语 | `review "数据结构"` / `review "经济学导论"` |
 | `python3 scripts/senior.py roadmap` | **官方培养方案学期推荐**：查看指定专业年级各学期推荐课表 | `roadmap --major 计算机 --grade 2026 --semester 2` |
 | `python3 scripts/senior.py audit` | **EAMS 毕业预审诊断**：严防重复计算在读学分，精确识别毕业缺口 | `audit --file data/my_plan_completion.html` |
 | `python3 scripts/senior.py search <关键词>` | **全局模糊搜索**：跨 CourseBench 库与三大资料库搜索课程 | `search "体系结构"` / `search "分生"` |
 | `python3 scripts/login_and_fetch_plan.py` | 启动浏览器让用户登录 EAMS 并自动抓取计划完成页面 | 用户同意登录时调用 |
-| `python3 scripts/build_index.py` | 重新扫描本地与上游资料库，刷新资料索引 | 本地更新资料库后调用 |
+| `python3 scripts/build_index.py` | 重新扫描本地与上游资料库，刷新资料基线索引 | 本地更新全量基线后调用 |
+
+> 💡 **架构解耦说明 (Decoupled Architecture)**：
+> Skill 采用**“内容资产与智能体能力分层解耦”**架构。上游课程资料库（`shanghaitech-course-database`）通过 GitHub Actions 自动更新 `catalog.json`；Skill 通过 `materials_sync.py` 动态同步与本地智能缓存（TTL 24小时，支持离线兜底与 `--refresh` 强制刷新）。因此，**当上游课程资料库添加或修改试卷/资料时，Skill 无需任何改动或重新打包，即可即时感知最新资料！**
 
 ---
 

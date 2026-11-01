@@ -25,19 +25,20 @@ import recommend_plan
 import analyze_plan
 
 
-def get_course_code_and_info(query):
+def get_course_code_and_info(query, force_refresh=False):
     """Resolve query to canonical course code and data."""
-    if not MATERIALS_INDEX_PATH.exists():
-        return None, None
-    with open(MATERIALS_INDEX_PATH, "r", encoding="utf-8") as f:
-        mat_index = json.load(f)
-        
-    resolved = query_materials.resolve_course_code(mat_index, query)
-    if isinstance(resolved, list) and resolved:
-        resolved = resolved[0]
-        
-    if resolved and resolved in mat_index["courses"]:
-        return resolved, mat_index["courses"][resolved]
+    try:
+        mat_index = query_materials.load_index(force_refresh=force_refresh)
+    except Exception:
+        mat_index = None
+
+    if mat_index:
+        resolved = query_materials.resolve_course_code(mat_index, query)
+        if isinstance(resolved, list) and resolved:
+            resolved = resolved[0]
+            
+        if resolved and resolved in mat_index.get("courses", {}):
+            return resolved, mat_index["courses"][resolved]
         
     # Fallback to coursebench db
     conn = sqlite3.connect(CB_DB_PATH)
@@ -66,14 +67,14 @@ def get_course_code_and_info(query):
     return None, None
 
 
-def cmd_ask(query):
+def cmd_ask(query, force_refresh=False):
     """
     Comprehensive briefing combining:
     1. CourseBench reputation & teacher review summary (选课维度)
     2. Test-taking & exam materials (备考资料维度)
     3. Senior's Takeaway (学长心法)
     """
-    code, mat_info = get_course_code_and_info(query)
+    code, mat_info = get_course_code_and_info(query, force_refresh=force_refresh)
     if not code:
         print(f"❌ 老学长在数据库中没有找到与 '{query}' 相关的课程信息。", file=sys.stderr)
         print("💡 建议使用 `python3 scripts/senior.py search <关键词>` 进行模糊搜索。", file=sys.stderr)
@@ -197,11 +198,17 @@ def main():
     # ask (Dual Mode: CourseBench + Materials)
     ask_p = subparsers.add_parser("ask", help="老学长综合全景把脉 (口碑评价 + 备考真题资料 + 避坑锦囊)")
     ask_p.add_argument("course", help="课程代码 (如 CS100) 或中文名/别名 (如 计算机编程, 大物, 数分, 线代)")
+    ask_p.add_argument("--refresh", "-r", action="store_true", help="强制从远程同步最新课程资料库")
 
     # materials (Test-Taking Materials)
     mat_p = subparsers.add_parser("materials", help="仅查询备考复习资料 (真题、作业解答、课件、代码)")
     mat_p.add_argument("course", help="课程代码或名称")
     mat_p.add_argument("--json", action="store_true", help="输出机器可读 JSON")
+    mat_p.add_argument("--refresh", "-r", action="store_true", help="强制从远程同步最新课程资料库")
+
+    # sync (Upstream Course Database Sync)
+    sync_p = subparsers.add_parser("sync", help="同步并更新最新课程资料库 (从 GitHub 自动拉取最新目录)")
+    sync_p.add_argument("--force", "-f", action="store_true", help="强制从远程刷新缓存")
 
     # review (CourseBench Review)
     rev_p = subparsers.add_parser("review", help="仅查询 CourseBench 口碑评分与学生文字评价")
@@ -230,13 +237,18 @@ def main():
         sys.exit(0)
 
     if args.command == "ask":
-        cmd_ask(args.course)
+        cmd_ask(args.course, force_refresh=getattr(args, "refresh", False))
     elif args.command == "materials":
         # Delegate to query_materials
         sys.argv = ["query_materials.py", "get", args.course]
         if args.json:
             sys.argv.append("--json")
+        if getattr(args, "refresh", False):
+            sys.argv.append("--refresh")
         query_materials.main()
+    elif args.command == "sync":
+        import materials_sync
+        materials_sync.sync_catalog(force=args.force, verbose=True)
     elif args.command == "review":
         sys.argv = ["query_course.py", "detail", args.course]
         query_course.main()

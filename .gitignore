@@ -1,53 +1,14 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-.env
-.venv
-env/
-venv/
-ENV/
-
-# Sensitive Student Personal Data (Never commit real student transcripts or EAMS HTML)
-data/my_plan_completion.html
-data/*_completion.html
-!data/sample_myPlanCompl.html
-
-# macOS files
+# OS
 .DS_Store
-.AppleDouble
-.LSOverride
+Thumbs.db
 
-# Editor & IDE settings
-.vscode/
-.idea/
-*.swp
-*.swo
+# Dynamic caches
+data/cache/
 
-# Intermediate OCR scratch (raw scans)
-data/ocr_json/
-scripts/ocr_pdf
-scripts/*.swift
+# Privacy: Student personal transcripts
+data/my_plan_completion.html

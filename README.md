@@ -78,12 +78,16 @@ python3 scripts/senior.py ask "线代"
 
 # 3. 仅提取备考复习资料 (真题卷、作业答案、课件讲义)
 python3 scripts/senior.py materials "高等数学I"
+python3 scripts/senior.py materials "CS100" --refresh  # 强制同步最新资料
 
-# 4. 查指定专业的学期推荐修课计划
+# 4. 一键同步上游课程资料库 (上游更新后自动感知，无需更新 Skill)
+python3 scripts/senior.py sync --force
+
+# 5. 查指定专业的学期推荐修课计划
 python3 scripts/senior.py roadmap --major 计算机 --semester 2
 python3 scripts/senior.py roadmap --major 电子 --semester 1
 
-# 5. 模糊检索课程
+# 6. 模糊检索课程
 python3 scripts/senior.py search "体系结构"
 ```
 

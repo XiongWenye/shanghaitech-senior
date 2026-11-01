@@ -17,14 +17,19 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 INDEX_FILE = BASE_DIR / "data" / "materials_index.json"
 
+sys.path.insert(0, str(BASE_DIR / "scripts"))
+import materials_sync
 
-def load_index():
-    if not INDEX_FILE.exists():
-        print(f"Error: Index file not found at {INDEX_FILE}", file=sys.stderr)
-        print("Please run `python3 scripts/build_index.py` first.", file=sys.stderr)
+
+def load_index(force_refresh: bool = False):
+    try:
+        return materials_sync.get_materials_index(force_refresh=force_refresh)
+    except Exception as e:
+        if INDEX_FILE.exists():
+            with open(INDEX_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        print(f"Error loading index: {e}", file=sys.stderr)
         sys.exit(1)
-    with open(INDEX_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 
 def resolve_course_code(index, query):
@@ -306,21 +311,25 @@ def format_markdown_report(course):
 
 def main():
     parser = argparse.ArgumentParser(description="ShanghaiTech Course Materials Query Engine")
+    parser.add_argument("--refresh", "-r", action="store_true", help="Force sync latest course database from upstream")
     subparsers = parser.add_subparsers(dest="command", help="Command to execute")
 
     # get command
     get_p = subparsers.add_parser("get", help="Get complete materials for a course")
     get_p.add_argument("course", help="Course code (e.g. CS100) or Chinese name/alias (e.g. 计算机编程, 大物, 数分)")
     get_p.add_argument("--json", action="store_true", help="Output raw JSON instead of markdown")
+    get_p.add_argument("--refresh", "-r", action="store_true", help="Force sync latest course database from upstream")
 
     # search command
     search_p = subparsers.add_parser("search", help="Fuzzy search courses in the database")
     search_p.add_argument("keyword", help="Search keyword")
     search_p.add_argument("--limit", type=int, default=10, help="Max results to display")
+    search_p.add_argument("--refresh", "-r", action="store_true", help="Force sync latest course database from upstream")
 
     # list command
     list_p = subparsers.add_parser("list", help="List all courses with available materials")
     list_p.add_argument("--dept", help="Filter by department/institute keyword")
+    list_p.add_argument("--refresh", "-r", action="store_true", help="Force sync latest course database from upstream")
 
     args = parser.parse_args()
 
@@ -328,7 +337,8 @@ def main():
         parser.print_help()
         sys.exit(0)
 
-    index = load_index()
+    force_refresh = getattr(args, "refresh", False)
+    index = load_index(force_refresh=force_refresh)
 
     if args.command == "get":
         target = resolve_course_code(index, args.course)

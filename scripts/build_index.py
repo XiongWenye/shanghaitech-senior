@@ -21,9 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 RAW_DIR = DATA_DIR / "raw_repos"
 CB_DB_PATH = DATA_DIR / "coursebench.db"
-XW_LOCAL_PATH = Path("/Users/bearxiong/Documents/ShanghaiTech/shanghaitech-course-database")
 ITECHX_PATHS_FILE = DATA_DIR / "itechx_paths.txt"
 OUTPUT_INDEX_FILE = DATA_DIR / "materials_index.json"
+
+sys.path.insert(0, str(BASE_DIR / "scripts"))
+import materials_sync
 
 ITECHX_BASE_URL = "https://github.com/i-TechX/iTechX/tree/file-base"
 ITECHX_BLOB_URL = "https://github.com/i-TechX/iTechX/blob/file-base"
@@ -557,63 +559,20 @@ def parse_itechx():
 
 
 def parse_xiongwenye():
-    """Parse XiongWenye's local shanghaitech-course-database directory."""
-    if not XW_LOCAL_PATH.exists():
-        return {}
+    """Parse XiongWenye's course database (auto-detect local repo, or fetch via remote catalog)."""
+    # 1. Check local repo auto-detection
+    local_path = materials_sync.find_local_repo_path()
+    if local_path and local_path.is_dir():
+        cat = materials_sync.catalog_from_local_repo(local_path)
+        if cat and "courses" in cat:
+            return cat["courses"]
 
-    xw_data = {}
-    for root, dirs, files in os.walk(XW_LOCAL_PATH):
-        if ".git" in root:
-            continue
-        rel_root = os.path.relpath(root, XW_LOCAL_PATH)
-        if rel_root == ".":
-            continue
-        
-        course_name = rel_root.split("/")[0]
-        if course_name not in xw_data:
-            encoded_name = urllib.parse.quote(course_name)
-            xw_data[course_name] = {
-                "folder_name": course_name,
-                "repo_url": f"{XW_BASE_URL}/{encoded_name}",
-                "exams": [],
-                "solutions": [],
-                "slides_notes": [],
-                "labs": [],
-                "others": [],
-                "total_files": 0
-            }
-        
-        item = xw_data[course_name]
-        for f in files:
-            if f.startswith("."):
-                continue
-            item["total_files"] += 1
-            full_rel = os.path.join(rel_root, f)
-            encoded_rel = urllib.parse.quote(full_rel)
-            file_url = f"{XW_BLOB_URL}/{encoded_rel}"
-            
-            file_info = {
-                "name": f,
-                "rel_path": full_rel,
-                "url": file_url
-            }
-            
-            fl = f.lower()
-            if is_exam_file(full_rel):
-                if is_solution_file(full_rel):
-                    item["solutions"].append(file_info)
-                else:
-                    item["exams"].append(file_info)
-            elif is_solution_file(full_rel):
-                item["solutions"].append(file_info)
-            elif any(k in fl for k in ["实验", "lab"]):
-                item["labs"].append(file_info)
-            elif any(k in fl for k in ["讲义", "课件", "ppt", "slide", "第", "章", "note", "笔记", "mp4"]):
-                item["slides_notes"].append(file_info)
-            else:
-                item["others"].append(file_info)
+    # 2. Sync dynamically from remote or cache
+    cat = materials_sync.sync_catalog(force=False, verbose=True)
+    if cat and "courses" in cat:
+        return cat["courses"]
 
-    return xw_data
+    return {}
 
 
 SKKK_BASE_URL = "https://github.com/skkk256/ShanghaiTech-Courses/tree/main"
