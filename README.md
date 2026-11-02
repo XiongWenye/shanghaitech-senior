@@ -49,6 +49,13 @@
 - ❌ **无需配置** 繁琐环境
 - ✅ 任何安装了 Python 3.8+ 的 Mac / Windows / Linux 机器均可**克隆即跑、毫秒级响应**！
 
+> 🪟 **Windows 环境编码特别提示 (Windows UTF-8 Notice)**：  
+> Windows 终端（PowerShell / CMD）默认代码页（如 GBK / CP936）在输出 Emoji 或特殊字符时可能会遇到字符编码报错（`UnicodeEncodeError`）。各 Python 脚本内置了标准 I/O UTF-8 容错重构；在 Windows PowerShell 下运行前，推荐设置环境变量开启 Python 全局 UTF-8 模式：  
+> ```powershell
+> $env:PYTHONUTF8='1'
+> ```  
+> （CMD 终端执行 `set PYTHONUTF8=1`）。
+
 ---
 
 ## 🚀 快速上手 (Quick Start)

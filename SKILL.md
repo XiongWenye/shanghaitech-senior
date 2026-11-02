@@ -173,6 +173,9 @@ flowchart TD
 
 > 💡 **架构解耦说明 (Decoupled Architecture)**：
 > Skill 采用**“内容资产与智能体能力分层解耦”**架构。上游课程资料库（`shanghaitech-course-database`）通过 GitHub Actions 自动更新 `catalog.json`；Skill 通过 `materials_sync.py` 动态同步与本地智能缓存（TTL 24小时，支持离线兜底与 `--refresh` 强制刷新）。因此，**当上游课程资料库添加或修改试卷/资料时，Skill 无需任何改动或重新打包，即可即时感知最新资料！**
+>
+> 🪟 **Windows 运行特别提示 (Windows UTF-8 Notice)**：  
+> Windows 终端（PowerShell / CMD）运行 Python 时若遇到字符编码或 Emoji 报错（`UnicodeEncodeError`），可预先在 PowerShell 执行 `$env:PYTHONUTF8='1'`（或 CMD 执行 `set PYTHONUTF8=1`）启用 Python 全局 UTF-8 模式。所有脚本均已集成自动流重构兜底。
 
 ---
 

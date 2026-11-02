@@ -15,6 +15,12 @@ import json
 import re
 from datetime import datetime
 
+# Ensure UTF-8 output across platforms, especially on Windows
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "coursebench.db")
 
 # Major to institute / prefix mapping

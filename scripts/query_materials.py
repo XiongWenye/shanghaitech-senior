@@ -14,6 +14,12 @@ import json
 import argparse
 from pathlib import Path
 
+# Ensure UTF-8 output across platforms, especially on Windows
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 INDEX_FILE = BASE_DIR / "data" / "materials_index.json"
 
