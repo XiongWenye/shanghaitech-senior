@@ -381,7 +381,7 @@ ZH_TO_CODE = {
     "果蝇生物学": "BIO1223",
     "现代生命科学导论B": "BIO1002",
     "现代生命科学导论C": "BIO1011",
-    "现代生物学实验理论": "BIO1026",
+    "现代生物学实验理论": "BIO1008",
     "生命科学导论A": "BIO1012",
     "生命科学导论B": "BIO1013",
     "生命科学与人类文明": "SL1012",
@@ -560,14 +560,7 @@ def parse_itechx():
 
 def parse_xiongwenye():
     """Parse XiongWenye's course database (auto-detect local repo, or fetch via remote catalog)."""
-    # 1. Check local repo auto-detection
-    local_path = materials_sync.find_local_repo_path()
-    if local_path and local_path.is_dir():
-        cat = materials_sync.catalog_from_local_repo(local_path)
-        if cat and "courses" in cat:
-            return cat["courses"]
-
-    # 2. Sync dynamically from remote or cache
+    # Use the same catalog loader as live queries, including upstream identities.
     cat = materials_sync.sync_catalog(force=False, verbose=True)
     if cat and "courses" in cat:
         return cat["courses"]
@@ -911,22 +904,10 @@ def build_unified_index():
     if rulerfuhai_data:
         all_course_codes.add("CHEM1100")
 
-    # Map XiongWenye courses to canonical codes
-    xw_to_code = dict(ZH_TO_CODE)
-    code_to_xw = {}
-    for zh, code in xw_to_code.items():
-        if zh in xw_data:
-            code_to_xw[code] = zh
-
-    for folder in xw_data:
-        if folder not in xw_to_code:
-            for c_code, c_info in cb_courses.items():
-                if c_info["name"] == folder or folder in c_info["name"]:
-                    xw_to_code[folder] = c_code
-                    code_to_xw[c_code] = folder
-                    break
-
-    all_course_codes.update(code_to_xw.keys())
+    # Share identity resolution with live synchronization; never overwrite aliases.
+    xw_resources, _ = materials_sync.group_catalog_courses(
+        {"courses": xw_data}, cb_courses, name_to_code=ZH_TO_CODE)
+    all_course_codes.update(xw_resources)
 
     unified_catalog = {}
 
@@ -934,8 +915,8 @@ def build_unified_index():
         cb_info = cb_courses.get(code, {})
         itechx_item = itechx_data.get(code)
         zsc_item = ZSC_COURSES.get(code)
-        xw_folder = code_to_xw.get(code)
-        xw_item = xw_data.get(xw_folder) if xw_folder else None
+        xw_item = xw_resources.get(code)
+        xw_folder = xw_item["folder_name"] if xw_item else None
         sk_item = skkk_data.get(code)
         wt_item = wty_data.get(code)
         pf_item = profetia_data.get(code)
@@ -972,6 +953,8 @@ def build_unified_index():
             aliases.add(name_zh)
         if name_en:
             aliases.add(name_en.lower())
+        if xw_item:
+            aliases.update(xw_item["folder_names"])
         if code in COLLOQUIAL_ALIASES:
             for al in COLLOQUIAL_ALIASES[code]:
                 aliases.add(al.lower())
@@ -1001,16 +984,8 @@ def build_unified_index():
 
         # 2. XiongWenye
         if xw_item:
-            course_entry["resources"]["xiongwenye"] = {
-                "available": True,
-                "folder_name": xw_folder,
-                "repo_url": xw_item["repo_url"],
-                "total_files": xw_item["total_files"],
-                "exams": xw_item["exams"][:15],
-                "solutions": xw_item["solutions"][:10],
-                "slides_notes": xw_item["slides_notes"][:10],
-                "labs": xw_item["labs"][:10]
-            }
+            course_entry["course_type"] = xw_item["course_type"]
+            course_entry["resources"]["xiongwenye"] = xw_item
 
         # 3. zsc2003
         if zsc_item:

@@ -25,9 +25,8 @@ def load_index(force_refresh: bool = False):
     try:
         return materials_sync.get_materials_index(force_refresh=force_refresh)
     except Exception as e:
-        if INDEX_FILE.exists():
-            with open(INDEX_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
+        # Network fallback belongs to sync_catalog. Identity conflicts must be visible;
+        # falling back here would hide corrupt mappings in an old baseline.
         print(f"Error loading index: {e}", file=sys.stderr)
         sys.exit(1)
 
@@ -35,21 +34,32 @@ def load_index(force_refresh: bool = False):
 def resolve_course_code(index, query):
     query = query.strip()
     q_lower = query.lower()
+    if not q_lower:
+        return None
     
     # 1. Exact match code
     for code in index["courses"]:
         if code.lower() == q_lower:
             return code
             
-    # 2. Inverted index match
+    # 2. Exact course name takes precedence over stale or ambiguous aliases.
+    exact_names = [code for code, info in index["courses"].items()
+                   if materials_sync.normalized_name(info.get("name_zh"))
+                   == materials_sync.normalized_name(query)]
+    if exact_names:
+        return exact_names[0] if len(exact_names) == 1 else exact_names
+
+    # 3. Inverted index match
     inverted = index.get("inverted_index", {})
     if q_lower in inverted and inverted[q_lower]:
-        return inverted[q_lower][0]
+        matches = [code for code in inverted[q_lower] if code in index["courses"]]
+        if matches:
+            return matches[0] if len(matches) == 1 else matches
         
     # 3. Substring match in inverted index or names
     candidates = []
     for alias, codes in inverted.items():
-        if q_lower in alias or alias in q_lower:
+        if alias and (q_lower in alias or alias in q_lower):
             for c in codes:
                 if c not in candidates:
                     candidates.append(c)
@@ -57,10 +67,14 @@ def resolve_course_code(index, query):
     # 4. Check Chinese names
     for code, info in index["courses"].items():
         name_zh = info.get("name_zh", "").lower()
-        if q_lower in name_zh or name_zh in q_lower:
+        if name_zh and (q_lower in name_zh or name_zh in q_lower):
             if code not in candidates:
                 candidates.append(code)
                 
+    if materials_sync.is_lab_course(query):
+        candidates = [code for code in candidates
+                      if materials_sync.is_lab_course(index["courses"][code].get("name_zh"), code)]
+
     if len(candidates) == 1:
         return candidates[0]
     elif len(candidates) > 1:
@@ -241,6 +255,10 @@ def format_markdown_report(course):
             has_slides = True
     if not has_slides:
         lines.append("- *可直接在下方资料库主页中查阅课件。*")
+    if xw and xw.get("others"):
+        lines.append("\n**其他课程资料（按原文件名列出，内容尚未分类）**：")
+        for file in xw["others"]:
+            lines.append(f"- 📄 [{file['name']}]({file['url']})")
     lines.append("")
 
     # Section 4: Projects, Labs & Templates
@@ -290,7 +308,10 @@ def format_markdown_report(course):
     if itx and itx.get("repo_url"):
         lines.append(f"- 🌐 **[iTechX 课程资源主页]({itx['repo_url']})**（收录 {itx.get('semesters_count', 0)} 个学期教学档案）")
     if xw and xw.get("repo_url"):
-        lines.append(f"- 🌐 **[XiongWenye 上科大课程资料库 - {xw.get('folder_name')}]({xw['repo_url']})**（收录 {xw.get('total_files', 0)} 份真题与解析）")
+        for folder, url in zip(xw.get("folder_names") or [xw.get("folder_name")],
+                               xw.get("repo_urls") or [xw["repo_url"]]):
+            lines.append(f"- 🌐 **[XiongWenye 上科大课程资料库 - {folder}]({url})**")
+        lines.append(f"  共收录 {xw.get('total_files', 0)} 份资料。")
     zsc = res.get("zsc2003")
     if zsc and zsc.get("repo_url"):
         lines.append(f"- 🌐 **[zsc2003 专属修课与通关仓库]({zsc['repo_url']})**（包含 {', '.join(zsc.get('semesters', []))} 经验与高分代码）")

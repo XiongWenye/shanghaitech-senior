@@ -15,6 +15,7 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import re
+import unicodedata
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -79,7 +80,7 @@ ZH_TO_CODE = {
     "果蝇生物学": "BIO1223",
     "现代生命科学导论B": "BIO1002",
     "现代生命科学导论C": "BIO1011",
-    "现代生物学实验理论": "BIO1026",
+    "现代生物学实验理论": "BIO1008",
     "生命科学导论A": "BIO1012",
     "生命科学导论B": "BIO1013",
     "生命科学与人类文明": "SL1012",
@@ -94,11 +95,119 @@ ZH_TO_CODE = {
     "中外歌剧赏析": "CLGE1007",
     "唐宋文学精华": "GEHA1001",
     "蛋白质设计科学与技术": "BIO1031",
-    "电路基础实验": "EE111",
+    "电路基础": "EE111",
+    "电路基础实验": "EE111L",
+    "信号与系统实验": "EE150L",
     "计算科学与工程": "MATH1113",
     "面向信息科学的概率论与数理统计": "SI140",
     "设计思维": "ARTS1001",
 }
+
+
+FILE_CATEGORIES = ("exams", "solutions", "slides_notes", "labs", "others")
+
+
+def normalized_name(name):
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", name or "")).casefold()
+
+
+def is_lab_course(name, code=""):
+    """L is the usual lab suffix; explicit names also cover BIO/CHEM codes."""
+    return bool(re.search(r"实验(?:课)?$|\blab(?:oratory)?$", name or "", re.I)
+                or re.fullmatch(r"[A-Z]+\d+[A-Z]*L", code or name or "", re.I))
+
+
+def resolve_catalog_course_code(folder_name, item, courses, name_to_code=None):
+    """Resolve identity exactly. Never attach a shorter name to a different course."""
+    mapping = dict(name_to_code or {})
+    mapping.update(ZH_TO_CODE)
+    key = normalized_name(folder_name)
+    declared_type = item.get("course_type")
+    lab = is_lab_course(folder_name)
+    if declared_type not in (None, "theory", "lab"):
+        raise ValueError(f"Invalid course_type for {folder_name}: {declared_type}")
+    if declared_type == "theory" and lab:
+        raise ValueError(f"Lab folder marked as theory: {folder_name}")
+    lab = lab or declared_type == "lab"
+
+    def checked(code):
+        existing = courses.get(code, {})
+        known_name = next((name for name, mapped_code in mapping.items() if mapped_code == code), "")
+        existing_name = existing.get("name_zh") or existing.get("name") or known_name
+        existing_lab = is_lab_course(existing_name, code)
+        if (existing_name or is_lab_course("", code)) and existing_lab != lab:
+            raise ValueError(f"Course identity conflict: {folder_name} -> {code} ({existing_name})")
+        return code
+
+    explicit = item.get("course_code")
+    if explicit:
+        if not re.fullmatch(r"[A-Za-z]+\d+[A-Za-z]*", explicit):
+            raise ValueError(f"Invalid course_code for {folder_name}: {explicit}")
+        return checked(explicit.upper())
+
+    for code in courses:
+        if normalized_name(code) == key:
+            return checked(code)
+    exact = [code for code, info in courses.items()
+             if normalized_name(info.get("name_zh") or info.get("name")) == key]
+    mapped = next((code for name, code in mapping.items() if normalized_name(name) == key), None)
+    if len(exact) == 1:
+        return checked(exact[0])
+    if mapped:
+        return checked(mapped)
+    if len(exact) > 1:
+        # Do not arbitrarily choose among different courses with the same name.
+        return folder_name
+
+    # Infer an L suffix only when a distinct theory course is already known.
+    # Explicit BIO/CHEM names and their established numeric codes take priority above.
+    if lab:
+        theory_name = re.sub(r"实验(?:课)?$", "", folder_name)
+        if theory_name != folder_name:
+            theory_code = resolve_catalog_course_code(theory_name, {}, courses, mapping)
+            if re.fullmatch(r"[A-Za-z]+\d+[A-Za-z]*", theory_code):
+                return checked(theory_code + "L")
+    return folder_name
+
+
+def catalog_course_identity(folder_name):
+    identity = {"course_type": "lab" if is_lab_course(folder_name) else "theory"}
+    if folder_name in ZH_TO_CODE:
+        identity["course_code"] = ZH_TO_CODE[folder_name]
+    return identity
+
+
+def group_catalog_courses(catalog, courses, name_to_code=None):
+    """Keep every file and source folder when true aliases share one identity."""
+    grouped = {}
+    assignments = {}
+    for folder_name, item in sorted(catalog.get("courses", {}).items()):
+        code = resolve_catalog_course_code(folder_name, item, courses, name_to_code)
+        course_type = "lab" if is_lab_course(folder_name, code) or item.get("course_type") == "lab" else "theory"
+        assignments[folder_name] = code
+        if code not in grouped:
+            grouped[code] = {
+                "course_type": course_type,
+                "available": True, "folder_name": folder_name, "folder_names": [],
+                "repo_url": item.get("repo_url", ""), "repo_urls": [],
+                **{category: [] for category in FILE_CATEGORIES}, "total_files": 0,
+            }
+        resource = grouped[code]
+        if resource["course_type"] != course_type:
+            raise ValueError(f"Theory/lab folders share a code: {code}")
+        resource["folder_names"].append(folder_name)
+        if item.get("repo_url") and item["repo_url"] not in resource["repo_urls"]:
+            resource["repo_urls"].append(item["repo_url"])
+        seen = {file.get("url") or file.get("rel_path") or file["name"]
+                for category in FILE_CATEGORIES for file in resource[category]}
+        for category in FILE_CATEGORIES:
+            for file in item.get(category, []):
+                identity = file.get("url") or file.get("rel_path") or file["name"]
+                if identity not in seen:
+                    resource[category].append(file)
+                    seen.add(identity)
+        resource["total_files"] = len(seen)
+    return grouped, assignments
 
 
 def find_local_repo_path():
@@ -140,9 +249,11 @@ def catalog_from_local_repo(repo_dir: Path) -> dict:
     """Build catalog from local directory."""
     base_url = f"https://github.com/{REPO_OWNER}/{REPO_NAME}/tree/main"
     blob_url = f"https://github.com/{REPO_OWNER}/{REPO_NAME}/blob/main"
-    excluded_dirs = {".git", ".github", "scripts", ".idea", ".vscode", "__pycache__"}
+    excluded_dirs = {".git", ".github", "scripts", "tests", ".idea", ".vscode", "__pycache__"}
     excluded_files = {".DS_Store", "catalog.json", "README.md", ".gitignore", "LICENSE"}
 
+    metadata_path = repo_dir / "course_metadata.json"
+    overrides = json.loads(metadata_path.read_text(encoding="utf-8")) if metadata_path.exists() else {}
     courses = {}
     total_files = 0
     total_exams = 0
@@ -156,6 +267,8 @@ def catalog_from_local_repo(repo_dir: Path) -> dict:
         course_name = entry
         encoded_name = urllib.parse.quote(course_name)
         course_data = {
+            **catalog_course_identity(course_name),
+            **overrides.get(course_name, {}),
             "folder_name": course_name,
             "repo_url": f"{base_url}/{encoded_name}",
             "exams": [],
@@ -167,13 +280,14 @@ def catalog_from_local_repo(repo_dir: Path) -> dict:
         }
 
         for root, dirs, files in os.walk(entry_path):
+            dirs[:] = sorted(d for d in dirs if d not in excluded_dirs and not d.startswith('.'))
             if ".git" in root:
                 continue
             for f in sorted(files):
                 if f in excluded_files or f.startswith('.'):
                     continue
                 abs_f = os.path.join(root, f)
-                rel_f = os.path.relpath(abs_f, repo_dir)
+                rel_f = Path(abs_f).relative_to(repo_dir).as_posix()
                 encoded_rel = urllib.parse.quote(rel_f)
                 file_info = {
                     "name": f,
@@ -220,7 +334,7 @@ def catalog_from_github_tree(tree_data: list) -> dict:
     """Build catalog from GitHub API tree response."""
     base_url = f"https://github.com/{REPO_OWNER}/{REPO_NAME}/tree/main"
     blob_url = f"https://github.com/{REPO_OWNER}/{REPO_NAME}/blob/main"
-    excluded_dirs = {".git", ".github", "scripts", ".idea", ".vscode", "__pycache__"}
+    excluded_dirs = {".git", ".github", "scripts", "tests", ".idea", ".vscode", "__pycache__"}
     excluded_files = {".DS_Store", "catalog.json", "README.md", ".gitignore", "LICENSE"}
 
     courses = {}
@@ -236,7 +350,7 @@ def catalog_from_github_tree(tree_data: list) -> dict:
         if len(parts) < 2:
             continue
         course_name = parts[0]
-        if course_name in excluded_dirs or course_name.startswith('.'):
+        if any(part in excluded_dirs or part.startswith('.') for part in parts[:-1]):
             continue
 
         filename = parts[-1]
@@ -246,6 +360,7 @@ def catalog_from_github_tree(tree_data: list) -> dict:
         if course_name not in courses:
             encoded_name = urllib.parse.quote(course_name)
             courses[course_name] = {
+                **catalog_course_identity(course_name),
                 "folder_name": course_name,
                 "repo_url": f"{base_url}/{encoded_name}",
                 "exams": [],
@@ -440,38 +555,29 @@ def overlay_latest_materials(base_index: dict, catalog: dict) -> dict:
     if not catalog or "courses" not in catalog:
         return base_index
 
-    courses = base_index.get("courses", {})
-    inverted = base_index.get("inverted_index", {})
+    courses = base_index.setdefault("courses", {})
+    grouped, assignments = group_catalog_courses(catalog, courses)
+    alias_owners = {normalized_name(folder): code for folder, code in assignments.items()}
 
-    xw_courses = catalog["courses"]
+    # Remove stale source assignments and aliases left by earlier buggy builds.
+    # Other repositories on the same course are retained.
+    for code, course in list(courses.items()):
+        resources = course.setdefault("resources", {})
+        old = resources.get("xiongwenye", {})
+        old_folders = old.get("folder_names") or [old.get("folder_name")]
+        if any(folder in assignments for folder in old_folders):
+            resources.pop("xiongwenye", None)
+            if not resources and code not in grouped:
+                del courses[code]
+                continue
+        course["aliases"] = [alias for alias in course.get("aliases", [])
+                             if alias_owners.get(normalized_name(alias), code) == code]
 
-    for folder_name, xw_item in xw_courses.items():
-        # Match to canonical course code
-        target_code = None
-
-        # 1. Direct code map
-        if folder_name in ZH_TO_CODE:
-            target_code = ZH_TO_CODE[folder_name]
-
-        # 2. Match existing course by code or Chinese name
-        if not target_code:
-            for code, info in courses.items():
-                if info.get("name_zh") == folder_name or folder_name in info.get("name_zh", ""):
-                    target_code = code
-                    break
-                if code.lower() == folder_name.lower():
-                    target_code = code
-                    break
-
-        # 3. If still not matched, use folder_name as its own code
-        if not target_code:
-            target_code = folder_name
-
-        # Ensure course entry exists
-        if target_code not in courses:
-            courses[target_code] = {
-                "code": target_code,
-                "name_zh": folder_name,
+    for code, resource in grouped.items():
+        if code not in courses:
+            courses[code] = {
+                "code": code,
+                "name_zh": resource["folder_name"],
                 "name_en": "",
                 "institute": "上海科技大学",
                 "credit": 0.0,
@@ -479,35 +585,26 @@ def overlay_latest_materials(base_index: dict, catalog: dict) -> dict:
                 "resources": {}
             }
 
-        # Inject or update XiongWenye resources
-        courses[target_code]["resources"]["xiongwenye"] = {
-            "available": True,
-            "folder_name": folder_name,
-            "repo_url": xw_item.get("repo_url", ""),
-            "exams": xw_item.get("exams", []),
-            "solutions": xw_item.get("solutions", []),
-            "slides_notes": xw_item.get("slides_notes", []),
-            "labs": xw_item.get("labs", []),
-            "others": xw_item.get("others", []),
-            "total_files": xw_item.get("total_files", 0)
-        }
+        course = courses[code]
+        course["course_type"] = resource["course_type"]
+        course["resources"]["xiongwenye"] = resource
+        course["aliases"] = sorted(set(course.get("aliases", []) + resource["folder_names"] + [code]))
 
-        # Update inverted index
-        aliases = [
-            folder_name.lower(),
-            target_code.lower(),
-        ]
-        if folder_name in ZH_TO_CODE:
-            aliases.append(ZH_TO_CODE[folder_name].lower())
-
-        for alias in aliases:
-            if alias not in inverted:
-                inverted[alias] = []
-            if target_code not in inverted[alias]:
-                inverted[alias].append(target_code)
+    inverted = {
+        alias: [code for code in codes if code in courses
+                and alias_owners.get(normalized_name(alias), code) == code]
+        for alias, codes in base_index.get("inverted_index", {}).items()
+    }
+    for code, course in courses.items():
+        for alias in course.get("aliases", []) + [code, course.get("name_zh", "")]:
+            key = alias.strip().lower()
+            if key and alias_owners.get(normalized_name(alias), code) == code:
+                if code not in inverted.setdefault(key, []):
+                    inverted[key].append(code)
 
     base_index["courses"] = courses
     base_index["inverted_index"] = inverted
+    base_index.setdefault("metadata", {})["total_courses_with_materials"] = len(courses)
     return base_index
 
 

@@ -1740,48 +1740,6 @@
         }
       }
     },
-    "BIO1026": {
-      "code": "BIO1026",
-      "name_zh": "中级生物学实验",
-      "name_en": "",
-      "institute": "生命科学与技术学院",
-      "credit": 3.0,
-      "cb_scores": {
-        "quality": 4.0,
-        "workload": 1.5,
-        "difficulty": 2.5,
-        "grade": 3.0
-      },
-      "aliases": [
-        "BIO1026",
-        "bio1026",
-        "中级生物学实验"
-      ],
-      "resources": {
-        "xiongwenye": {
-          "available": true,
-          "folder_name": "现代生物学实验理论",
-          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA",
-          "total_files": 10,
-          "exams": [
-            {
-              "name": "上海科技大学试卷-实验理论 2022.pdf",
-              "rel_path": "现代生物学实验理论/上海科技大学试卷-实验理论 2022.pdf",
-              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/%E4%B8%8A%E6%B5%B7%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E8%AF%95%E5%8D%B7-%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA%202022.pdf"
-            }
-          ],
-          "solutions": [],
-          "slides_notes": [
-            {
-              "name": "复习笔记.docx",
-              "rel_path": "现代生物学实验理论/复习笔记.docx",
-              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.docx"
-            }
-          ],
-          "labs": []
-        }
-      }
-    },
     "BIO1068": {
       "code": "BIO1068",
       "name_zh": "癌症生物学",
@@ -12716,8 +12674,44 @@
               "url": "https://github.com/i-TechX/iTechX/blob/file-base/courses/EE111/EE111.01_Fall_2022/Homework%20Solution%20%E4%BD%9C%E4%B8%9A%E7%AD%94%E6%A1%88/Answer_EE111-01_Homework1_solution.pdf"
             }
           ]
+        },
+        "xiongwenye": {
+          "course_type": "theory",
+          "available": true,
+          "folder_name": "电路基础",
+          "folder_names": [
+            "电路基础"
+          ],
+          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80",
+          "repo_urls": [
+            "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80"
+          ],
+          "exams": [
+            {
+              "name": "1_EE111-finalexam-23Fall.pdf",
+              "rel_path": "电路基础/1_EE111-finalexam-23Fall.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/1_EE111-finalexam-23Fall.pdf"
+            },
+            {
+              "name": "EE111 Final Cheat_Sheet.pdf",
+              "rel_path": "电路基础/EE111 Final Cheat_Sheet.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/EE111%20Final%20Cheat_Sheet.pdf"
+            }
+          ],
+          "solutions": [],
+          "slides_notes": [],
+          "labs": [],
+          "others": [
+            {
+              "name": "EE111 2025Spring.pdf",
+              "rel_path": "电路基础/EE111 2025Spring.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/EE111%202025Spring.pdf"
+            }
+          ],
+          "total_files": 3
         }
-      }
+      },
+      "course_type": "theory"
     },
     "EE111L": {
       "code": "EE111L",
@@ -12738,10 +12732,16 @@
       ],
       "resources": {
         "xiongwenye": {
+          "course_type": "lab",
           "available": true,
           "folder_name": "电路基础实验",
+          "folder_names": [
+            "电路基础实验"
+          ],
           "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C",
-          "total_files": 12,
+          "repo_urls": [
+            "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C"
+          ],
           "exams": [],
           "solutions": [],
           "slides_notes": [],
@@ -12756,9 +12756,63 @@
               "rel_path": "电路基础实验/实验与报告参考/Lab3_交流电路与滤波器实验报告参考.pdf",
               "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E5%AE%9E%E9%AA%8C%E4%B8%8E%E6%8A%A5%E5%91%8A%E5%8F%82%E8%80%83/Lab3_%E4%BA%A4%E6%B5%81%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%BB%A4%E6%B3%A2%E5%99%A8%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%82%E8%80%83.pdf"
             }
-          ]
+          ],
+          "others": [
+            {
+              "name": "EE111_Fall2026_HW1_详细解答参考.pdf",
+              "rel_path": "电路基础实验/平时作业/EE111_Fall2026_HW1_详细解答参考.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E5%B9%B3%E6%97%B6%E4%BD%9C%E4%B8%9A/EE111_Fall2026_HW1_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94%E5%8F%82%E8%80%83.pdf"
+            },
+            {
+              "name": "EE111_Fall2026_HW1_题目.pdf",
+              "rel_path": "电路基础实验/平时作业/EE111_Fall2026_HW1_题目.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E5%B9%B3%E6%97%B6%E4%BD%9C%E4%B8%9A/EE111_Fall2026_HW1_%E9%A2%98%E7%9B%AE.pdf"
+            },
+            {
+              "name": "EE111_Fall2026_HW2_题目.pdf",
+              "rel_path": "电路基础实验/平时作业/EE111_Fall2026_HW2_题目.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E5%B9%B3%E6%97%B6%E4%BD%9C%E4%B8%9A/EE111_Fall2026_HW2_%E9%A2%98%E7%9B%AE.pdf"
+            },
+            {
+              "name": "Appendix2_ DH1766 DC Power Supply user guide .pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix2_ DH1766 DC Power Supply user guide .pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix2_%20DH1766%20DC%20Power%20Supply%20user%20guide%20.pdf"
+            },
+            {
+              "name": "Appendix3_Bread Board.pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix3_Bread Board.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix3_Bread%20Board.pdf"
+            },
+            {
+              "name": "Appendix4__ Signal Generator .pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix4__ Signal Generator .pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix4__%20Signal%20Generator%20.pdf"
+            },
+            {
+              "name": "Appendix5-_Digital Oscilloscope .pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix5-_Digital Oscilloscope .pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix5-_Digital%20Oscilloscope%20.pdf"
+            },
+            {
+              "name": "Appendix6-_SDS2000X Digital Oscilloscope user guide .pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix6-_SDS2000X Digital Oscilloscope user guide .pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix6-_SDS2000X%20Digital%20Oscilloscope%20user%20guide%20.pdf"
+            },
+            {
+              "name": "Appendix7_Fluke Multimeter user guide .pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix7_Fluke Multimeter user guide .pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix7_Fluke%20Multimeter%20user%20guide%20.pdf"
+            },
+            {
+              "name": "Appendix9__SDG2000X Signal Generator user guide.pdf",
+              "rel_path": "电路基础实验/仪器使用说明/Appendix9__SDG2000X Signal Generator user guide.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C/%E4%BB%AA%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/Appendix9__SDG2000X%20Signal%20Generator%20user%20guide.pdf"
+            }
+          ],
+          "total_files": 12
         }
-      }
+      },
+      "course_type": "lab"
     },
     "EE115B": {
       "code": "EE115B",
@@ -19499,6 +19553,92 @@
           "labs": []
         }
       }
+    },
+    "BIO1008": {
+      "code": "BIO1008",
+      "name_zh": "现代生物学实验理论",
+      "name_en": "",
+      "institute": "上海科技大学",
+      "credit": 0.0,
+      "cb_scores": {},
+      "resources": {
+        "xiongwenye": {
+          "course_type": "theory",
+          "available": true,
+          "folder_name": "现代生物学实验理论",
+          "folder_names": [
+            "现代生物学实验理论"
+          ],
+          "repo_url": "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA",
+          "repo_urls": [
+            "https://github.com/XiongWenye/shanghaitech-course-database/tree/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA"
+          ],
+          "exams": [
+            {
+              "name": "上海科技大学试卷-实验理论 2022.pdf",
+              "rel_path": "现代生物学实验理论/上海科技大学试卷-实验理论 2022.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/%E4%B8%8A%E6%B5%B7%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E8%AF%95%E5%8D%B7-%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA%202022.pdf"
+            }
+          ],
+          "solutions": [],
+          "slides_notes": [
+            {
+              "name": "复习笔记.docx",
+              "rel_path": "现代生物学实验理论/复习笔记.docx",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0.docx"
+            }
+          ],
+          "labs": [],
+          "others": [
+            {
+              "name": "1 离心技术.pdf",
+              "rel_path": "现代生物学实验理论/1 离心技术.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/1%20%E7%A6%BB%E5%BF%83%E6%8A%80%E6%9C%AF.pdf"
+            },
+            {
+              "name": "2 电泳技术.pdf",
+              "rel_path": "现代生物学实验理论/2 电泳技术.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/2%20%E7%94%B5%E6%B3%B3%E6%8A%80%E6%9C%AF.pdf"
+            },
+            {
+              "name": "3 PCR技术.pdf",
+              "rel_path": "现代生物学实验理论/3 PCR技术.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/3%20PCR%E6%8A%80%E6%9C%AF.pdf"
+            },
+            {
+              "name": "4 测序技术.pdf",
+              "rel_path": "现代生物学实验理论/4 测序技术.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/4%20%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF.pdf"
+            },
+            {
+              "name": "5 免疫学.pdf",
+              "rel_path": "现代生物学实验理论/5 免疫学.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/5%20%E5%85%8D%E7%96%AB%E5%AD%A6.pdf"
+            },
+            {
+              "name": "7 显微镜.pdf",
+              "rel_path": "现代生物学实验理论/7 显微镜.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/7%20%E6%98%BE%E5%BE%AE%E9%95%9C.pdf"
+            },
+            {
+              "name": "8 体外培养技术.pdf",
+              "rel_path": "现代生物学实验理论/8 体外培养技术.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/8%20%E4%BD%93%E5%A4%96%E5%9F%B9%E5%85%BB%E6%8A%80%E6%9C%AF.pdf"
+            },
+            {
+              "name": "DNA测序技术与基因组学_副本.pdf",
+              "rel_path": "现代生物学实验理论/DNA测序技术与基因组学_副本.pdf",
+              "url": "https://github.com/XiongWenye/shanghaitech-course-database/blob/main/%E7%8E%B0%E4%BB%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%9E%E9%AA%8C%E7%90%86%E8%AE%BA/DNA%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6_%E5%89%AF%E6%9C%AC.pdf"
+            }
+          ],
+          "total_files": 10
+        }
+      },
+      "course_type": "theory",
+      "aliases": [
+        "BIO1008",
+        "现代生物学实验理论"
+      ]
     }
   },
   "inverted_index": {
@@ -19786,12 +19926,8 @@
     "分生实验": [
       "BIO1024"
     ],
-    "bio1026": [
-      "BIO1026"
-    ],
-    "中级生物学实验": [
-      "BIO1026"
-    ],
+    "bio1026": [],
+    "中级生物学实验": [],
     "bio1068": [
       "BIO1068"
     ],
@@ -21026,6 +21162,12 @@
     ],
     "生命科学与人类文明": [
       "SL1012"
+    ],
+    "bio1008": [
+      "BIO1008"
+    ],
+    "现代生物学实验理论": [
+      "BIO1008"
     ]
   }
 }
