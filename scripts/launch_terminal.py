@@ -1,81 +1,70 @@
 #!/usr/bin/env python3
-"""
-Cross-Platform Terminal Launcher for ShanghaiTech Senior Skill.
-Automatically spawns a native terminal window to execute interactive commands
-(e.g., login, SMS verification, audit) across macOS, Windows, and Linux.
-"""
-
+"""Open a native terminal with the authentication command already entered."""
 import os
-import sys
+from pathlib import Path
 import platform
+import shlex
 import shutil
 import subprocess
+import sys
+import tempfile
 
-SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_DIR = os.path.abspath(os.path.join(SCRIPTS_DIR, ".."))
+SCRIPTS_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = SCRIPTS_DIR.parent
 
-def launch_in_terminal(command_str: str, cwd: str = PROJECT_DIR) -> bool:
-    """
-    Spawns an interactive native terminal window running command_str.
-    Returns True if launched successfully.
-    """
-    sys_name = platform.system().lower()
 
-    if sys_name == "darwin":  # macOS
-        # AppleScript command
-        escaped_cmd = command_str.replace('\\', '\\\\').replace('"', '\\"')
-        script = f'''
-        tell application "Terminal"
-            activate
-            do script "cd \\"{cwd}\\" && {escaped_cmd}"
-        end tell
-        '''
-        try:
-            subprocess.run(["osascript", "-e", script], check=True)
+def login_command(method="sms"):
+    argv = [sys.executable, str(SCRIPTS_DIR / "senior.py"), "login", "--method", method]
+    return subprocess.list2cmdline(argv) if os.name == "nt" else shlex.join(argv)
+
+
+def launch_in_terminal(command_str, cwd=PROJECT_DIR):
+    system = platform.system().lower()
+    try:
+        if system == "darwin":
+            command = f"cd {shlex.quote(str(cwd))} && {command_str}"
+            # LaunchServices opens a prefilled terminal without Apple Events permission.
+            # This temporary helper contains code only, and deletes itself before login.
+            with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", prefix="shanghaitech-login-",
+                                             suffix=".command", delete=False) as stream:
+                script_path = Path(stream.name)
+                stream.write('#!/bin/bash\nrm -f -- "$0"\n' + command + '\n')
+            script_path.chmod(0o700)
+            try:
+                subprocess.run(["open", "-a", "Terminal", str(script_path)], check=True,
+                               capture_output=True, text=True, timeout=15)
+            except (OSError, subprocess.SubprocessError):
+                script_path.unlink(missing_ok=True)
+                raise
             return True
-        except Exception as e:
-            print(f"⚠️ macOS 唤起 Terminal.app 失败: {e}", file=sys.stderr)
-            return False
-
-    elif sys_name == "windows":
-        # Windows: start cmd /k or powershell
-        try:
-            full_cmd = f'cd /d "{cwd}" && {command_str}'
-            subprocess.Popen(f'start cmd /k "{full_cmd}"', shell=True)
+        if system == "windows":
+            # startfile uses the Windows shell to create an interactive cmd window.
+            subprocess.Popen(["cmd.exe", "/k", command_str], cwd=str(cwd),
+                             creationflags=subprocess.CREATE_NEW_CONSOLE)
             return True
-        except Exception as e:
-            print(f"⚠️ Windows 唤起 cmd.exe 失败: {e}", file=sys.stderr)
-            return False
-
-    else:  # Linux
-        # Detect common Linux terminal emulators
-        terminals = [
-            ("x-terminal-emulator", lambda c: ["x-terminal-emulator", "-e", f"bash -c \"cd '{cwd}' && {c}; exec bash\""]),
-            ("gnome-terminal", lambda c: ["gnome-terminal", "--", "bash", "-c", f"cd '{cwd}' && {c}; exec bash"]),
-            ("konsole", lambda c: ["konsole", "-e", f"bash -c \"cd '{cwd}' && {c}; exec bash\""]),
-            ("xfce4-terminal", lambda c: ["xfce4-terminal", "-e", f"bash -c \"cd '{cwd}' && {c}; exec bash\""]),
-            ("xterm", lambda c: ["xterm", "-e", f"bash -c \"cd '{cwd}' && {c}; exec bash\""]),
-        ]
-        for term_bin, cmd_builder in terminals:
-            if shutil.which(term_bin):
-                try:
-                    subprocess.Popen(cmd_builder(command_str))
-                    return True
-                except Exception:
-                    continue
-        print("⚠️ Linux 未检测到受支持的图形终端仿真器 (gnome-terminal/konsole/xterm)", file=sys.stderr)
+        command = f"cd {shlex.quote(str(cwd))} && {command_str}; exec bash"
+        for binary in ("x-terminal-emulator", "gnome-terminal", "konsole", "xfce4-terminal", "xterm"):
+            if not shutil.which(binary):
+                continue
+            if binary == "gnome-terminal":
+                argv = [binary, "--", "bash", "-c", command]
+            elif binary == "xfce4-terminal":
+                argv = [binary, "--command", shlex.join(["bash", "-c", command])]
+            else:
+                argv = [binary, "-e", "bash", "-c", command]
+            subprocess.Popen(argv)
+            return True
+    except (OSError, subprocess.SubprocessError):
         return False
+    return False
 
-def launch_login_and_audit(cwd: str = PROJECT_DIR) -> bool:
-    """Convenience launcher: run login first, then automatically run audit."""
-    cmd = "python3 scripts/senior.py login && python3 scripts/senior.py audit"
-    return launch_in_terminal(cmd, cwd=cwd)
+
+def launch_login(cwd=PROJECT_DIR, method="sms"):
+    """The new terminal runs only login; no subsequent personal query."""
+    return launch_in_terminal(login_command(method), cwd=cwd)
+
 
 if __name__ == "__main__":
-    cmd_to_run = sys.argv[1] if len(sys.argv) > 1 else "python3 scripts/senior.py login && python3 scripts/senior.py audit"
-    print(f"🚀 正在跨平台唤起原生终端窗口执行: {cmd_to_run}")
-    ok = launch_in_terminal(cmd_to_run)
-    if ok:
-        print("✅ 原生终端窗口已成功唤起！")
-    else:
-        print("❌ 原生终端唤起失败。")
+    launched = launch_login()
+    print("登录终端已打开，请填写手机号和验证码。" if launched else "无法打开登录终端。", file=sys.stderr)
+    raise SystemExit(0 if launched else 1)

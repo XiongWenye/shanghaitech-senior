@@ -15,3 +15,11 @@ data/eams_cookie.txt
 data/my_*
 data/gym_availability.json
 *.ics
+
+# Personal snapshots are unsupported; ignore legacy leftovers as defense in depth.
+data/*cookie*
+data/*session*
+data/sample_myPlanCompl.html
+data/test_my_plan_completion.json
+.env
+.env.*

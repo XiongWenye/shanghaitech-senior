@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""
-ShanghaiTech Plan Completion Analyzer & Personalized Course Recommendation Engine
-Zero-dependency script (uses Python standard library: json, re, html.parser, sqlite3).
-Supports all 12 majors (2026 Grade and 2023 Grade):
-Compares student's actual plan completion status from EAMS (or raw course code list)
-against the official Major Curriculum, identifies missing compulsory courses and credit deficits,
-and invokes CourseBench to recommend the highest-rated courses to fill those exact gaps.
-"""
+"""Parse a fresh official EAMS completion page and compare available public curricula."""
 
 import sys
 import os
@@ -19,13 +12,6 @@ SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPTS_DIR, "..", "data")
 CURRICULUM_DIR = os.path.join(DATA_DIR, "curriculums")
 DEFAULT_CURRICULUM = os.path.join(CURRICULUM_DIR, "2026_CS_SIST.json")
-
-# Import query_course recommendation engine
-sys.path.append(SCRIPTS_DIR)
-try:
-    from query_course import recommend_courses, get_course_detail, search_courses
-except ImportError:
-    pass
 
 MAJOR_MAPPING = {
     "cs": "2026_CS_SIST.json",
@@ -69,24 +55,19 @@ MAJOR_MAPPING = {
     "创艺": "2026_ID_SCA.json"
 }
 
-def resolve_curriculum_path(major_str=None, grade=2026):
-    if not major_str:
-        return DEFAULT_CURRICULUM
-    m_clean = major_str.strip().lower()
-    if grade == 2023 and any(k in m_clean for k in ["cs", "计算机", "计科"]):
-        p = os.path.join(CURRICULUM_DIR, "2023_CS_SIST.json")
-        if os.path.exists(p):
-            return p
-    for fname in os.listdir(CURRICULUM_DIR):
-        if not fname.endswith(".json"):
-            continue
-        if str(grade) in fname and any(k in fname for k in [major_str, m_clean]):
-            return os.path.join(CURRICULUM_DIR, fname)
-    if m_clean in MAJOR_MAPPING:
-        p = os.path.join(CURRICULUM_DIR, MAJOR_MAPPING[m_clean])
-        if os.path.exists(p):
-            return p
-    return DEFAULT_CURRICULUM
+def resolve_curriculum_path(major_str=None, grade=None):
+    from live_session import LiveQueryError
+    if not major_str or grade is None:
+        raise LiveQueryError("学籍年级或专业缺失，不能默认套用计科培养方案")
+    major = major_str.strip().lower()
+    template = MAJOR_MAPPING.get(major)
+    if not template:
+        raise LiveQueryError("本地公开培养方案库未匹配到该专业，请核对 EAMS 官方模块")
+    filename = template.replace("2026_", str(grade) + "_", 1)
+    path = os.path.join(CURRICULUM_DIR, filename)
+    if not os.path.isfile(path):
+        raise LiveQueryError(f"公开培养方案库缺少 {grade} 级对应文件，请核对 EAMS 官方模块")
+    return path
 
 class SimpleTableParser(HTMLParser):
     def __init__(self):
@@ -136,10 +117,10 @@ def parse_html_plan(html_content):
     """
     # 1. Parse header
     header_info = {
-        "req_credits": 140.0,
-        "compl_credits": 0.0,
-        "actual_credits": 0.0,
-        "gpa": 0.0,
+        "req_credits": None,
+        "compl_credits": None,
+        "actual_credits": None,
+        "gpa": None,
         "audit_result": "",
         "major": "",
         "dept": "",
@@ -148,7 +129,7 @@ def parse_html_plan(html_content):
         "student_id": ""
     }
     
-    m_req = re.search(r'要求学分/完成学分/实修学分:.*?<td[^>]*>([0-9]+)&nbsp;/&nbsp;([0-9]+)&nbsp;/&nbsp;([0-9]+)</td>', html_content, re.S)
+    m_req = re.search(r'要求学分/完成学分/实修学分:.*?<td[^>]*>([0-9]+(?:\.[0-9]+)?)(?:&nbsp;|\s)*/(?:&nbsp;|\s)*([0-9]+(?:\.[0-9]+)?)(?:&nbsp;|\s)*/(?:&nbsp;|\s)*([0-9]+(?:\.[0-9]+)?)</td>', html_content, re.S)
     if m_req:
         header_info["req_credits"] = float(m_req.group(1))
         header_info["compl_credits"] = float(m_req.group(2))
@@ -240,54 +221,12 @@ def parse_html_plan(html_content):
             
             if is_in_progress:
                 in_progress_courses[raw_code] = course_obj
-            elif grade or (is_explicit_yes and not is_explicit_no):
+            elif not is_explicit_no and (grade or is_explicit_yes):
                 completed_courses[raw_code] = course_obj
             else:
                 unfulfilled_courses[raw_code] = course_obj
 
     return completed_courses, in_progress_courses, header_info
-
-def parse_course_codes_str(input_str):
-    """Parses a comma or whitespace separated list of course codes (e.g. CS100, MATH1112, SI100B)."""
-    codes = re.findall(r'\b[A-Z]{2,6}[0-9]{3,4}[A-Za-z0-9]*\b', input_str.upper())
-    completed = {}
-    for c in codes:
-        completed[c] = {"code": c, "name": c, "credit": 3.0}
-    return completed, {}
-
-def parse_text_or_json_plan(input_path_or_str):
-    if os.path.isfile(input_path_or_str):
-        with open(input_path_or_str, "r", encoding="utf-8", errors="ignore") as f:
-            content = f.read()
-    else:
-        content = input_path_or_str
-        
-    try:
-        data = json.loads(content)
-        if isinstance(data, dict):
-            completed = {c["code"]: c for c in data.get("completed", [])}
-            in_prog = {c["code"]: c for c in data.get("in_progress", [])}
-            header_info = {
-                "grade": int(data.get("grade")) if data.get("grade") else None,
-                "major": data.get("major"),
-                "dept": data.get("dept"),
-                "name": data.get("name"),
-                "student_id": data.get("student_id"),
-                "compl_credits": data.get("compl_credits"),
-                "in_progress_credits": data.get("in_progress_credits"),
-            }
-            return completed, in_prog, header_info
-        elif isinstance(data, list):
-            completed = {c["code"]: c for c in data if "code" in c}
-            return completed, {}, {}
-    except json.JSONDecodeError:
-        pass
-        
-    if "<table" in content.lower():
-        return parse_html_plan(content)
-    else:
-        comp, in_p = parse_course_codes_str(content)
-        return comp, in_p, {}
 
 def analyze_plan_gap(completed_courses, in_progress_courses, curriculum_path=DEFAULT_CURRICULUM, header_info=None):
     with open(curriculum_path, "r", encoding="utf-8") as f:
@@ -374,162 +313,45 @@ def analyze_plan_gap(completed_courses, in_progress_courses, curriculum_path=DEF
     }
 
 def generate_personalized_recommendation_report(analysis, target_semester="spring"):
-    curr = analysis["curriculum"]
-    earned = analysis["total_earned_credits"]
-    in_prog = analysis["total_in_progress_credits"]
-    min_tot = analysis["min_total_credits"]
-    header = analysis.get("header_info", {})
-    major_name = curr.get("major", "计算机科学与技术")
-    institute = curr.get("institute", "信息科学与技术学院")
-    grade = curr.get("grade", 2026)
-    
-    lines = []
-    lines.append(f"# 🎓 上海科技大学修课完成度与毕业学分个性化诊断报告")
-    lines.append(f"**专业**: {major_name} ({institute}) | **年级**: {grade}级 | **毕业总学分要求**: {min_tot} 学分\n")
-    
-    lines.append(f"### 📊 学分进度总览与在读状态识别")
-    if header.get("compl_credits"):
-        lines.append(f"- **EAMS 预审系统完成学分**: **{header['compl_credits']:.1f}** / **{min_tot:.1f}** 学分")
-        lines.append(f"- **EAMS 官方审核状态**: `{header.get('audit_result', '进行中')}` | **当前 GPA**: `{header.get('gpa', 0.0):.2f}`")
-        lines.append(f"> ⚠️ **【重要统计提示】**：EAMS 预审界面中显示的“完成学分”（{header['compl_credits']:.1f} 分）**已预先包含了本学期正在修读的课程**（审核状态提示‘未通过预审，有在读课程’）。因此切勿将完成学分与在读学分进行重复叠加！")
-        lines.append(f"- **纯已结课通过学分**: **{earned:.1f}** 学分 ({analysis['completed_count']} 门课程已获最终成绩)")
-        lines.append(f"- **本学期正在修读学分**: **{in_prog:.1f}** 学分 ({analysis['in_progress_count']} 门课程，待期末结课出分)")
-        lines.append(f"- **本学期结课后预计达成学分**: **{earned + in_prog:.1f}** 学分 (学分达成率 `{(earned + in_prog) / min_tot * 100:.1f}%`)")
-        lines.append(f"- **毕业尚需修读学分**: **{max(0.0, min_tot - (earned + in_prog)):.1f}** 学分\n")
-    else:
-        lines.append(f"- **已完成结课学分**: **{earned:.1f}** 学分 ({analysis['completed_count']} 门)")
-        lines.append(f"- **正在修读学分**: **{in_prog:.1f}** 学分 ({analysis['in_progress_count']} 门)")
-        lines.append(f"> ⚠️ **【注意】**：若您的统计数据来自 EAMS 预审界面，该数值通常已包含在读课程，请勿重复相加！")
-        lines.append(f"- **预计总学分**: **{earned + in_prog:.1f}** 学分 | **毕业尚需学分**: **{max(0.0, min_tot - (earned + in_prog)):.1f}** 学分\n")
-    
-    lines.append(f"### ⚠️ 真实待修核心必修课缺口排查 (毕业硬性要求)")
-    has_missing_comp = False
-    for mod in analysis["modules_analysis"]:
-        if mod["missing_compulsory"]:
-            has_missing_comp = True
-            lines.append(f"#### 📌 【{mod['name']}】待修必修课：")
-            for mc in mod["missing_compulsory"][:8]:
-                lines.append(f"- **{mc['name']}** (`{mc['code']}`), {mc.get('credit', '?')} 学分")
-        for cg in mod["choice_status"]:
-            if not cg["satisfied"]:
-                has_missing_comp = True
-                lines.append(f"#### 📌 【{mod['name']} - {cg['group_name']}】未满足（需修满 {cg['required_credits']} 学分）：")
-                for opt in cg["options"]:
-                    lines.append(f"  - 可选: **{opt['name']}** (`{opt['code']}`), {opt['credit']} 分")
-    if not has_missing_comp:
-        lines.append("🎉 恭喜！所有硬性专业必修课与基础必修环节均已修读或正在修读完毕！\n")
-    else:
-        lines.append("")
-
-    lines.append(f"### 🎯 针对培养方案缺口的专属 CourseBench 智能选课方案")
-    lines.append(f"结合同学【**{major_name}**】背景与目标学期（**{target_semester.upper()}**），精准匹配缺口选修模块：\n")
-    
-    # 1. 跨学科选修课推荐
-    lines.append(f"#### 1. 【跨学科选修课程】缺口匹配 (需修满 3 学分)")
-    recs_inter = recommend_courses(
-        major=major_name,
-        credit=3.0,
-        category="跨学科",
-        semester=target_semester,
-        workload_pref="any",
-        grade_pref="generous",
-        top_k=2
-    )
-    if recs_inter:
-        for idx, r in enumerate(recs_inter, 1):
-            lines.append(f"  - **最优推荐 {idx}: 【{r['name']}】(`{r['code']}`, {r['institute']}) - {r['credit']}学分**")
-            lines.append(f"    - 评分: 质量 `{r['score_quality']:.1f}` / 作业友好 `{r['score_workload']:.1f}` / 给分慷慨 `{r['score_grade']:.1f}` ({r['comment_num']} 条评价)")
-            lines.append(f"    - 契合理由: {r.get('rel_reason') or '跨学科高口碑好课'}")
-            lines.append(f"    - 链接: https://coursebench.org/course/{r['id']}")
-    else:
-        lines.append("  - 建议选修外学院交叉课程（如物质材料学、生医工影像、创管金融量化等）。")
-
-    # 2. 创意与艺术推荐
-    lines.append(f"\n#### 2. 【通识选修 - 创意与艺术课程群】推荐 (需修满 2 学分)")
-    recs_arts = recommend_courses(
-        major=major_name,
-        credit=2.0,
-        category="通识",
-        semester=target_semester,
-        workload_pref="any",
-        grade_pref="generous",
-        top_k=3
-    )
-    arts_shown = 0
-    for r in recs_arts:
-        if r['code'].startswith("ARTS") or "艺术" in r['institute'] or "书院" in r['institute']:
-            arts_shown += 1
-            lines.append(f"  - **推荐 {arts_shown}: 【{r['name']}】(`{r['code']}`, {r['institute']}) - {r['credit']}学分**")
-            lines.append(f"    - 评分: 质量 `{r['score_quality']:.1f}` / 作业友好 `{r['score_workload']:.1f}` / 给分慷慨 `{r['score_grade']:.1f}`")
-            lines.append(f"    - 链接: https://coursebench.org/course/{r['id']}")
-            if arts_shown >= 2:
-                break
-    if arts_shown == 0:
-        lines.append("  - 推荐 【数字媒体设计】(`ARTS1401`) 或 【用户体验与创新设计】(`ARTS1407`)。")
-
-    # 3. 文学写作与经典导读
-    lines.append(f"\n#### 3. 【通识选修 - 文学写作与文明经典导读】高分口碑课推荐")
-    lines.append(f"  - **【非虚构写作导论】(`GEHA1193`, 杜雨晴, 3学分)**: 质量 5.0 / 作业 4.8 / 给分 5.0，期末 Essay 悉心指导，GPA 保分天花板。")
-    lines.append(f"  - **【唐宋文学精华】(`GEHA1152`, 陈娅妮, 3学分)**: 质量 5.0 / 给分 5.0，历届口碑极佳，人文素养浸润。")
-    lines.append(f"  - **【柏拉图《理想国》导读】(`GEHA1087`, 2学分)**: 质量 4.8 / 给分 4.7，经典研读首选。")
-    
+    header = analysis["header_info"]
+    curriculum = analysis["curriculum"]
+    lines = ["# EAMS 实时计划完成情况", f"年级：{header.get('grade')} | 专业：{header.get('major')}"]
+    for key, label in (("req_credits", "官方要求学分"), ("compl_credits", "官方预审完成学分（含在读）"),
+                       ("actual_credits", "官方实修学分"), ("gpa", "GPA")):
+        if header.get(key) is not None:
+            lines.append(f"- {label}：{header[key]}")
+    lines.append(f"- 官方审核状态：{header.get('audit_result') or '页面未提供'}")
+    lines.append(f"- 课程行解析的已通过学分：{analysis['total_earned_credits']:.1f}")
+    lines.append(f"- 课程行解析的在读学分：{analysis['total_in_progress_credits']:.1f}")
+    lines.append("预审完成学分已包含在读课程，不能再次叠加。模块认定及抵扣以本次 EAMS 原始表格为准。")
+    if not curriculum:
+        lines.append("公开培养方案比对暂不可用：" + analysis["comparison_error"])
+        return "\n".join(lines)
+    lines.append(f"\n公开培养方案比对：{curriculum.get('grade')} 级 {curriculum.get('major')}。以下为待核对项目，需结合 EAMS 模块认定确认。")
+    for module in analysis["modules_analysis"]:
+        for course in module["missing_compulsory"]:
+            lines.append(f"- {module['name']}：页面未识别到 {course['code']} {course['name']} 的通过或在读记录")
+        for group in module["choice_status"]:
+            if not group["satisfied"]:
+                lines.append(f"- {module['name']} / {group['group_name']}：需核对课程组抵扣")
     return "\n".join(lines)
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Analyze ShanghaiTech plan completion and recommend gap-filling courses")
-    parser.add_argument("--file", help="Path to exported HTML or JSON file of myPlanCompl.action")
-    parser.add_argument("--courses", help="Comma-separated course codes (e.g. 'CS100, MATH1112, SI100B, GESS1028')")
-    parser.add_argument("--major", default=None, help="Student's major (e.g. 物理, 计算机, 生医工, 工业设计, AI荣誉班)")
-    parser.add_argument("--grade", type=int, default=None, help="Student's grade year (e.g. 2026, 2023)")
-    parser.add_argument("--curriculum", help="Explicit path to curriculum JSON")
-    parser.add_argument("--semester", default="spring", help="Target semester (spring/fall)")
-    parser.add_argument("--json", action="store_true", help="Output raw analysis JSON")
-    
+    from live_session import LiveQueryError
+    from sync_my_plan import sync_and_audit
+    parser = argparse.ArgumentParser(description="实时查询并分析 EAMS 官方计划完成情况；不读取本地档案")
+    parser.add_argument("--major", help="显式指定比对专业")
+    parser.add_argument("--grade", type=int, help="显式指定比对年级")
+    parser.add_argument("--sync", action="store_true", help="兼容参数；每次均实时查询")
+    parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
-    
-    target_file = args.file
-    if not target_file or not os.path.exists(target_file):
-        # Check standard data directory candidates
-        cand_json = os.path.join(DATA_DIR, "my_plan_completion.json")
-        cand_html = os.path.join(DATA_DIR, "my_plan_completion.html")
-        if os.path.exists(cand_json):
-            target_file = cand_json
-        elif os.path.exists(cand_html):
-            target_file = cand_html
+    try:
+        sync_and_audit(major=args.major, grade=args.grade, as_json=args.json)
+    except LiveQueryError as error:
+        print(f"查询失败：{error}", file=sys.stderr)
+        raise SystemExit(1)
 
-    header_info = {}
-    if target_file and os.path.exists(target_file):
-        completed, in_prog, header_info = parse_text_or_json_plan(target_file)
-    elif args.courses:
-        completed, in_prog, header_info = parse_text_or_json_plan(args.courses)
-    else:
-        print("[!] No plan completion file or courses provided.")
-        print("Usage: python3 scripts/analyze_plan.py --major <专业> --courses 'CS100, MATH1112, SI100B'")
-        print("   or: python3 scripts/analyze_plan.py --file <myPlanCompl.html> [--major <专业>]")
-        sys.exit(1)
-        
-    # Auto-detect grade and major from parsed EAMS header if available
-    final_grade = args.grade or header_info.get("grade") or 2026
-    final_major = args.major or header_info.get("major") or "计算机"
-    
-    cur_path = args.curriculum if args.curriculum else resolve_curriculum_path(final_major, final_grade)
-    
-    if not args.json:
-        print("=" * 72)
-        print(f"📋 【EAMS 计划完成情况与学籍确认】")
-        if header_info.get("student_id") or header_info.get("name"):
-            print(f"   • 学生: {header_info.get('name', '未记录')} (学号: {header_info.get('student_id', '未记录')})")
-        print(f"   • 学籍确认: {final_grade} 级 | {header_info.get('dept', '上海科技大学')} | {final_major}")
-        print(f"   • 载入培养方案: {os.path.basename(cur_path)}")
-        print("=" * 72 + "\n")
-
-    analysis = analyze_plan_gap(completed, in_prog, cur_path, header_info)
-    
-    if args.json:
-        print(json.dumps(analysis, ensure_ascii=False, indent=2))
-    else:
-        report = generate_personalized_recommendation_report(analysis, args.semester)
-        print(report)
 
 if __name__ == "__main__":
     main()

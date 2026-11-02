@@ -19,7 +19,6 @@ from datetime import datetime, date, timedelta, time, timezone
 from typing import List, Dict, Optional, Tuple, Any
 
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(SCRIPTS_DIR, "..", "data")
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
@@ -248,7 +247,7 @@ def build_ics_calendar(
                 lines.append("BEGIN:VALARM")
                 lines.append("ACTION:DISPLAY")
                 lines.append(f"DESCRIPTION:考试提醒: {escape_ics_text(summary)}")
-                lines.append("-PT60M")
+                lines.append("TRIGGER:-PT60M")
                 lines.append("END:VALARM")
 
             lines.append("SEQUENCE:0")
@@ -259,59 +258,30 @@ def build_ics_calendar(
     return "\r\n".join(lines) + "\r\n"
 
 def main():
-    parser = argparse.ArgumentParser(description="上海科技大学课表/考表转 iCalendar (.ics) 日历文件导出器")
-    parser.add_argument("--input", "-i", type=str, help="课表 JSON 文件路径")
-    parser.add_argument("--output", "-o", type=str, default="shanghaitech_schedule.ics", help="输出 .ics 文件路径")
-    parser.add_argument("--term-begin", "-t", type=str, default="2026-09-07", help="学期第一周周一日期 (YYYY-MM-DD)")
-    parser.add_argument("--name", "-n", type=str, default="上海科技大学课表", help="日历名称")
-
+    from live_session import LiveQueryError
+    from sync_my_plan import fetch_live_schedule
+    parser = argparse.ArgumentParser(description="实时 EAMS 课表转 ICS，仅标准输出，不读取或保存个人文件")
+    parser.add_argument("--semester", "-s", default="")
+    parser.add_argument("--name", "-n", default="上海科技大学课表")
     args = parser.parse_args()
-
     try:
-        term_begin = datetime.strptime(args.term_begin, "%Y-%m-%d").date()
-    except ValueError:
-        print(f"❌ 日期格式错误: {args.term_begin}，请使用 YYYY-MM-DD 格式")
-        sys.exit(1)
+        data = fetch_live_schedule(semester_id=args.semester, with_calendar=True)
+        periods = {}
+        for entry in data.get("periods", []):
+            for index, time_range in entry.items():
+                parts = time_range.split("-")
+                if len(parts) != 2:
+                    raise LiveQueryError("EAMS 作息时间格式无效")
+                periods[int(index)] = tuple(part.strip() for part in parts)
+        if data["courses"] and not periods:
+            raise LiveQueryError("EAMS 课表缺少作息时间，不能用静态时间代替本次实时查询")
+        content = build_ics_calendar(data["courses"], datetime.fromisoformat(data["termBegin"]).date(),
+                                     calendar_name=args.name, periods_map=periods)
+    except (LiveQueryError, ValueError, TypeError, AttributeError) as error:
+        print(f"日历生成失败：{error}", file=sys.stderr)
+        raise SystemExit(1)
+    print(content, end="")
 
-    courses = []
-    exams = []
-
-    input_file = args.input
-    if not input_file:
-        cand_schedule = os.path.join(DATA_DIR, "my_schedule.json")
-        if os.path.exists(cand_schedule):
-            input_file = cand_schedule
-
-    if not input_file or not os.path.exists(input_file):
-        print("❌ 未指定课表输入文件，且未检测到已同步的真实课表数据。")
-        print("学长 SKILL 第一要义：本地严禁存放或生成任何 Demo 虚构假课表。")
-        print("所有个人的课表与排考信息必须通过真实网络端口（EAMS 课表系统）同步查询。")
-        print("👉 请先运行 `python3 scripts/senior.py login` 登录获取授权并同步课表，或使用 `--input <文件.json>` 指定真实课表。")
-        sys.exit(1)
-
-    with open(input_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    if isinstance(data, dict):
-        courses = data.get("courses", [])
-        exams = data.get("exams", [])
-    elif isinstance(data, list):
-        courses = data
-
-    ics_content = build_ics_calendar(
-        courses=courses,
-        term_begin=term_begin,
-        calendar_name=args.name,
-        exams=exams,
-    )
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(ics_content)
-
-    print(f"🎉 课表日历导出成功！")
-    print(f"📁 保存路径: {args.output}")
-    print(f"📅 开学日期: {term_begin}")
-    print(f"📚 课程数: {len(courses)} 门，考试数: {len(exams)} 场")
-    print(f"📍 已自动注入上科大信息学院/教学中心/物质学院/体育馆等高精度 GPS 经纬度与 Apple 地图数据！")
 
 if __name__ == "__main__":
     main()

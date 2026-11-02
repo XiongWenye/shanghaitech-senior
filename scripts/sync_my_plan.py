@@ -1,316 +1,133 @@
 #!/usr/bin/env python3
-"""
-ShanghaiTech Real-time Plan Completion & Course History Sync Engine.
-Integrates with TechPie backend to query multi-semester course enrollments,
-fills official course credits from CourseBench DB, and generates
-accurate graduation plan progress.
-"""
+"""Live EAMS schedule and degree audit. Personal responses stay in memory.
 
-import os
-import sys
+A course table establishes enrollment, never a passing grade or earned credit.
+"""
+import argparse
 import json
-import time
 import re
-import sqlite3
-import urllib.request
-import urllib.error
-from typing import Dict, List, Optional, Tuple, Any
+import sys
+from datetime import datetime
+from live_session import (LiveQueryError, derive_cookies, get_tgc, post_json,
+                          queried_at, require_cookie)
 
-SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(SCRIPTS_DIR, "..", "data")
-COOKIE_PATH = os.path.join(DATA_DIR, "eams_cookie.txt")
-SCHEDULE_PATH = os.path.join(DATA_DIR, "my_schedule.json")
-PLAN_COMPL_JSON_PATH = os.path.join(DATA_DIR, "my_plan_completion.json")
-CB_DB_PATH = os.path.join(DATA_DIR, "coursebench.db")
 
-TECHPIE_EAMS_AUTH_URL = "https://techpie.geekpie.club/api/auth/third-party/eams"
-TECHPIE_SEMESTERS_URL = "https://techpie.geekpie.club/api/schedule/semesters"
-TECHPIE_COURSE_TABLE_URL = "https://techpie.geekpie.club/api/schedule/course_table"
-TECHPIE_EXAM_TABLE_URL = "https://techpie.geekpie.club/api/schedule/exam_table"
+def extract_course_code(raw_name, raw_code=""):
+    code = raw_code.split(".")[0].strip().upper()
+    if re.fullmatch(r"[A-Z]{2,6}[0-9]{3,4}[A-Z0-9]*", code):
+        return code
+    matches = re.findall(r"\b([A-Z]{2,6}[0-9]{3,4}[A-Z0-9]*)(?:\.[0-9]{2})?\b", raw_name.upper())
+    return matches[-1] if matches else raw_name.strip()
 
-def get_tgc(cookie: Optional[str] = None) -> Optional[str]:
-    """Retrieve raw TGC string from argument, file, or env."""
-    raw = cookie or os.environ.get("CASTGC") or os.environ.get("EAMS_COOKIE")
-    if not raw and os.path.exists(COOKIE_PATH):
+
+def exchange_eams_cookies(tgc):
+    return derive_cookies("eams", tgc)
+
+
+def schedule_context(cookie=None, semester_id=""):
+    from eams_session import get_student_profile
+    cookies = derive_cookies("eams", require_cookie(cookie))
+    profile = get_student_profile(cookies)
+    if not profile or not profile.get("student_id"):
+        raise LiveQueryError("未能从本次 EAMS 在线响应确认学号，不能查询个人课表或考务")
+    student_id = profile["student_id"]
+    metadata = post_json("/schedule/semesters", {"cookies": cookies, "studentId": student_id})
+    if not isinstance(metadata, dict) or not isinstance(metadata.get("semesters"), dict):
+        raise LiveQueryError("EAMS 学期目录响应无效")
+    semester = str(semester_id or metadata.get("defaultSemester") or "")
+    terms = [(year, term, str(sid)) for year, term_map in metadata["semesters"].items()
+             if isinstance(term_map, dict) for term, sid in term_map.items()]
+    selected = next(((year, term) for year, term, sid in terms if sid == semester), None)
+    if not semester or not selected:
+        raise LiveQueryError("EAMS 未返回可确认的目标学期；未采用写死的默认学期")
+    return cookies, student_id, semester, metadata, selected
+
+
+def fetch_live_schedule(cookie=None, semester_id="", with_calendar=False):
+    cookies, student_id, semester, metadata, selected = schedule_context(cookie, semester_id)
+    body = {"cookies": cookies, "studentId": student_id, "semester_id": semester}
+    if metadata.get("tableId"):
+        body["table_id"] = metadata["tableId"]
+    data = post_json("/schedule/course_table", body)
+    if not isinstance(data, dict) or not isinstance(data.get("courses"), list) or not all(isinstance(c, dict) for c in data["courses"]):
+        raise LiveQueryError("EAMS 课表响应缺少有效 courses 列表")
+    result = {**data, "semester_id": semester, "queried_at": queried_at(),
+              "source": "EAMS via TechPie /schedule/course_table"}
+    if with_calendar:
+        year, term = selected
+        term_numbers = {"秋": "1", "春": "2", "暑": "3"}
+        term_no = term if term in ("1", "2", "3") else next((n for name, n in term_numbers.items() if name in term), None)
+        if not term_no:
+            raise LiveQueryError("无法从实时学期目录确认校历学期")
+        calendar = post_json("/schedule/term_begin", {"cookies": cookies, "studentId": student_id,
+                                                     "year": year.split("-")[0], "semester": term_no})
+        if not isinstance(calendar, dict) or not calendar.get("termBegin"):
+            raise LiveQueryError("实时校历缺少 termBegin")
         try:
-            with open(COOKIE_PATH, "r", encoding="utf-8") as f:
-                raw = f.read().strip()
-        except Exception:
-            pass
-    if not raw:
-        return None
-    raw = raw.strip()
-    if "CASTGC=" in raw:
-        for part in raw.split(";"):
-            part = part.strip()
-            if part.startswith("CASTGC="):
-                return part.split("=", 1)[1].strip()
-    return raw
+            datetime.fromisoformat(calendar["termBegin"])
+        except (TypeError, ValueError):
+            raise LiveQueryError("实时校历开学日期格式无效") from None
+        result["termBegin"] = calendar["termBegin"]
+    return result
 
-def exchange_eams_cookies(tgc: str) -> Optional[str]:
-    """Exchange TGC for active EAMS cookies via TechPie proxy."""
-    req = urllib.request.Request(
-        TECHPIE_EAMS_AUTH_URL,
-        data=json.dumps({"tgc": tgc}).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json; charset=utf-8",
-            "User-Agent": "TechPie-SeniorSkill/2.0",
-        }
-    )
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                res = json.loads(resp.read().decode("utf-8"))
-                if res.get("success") and "data" in res:
-                    return res["data"]["raw"]["cookies"]
-        except Exception as e:
-            if attempt < 2:
-                time.sleep(1)
-            else:
-                print(f"⚠️ EAMS 会话认证换取失败: {e}", file=sys.stderr)
-    return None
 
-def extract_course_code(raw_name: str, raw_code: str = "") -> str:
-    """Robustly extract canonical course code from name or code field."""
-    if raw_code and re.match(r'^[A-Z]{2,6}[0-9]{3,4}[A-Za-z0-9]*$', raw_code.split(".")[0].strip().upper()):
-        return raw_code.split(".")[0].strip().upper()
-    
-    # Try finding standard course pattern in raw_name e.g. BIO1011.02, CS100, GEHA1003
-    matches = re.findall(r'\b([A-Z]{2,6}[0-9]{3,4}[A-Za-z0-9]*)(?:\.[0-9]{2})?\b', raw_name.upper())
-    if matches:
-        return matches[-1]
-    
-    return raw_name.strip()
+def fetch_live_plan(cookie=None):
+    from eams_session import fetch_plan_lightweight, MY_PLAN_URL
+    from analyze_plan import parse_html_plan
+    html = fetch_plan_lightweight(require_cookie(cookie))
+    completed, in_progress, header = parse_html_plan(html)
+    if not header.get("student_id") or header.get("grade") is None or not header.get("major"):
+        raise LiveQueryError("EAMS 页面学籍字段不完整，不能确认年级与专业")
+    if header.get("compl_credits") is None:
+        raise LiveQueryError("EAMS 页面未解析到官方学分统计")
+    return {"completed": completed, "in_progress": in_progress, "header": header,
+            "source": MY_PLAN_URL, "queried_at": queried_at()}
 
-def lookup_course_credit_and_zh_name(code: str, conn: Optional[sqlite3.Connection] = None) -> Tuple[float, str]:
-    """Lookup credit and Chinese course name from CourseBench sqlite database."""
-    if not conn:
-        return 3.0, ""
+
+def sync_and_audit(cookie=None, major=None, grade=None, as_json=False):
+    """Audit a fresh official completion page; no historical-enrollment inference."""
+    from analyze_plan import resolve_curriculum_path, analyze_plan_gap, generate_personalized_recommendation_report
+    record = fetch_live_plan(cookie)
+    header = record["header"]
     try:
-        cur = conn.cursor()
-        cur.execute("SELECT credit, name FROM courses WHERE code = ? COLLATE NOCASE", (code,))
-        row = cur.fetchone()
-        if row:
-            cred = float(row[0]) if row[0] is not None else 3.0
-            name = row[1] if row[1] else ""
-            return cred, name
-    except Exception:
-        pass
-    return 3.0, ""
-
-def fetch_all_semesters_courses(cookies: str, student_id: str) -> Tuple[Dict[str, Any], Dict[str, Any], List[Dict[str, Any]]]:
-    """
-    Fetch course tables across all enrolled semesters.
-    Returns (completed_dict, in_progress_dict, current_semester_courses_list).
-    """
-    conn = None
-    if os.path.exists(CB_DB_PATH):
-        try:
-            conn = sqlite3.connect(CB_DB_PATH)
-        except Exception:
-            pass
-
-    # 1. Fetch semesters metadata
-    req_sem = urllib.request.Request(
-        TECHPIE_SEMESTERS_URL,
-        data=json.dumps({"cookies": cookies, "studentId": student_id}).encode("utf-8"),
-        headers={"Content-Type": "application/json; charset=utf-8"}
-    )
-    default_semester = "282"
-    semesters_map = {}
-    try:
-        with urllib.request.urlopen(req_sem, timeout=15) as resp:
-            sem_res = json.loads(resp.read().decode("utf-8"))
-            if sem_res.get("success"):
-                default_semester = str(sem_res["data"].get("defaultSemester") or "282")
-                semesters_map = sem_res["data"].get("semesters", {})
-    except Exception as e:
-        print(f"⚠️ 学期目录拉取异常，使用默认学期 {default_semester}: {e}", file=sys.stderr)
-
-    # Flatten relevant semesters for the student (from 2023 onwards for grade 2023)
-    target_terms = []
-    for year in sorted(semesters_map.keys()):
-        parts = year.split("-")
-        if parts and parts[0].isdigit() and int(parts[0]) >= 2023:
-            term_dict = semesters_map[year]
-            if isinstance(term_dict, dict):
-                for term_no, sem_id in sorted(term_dict.items()):
-                    target_terms.append((f"{year}-{term_no}", str(sem_id)))
-
-    if not target_terms:
-        target_terms = [
-            ("2023-2024-1", "222"),
-            ("2023-2024-2", "223"),
-            ("2023-2024-3", "224"),
-            ("2024-2025-1", "242"),
-            ("2024-2025-2", "243"),
-            ("2024-2025-3", "244"),
-            ("2025-2026-1", "262"),
-            ("2025-2026-2", "263"),
-            ("2025-2026-3", "264"),
-            ("2026-2027-1", "282"),
-        ]
-
-    completed_courses: Dict[str, Dict[str, Any]] = {}
-    in_progress_courses: Dict[str, Dict[str, Any]] = {}
-    current_schedule_courses: List[Dict[str, Any]] = []
-
-    print(f"🔄 正在同步学号 {student_id} 历届学期实际修读课程与课表...")
-
-    for term_label, sem_id in target_terms:
-        headers = {
-            "Content-Type": "application/json; charset=utf-8",
-            "Connection": "close",
-            "User-Agent": "TechPie-SeniorSkill/2.0",
-        }
-        success_term = False
-        for attempt in range(2):
-            try:
-                req_c = urllib.request.Request(
-                    TECHPIE_COURSE_TABLE_URL,
-                    data=json.dumps({
-                        "cookies": cookies,
-                        "studentId": student_id,
-                        "semester_id": sem_id,
-                        "table_id": "std"
-                    }).encode("utf-8"),
-                    headers=headers
-                )
-                with urllib.request.urlopen(req_c, timeout=15) as resp_c:
-                    c_data = json.loads(resp_c.read().decode("utf-8"))
-                    if not c_data.get("success"):
-                        break
-                    courses = c_data.get("data", {}).get("courses", [])
-                    if not courses:
-                        success_term = True
-                        break
-
-                    if sem_id == default_semester:
-                        current_schedule_courses = courses
-
-                    term_unique = {}
-                    for c in courses:
-                        raw_name = c.get("name", "")
-                        code = extract_course_code(raw_name, c.get("courseCode", ""))
-                        if code not in term_unique:
-                            cred, zh_name = lookup_course_credit_and_zh_name(code, conn)
-                            display_name = zh_name if zh_name else (raw_name.split("(")[0].strip() if "(" in raw_name else raw_name)
-                            term_unique[code] = {
-                                "code": code,
-                                "name": display_name,
-                                "raw_name": raw_name,
-                                "teachers": c.get("teachers", ""),
-                                "classroom": c.get("classroom", ""),
-                                "semester": term_label,
-                                "semester_id": sem_id,
-                                "credit": cred,
-                            }
-
-                    if sem_id == default_semester:
-                        in_progress_courses.update(term_unique)
-                        print(f"  ⚡ 【{term_label} (当前学期)】发现 {len(term_unique)} 门正在修读课程")
-                    else:
-                        completed_courses.update(term_unique)
-                        print(f"  ✅ 【{term_label}】同步 {len(term_unique)} 门已修读课程")
-                    success_term = True
-                    break
-            except Exception as e:
-                if attempt == 0:
-                    time.sleep(0.8)
-                else:
-                    print(f"  ⚠️ 拉取 {term_label} ({sem_id}) 课表跳过: {e}", file=sys.stderr)
-        time.sleep(0.3)
-
-    if conn:
-        conn.close()
-
-    return completed_courses, in_progress_courses, current_schedule_courses
-
-def save_sync_data(
-    completed_courses: Dict[str, Dict[str, Any]],
-    in_progress_courses: Dict[str, Dict[str, Any]],
-    current_schedule_courses: List[Dict[str, Any]],
-    student_id: str,
-    major: str = "计算机科学与技术",
-    grade: int = 2026,
-    name: str = "上科大学子",
-    dept: str = "信息科学与技术学院"
-):
-    """Save parsed plan data and schedule to data files."""
-    os.makedirs(DATA_DIR, exist_ok=True)
-
-    tot_comp_cred = sum(c.get("credit", 0.0) for c in completed_courses.values())
-    tot_prog_cred = sum(c.get("credit", 0.0) for c in in_progress_courses.values())
-
-    plan_data = {
-        "student_id": student_id,
-        "name": name,
-        "major": major,
-        "dept": dept,
-        "grade": grade,
-        "compl_credits": tot_comp_cred,
-        "in_progress_credits": tot_prog_cred,
-        "completed": list(completed_courses.values()),
-        "in_progress": list(in_progress_courses.values()),
-        "updated_at": time.strftime("%Y-%m-%d %H:%M:%S")
-    }
-    with open(PLAN_COMPL_JSON_PATH, "w", encoding="utf-8") as f:
-        json.dump(plan_data, f, ensure_ascii=False, indent=2)
-
-    if current_schedule_courses:
-        sched_data = {
-            "semester_id": "282",
-            "student_id": student_id,
-            "courses": current_schedule_courses,
-            "updated_at": time.strftime("%Y-%m-%d %H:%M:%S")
-        }
-        with open(SCHEDULE_PATH, "w", encoding="utf-8") as f:
-            json.dump(sched_data, f, ensure_ascii=False, indent=2)
-
-    print(f"\n🎉 培养方案修课档案已生成！")
-    print(f"   • 已修完课程: {len(completed_courses)} 门 ({tot_comp_cred:.1f} 学分)")
-    print(f"   • 本学期在读课程: {len(in_progress_courses)} 门 ({tot_prog_cred:.1f} 学分)")
-    print(f"   • 存储位置: {PLAN_COMPL_JSON_PATH}")
-
-def sync_and_audit(cookie: Optional[str] = None, student_id: Optional[str] = None, major: Optional[str] = None, grade: Optional[int] = None) -> bool:
-    tgc = get_tgc(cookie)
-    if not tgc:
-        print("❌ 未检测到 CASTGC 统一认证凭据，无法执行在线同步。")
-        print("学长 SKILL 第一要义：本地零个人化虚假数据，所有个人学业与选课档案必须通过网络端口实时查询。")
-        print("👉 请先运行 `python3 scripts/senior.py login` 登录。")
-        return False
-
-    # Dynamically extract student profile from live EAMS session if not provided
-    name = "上科大学子"
-    dept = "信息科学与技术学院"
-    if not student_id or not major or not grade:
-        try:
-            import eams_session
-            profile = eams_session.get_student_profile(tgc)
-            if profile:
-                student_id = student_id or profile.get("student_id")
-                name = profile.get("name") or name
-                major = major or profile.get("major") or "计算机科学与技术"
-                grade = grade or profile.get("grade") or 2026
-                dept = profile.get("dept") or dept
-        except Exception:
-            pass
-
-    if not student_id:
-        print("❌ 无法从在线 EAMS 会话中解析学生学号，请传入 --student-id 参数。")
-        return False
-
-    final_major = major or "计算机科学与技术"
-    final_grade = grade or 2026
-
-    cookies = exchange_eams_cookies(tgc)
-    if not cookies:
-        print("❌ 换取 EAMS 会话失败，请检查统一认证凭据是否已过期。")
-        return False
-
-    completed, in_prog, sched = fetch_all_semesters_courses(cookies, student_id=student_id)
-    save_sync_data(completed, in_prog, sched, student_id=student_id, major=final_major, grade=final_grade, name=name, dept=dept)
+        path = resolve_curriculum_path(major or header["major"], grade or header["grade"])
+    except LiveQueryError as error:
+        # Public-curriculum coverage does not invalidate a successful live EAMS query.
+        analysis = {"header_info": header, "curriculum": {}, "modules_analysis": [],
+                    "total_earned_credits": sum(c["credit"] for c in record["completed"].values()),
+                    "total_in_progress_credits": sum(c["credit"] for c in record["in_progress"].values()),
+                    "comparison_available": False, "comparison_error": str(error)}
+    else:
+        analysis = analyze_plan_gap(record["completed"], record["in_progress"], path, header)
+        analysis["comparison_available"] = True
+    analysis.update(source=record["source"], queried_at=record["queried_at"])
+    if as_json:
+        print(json.dumps({**record, "analysis": analysis}, ensure_ascii=False, indent=2))
+    else:
+        print(f"来源：{record['source']} | 实时查询：{record['queried_at']}")
+        print(generate_personalized_recommendation_report(analysis))
     return True
 
+
+def main():
+    parser = argparse.ArgumentParser(description="实时查询 EAMS 本学期选课与课表，不保存个人数据")
+    parser.add_argument("--semester", default="", help="目标学期 ID，默认实时 EAMS 当前学期")
+    parser.add_argument("--json", action="store_true")
+    args = parser.parse_args()
+    try:
+        data = fetch_live_schedule(semester_id=args.semester)
+    except LiveQueryError as error:
+        print(f"查询失败：{error}", file=sys.stderr)
+        raise SystemExit(1)
+    if args.json:
+        print(json.dumps(data, ensure_ascii=False, indent=2))
+    else:
+        print(f"EAMS 学期 {data['semester_id']} | 实时查询：{data['queried_at']}")
+        for course in data["courses"]:
+            print(f"{course.get('name', '--')} | {course.get('classroom', '--')} | {course.get('teachers', '--')} | 周次 {course.get('weeks', '--')} | 节次 {course.get('times', {})}")
+        if not data["courses"]:
+            print("EAMS 本次查询成功，目标学期课表为空。")
+
+
 if __name__ == "__main__":
-    sync_and_audit()
+    main()
