@@ -23,6 +23,7 @@ import query_course
 import query_materials
 import recommend_plan
 import analyze_plan
+import query_exchange
 
 
 def get_course_code_and_info(query, force_refresh=False):
@@ -73,7 +74,29 @@ def cmd_ask(query, force_refresh=False):
     1. CourseBench reputation & teacher review summary (选课维度)
     2. Test-taking & exam materials (备考资料维度)
     3. Senior's Takeaway (学长心法)
+    4. Auto-detect 3+1 international exchange queries (出国交流维度)
     """
+    q_lower = query.lower()
+    exchange_keywords = ["3+1", "出国", "国际交流", "交换生", "专项奖学金", "海外交流"]
+    school_keywords = ["伯克利", "berkeley", "ucb", "哈佛", "harvard", "哥大", "columbia", "uiuc", "香槟", "麦迪逊", "wisconsin", "密歇根", "umich", "芝大", "芝加哥", "uchicago", "宾大", "upenn", "德雷塞尔", "drexel", "莱顿", "lumc", "格勒", "grenoble"]
+
+    is_exchange_query = any(k in q_lower for k in exchange_keywords) or \
+                        (any(s in q_lower for s in school_keywords) and any(w in q_lower for w in ["申请", "项目", "学费", "名额", "要求", "gpa", "奖学金", "托福", "雅思", "多邻国", "交流"]))
+
+    if is_exchange_query:
+        programs = query_exchange.load_programs()
+        clean_q = query
+        for k in exchange_keywords:
+            clean_q = clean_q.replace(k, "")
+        clean_q = clean_q.strip()
+        if not clean_q or clean_q in ["项目", "一览", "清单", "有哪些"]:
+            query_exchange.cmd_list(programs)
+        elif "奖学金" in query and not any(s in q_lower for s in school_keywords):
+            query_exchange.cmd_scholarship()
+        else:
+            query_exchange.cmd_info(clean_q or query, programs)
+        return
+
     code, mat_info = get_course_code_and_info(query, force_refresh=force_refresh)
     if not code:
         print(f"❌ 老学长在数据库中没有找到与 '{query}' 相关的课程信息。", file=sys.stderr)
@@ -230,6 +253,17 @@ def main():
     search_p = subparsers.add_parser("search", help="模糊全局搜索课程 (同时检索 CourseBench 与资料库)")
     search_p.add_argument("keyword", help="搜索关键词")
 
+    # 3plus1 / exchange (Study Abroad & Exchange Program)
+    ex_p = subparsers.add_parser("3plus1", aliases=["exchange"], help="3+1 国际交流项目与专项奖学金把脉 (官方大表与评定标准)")
+    ex_p.add_argument("query", nargs="*", help="高校名称/项目名/序号/子命令 (如 伯克利, 哈佛, info 伯克利, list, scholarship, deadlines)")
+    ex_p.add_argument("--major", help="按专业筛选")
+    ex_p.add_argument("--tier", help="按奖学金档位筛选 (如 一类, 二类)")
+    ex_p.add_argument("--country", help="按国家筛选 (如 美国, 荷兰, 法国)")
+    ex_p.add_argument("--gpa", type=float, help="当前绩点 (如 3.65)")
+    ex_p.add_argument("--toefl", type=int, help="托福总分 (如 102)")
+    ex_p.add_argument("--ielts", type=float, help="雅思总分 (如 7.0)")
+    ex_p.add_argument("--duolingo", type=int, help="多邻国总分 (如 130)")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -267,6 +301,32 @@ def main():
     elif args.command == "search":
         sys.argv = ["query_materials.py", "search", args.keyword]
         query_materials.main()
+    elif args.command in ("3plus1", "exchange"):
+        programs = query_exchange.load_programs()
+        q_raw = getattr(args, "query", [])
+        if isinstance(q_raw, list):
+            if len(q_raw) > 1 and q_raw[0] in ("info", "get", "detail"):
+                q = " ".join(q_raw[1:])
+            elif q_raw:
+                q = " ".join(q_raw)
+            else:
+                q = None
+        else:
+            q = q_raw
+
+        if q == "scholarship" or (q and "奖学金" in q):
+            query_exchange.cmd_scholarship()
+        elif q == "deadlines" or (q and ("时间" in q or "截止" in q)):
+            query_exchange.cmd_deadlines(programs)
+        elif q == "list" or not q:
+            if args.gpa or args.toefl or args.ielts or args.duolingo:
+                query_exchange.cmd_match(programs, gpa=args.gpa, toefl=args.toefl, ielts=args.ielts, duolingo=args.duolingo, major=args.major)
+            else:
+                query_exchange.cmd_list(programs, major_filter=args.major, tier_filter=args.tier, country_filter=args.country)
+        elif q == "match":
+            query_exchange.cmd_match(programs, gpa=args.gpa, toefl=args.toefl, ielts=args.ielts, duolingo=args.duolingo, major=args.major)
+        else:
+            query_exchange.cmd_info(q, programs)
 
 
 if __name__ == "__main__":

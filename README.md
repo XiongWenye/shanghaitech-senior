@@ -5,9 +5,11 @@
 [![ShanghaiTech](https://img.shields.io/badge/University-ShanghaiTech-red.svg)](https://www.shanghaitech.edu.cn/)
 [![Courses Covered](https://img.shields.io/badge/Courses-151+-brightgreen.svg)]()
 [![CourseBench Reviews](https://img.shields.io/badge/Reviews-2300+-orange.svg)]()
+[![3+1 Programs](https://img.shields.io/badge/3+1%20Programs-19%20Official-blueviolet.svg)]()
+[![Scholarship Guide](https://img.shields.io/badge/Exchange%20Scholarship-2025%20Policy-critical.svg)]()
 
-> **“选课不踩坑，复习有真题，作业有答案，毕业不延毕。”**  
-> 专为上海科技大学（ShanghaiTech）本科生打造的**全能学业导师与通关伙伴**。融合 **CourseBench** 真实学生评价大数据、**全校 12 大本科专业官方培养方案**，以及各大公开课程通关资料库（详见文末致谢）。
+> 专为上海科技大学（ShanghaiTech）本科生打造的**全能学业导师与通关伙伴**。  
+> 融合 **CourseBench** 真实学生评价大数据、**全校 12 大本科专业官方培养方案**、各大公开课程通关资料库，以及**学校官方 3+1 国际交流项目与专项奖学金标准**。
 
 ---
 
@@ -32,6 +34,14 @@
 ### 4. 🎓 EAMS 计划完成情况智能预审 (Degree Audit)
 - 独家实现 **EAMS 预审“三层学分切分”**（纯已通过、在读修读中、真实待修硬性缺口）。
 - **严格遵循防重复统计铁律**：严防把 EAMS 顶部已内含的在读学分做二次重复叠加，精准预警大四毕业论文（SI199 6学分）等硬性缺口。
+
+### 5. 🌍 3+1 本科国际交流与专项奖学金把脉 (Study Abroad & Scholarship Engine)
+- **19 项官方合作名校与项目全覆盖**：哈佛大学（VUS）、加州大学伯克利分校（COE、SCET、DATA、BICCEP、BBSA、BPIE、BHGAP、MATH、ID 9大方向）、哥伦比亚大学（SEAS UVSP）、宾夕法尼亚大学（LPS IGSP）、芝加哥大学、密歇根大学（LSA）、威斯康星麦迪逊（VISP）、UIUC、荷兰莱顿大学医学院（LUMC）、法国格勒诺布尔综合理工（Grenoble INP）、德雷塞尔大学等。
+- **真实门槛与录取画像**：区分最低硬性 GPA 与**往届真实录取学分绩区间**，标注官方选拔名额、选课要求、基础学费参考与申报截止节点。
+- **语言免除（Waiver）独家机制**：支持托福、雅思、多邻国、CET-6六级（伯克利BBSA接受520+）；特别固化**加州大学伯克利分校全系列项目不严格死卡英语标化，可通过 Berkeley 官方远程面试开具证明直接 Waive 掉语言要求**的重要内幕！
+- **专项奖学金自动核算**：全面对接《上海科技大学本科生国际交流专项奖学金评定管理办法》（上科大教〔2025〕2 号），直连一类至五类项目资助标准（前 2%、前 3-7%、前 8-15% 档位，最高 8.3 万元/学期，全校 16 万元上限）。
+- **三维背景智能匹配选校**：输入学生 GPA、语言成绩与专业，秒级划分为【核心适配 Target】、【稳妥保底 Safe】、【冲刺拔高 Reach】与【受限项 Conditional】。
+- **🧑‍🎓 开放亲历经验插槽**：预留学生个人真实经验库（`data/exchange/experiences/`），支持后续持续载入海外选课、科研套磁进组、海外导师推荐信与国内学分转换实操。
 
 ---
 
@@ -59,6 +69,8 @@ git clone https://github.com/XiongWenye/shanghaitech-senior.git ~/你的Agent Sk
 - *“快期末考了，有没有大物I和高数I的历年真题卷？”*
 - *“下学期计科大一春季选什么课好？帮我推荐个路线。”*
 - *“帮我分析一下我的 EAMS 培养计划完成情况，我还差什么学分？”*
+- *“学长，伯克利 3+1 怎么选？需要考托福吗？可以面试 Waive 吗？”*
+- *“我 GPA 3.65、托福 102，能申哪些 3+1 项目？奖学金能拿多少？”*
 
 ---
 
@@ -71,10 +83,10 @@ git clone https://github.com/XiongWenye/shanghaitech-senior.git ~/你的Agent Sk
 git clone https://github.com/XiongWenye/shanghaitech-senior.git
 cd shanghaitech-senior
 
-# 2. 老学长全景把脉 (口碑 + 备考真题资料包 + 避坑锦囊)
+# 2. 老学长全景把脉 (口碑 + 备考真题资料包 + 避坑锦囊，支持自动识别 3+1 出国意图)
 python3 scripts/senior.py ask "CS100"
 python3 scripts/senior.py ask "普通物理I"
-python3 scripts/senior.py ask "线代"
+python3 scripts/senior.py ask "伯克利3+1"
 
 # 3. 仅提取备考复习资料 (真题卷、作业答案、课件讲义)
 python3 scripts/senior.py materials "高等数学I"
@@ -89,6 +101,14 @@ python3 scripts/senior.py roadmap --major 电子 --semester 1
 
 # 6. 模糊检索课程
 python3 scripts/senior.py search "体系结构"
+
+# 7. 3+1 国际交流项目与专项奖学金把脉 (名校大表、选校匹配、奖学金核算)
+python3 scripts/senior.py 3plus1                       # 查看 19 个官方合作项目一览
+python3 scripts/senior.py 3plus1 info 伯克利            # 查询伯克利各学院项目、选课与语言 Waiver
+python3 scripts/senior.py 3plus1 info 哥大              # 查询哥伦比亚大学工程学院 SEAS 选拔
+python3 scripts/senior.py 3plus1 match --gpa 3.65 --toefl 102 --major 计算机 # 智能三维背景定位选校
+python3 scripts/senior.py 3plus1 scholarship           # 查看一类至五类专项奖学金标准与评定细则
+python3 scripts/senior.py 3plus1 deadlines             # 查看全校 3+1 校内外申请截止时间轴
 ```
 
 ---

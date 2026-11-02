@@ -1,0 +1,20 @@
+[
+  {
+    "program_id": 2,
+    "school_name": "加州大学伯克利分校",
+    "track": "工程学院 (COE)",
+    "author": "示例：2021级 计算机科学与技术 学长",
+    "exchange_year": "2024-2025",
+    "exchange_term": "一学年",
+    "profile_at_apply": {
+      "gpa": 3.75,
+      "toefl": 105,
+      "major": "计算机科学与技术"
+    },
+    "course_advice": "选课时提前在 classes.berkeley.edu 查好课程与前置要求。专业核心课硬核且 workload 大，但给分标准透明。",
+    "research_lab": "学期初主动发邮件约 Office Hour，积极表达科研兴趣，争取进组做科研甚至拿到国外导师推荐信的机会。",
+    "credit_transfer": "每学期修满 12-15 units，注意回国后在 EAMS 系统提交学分转换申请，毕业设计 SI199 需提前与上科大导师沟通。",
+    "living_tips": "建议在项目群或 CSSA 论坛尽早合租找房，提前办理国际信用卡与手机卡。",
+    "takeaway": "3+1 是上科大极具优势的国际化跳板，充分利用海外顶级学术资源，积极参与课堂交流与科研组会！"
+  }
+]
