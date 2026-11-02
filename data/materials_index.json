@@ -10009,10 +10009,13 @@
       },
       "aliases": [
         "CS120",
+        "Computer Networks",
+        "Network",
+        "computer networks",
         "cs120",
-        "离散",
-        "离散数学",
-        "计算机网络"
+        "network",
+        "计算机网络",
+        "计网"
       ],
       "resources": {
         "itechx": {
@@ -21046,6 +21049,7 @@
       "aliases": [
         "GEMA1001",
         "gema1001",
+        "高数",
         "高数1",
         "高数I",
         "高数i",
@@ -21357,6 +21361,7 @@
       "aliases": [
         "GEMA1003",
         "gema1003",
+        "高数",
         "高数2",
         "高数II",
         "高数ii",
@@ -24765,6 +24770,7 @@
         "grade": 3.3870967741935485
       },
       "aliases": [
+        "Discrete Mathematics",
         "SI120",
         "discrete mathematics",
         "si120",
@@ -27897,15 +27903,16 @@
     "cs120": [
       "CS120"
     ],
-    "离散": [
-      "CS120",
-      "SI120"
+    "computer networks": [
+      "CS120"
     ],
-    "离散数学": [
-      "CS120",
-      "SI120"
+    "network": [
+      "CS120"
     ],
     "计算机网络": [
+      "CS120"
+    ],
+    "计网": [
       "CS120"
     ],
     "cs121": [
@@ -28483,6 +28490,10 @@
     "gema1001": [
       "GEMA1001"
     ],
+    "高数": [
+      "GEMA1001",
+      "GEMA1003"
+    ],
     "高数1": [
       "GEMA1001"
     ],
@@ -28751,10 +28762,16 @@
     "计算科学与工程": [
       "SI114H"
     ],
+    "discrete mathematics": [
+      "SI120"
+    ],
     "si120": [
       "SI120"
     ],
-    "discrete mathematics": [
+    "离散": [
+      "SI120"
+    ],
+    "离散数学": [
       "SI120"
     ],
     "prob & stat": [

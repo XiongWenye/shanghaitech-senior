@@ -164,6 +164,29 @@ def is_extreme_emotional_comment(title, content, like_count=0, dislike_count=0):
         
     return False, None
 
+def _resolve_query_aliases(query):
+    """Attempt to resolve colloquial aliases using materials_index.json."""
+    try:
+        idx_path = os.path.join(os.path.dirname(__file__), "..", "data", "materials_index.json")
+        if os.path.exists(idx_path):
+            with open(idx_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            q = query.strip().lower()
+            inverted = data.get("inverted_index", {})
+            if q in inverted and inverted[q]:
+                return inverted[q]
+            # Substring match in inverted aliases
+            matches = []
+            for alias, codes in inverted.items():
+                if alias and (q in alias or alias in q):
+                    for c in codes:
+                        if c not in matches:
+                            matches.append(c)
+            return matches
+    except Exception:
+        pass
+    return []
+
 def search_courses(query, limit=10):
     conn = get_db()
     cur = conn.cursor()
@@ -177,7 +200,26 @@ def search_courses(query, limit=10):
         ORDER BY comment_num DESC, score_quality DESC
         LIMIT ?
     """, (like_query, like_query, like_query, like_query, limit))
-    return [dict(row) for row in cur.fetchall()]
+    results = [dict(row) for row in cur.fetchall()]
+    existing_codes = {r["code"] for r in results}
+
+    alias_codes = _resolve_query_aliases(query)
+    for acode in alias_codes:
+        if acode not in existing_codes and len(results) < limit:
+            cur.execute("""
+                SELECT id, name, code, institute, credit, comment_num,
+                       score_quality, score_workload, score_difficulty, score_grade,
+                       teachers, semesters
+                FROM courses
+                WHERE code = ?
+                LIMIT 1
+            """, (acode,))
+            row = cur.fetchone()
+            if row:
+                results.append(dict(row))
+                existing_codes.add(acode)
+
+    return results
 
 def get_course_detail(course_identifier):
     conn = get_db()
@@ -196,6 +238,12 @@ def get_course_detail(course_identifier):
                     (f"%{course_identifier}%", f"%{course_identifier}%"))
         course = cur.fetchone()
     
+    if not course:
+        alias_codes = _resolve_query_aliases(course_identifier)
+        if alias_codes:
+            cur.execute("SELECT * FROM courses WHERE code = ? LIMIT 1", (alias_codes[0],))
+            course = cur.fetchone()
+
     if not course:
         return None
     
