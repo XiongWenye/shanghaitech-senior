@@ -267,7 +267,16 @@ def parse_text_or_json_plan(input_path_or_str):
         if isinstance(data, dict):
             completed = {c["code"]: c for c in data.get("completed", [])}
             in_prog = {c["code"]: c for c in data.get("in_progress", [])}
-            return completed, in_prog, {}
+            header_info = {
+                "grade": int(data.get("grade")) if data.get("grade") else None,
+                "major": data.get("major"),
+                "dept": data.get("dept"),
+                "name": data.get("name"),
+                "student_id": data.get("student_id"),
+                "compl_credits": data.get("compl_credits"),
+                "in_progress_credits": data.get("in_progress_credits"),
+            }
+            return completed, in_prog, header_info
         elif isinstance(data, list):
             completed = {c["code"]: c for c in data if "code" in c}
             return completed, {}, {}
@@ -478,9 +487,19 @@ def main():
     
     args = parser.parse_args()
     
+    target_file = args.file
+    if not target_file or not os.path.exists(target_file):
+        # Check standard data directory candidates
+        cand_json = os.path.join(DATA_DIR, "my_plan_completion.json")
+        cand_html = os.path.join(DATA_DIR, "my_plan_completion.html")
+        if os.path.exists(cand_json):
+            target_file = cand_json
+        elif os.path.exists(cand_html):
+            target_file = cand_html
+
     header_info = {}
-    if args.file and os.path.exists(args.file):
-        completed, in_prog, header_info = parse_text_or_json_plan(args.file)
+    if target_file and os.path.exists(target_file):
+        completed, in_prog, header_info = parse_text_or_json_plan(target_file)
     elif args.courses:
         completed, in_prog, header_info = parse_text_or_json_plan(args.courses)
     else:

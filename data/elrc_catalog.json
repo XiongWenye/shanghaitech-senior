@@ -1,0 +1,139 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-11-02",
+  "origin": "https://elrc.shanghaitech.edu.cn",
+  "courses": [
+    {
+      "courseId": "elrc-cs100",
+      "courseNo": "CS100",
+      "name": "计算机编程 (CS100)",
+      "schoolYear": "2025-2026",
+      "semester": "1",
+      "reviewId": "rev-cs100-2025",
+      "teachers": "周平强 / 高跃",
+      "description": "CS100 · 计算机科学入门与 C/C++ 编程实战",
+      "lessonsCount": 32,
+      "lessons": [
+        {"week": "1", "weekDay": "周二", "section": "1-2节", "title": "课程导论、环境配置与 C 语言基础", "scheduleIds": ["sch-cs100-w1-1"]},
+        {"week": "1", "weekDay": "周四", "section": "3-4节", "title": "数据类型、基本运算与分支结构", "scheduleIds": ["sch-cs100-w1-2"]},
+        {"week": "3", "weekDay": "周二", "section": "1-2节", "title": "循环控制、函数与递归详解", "scheduleIds": ["sch-cs100-w3-1"]},
+        {"week": "5", "weekDay": "周二", "section": "1-2节", "title": "指针入门与内存模型剖析", "scheduleIds": ["sch-cs100-w5-1"]},
+        {"week": "7", "weekDay": "周二", "section": "1-2节", "title": "期中串讲与核心概念答疑", "scheduleIds": ["sch-cs100-w7-1"]},
+        {"week": "9", "weekDay": "周二", "section": "1-2节", "title": "动态内存分配 (malloc/free) 与常见 Bug", "scheduleIds": ["sch-cs100-w9-1"]},
+        {"week": "11", "weekDay": "周二", "section": "1-2节", "title": "C++ 类与对象、构造函数与析构", "scheduleIds": ["sch-cs100-w11-1"]},
+        {"week": "13", "weekDay": "周二", "section": "1-2节", "title": "C++ 运算符重载与继承多态", "scheduleIds": ["sch-cs100-w13-1"]},
+        {"week": "15", "weekDay": "周二", "section": "1-2节", "title": "期末综合复习与 Project 进阶分析", "scheduleIds": ["sch-cs100-w15-1"]}
+      ]
+    },
+    {
+      "courseId": "elrc-cs110",
+      "courseNo": "CS110",
+      "name": "计算机系统基础 (CS110)",
+      "schoolYear": "2025-2026",
+      "semester": "2",
+      "reviewId": "rev-cs110-2025",
+      "teachers": "殷树 / 屠要峰",
+      "description": "CS110 · Computer Architecture & Systems (CS:APP)",
+      "lessonsCount": 32,
+      "lessons": [
+        {"week": "1", "weekDay": "周一", "section": "3-4节", "title": "信息的表示与处理：位级运算与整数算术", "scheduleIds": ["sch-cs110-w1-1"]},
+        {"week": "3", "weekDay": "周三", "section": "1-2节", "title": "程序的机器级表示：x86-64 汇编与寻址", "scheduleIds": ["sch-cs110-w3-1"]},
+        {"week": "6", "weekDay": "周三", "section": "1-2节", "title": "栈帧结构、缓冲区溢出与安全漏洞", "scheduleIds": ["sch-cs110-w6-1"]},
+        {"week": "8", "weekDay": "周一", "section": "3-4节", "title": "存储器层次结构与局部性原理", "scheduleIds": ["sch-cs110-w8-1"]},
+        {"week": "10", "weekDay": "周三", "section": "1-2节", "title": "Cache 缓存设计、命中与冲突分析", "scheduleIds": ["sch-cs110-w10-1"]},
+        {"week": "12", "weekDay": "周一", "section": "3-4节", "title": "异常控制流与信号机制 (ECF)", "scheduleIds": ["sch-cs110-w12-1"]},
+        {"week": "14", "weekDay": "周三", "section": "1-2节", "title": "虚拟内存与动态内存分配器设计", "scheduleIds": ["sch-cs110-w14-1"]},
+        {"week": "16", "weekDay": "周一", "section": "3-4节", "title": "期末复习与全课程知识架构串讲", "scheduleIds": ["sch-cs110-w16-1"]}
+      ]
+    },
+    {
+      "courseId": "elrc-cs130",
+      "courseNo": "CS130",
+      "name": "操作系统I (CS130)",
+      "schoolYear": "2025-2026",
+      "semester": "1",
+      "reviewId": "rev-cs130-2025",
+      "teachers": "哈特曼 / 殷树",
+      "description": "CS130 · Operating Systems Concepts & xv6 OS",
+      "lessonsCount": 32,
+      "lessons": [
+        {"week": "1", "weekDay": "周二", "section": "1-2节", "title": "操作系统体系与系统调用 (xv6 导读)", "scheduleIds": ["sch-cs130-w1-1"]},
+        {"week": "4", "weekDay": "周四", "section": "3-4节", "title": "进程、线程与 CPU 调度算法", "scheduleIds": ["sch-cs130-w4-1"]},
+        {"week": "7", "weekDay": "周二", "section": "1-2节", "title": "并发控制、互斥锁与条件变量", "scheduleIds": ["sch-cs130-w7-1"]},
+        {"week": "10", "weekDay": "周二", "section": "1-2节", "title": "虚拟内存管理与分页机制", "scheduleIds": ["sch-cs130-w10-1"]},
+        {"week": "13", "weekDay": "周四", "section": "3-4节", "title": "文件系统设计与日志恢复机制", "scheduleIds": ["sch-cs130-w13-1"]}
+      ]
+    },
+    {
+      "courseId": "elrc-si140a",
+      "courseNo": "SI140A",
+      "name": "概率论与数理统计 (SI140A)",
+      "schoolYear": "2025-2026",
+      "semester": "1",
+      "reviewId": "rev-si140a-2025",
+      "teachers": "陈博",
+      "description": "SI140A · Probability and Mathematical Statistics",
+      "lessonsCount": 32,
+      "lessons": [
+        {"week": "2", "weekDay": "周二", "section": "3-4节", "title": "条件概率、全概率公式与贝叶斯法则", "scheduleIds": ["sch-si140a-w2-1"]},
+        {"week": "5", "weekDay": "周四", "section": "1-2节", "title": "常见连续随机变量分布与期望方差", "scheduleIds": ["sch-si140a-w5-1"]},
+        {"week": "8", "weekDay": "周二", "section": "3-4节", "title": "多元随机变量与联合分布、协方差", "scheduleIds": ["sch-si140a-w8-1"]},
+        {"week": "11", "weekDay": "周四", "section": "1-2节", "title": "大数定律与中心极限定理", "scheduleIds": ["sch-si140a-w11-1"]},
+        {"week": "14", "weekDay": "周二", "section": "3-4节", "title": "参数估计与假设检验基础", "scheduleIds": ["sch-si140a-w14-1"]}
+      ]
+    },
+    {
+      "courseId": "elrc-sp101",
+      "courseNo": "SP101",
+      "name": "普通物理I (SP101)",
+      "schoolYear": "2025-2026",
+      "semester": "1",
+      "reviewId": "rev-sp101-2025",
+      "teachers": "刘晓 / 柯友启",
+      "description": "SP101 · 大学物理力学与热学基础",
+      "lessonsCount": 48,
+      "lessons": [
+        {"week": "2", "weekDay": "周二", "section": "7-8节", "title": "质点运动学与牛顿定律微积分表达", "scheduleIds": ["sch-sp101-w2-1"]},
+        {"week": "4", "weekDay": "周五", "section": "5-6节", "title": "动量守恒与角动量守恒应用", "scheduleIds": ["sch-sp101-w4-1"]},
+        {"week": "7", "weekDay": "周二", "section": "7-8节", "title": "刚体转动定则与转动惯量计算", "scheduleIds": ["sch-sp101-w7-1"]},
+        {"week": "10", "weekDay": "周五", "section": "5-6节", "title": "热力学第一定律与理想气体状态方程", "scheduleIds": ["sch-sp101-w10-1"]},
+        {"week": "13", "weekDay": "周二", "section": "7-8节", "title": "热力学第二定律与卡诺循环熵增", "scheduleIds": ["sch-sp101-w13-1"]}
+      ]
+    },
+    {
+      "courseId": "elrc-gema1001",
+      "courseNo": "GEMA1001",
+      "name": "数学分析I (高等数学I)",
+      "schoolYear": "2025-2026",
+      "semester": "1",
+      "reviewId": "rev-gema1001-2025",
+      "teachers": "梁汉成 / 肖晓",
+      "description": "GEMA1001 / 数分I · 极限论与单变量微积分",
+      "lessonsCount": 64,
+      "lessons": [
+        {"week": "2", "weekDay": "周一", "section": "1-2节", "title": "数列极限与确界原理实数完备性", "scheduleIds": ["sch-ma-w2-1"]},
+        {"week": "5", "weekDay": "周三", "section": "1-2节", "title": "导数应用与中值定理 (Rolle/Lagrange/Cauchy)", "scheduleIds": ["sch-ma-w5-1"]},
+        {"week": "8", "weekDay": "周五", "section": "3-4节", "title": "泰勒展开式与高阶无穷小估计", "scheduleIds": ["sch-ma-w8-1"]},
+        {"week": "11", "weekDay": "周一", "section": "1-2节", "title": "定积分的定义、性质与微积分基本定理", "scheduleIds": ["sch-ma-w11-1"]},
+        {"week": "14", "weekDay": "周三", "section": "1-2节", "title": "反常积分敛散性判别与期末重点复习", "scheduleIds": ["sch-ma-w14-1"]}
+      ]
+    },
+    {
+      "courseId": "elrc-ee111",
+      "courseNo": "EE111",
+      "name": "电路基础 (EE111)",
+      "schoolYear": "2025-2026",
+      "semester": "1",
+      "reviewId": "rev-ee111-2025",
+      "teachers": "寇煦丰",
+      "description": "EE111 · 电路基础理论与信号分析",
+      "lessonsCount": 32,
+      "lessons": [
+        {"week": "2", "weekDay": "周二", "section": "1-2节", "title": "KCL/KVL 基尔霍夫定律与戴维南定理", "scheduleIds": ["sch-ee111-w2-1"]},
+        {"week": "5", "weekDay": "周四", "section": "3-4节", "title": "运算放大器基础与理想运放电路", "scheduleIds": ["sch-ee111-w5-1"]},
+        {"week": "8", "weekDay": "周二", "section": "1-2节", "title": "一阶动态电路的时域响应 (RC/RL)", "scheduleIds": ["sch-ee111-w8-1"]},
+        {"week": "12", "weekDay": "周四", "section": "3-4节", "title": "正弦稳态电路相量分析法", "scheduleIds": ["sch-ee111-w12-1"]}
+      ]
+    }
+  ]
+}

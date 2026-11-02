@@ -1,98 +1,49 @@
 #!/usr/bin/env python3
 """
-Automated EAMS Plan Completion Fetcher using Playwright with System Chrome.
-1. Pops up a real Chrome window on user's screen.
-2. Directs user to https://eams.shanghaitech.edu.cn/eams/myPlanCompl.action
-3. Waits for user to log in via ShanghaiTech SSO.
-4. Once the plan completion table is loaded, automatically extracts HTML and table data.
-5. Saves to data/my_plan_completion.html and runs analyze_plan.py!
+Automated EAMS Plan Completion Fetcher with Intelligent Fallback Chain:
+1. First: Check if local/env CASTGC session cookie exists. If valid, fetch via lightweight HTTP in < 1s (100% headless).
+2. Second: If no cookie exists, automatically launch native OS terminal (macOS/Windows/Linux) running:
+   `python3 scripts/senior.py login && python3 scripts/senior.py audit`
+   Eliminating the need for the user to manually open a terminal.
 """
 
 import os
 import sys
-import time
 import subprocess
 import argparse
 
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
+
+from eams_session import fetch_plan_lightweight, save_cookie_cache, get_cached_cookie
+import launch_terminal
+
 DATA_DIR = os.path.join(SCRIPTS_DIR, "..", "data")
 OUTPUT_HTML = os.path.join(DATA_DIR, "my_plan_completion.html")
-OUTPUT_JSON = os.path.join(DATA_DIR, "my_plan_completion.json")
 
-def fetch_plan_with_browser(major=None, grade=None, timeout_sec=180):
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        print("[!] Playwright not installed. Run via: uv run --with playwright python3 scripts/login_and_fetch_plan.py")
-        sys.exit(1)
+def fetch_plan_or_launch_terminal(major=None, grade=None, cookie=None):
+    # 1. First Priority: Lightweight HTTP fetch if credentials exist
+    if fetch_plan_lightweight(cookie=cookie, output_path=OUTPUT_HTML):
+        run_analysis(major=major, grade=grade)
+        return True
 
-    url = "https://eams.shanghaitech.edu.cn/eams/myPlanCompl.action"
+    # 2. Second Priority: Automatically spawn native OS terminal window
     print("=" * 70)
-    print("🌐 正在使用系统默认 Chrome 浏览器打开 EAMS 培养计划完成情况页面...")
-    print(f"👉 目标地址: {url}")
-    print("=" * 70)
-    print("💡 请在弹出的浏览器窗口中输入上海科技大学统一身份认证的账号与密码进行登录。")
-    print("   登录成功后，系统将自动捕获您的计划完成情况与真实学籍信息，并自动关闭浏览器。")
+    print("⚠️ 未检测到已保存的 EAMS 统一身份认证凭据 (CASTGC)。")
+    print("🚀 老学长正在为您自动唤起原生终端窗口执行免弹窗登录...")
+    print("👉 登录成功后将自动无缝执行毕业学分缺口诊断 (python3 scripts/senior.py audit)！")
     print("=" * 70)
 
-    with sync_playwright() as p:
-        # Launch real system Chrome window
-        browser = p.chromium.launch(
-            channel="chrome",
-            headless=False,
-            args=["--start-maximized", "--disable-blink-features=AutomationControlled"]
-        )
-        context = browser.new_context(viewport=None)
-        page = context.new_page()
+    launched = launch_terminal.launch_login_and_audit()
+    if launched:
+        print("✅ 系统终端已成功弹出！请在弹出的终端窗口中输入手机号并输入收到的 6 位短信验证码。")
+        return True
+    else:
+        print("❌ 自动唤起系统终端失败，请手动在终端运行: python3 scripts/senior.py login")
+        return False
 
-        try:
-            page.goto(url, wait_until="commit", timeout=30000)
-        except Exception as e:
-            print(f"[*] 导航中: {e}")
-
-        # Wait for user to login and land on myPlanCompl table
-        print(f"⏳ 等待登录中（最长等待 {timeout_sec} 秒）...")
-        start_time = time.time()
-        captured = False
-
-        while time.time() - start_time < timeout_sec:
-            current_url = page.url
-            # Check if we are on myPlanCompl and table exists
-            if "myPlanCompl" in current_url:
-                try:
-                    # Check if table with courses is present
-                    has_table = page.evaluate("""() => {
-                        const tables = document.querySelectorAll('table');
-                        for (let t of tables) {
-                            if (t.innerText.includes('课程代码') || t.innerText.includes('课程名称')) {
-                                return true;
-                            }
-                        }
-                        return false;
-                    }""")
-                    if has_table:
-                        print("\n🎉 检测到已进入培养计划完成情况页面，正在提取数据...")
-                        # Wait 1 sec for any dynamic contents
-                        page.wait_for_timeout(1000)
-                        html_content = page.content()
-                        
-                        # Save HTML
-                        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
-                            f.write(html_content)
-                        print(f"✅ 已成功保存页面到: {OUTPUT_HTML}")
-                        
-                        captured = True
-                        break
-                except Exception:
-                    pass
-            time.sleep(1.5)
-
-        browser.close()
-
-    if not captured:
-        print("\n❌ 等待超时或未进入培养计划完成情况页面。")
-        sys.exit(1)
-
+def run_analysis(major=None, grade=None):
     print("\n" + "=" * 70)
     print("🚀 数据捕获成功！正在调用培养方案智能诊断引擎进行分析...")
     print("=" * 70 + "\n")
@@ -105,10 +56,10 @@ def fetch_plan_with_browser(major=None, grade=None, timeout_sec=180):
     subprocess.run(cmd)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Fetch EAMS myPlanCompl via user login in browser")
+    parser = argparse.ArgumentParser(description="Fetch EAMS myPlanCompl via lightweight HTTP or auto-spawned terminal login")
+    parser.add_argument("--cookie", "-c", default=None, help="EAMS Cookie (CASTGC / JSESSIONID)")
     parser.add_argument("--major", default=None, help="Student's major (optional, auto-detected from EAMS)")
     parser.add_argument("--grade", type=int, default=None, help="Grade year (optional, auto-detected from EAMS)")
-    parser.add_argument("--timeout", type=int, default=180, help="Max wait seconds for login (default: 180)")
     args = parser.parse_args()
 
-    fetch_plan_with_browser(major=args.major, grade=args.grade, timeout_sec=args.timeout)
+    fetch_plan_or_launch_terminal(major=args.major, grade=args.grade, cookie=args.cookie)

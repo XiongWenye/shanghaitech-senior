@@ -10,5 +10,8 @@ Thumbs.db
 # Dynamic caches
 data/cache/
 
-# Privacy: Student personal transcripts
-data/my_plan_completion.html
+# Privacy & Personal Session Files (学长SKILL第一要义：本地严禁存放任何用户个人化数据与Demo假数据)
+data/eams_cookie.txt
+data/my_*
+data/gym_availability.json
+*.ics

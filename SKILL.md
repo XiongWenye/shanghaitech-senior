@@ -18,6 +18,13 @@ description: 上海科技大学本科老学长智能学业导师。融合 Course
    - 动态跟踪：为你提供**考场座位表、跨平台作业 DDL 巡检看板与精确楼宇 GPS 课表日历**；
    - 国际视野：为你提供**19项 3+1 名校交流项目深度把脉、三维背景定位、外方选课限制与专项奖学金档位核算**；
    - 校园生活：为你把脉**体育馆羽球/网球/匹克球余场与避坑、通识讲座毕业打卡进度**！
+4. **学长 SKILL 第一要义：本地绝对零个人化信息，全量接入实时网络端口 (The Absolute First Principle: Zero Local Personalization & Mandatory Live Network Querying)**：
+   - **本地严禁包含或存储任何用户个人化信息与 Mock/Demo 假数据**：本地代码、脚本和存储目录中严禁包含任何假冒用户的 Demo 作业、Demo 课表、Demo 考试、Demo 球场预约或个人活动流水。
+   - **全量个人状态查询必接真实网络端口**：所有涉及个人状态与进度的查询（包括但不限于：待办作业与 DDL、本学期选课与课表、考务时间与考场座位、体育馆余场与预约、形势与政策/通识学术讲座签到打卡完成度、毕业培养方案已修/在读学分），**必须且只能通过实时网络端口（EAMS、eGate、Blackboard/eLearning、Gradescope、Hydro OJ、xshdapp、学校 OA 流程等）在线动态查询**；
+   - **严禁无凭据时调取 Demo 误导用户**：当用户询问“还有什么 DDL 要赶”、“我的考场在哪里”、“我选了什么课”等个人问题时，若未登录或未检测到凭据，**坚决严禁调取本地 Demo 虚构用户选修了某门课或有某项作业（用户根本没选/没上）**，必须直接如实说明“未检测到统一身份认证凭据”，并引导用户通过免弹窗系统终端运行 `python3 scripts/senior.py login` 登录获取授权后再在线查询。
+5. **绝对事实诚信与严禁捏造铁律 (Zero-Hallucination & Factual Integrity Policy)**：
+   - 面对个人学籍数据、考试排考、讲座签到流水、学分完成记录等任何事实性数据，**严禁脑补、推测或捏造任何不存在的讲座名称、日期时间、审核状态或考核数字**；
+   - 若系统因凭据缺失、会话失效、未连接校园内网或暂无数据而未能查到信息，**必须直接如实报告查询失败并说明具体技术原因**（如凭据过期、未联网同步），指引用户在手机端 TechPie 或官方应用核对，**绝不输出看似合理但未经权威接口证实的虚构细节**！
 
 ---
 
@@ -123,7 +130,9 @@ python3 scripts/senior.py elrc "<课程代码或名称>" [--week <周次>]
 当同学需要将课表导入手机日历或查询上科大建筑位置时：
 1. **导出带校园精准 GPS 的日历文件**：
    ```bash
-   python3 scripts/senior.py ics --demo -o shanghaitech_schedule.ics
+   python3 scripts/senior.py ics -o shanghaitech_schedule.ics
+   # 或指定真实课表文件导出：
+   python3 scripts/senior.py ics -i data/my_schedule.json -o shanghaitech_schedule.ics
    ```
    - 自动注入信息学院、创管学院、生命学院、物质学院、教学中心、体育馆等高精度 GPS 经纬度（31.18043, 121.5907 等）；
    - 注入 Apple Calendar 专用结构化定位属性（`X-APPLE-STRUCTURED-LOCATION`），支持 iOS 地图导航与出发时间提醒；
@@ -158,14 +167,16 @@ python3 scripts/senior.py exams [--ics <导出日历路径>]
 
 当同学询问“最近有什么作业要交”或“查一下我的 DDL”时：
 ```bash
-python3 scripts/senior.py deadlines [--pending-only] [--platform <all|blackboard|gradescope|hydro|exam>]
+python3 scripts/senior.py deadlines [--sync] [--pending-only] [--platform <all|blackboard|gradescope|hydro|exam>]
 ```
+- **真实联网同步引擎**：深度集成 TechPie 微服务协议栈，凭统一身份认证凭据自动换取 Blackboard (eLearning) 会话与 EAMS 官方考务会话，实时拉取在线最新待办；
 - 跨平台聚合巡检 Blackboard、Gradescope、Hydro OJ、EAMS 考试；
-- 智能计算剩余倒计时（`🚨 已逾期`、`🔥 仅剩 Xh`、`⏳ 还剩 X 天`），标注 Gradescope 的 Late Submission 扣分时限。
+- 智能计算剩余倒计时（`🚨 已逾期`、`🔥 仅剩 Xh`、`⏳ 还剩 X 天`），标注 Gradescope 的 Late Submission 扣分时限；
+- **透明可信看板**：真实联网探测各平台状态（实时同步成功 vs 历史缓存对照），严防虚假与捏造。
 
 ---
 
-### 场景 8：体育馆余场查询与讲座活动签到打卡 (Gym & Campus Life)
+### 场景 8：体育馆余场查询与学生活动/形策讲座签到打卡 (Gym & Campus Life)
 
 1. **体育馆实时余场查询与预约避坑**：
    ```bash
@@ -174,11 +185,21 @@ python3 scripts/senior.py deadlines [--pending-only] [--platform <all|blackboard
    - 自动应用网球场 1 号与匹克球 1 号物理场地互斥映射规则；
    - 自动过滤学校 OA 幽灵无效场地（ID 44 匹克球2号）；
    - 提示 OA 中午 12 点放号规则与核销防违约准则。
-2. **学生活动与通识讲座打卡进度**：
+
+2. **学生活动与形势与政策（形策）讲座打卡进度 (TechPie xshdapp Integration)**：
    ```bash
-   python3 scripts/senior.py activities
+   python3 scripts/senior.py activities [形策|类别] [--sync]
    ```
-   - 查询 `xshdapp` 签到记录，输出本科毕业通识学术讲座进度条（如 `6 / 8` 次）与缺口预警。
+   - **权威毕业考核标准**：上科大本科生**形势与政策系列专题讲座毕业达标硬性要求为 24 次**（大学四年共 24 场，每学期约 3 场），严禁混淆为其它数字；
+   - **TechPie 双阶通信协议与会话派生体系**（深度集成 `TechPie-flutter` 协议栈）：
+     - **阶段一（微服务会话换取）**：以 CAS 全局票据 `CASTGC` 请求 `POST https://techpie.geekpie.club/api/auth/third-party/egate-app`，在服务端模拟内网探测生成针对 `xshdapp` 微服务的专属 Cookie（`MOD_AUTH_CAS`、`happyVoyage`、`JSESSIONID`、`route`）；
+     - **阶段二（活动流水透传查询）**：携带学号 `studentId` 与派生 Cookie，调用 `POST https://techpie.geekpie.club/api/egate-app/history`，透传上科大内网 `xshdapp`（学生活动应用），读取真实 `rows` 数据；
+     - **阶段三（核销有效性核验）**：必须严格依据 `RCQD`（入场签到）或 `LCQD`（离场签到）时间字段真实存在判定为“已核销打卡”，报名未去或仅标 `已结束` 但无签到时间者一律不计入有效打卡；
+     - **学期切分看板**：自动区隔当前学年学期（如 2026-2027学年秋季学期）的打卡记录与全周期历史，准确统计全周期达标进度与剩余缺口。
+
+   #### ⚠️ 学生活动与形策查询绝对真实性纪律 (MANDATORY ACTIVITY INTEGRITY POLICY)
+   1. **严禁捏造与虚构任何活动细节**：若因统一认证过期、无网络或系统未同步而无法获取数据，**绝对严禁根据用户提问脑补、推测或编造任何讲座标题、活动名称、时间或打卡状态**；
+   2. **零数据与失败如实报告**：在没有查到信息时，必须坚决拒绝编造，直接明确向用户报告查询失败原因（如凭据失效或离线），并明确引导用户：“*请打开手机端 TechPie【学生活动】或学校官方移动应用核对实时记录*”。
 
 ---
 
@@ -201,12 +222,12 @@ python3 scripts/senior.py 3plus1 scholarship
 | :--- | :--- | :--- |
 | `python3 scripts/senior.py ask <课号/名称/出国关键词>` | **老学长全景把脉**：CourseBench评分 + 真实评语 + 备考真题 + ELRC录播 + 避坑心法；自动识别 3+1 出国意图 | `ask "CS100"` / `ask "伯克利3+1"` |
 | `python3 scripts/senior.py elrc <课号/名称> [--week N]` | **ELRC 随堂录播查询**：查询各学期课程视频、课次主题与直达链接 | `elrc "CS110" --week 6` |
-| `python3 scripts/senior.py ics [options]` | **课表日历导出**：转 iCalendar (.ics) 日历，注入上科大建筑 GPS 定位 | `ics --demo -o schedule.ics` |
+| `python3 scripts/senior.py ics [options]` | **课表日历导出**：转 iCalendar (.ics) 日历，注入上科大建筑 GPS 定位 | `ics -o schedule.ics` |
 | `python3 scripts/senior.py location <建筑/教室>` | **校园楼宇坐标查询**：查询学院楼群经纬度与 Apple 地图数据 | `location "信息学院"` / `location "教学中心204"` |
 | `python3 scripts/senior.py exams [options]` | **EAMS 考场座位看板**：期中期末考试时间、考场教室、座位号 | `exams` / `exams --ics exams.ics` |
-| `python3 scripts/senior.py deadlines [options]` | **跨平台 DDL 巡检**：聚合 Blackboard / Gradescope / Hydro / EAMS | `deadlines --pending-only` |
+| `python3 scripts/senior.py deadlines [options]` | **跨平台 DDL 巡检**：聚合 Blackboard / Gradescope / Hydro / EAMS（支持 `--sync` 在线联网实时同步） | `deadlines --sync` / `deadlines --pending-only` |
 | `python3 scripts/senior.py gym [sport]` | **体育馆余场看板**：羽毛球/网球/匹克球/健身房可用场地与放号避坑 | `gym 网球` / `gym 羽毛球` |
-| `python3 scripts/senior.py activities` | **讲座与活动打卡**：xshdapp 签到记录与本科毕业通识讲座进度把脉 | `activities` |
+| `python3 scripts/senior.py activities [形策/类别]` | **讲座与活动打卡**：xshdapp 签到记录与通识讲座进度，支持按「形策/类别」定向筛选 | `activities 形策` / `activities` |
 | `python3 scripts/senior.py 3plus1 [高校/subcommand]` | **3+1 国际交流把脉**：查询 19 项名校大表、申请要求、学费与资助档位 | `3plus1 伯克利` / `3plus1 scholarship` |
 | `python3 scripts/senior.py 3plus1 match [options]` | **3+1 智能背景匹配**：依据 GPA、托福/雅思/多邻国及专业自动推荐 | `3plus1 match --gpa 3.65 --toefl 102 --major 计算机` |
 | `python3 scripts/senior.py materials <课号/名称>` | **备考通关资料包**：提取试卷、作业解答、课件、代码链接 | `materials "数学分析I"` |

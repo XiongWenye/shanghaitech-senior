@@ -30,6 +30,8 @@ import query_materials
 import recommend_plan
 import analyze_plan
 import query_exchange
+import query_elrc
+import campus_locations
 
 
 def get_course_code_and_info(query, force_refresh=False):
@@ -172,6 +174,13 @@ def cmd_ask(query, force_refresh=False):
         else:
             print(report_md)
 
+    # 2.5 官方课堂录播与随堂视频 (ELRC)
+    elrc_matches = query_elrc.search_elrc_courses(code)
+    if elrc_matches:
+        print("## 🎥 维度二·点五：ELRC 官方课堂录播与随堂视频")
+        print(query_elrc.format_elrc_report(elrc_matches[0]))
+        print("")
+
     # 3. 老学长避坑锦囊
     print("## 💡 维度三：老学长避坑锦囊 (Senior's Takeaway)")
     # Generate tailored advice based on scores
@@ -251,9 +260,13 @@ def main():
 
     # audit (EAMS Degree Plan Audit)
     audit_p = subparsers.add_parser("audit", help="EAMS 培养方案计划完成情况毕业智能诊断")
-    audit_p.add_argument("--file", default=str(DATA_DIR / "my_plan_completion.html"), help="EAMS 导出的 HTML 计划文件")
+    audit_p.add_argument("--file", default=None, help="EAMS 导出的 HTML 或 JSON 计划文件")
     audit_p.add_argument("--major", help="强制指定对比专业")
     audit_p.add_argument("--grade", help="强制指定对比年级")
+    audit_p.add_argument("--sync", action="store_true", help="强制联网重新同步最新学期修课记录")
+
+    # login (Headless EAMS/eGate Authentication)
+    login_p = subparsers.add_parser("login", help="纯终端免弹窗登录统一身份认证 (支持短信验证码 / 账号密码)")
 
     # search
     search_p = subparsers.add_parser("search", help="模糊全局搜索课程 (同时检索 CourseBench 与资料库)")
@@ -269,6 +282,51 @@ def main():
     ex_p.add_argument("--toefl", type=int, help="托福总分 (如 102)")
     ex_p.add_argument("--ielts", type=float, help="雅思总分 (如 7.0)")
     ex_p.add_argument("--duolingo", type=int, help="多邻国总分 (如 130)")
+
+    # ics (Course table / Exam to iCalendar export)
+    ics_p = subparsers.add_parser("ics", help="课表转 iCalendar (.ics) 日历导出 (含上科大精准地理位置)")
+    ics_p.add_argument("--input", "-i", help="课表 JSON 文件 (默认读取已同步课表)")
+    ics_p.add_argument("--output", "-o", default="shanghaitech_schedule.ics", help="输出路径 (默认 shanghaitech_schedule.ics)")
+    ics_p.add_argument("--term-begin", "-t", default="2026-09-07", help="开学第一周周一 (YYYY-MM-DD)")
+    ics_p.add_argument("--name", "-n", default="上海科技大学课表", help="日历名称")
+
+    # location (Campus Building Geo-coordinates)
+    loc_p = subparsers.add_parser("location", help="查询校园楼宇高精度 GPS 经纬度与地图标注")
+    loc_p.add_argument("query", help="建筑/教室关键词 (如 信息学院, 教学中心204, 体育馆)")
+
+    # elrc (Lecture Video Recordings)
+    elrc_p = subparsers.add_parser("elrc", help="查询 ELRC 课程随堂录播与课次播放链接")
+    elrc_p.add_argument("course", help="课程代码或名称 (如 CS100, CS110)")
+    elrc_p.add_argument("--week", "-w", help="指定周次 (如 5)")
+    elrc_p.add_argument("--json", action="store_true", help="输出 JSON")
+
+    # exams (EAMS Exam Table & Seat)
+    exams_p = subparsers.add_parser("exams", help="查询 EAMS 正式考试日程与考场座位看板")
+    exams_p.add_argument("--cookie", "-c", help="EAMS/eGate 会话 Cookie")
+    exams_p.add_argument("--semester", "-s", default="", help="学期 ID")
+    exams_p.add_argument("--ics", help="导出考试日程至指定 .ics 文件")
+    exams_p.add_argument("--json", action="store_true", help="输出 JSON")
+
+    # deadlines (Multi-source Assignment Tracker)
+    ddl_p = subparsers.add_parser("deadlines", aliases=["ddl"], help="跨平台作业/考试 DDL 巡检看板 (Blackboard/Gradescope/Hydro/EAMS)")
+    ddl_p.add_argument("--platform", "-p", choices=["all", "blackboard", "gradescope", "hydro", "exam"], default="all", help="筛选平台")
+    ddl_p.add_argument("--pending-only", action="store_true", help="仅显示未完成作业")
+    ddl_p.add_argument("--sync", action="store_true", help="强制在线联网同步最新 DDL")
+    ddl_p.add_argument("--json", action="store_true", help="输出 JSON")
+
+    # gym (OA Gym & Court Availability)
+    gym_p = subparsers.add_parser("gym", help="查询体育馆羽毛球/网球/匹克球/健身房余场看板与预约避坑")
+    gym_p.add_argument("sport", nargs="?", default="badminton", help="运动项目 (羽毛球, 网球, 匹克球, 健身房)")
+    gym_p.add_argument("--date", "-d", help="查询日期 (YYYY-MM-DD)")
+    gym_p.add_argument("--sync", action="store_true", help="强制在线联网同步实时场地")
+    gym_p.add_argument("--json", action="store_true", help="输出 JSON")
+
+    # activities (xshdapp Check-in & Graduation Lecture Progress)
+    act_p = subparsers.add_parser("activities", aliases=["events"], help="查询学生活动签到与通识讲座毕业打卡进度")
+    act_p.add_argument("category", nargs="?", default=None, help="活动类别筛选 (如 '形策', '形势与政策')")
+    act_p.add_argument("--type", "-t", dest="filter_type", help="活动类别筛选")
+    act_p.add_argument("--sync", action="store_true", help="强制从 TechPie 联网同步最新打卡记录")
+    act_p.add_argument("--json", action="store_true", help="输出 JSON")
 
     args = parser.parse_args()
 
@@ -298,12 +356,42 @@ def main():
             sys.argv.extend(["--semester", str(args.semester)])
         recommend_plan.main()
     elif args.command == "audit":
-        sys.argv = ["analyze_plan.py", "--file", args.file]
+        plan_json = DATA_DIR / "my_plan_completion.json"
+        plan_html = DATA_DIR / "my_plan_completion.html"
+        user_file = Path(args.file) if args.file else None
+
+        has_file = (user_file and user_file.exists()) or plan_json.exists() or plan_html.exists()
+
+        if getattr(args, "sync", False) or not has_file:
+            cookie_txt = DATA_DIR / "eams_cookie.txt"
+            has_credentials = cookie_txt.exists() or os.environ.get("CASTGC") or os.environ.get("EAMS_COOKIE")
+            if has_credentials:
+                print("⚡ 检测到已保存的统一身份认证凭据，正在同步最新培养方案修课档案...")
+                import sync_my_plan
+                sync_my_plan.sync_and_audit()
+            else:
+                print("⚠️ 未检测到已保存的 EAMS 统一身份认证凭据 (CASTGC)。")
+                print("🚀 正在为您自动唤起原生终端窗口执行免弹窗登录...")
+                print("👉 登录成功后将自动无缝执行毕业学分缺口诊断 (python3 scripts/senior.py audit)！")
+                import launch_terminal
+                launch_terminal.launch_login_and_audit()
+                return
+
+        sys.argv = ["analyze_plan.py"]
+        if user_file and user_file.exists():
+            sys.argv.extend(["--file", str(user_file)])
+        elif plan_json.exists():
+            sys.argv.extend(["--file", str(plan_json)])
+        elif plan_html.exists():
+            sys.argv.extend(["--file", str(plan_html)])
         if args.major:
             sys.argv.extend(["--major", args.major])
         if args.grade:
             sys.argv.extend(["--grade", args.grade])
         analyze_plan.main()
+    elif args.command == "login":
+        import eams_auth
+        eams_auth.interactive_login()
     elif args.command == "search":
         sys.argv = ["query_materials.py", "search", args.keyword]
         query_materials.main()
@@ -333,6 +421,74 @@ def main():
             query_exchange.cmd_match(programs, gpa=args.gpa, toefl=args.toefl, ielts=args.ielts, duolingo=args.duolingo, major=args.major)
         else:
             query_exchange.cmd_info(q, programs)
+    elif args.command == "ics":
+        import export_schedule_ics
+        sys.argv = ["export_schedule_ics.py", "-o", args.output, "-t", args.term_begin, "-n", args.name]
+        if args.input:
+            sys.argv.extend(["-i", args.input])
+        elif (DATA_DIR / "my_schedule.json").exists():
+            sys.argv.extend(["-i", str(DATA_DIR / "my_schedule.json")])
+        export_schedule_ics.main()
+    elif args.command == "location":
+        loc = campus_locations.find_location(args.query)
+        if loc:
+            print(f"📍 校园建筑匹配成功：【{loc.title}】")
+            print(f"- **关键词/简写**：`{loc.keyword}` ({', '.join(loc.alias)})")
+            print(f"- **高精度 GPS 坐标**：`{loc.latitude}, {loc.longitude}`")
+            print(f"- **标准校址**：{campus_locations.CAMPUS_ADDRESS}")
+            print(f"- **Apple Geo 属性**：`{campus_locations.format_apple_structured_location(loc)}`")
+        else:
+            print(f"❌ 未能匹配到建筑「{args.query}」，请尝试输入学院名 (如 信息学院) 或教室编号 (如 1A-200, 教学中心204)。")
+    elif args.command == "elrc":
+        sys.argv = ["query_elrc.py", args.course]
+        if args.week:
+            sys.argv.extend(["-w", str(args.week)])
+        if args.json:
+            sys.argv.append("--json")
+        query_elrc.main()
+    elif args.command == "exams":
+        import query_exams
+        sys.argv = ["query_exams.py"]
+        if args.cookie:
+            sys.argv.extend(["-c", args.cookie])
+        if args.semester:
+            sys.argv.extend(["-s", args.semester])
+        if args.ics:
+            sys.argv.extend(["--ics", args.ics])
+        if args.json:
+            sys.argv.append("--json")
+        query_exams.main()
+    elif args.command in ("deadlines", "ddl"):
+        import query_deadlines
+        sys.argv = ["query_deadlines.py", "-p", args.platform]
+        if args.pending_only:
+            sys.argv.append("--pending-only")
+        if getattr(args, "sync", False):
+            sys.argv.append("--sync")
+        if args.json:
+            sys.argv.append("--json")
+        query_deadlines.main()
+    elif args.command == "gym":
+        import query_gym
+        sys.argv = ["query_gym.py", args.sport]
+        if args.date:
+            sys.argv.extend(["-d", args.date])
+        if getattr(args, "sync", False):
+            sys.argv.append("--sync")
+        if args.json:
+            sys.argv.append("--json")
+        query_gym.main()
+    elif args.command in ("activities", "events"):
+        import query_activities
+        sys.argv = ["query_activities.py"]
+        filter_val = args.filter_type or args.category
+        if filter_val:
+            sys.argv.extend(["-t", filter_val])
+        if getattr(args, "sync", False):
+            sys.argv.append("--sync")
+        if args.json:
+            sys.argv.append("--json")
+        query_activities.main()
 
 
 if __name__ == "__main__":

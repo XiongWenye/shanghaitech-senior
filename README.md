@@ -32,6 +32,8 @@
 - 支持按学期（大一秋/春/夏至大四）一键推荐官方建议修课计划，并自动标注每门课的 CourseBench 口碑评分。
 
 ### 4. 🎓 EAMS 计划完成情况智能预审 (Degree Audit)
+- 零弹窗轻量优先：支持直接读取会话 Cookie 秒级拉取培养计划完成情况，兼备系统 Chrome 扫码与密码登录回退。
+- 严格遵循**“完成学分已内含在读课程”**的防重复叠加法则，精准切分“纯已通过”、“在读”与“硬性真实缺口”。
 
 ### 5. 🌍 3+1 本科国际交流与专项奖学金把脉 (Study Abroad & Scholarship Engine)
 - **19 项官方合作名校与项目全覆盖**：哈佛大学（VUS）、加州大学伯克利分校（COE、SCET、DATA、BICCEP、BBSA、BPIE、BHGAP、MATH、ID 9大方向）、哥伦比亚大学（SEAS UVSP）、宾夕法尼亚大学（LPS IGSP）、芝加哥大学、密歇根大学（LSA）、威斯康星麦迪逊（VISP）、UIUC、荷兰莱顿大学医学院（LUMC）、法国格勒诺布尔综合理工（Grenoble INP）、德雷塞尔大学等。
@@ -39,6 +41,15 @@
 - **语言免除（Waiver）机制**：支持托福、雅思、多邻国、CET-6六级（伯克利BBSA接受520+）；Berkeley可Waive
 - **专项奖学金自动核算**：全面对接最新《上海科技大学本科生国际交流专项奖学金评定管理办法》
 - **🧑‍🎓 开放亲历经验插槽**：预留学生个人真实经验库（`data/exchange/experiences/`），支持后续持续载入海外选课、科研套磁进组、海外导师推荐信与国内学分转换实操。
+
+### 6. 📱 TechPie 深度集成校园服务 (TechPie Protocol Integrations)
+- **🛡️ 学长 SKILL 第一要义：本地绝对零个人化信息，全量接入实时网络端口**：本地严禁存放或展示虚假 Demo 作业、课表、考场或活动签到数据；所有个人学业与生活状态查询均通过网络端口实时动态拉取。
+- **🎥 ELRC 官方课堂录播直达**：打通 `elrc.shanghaitech.edu.cn` 录播系统，一键查询全校各课程在架录播、各周次/节次重点讲授内容与直达播放链接。
+- **🗺️ 校园楼宇地理坐标与课表 ICS 导出**：收录信息学院、创管学院、生命学院、物质学院、教学中心、体育馆等建筑高精度 GPS 经纬度，一键生成标准 iCalendar (.ics) 日历（支持 iOS 结构化地图与出发提醒）。
+- **📝 EAMS 考场与座位号看板**：一键查看期中与期末正式考试日程、考场教室及精确座位号，并支持直接导出为考试日历。
+- **⏱️ 多源作业 Deadline 巡检看板**：跨平台聚合巡检 Blackboard、Gradescope、Hydro OJ 与 EAMS 考试日程，智能预警逾期与今日截止任务。
+- **🏸 体育馆余场实时看板与避坑指南**：提供羽毛球、网球、匹克球与健身房空闲场地查询，自动过滤学校 ID 44 幽灵场地并处理物理共用场地互斥。
+- **🎟️ xshdapp 校园活动打卡与讲座把脉**：自动核算本科毕业要求的通识学术讲座打卡进度与缺口预警。
 
 ---
 
@@ -113,6 +124,28 @@ python3 scripts/senior.py 3plus1 info 哥大              # 查询哥伦比亚�
 python3 scripts/senior.py 3plus1 match --gpa 3.65 --toefl 102 --major 计算机 # 智能三维背景定位选校
 python3 scripts/senior.py 3plus1 scholarship           # 查看一类至五类专项奖学金标准与评定细则
 python3 scripts/senior.py 3plus1 deadlines             # 查看全校 3+1 校内外申请截止时间轴
+
+# 8. ELRC 官方随堂录播查询 (随堂课次、录播直达)
+python3 scripts/senior.py elrc "CS110" --week 6        # 查看 CS110 第 6 周录播与播放链接
+python3 scripts/senior.py elrc "CS100"                 # 查看 CS100 全部在架随堂录播
+
+# 9. 课表日历导出与校园楼宇 GPS 经纬度查询
+python3 scripts/senior.py ics -o my_cal.ics             # 导出已同步课表的 .ics 日历文件 (含精准 GPS)
+python3 scripts/senior.py location "信息学院"          # 查询信息学院精确坐标与 Apple 地图数据
+python3 scripts/senior.py location "教学中心204"       # 查询公共教学中心建筑定位
+
+# 10. EAMS 考场与座位号看板
+python3 scripts/senior.py exams                        # 查询本学期期中期末考试时间、考场与座位号
+python3 scripts/senior.py exams --ics exams.ics        # 将考试日程一键导出为日历
+
+# 11. 跨平台作业/考试 Deadline 巡检
+python3 scripts/senior.py deadlines                    # 聚合巡检 Blackboard / Gradescope / Hydro / EAMS
+python3 scripts/senior.py deadlines --pending-only     # 仅展示尚未完成的紧急 DDL
+
+# 12. 体育馆余场实时看板与活动讲座打卡
+python3 scripts/senior.py gym 网球                     # 查询室外网球场空闲时段与预约避坑
+python3 scripts/senior.py gym 羽毛球                   # 查询室内羽毛球场余场
+python3 scripts/senior.py activities                   # 查询通识学术讲座毕业打卡进度 (如 6/8 次)
 ```
 
 ---
@@ -136,6 +169,7 @@ python3 scripts/senior.py 3plus1 deadlines             # 查看全校 3+1 校内
 - 🔴 **[profetia / shanghaitech](https://github.com/profetia/shanghaitech)**：并行计算、操作系统、数据可视化、生信开发等全套工程源码与文档。
 - 🔷 **[GKxxUCAS / ShanghaiTech-CS100-Slides](https://github.com/GKxxUCAS/ShanghaiTech-CS100-Slides)**：CS100 计算机编程全套 29 讲高清课件、图解与核心知识点速查。
 - 🟤 **[RulerFuhai / Shanghaitech-CHEM1100](https://github.com/RulerFuhai/Shanghaitech-CHEM1100)**：CHEM1100 2024-2025 秋普化实验 13 个实验完整高分实验报告范本、预习思考题与报告纸模板。
+- 🥧 **[TechPie / GeekPie](https://github.com/HeZeBang/TechPie-flutter)**：上科大成熟校园服务客户端。本项目深度融合了其 ELRC 课程录播解析、校园楼宇高精度 GPS 坐标映射、SessionTree 认证状态机、作业/考试聚合与体育馆预约避坑机制。
 - 上海科技大学 CourseBench 平台全体贡献真实评课的同学们
 
 ---
