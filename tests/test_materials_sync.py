@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import materials_sync as sync
 import query_materials as query
 import build_index
+import senior
 
 
 def catalog_item(folder, names, **identity):
@@ -171,6 +172,52 @@ class MaterialsSyncTests(unittest.TestCase):
             self.assertEqual(index["courses"]["EE111"]["resources"]["xiongwenye"]["total_files"], 3)
             self.assertEqual(index["courses"]["EE111L"]["resources"]["xiongwenye"]["total_files"], 1)
             self.assertIn("2025Spring", query.format_markdown_report(index["courses"]["EE111"]))
+
+    def test_coursebench_workload_and_difficulty_polarity(self):
+        f = io.StringIO()
+        with redirect_stdout(f):
+            senior.cmd_ask("CS110")
+        output = f.getvalue()
+        self.assertIn("课业负荷巨大", output)
+        self.assertNotIn("课业负担温和", output)
+        self.assertIn("考试硬核度高", output)
+
+        f2 = io.StringIO()
+        with redirect_stdout(f2):
+            senior.cmd_ask("GESS1028")
+        output2 = f2.getvalue()
+        self.assertIn("课业负担温和", output2)
+        self.assertNotIn("课业负荷巨大", output2)
+
+    def test_curriculums_ocr_names_and_depts_cleaned(self):
+        import glob
+        cur_dir = Path(__file__).resolve().parents[1] / "data" / "curriculums"
+        files = sorted(glob.glob(str(cur_dir / "2026_*.json")))
+        self.assertEqual(len(files), 12)
+
+        for fpath in files:
+            with open(fpath, encoding="utf-8") as fp:
+                text = fp.read()
+            for bad in ["学阮", "口附", "118Z", "43科学", "2进程", "基础英语1-写作", "上道予院"]:
+                self.assertNotIn(bad, text, f"Found corrupted OCR pattern {bad} in {fpath}")
+
+        # Check CS172 in CS curriculum
+        cs_file = cur_dir / "2026_CS_SIST.json"
+        with open(cs_file, encoding="utf-8") as fp:
+            cs_data = json.load(fp)
+        cs172 = next(c for c in cs_data["all_courses"] if c["code"] == "CS172")
+        self.assertEqual(cs172["name"], "计算机视觉I")
+        self.assertEqual(cs172["dept"], "信息科学与技术学院")
+
+        # Test roadmap CLI output
+        import recommend_plan
+        from argparse import Namespace
+        f = io.StringIO()
+        with redirect_stdout(f):
+            recommend_plan.cmd_roadmap(Namespace(major="计算机", grade="2026", semester=8))
+        out = f.getvalue()
+        self.assertIn("计算机视觉I", out)
+        self.assertNotIn("口附1|118Z", out)
 
 
 if __name__ == "__main__":

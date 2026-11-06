@@ -40,7 +40,7 @@
           "semesters": [
             3
           ],
-          "dept": "思想政治需按规定理论课教参加形势研部",
+          "dept": "思想政治理论课教研部",
           "notes": "与政策课"
         },
         {
@@ -58,7 +58,7 @@
           "name": "习近平新时代中国特色社会主义思想概论",
           "credit": 3.0,
           "semesters": [],
-          "dept": "思想政治论课（思理论课教研部政部开设） +1学分",
+          "dept": "思想政治理论课教研部",
           "notes": ""
         },
         {
@@ -66,7 +66,7 @@
           "name": "大学生心理健康",
           "credit": 2.0,
           "semesters": [],
-          "dept": "课，最后合成为该课程学分",
+          "dept": "上道书院",
           "notes": ""
         },
         {
@@ -74,7 +74,7 @@
           "name": "国家安全教育",
           "credit": 1.0,
           "semesters": [],
-          "dept": "思想政治理论课教",
+          "dept": "思想政治理论课教研部",
           "notes": ""
         },
         {
@@ -105,7 +105,7 @@
           "code": "GEHA1003",
           "name": "世界文明通论",
           "credit": 2.0,
-          "dept": "人文科学哲导/世通研究院/科通，三选一"
+          "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1004",
@@ -115,7 +115,7 @@
         },
         {
           "code": "GEHA1165",
-          "name": "读30基础英语I-人文阅",
+          "name": "基础英语I-人文阅读",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
@@ -148,7 +148,7 @@
           "semesters": [
             4
           ],
-          "dept": "思想政治论课（思理论课教政部开设研部1）+1学分",
+          "dept": "思想政治理论课教研部",
           "notes": ""
         },
         {
@@ -190,13 +190,13 @@
       "elective_pool": [
         {
           "code": "GEHA1101",
-          "name": "丝绸之路与东西文化",
+          "name": "丝绸之路与东西文化交流",
           "credit": 2.0,
-          "dept": "思想政治"
+          "dept": "思想政治理论课教研部"
         },
         {
           "code": "GESS1026",
-          "name": "中国经济发展和改革2进程",
+          "name": "中国经济发展和改革进程",
           "credit": 0.0,
           "dept": "思想政治理论课教研部"
         },
@@ -208,7 +208,7 @@
         },
         {
           "code": "MT1014",
-          "name": "人类命运共同体历史基础与当代实践",
+          "name": "人类命运共同体的历史基础与当代实践",
           "credit": 2.0,
           "dept": "思想政治理论课教研部"
         },
@@ -240,7 +240,7 @@
           "code": "MT1019",
           "name": "新时代中国科技自立自强战略",
           "credit": 1.0,
-          "dept": "理论课教思想政治研部"
+          "dept": "思想政治理论课教研部"
         },
         {
           "code": "MT1029",
@@ -258,7 +258,7 @@
           "code": "MT1032",
           "name": "中华优秀传统文化中的心性理论与实践",
           "credit": 2.0,
-          "dept": "理论课教思想政治研部"
+          "dept": "思想政治理论课教研部"
         },
         {
           "code": "MT1033",
@@ -268,7 +268,7 @@
         },
         {
           "code": "MT1034",
-          "name": "马克思同时代德国经典著作导读唯物主义与共产主义",
+          "name": "马克思同时代德国唯物主义与共产主义经典著作导读",
           "credit": 2.0,
           "dept": "思想政治理论课教研部"
         }
@@ -280,7 +280,7 @@
       "compulsory_courses": [
         {
           "code": "CLPE1001",
-          "name": "游泳运动与健康43科学健身与田径运",
+          "name": "游泳运动与健康",
           "credit": 1.0,
           "semesters": [],
           "dept": "上道书院",
@@ -290,25 +290,25 @@
       "elective_pool": [
         {
           "code": "GEHA1132",
-          "name": "基础英语I-人文阅读",
+          "name": "基础英语II-人文阅读",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1150",
-          "name": "基础英语工-写作",
+          "name": "基础英语II-写作",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1303",
-          "name": "年到1920年间的美国史",
+          "name": "1770年到1920年间的美国史",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1304",
-          "name": "说的兴起35数字人文：英国小",
+          "name": "数字人文：英国小说的兴起",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
@@ -320,7 +320,7 @@
         },
         {
           "code": "GEHA1306",
-          "name": "启蒙时代：现代世界昀诞生",
+          "name": "启蒙时代：现代世界的诞生",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
@@ -364,7 +364,7 @@
         },
         {
           "code": "CLPE1048",
-          "name": "健康体适能学分小计",
+          "name": "健康体适能",
           "credit": 1.0,
           "semesters": [
             10
@@ -376,7 +376,7 @@
       "elective_pool": [
         {
           "code": "GEPE1007",
-          "name": "击剑与防卫145健美操I",
+          "name": "击剑与防卫 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
@@ -384,29 +384,29 @@
           "code": "GEPE1009",
           "name": "健美操I",
           "credit": 1.0,
-          "dept": "上道予院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1011",
-          "name": "籃球I47乒乓球I",
+          "name": "篮球 I",
           "credit": 0.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1015",
-          "name": "乒乓球I48拳击与塑形I",
+          "name": "乒乓球 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1017",
-          "name": "拳击与塑形I49跆拳道工",
+          "name": "拳击与塑形 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1019",
-          "name": "跆拳道工",
+          "name": "跆拳道 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
@@ -418,25 +418,25 @@
         },
         {
           "code": "GEPE1025",
-          "name": "游泳I",
+          "name": "游泳 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1028",
-          "name": "羽毛球I",
+          "name": "羽毛球 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1030",
-          "name": "足球I",
+          "name": "足球 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1032",
-          "name": "武术I",
+          "name": "武术 I",
           "credit": 1.0,
           "dept": "上道书院"
         },
@@ -448,97 +448,97 @@
         },
         {
           "code": "GEPE1046",
-          "name": "匹克球I57赛艇I",
+          "name": "匹克球 I",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1047",
-          "name": "赛艇I",
+          "name": "赛艇 I",
           "credit": 0.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1008",
-          "name": "击剑与防卫I59健美操I",
+          "name": "击剑与防卫 II",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1010",
-          "name": "健美操I60篮球II",
+          "name": "健美操II",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1012",
-          "name": "篮球II61乒乓球I",
+          "name": "篮球 II",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1016",
-          "name": "乒乓球I62拳击与塑形I",
+          "name": "乒乓球 II",
           "credit": 0.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1018",
-          "name": "拳击与塑形I63跆拳道I",
+          "name": "拳击与塑形 II",
           "credit": 0.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1020",
-          "name": "跆拳道I",
+          "name": "跆拳道 II",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1024",
-          "name": "网球I",
+          "name": "网球II",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1026",
-          "name": "游泳I",
+          "name": "游泳 II",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1029",
-          "name": "羽毛球II",
+          "name": "羽毛球 II",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1031",
-          "name": "足球I",
+          "name": "足球 II",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1033",
-          "name": "武术I",
+          "name": "武术 II",
           "credit": 0.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1043",
-          "name": "基础瑜伽I",
+          "name": "基础瑜伽II",
           "credit": 1.0,
           "dept": "上道书院"
         },
         {
           "code": "GEPE1048",
-          "name": "匹克球II71赛艇I",
+          "name": "匹克球 II",
           "credit": 0.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "GEPE1049",
-          "name": "赛艇I应修学分",
+          "name": "赛艇 II",
           "credit": 1.0,
           "dept": "上道书院"
         },
@@ -592,37 +592,37 @@
         },
         {
           "code": "CLPE1057",
-          "name": "羽毛球运动81 足球运动",
+          "name": "羽毛球运动",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "CLPE1058",
-          "name": "足球运动82 武术运动",
+          "name": "足球运动",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "CLPE1059",
-          "name": "武术运动83瑜伽运动",
+          "name": "武术运动",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "CLPE1060",
-          "name": "瑜伽运动84 匹克球运动",
+          "name": "瑜伽运动",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "CLPE1061",
-          "name": "匹克球运动85 赛艇运动",
+          "name": "匹克球运动",
           "credit": 1.0,
-          "dept": "上道书院上道书院"
+          "dept": "上道书院"
         },
         {
           "code": "CLPE1062",
-          "name": "赛艇运动应修学分",
+          "name": "赛艇运动",
           "credit": 2.0,
           "dept": "上道书院"
         },
@@ -665,31 +665,31 @@
         },
         {
           "code": "GEHA1151",
-          "name": "武侠小说与未元历史",
+          "name": "武侠小说与宋元历史",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1152",
-          "name": "唐禾文学精华",
+          "name": "唐宋文学精华",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1153",
-          "name": "港合文学与电影",
+          "name": "港台文学与电影",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1154",
-          "name": "文学中“空间”",
+          "name": "文学中的“空间”",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1155",
-          "name": "电影96 阅读城市：小说与",
+          "name": "阅读城市：小说与电影",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
@@ -701,7 +701,7 @@
         },
         {
           "code": "GEHA1157",
-          "name": "性别视角下文学与电影",
+          "name": "性别视角下的文学与电影",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
@@ -785,7 +785,7 @@
         },
         {
           "code": "GEHA1271",
-          "name": "“家”故事：从传统到现代",
+          "name": "“家”的故事：从传统到现代",
           "credit": 3.0,
           "dept": "人文科学研究院"
         },
@@ -815,7 +815,7 @@
         },
         {
           "code": "GEHA1076",
-          "name": "《庄子》世界",
+          "name": "《庄子》的世界",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
@@ -846,7 +846,7 @@
         },
         {
           "code": "GEHA1199",
-          "name": "《尼各马可伦理学》 导读",
+          "name": "《尼各马可伦理学》导读",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
@@ -870,13 +870,13 @@
         },
         {
           "code": "GEHA1230",
-          "name": "《传习录》解读-一现代视野下王",
+          "name": "《传习录》解读——现代视野下的王阳明思想",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
         {
           "code": "GEHA1262",
-          "name": "《想象共同体》导读",
+          "name": "《想象的共同体》导读",
           "credit": 2.0,
           "dept": "人文科学研究院"
         },
@@ -938,7 +938,7 @@
           "code": "ARTS1307",
           "name": "游戏媒介批评",
           "credit": 2.0,
-          "dept": "创意与艺木学院"
+          "dept": "创意与艺术学院"
         },
         {
           "code": "ARTS1308",
@@ -966,7 +966,7 @@
         },
         {
           "code": "ARTS1407",
-          "name": "计141用户体验与创新设",
+          "name": "用户体验与创新设计",
           "credit": 2.0,
           "dept": "创意与艺术学院"
         },
@@ -993,13 +993,13 @@
           "code": "ARTS1426",
           "name": "混合现实设计",
           "credit": 3.0,
-          "dept": "创意与艺木学院"
+          "dept": "创意与艺术学院"
         },
         {
           "code": "ARTS1427",
           "name": "设计项目实践",
           "credit": 2.0,
-          "dept": "创意与艺木学院"
+          "dept": "创意与艺术学院"
         },
         {
           "code": "ARTS1429",
@@ -1021,7 +1021,7 @@
         },
         {
           "code": "ARTS1434",
-          "name": "经典艺术鉴赏-从文艺复兴到现代",
+          "name": "经典艺术鉴赏——从文艺复兴到现代",
           "credit": 2.0,
           "dept": "创意与艺术学院"
         },
@@ -1057,13 +1057,13 @@
         },
         {
           "code": "ARTS1444",
-          "name": "科幻漫画与动画鉴賞",
+          "name": "科幻漫画与动画鉴赏",
           "credit": 2.0,
           "dept": "创意与艺术学院"
         },
         {
           "code": "ARTS1452",
-          "name": "物性的叙事：当代首饰痕迹与秩序",
+          "name": "物性的叙事：当代首饰的痕迹与秩序",
           "credit": 2.0,
           "dept": "创意与艺术学院"
         },
@@ -1071,13 +1071,13 @@
           "code": "ARTS1453",
           "name": "跨物种交互设计",
           "credit": 3.0,
-          "dept": "创意与艺木学院"
+          "dept": "创意与艺术学院"
         },
         {
           "code": "ARTS1507",
           "name": "油画与综合材料",
           "credit": 2.0,
-          "dept": "创意与艺木学院"
+          "dept": "创意与艺术学院"
         },
         {
           "code": "ARTS1509",
@@ -1189,7 +1189,7 @@
         },
         {
           "code": "ENTR1006",
-          "name": "新177商业决策和技术创",
+          "name": "商业决策和技术创新",
           "credit": 2.0,
           "dept": "创业与管理学院"
         },
@@ -1225,7 +1225,7 @@
         },
         {
           "code": "SI140A",
-          "name": "面向信息科学概率论与数理统计",
+          "name": "面向信息科学的概率论与数理统计",
           "credit": 4.0,
           "semesters": [],
           "dept": "信息科学与技术学院",
@@ -1253,7 +1253,7 @@
         },
         {
           "code": "ENTR2004",
-          "name": "创新创业工具及人工智能运用",
+          "name": "创新创业工具及人工智能的运用",
           "credit": 1.0,
           "dept": "创业与管理学院"
         },
@@ -1316,7 +1316,7 @@
           "name": "算法与数据结构",
           "credit": 4.0,
           "semesters": [],
-          "dept": "信息科学与技术学阮",
+          "dept": "信息科学与技术学院",
           "notes": ""
         },
         {
@@ -1331,7 +1331,7 @@
         },
         {
           "code": "CS110P",
-          "name": "计算机体系结构【课程设计",
+          "name": "计算机体系结构I课程设计",
           "credit": 2.0,
           "semesters": [],
           "dept": "信息科学与技术学院",
@@ -1369,7 +1369,7 @@
         },
         {
           "code": "GEMA1010",
-          "name": "数学分析I",
+          "name": "数学分析II",
           "credit": 5.0,
           "dept": "数学科学研究所"
         },
@@ -1377,7 +1377,7 @@
           "code": "BIO1002",
           "name": "现代生命科学导论B",
           "credit": 3.0,
-          "dept": "生命科学与技术学阮"
+          "dept": "生命科学与技术学院"
         },
         {
           "code": "BIO1011",
@@ -1395,13 +1395,13 @@
           "code": "BIO1013",
           "name": "生命科学导论B",
           "credit": 3.0,
-          "dept": "生命科学化学/生物与技术学课程群院，选一"
+          "dept": "生命科学与技术学院"
         },
         {
           "code": "BIO1015",
           "name": "现代生命科学导论D",
           "credit": 2.0,
-          "dept": "与技术学生命科学院"
+          "dept": "生命科学与技术学院"
         },
         {
           "code": "CHEM1103",
@@ -1431,7 +1431,7 @@
           "code": "EE150",
           "name": "信号与系统",
           "credit": 4.0,
-          "dept": "信息科学与技术学或者院"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "EE150L",
@@ -1449,11 +1449,11 @@
           "code": "CS181",
           "name": "人工智能I",
           "credit": 4.0,
-          "dept": "信息科学与技术学CS181院"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS171",
-          "name": "计算机图形学1",
+          "name": "计算机图形学I",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
@@ -1545,7 +1545,7 @@
           "code": "SI160",
           "name": "高阶机器人设计与集成",
           "credit": 4.0,
-          "dept": "信息科学与技术学"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "SI170",
@@ -1621,7 +1621,7 @@
         },
         {
           "code": "SI151A",
-          "name": "凸优化及其在信息科学中应用",
+          "name": "凸优化及其在信息科学中的应用",
           "credit": 3.0,
           "dept": "信息科学与技术学院"
         },
@@ -1653,7 +1653,7 @@
           "code": "SI214",
           "name": "偏微分方程数值解",
           "credit": 4.0,
-          "dept": "信息科学与技术学阮"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "SI214C",
@@ -1663,7 +1663,7 @@
         },
         {
           "code": "SI214H",
-          "name": "偏微分方程数值解",
+          "name": "偏微分方程数值解（H）",
           "credit": 3.0,
           "dept": "信息科学与技术学院"
         },
@@ -1719,7 +1719,7 @@
           "code": "CS120",
           "name": "计算机网络",
           "credit": 4.0,
-          "dept": "信息科学"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS121",
@@ -1731,7 +1731,7 @@
           "code": "CS130",
           "name": "操作系统I",
           "credit": 4.0,
-          "dept": "与技术学信息科学院"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS130P",
@@ -1759,13 +1759,13 @@
         },
         {
           "code": "CS133H",
-          "name": "甜樂返料++ひゃして",
+          "name": "C++进阶编程",
           "credit": 3.0,
           "dept": "信息科学与技术学院"
         },
         {
           "code": "CS150",
-          "name": "鲜酥酱獗与專鲜獗 SLZ",
+          "name": "数据库与数据挖掘",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
@@ -1777,33 +1777,33 @@
         },
         {
           "code": "CS151",
-          "name": "正所|！ LLZ",
+          "name": "计算机安全I",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
         {
           "code": "CS160",
-          "name": "互XIAY 6LZ",
+          "name": "人机交互",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
         {
           "code": "CS171",
-          "name": "垂味+108Z",
+          "name": "计算机图形学I",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
         {
           "code": "CS172",
-          "name": "口附1|118Z",
+          "name": "计算机视觉I",
           "credit": 4.0,
-          "dept": "信息科学与技术学阮"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS173",
           "name": "数据挖掘",
           "credit": 3.0,
-          "dept": "信息科学与技术学阮"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS177",
@@ -1843,13 +1843,13 @@
         },
         {
           "code": "CS210",
-          "name": "计算机体系结构I",
+          "name": "计算机体系结构III",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
         {
           "code": "CS211",
-          "name": "计算机体系结构I1",
+          "name": "计算机体系结构II",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
@@ -1905,7 +1905,7 @@
           "code": "CS244",
           "name": "计算理论",
           "credit": 4.0,
-          "dept": "信息科学与技术学阮"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS245",
@@ -1957,7 +1957,7 @@
         },
         {
           "code": "CS271",
-          "name": "计算机图形学I",
+          "name": "计算机图形学II",
           "credit": 4.0,
           "dept": "信息科学与技术学院"
         },
@@ -1971,7 +1971,7 @@
           "code": "CS274A",
           "name": "自然语言处理",
           "credit": 4.0,
-          "dept": "信息科学与技术学"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS275",
@@ -2041,9 +2041,9 @@
         },
         {
           "code": "CS286",
-          "name": "工程学应用322人工智能在科学与",
+          "name": "人工智能在科学与工程学的应用",
           "credit": 4.0,
-          "dept": "信息科学与技术学"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS287",
@@ -2061,11 +2061,11 @@
           "code": "CS289",
           "name": "机器人操作原理与实践",
           "credit": 3.0,
-          "dept": "信息科学与技术学阮"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS290A",
-          "name": "学326 交互式计算机图形",
+          "name": "交互式计算机图形学",
           "credit": 3.0,
           "dept": "信息科学与技术学院"
         },
@@ -2079,7 +2079,7 @@
           "code": "CS290S",
           "name": "深度学习工程实践",
           "credit": 2.0,
-          "dept": "信息科学与技术学阮"
+          "dept": "信息科学与技术学院"
         },
         {
           "code": "CS290T",
@@ -2103,7 +2103,7 @@
           "code": "CS291A",
           "name": "天基计算导论",
           "credit": 1.0,
-          "dept": "信息科学"
+          "dept": "信息科学与技术学院"
         }
       ]
     }
@@ -2188,7 +2188,7 @@
       },
       {
         "code": "GEHA1165",
-        "name": "读30基础英语I-人文阅",
+        "name": "基础英语I-人文阅读",
         "credit": 2.0,
         "is_compulsory": false,
         "module": "通识必修",
@@ -2340,7 +2340,7 @@
       },
       {
         "code": "CLPE1001",
-        "name": "游泳运动与健康43科学健身与田径运",
+        "name": "游泳运动与健康",
         "credit": 1.0,
         "is_compulsory": true,
         "module": "通识选修-大学英语",
@@ -2361,7 +2361,7 @@
     "2": [
       {
         "code": "GEHA1132",
-        "name": "基础英语I-人文阅读",
+        "name": "基础英语II-人文阅读",
         "credit": 2.0,
         "is_compulsory": false,
         "module": "通识选修-大学英语",
@@ -2380,7 +2380,7 @@
       },
       {
         "code": "GEHA1150",
-        "name": "基础英语工-写作",
+        "name": "基础英语II-写作",
         "credit": 2.0,
         "is_compulsory": false,
         "module": "通识选修-大学英语",
@@ -2399,7 +2399,7 @@
       },
       {
         "code": "GEMA1010",
-        "name": "数学分析I",
+        "name": "数学分析II",
         "credit": 5.0,
         "is_compulsory": false,
         "module": "自然科学基础",
@@ -2734,7 +2734,7 @@
       },
       {
         "code": "GEHA1303",
-        "name": "年到1920年间的美国史",
+        "name": "1770年到1920年间的美国史",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-大学英语",
@@ -2753,7 +2753,7 @@
       },
       {
         "code": "GEHA1304",
-        "name": "说的兴起35数字人文：英国小",
+        "name": "数字人文：英国小说的兴起",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-大学英语",
@@ -2780,7 +2780,7 @@
       },
       {
         "code": "GEHA1306",
-        "name": "启蒙时代：现代世界昀诞生",
+        "name": "启蒙时代：现代世界的诞生",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-大学英语",
@@ -2853,7 +2853,7 @@
       },
       {
         "code": "GEPE1007",
-        "name": "击剑与防卫145健美操I",
+        "name": "击剑与防卫 I",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -2891,7 +2891,7 @@
       },
       {
         "code": "GEPE1011",
-        "name": "籃球I47乒乓球I",
+        "name": "篮球 I",
         "credit": 0.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -2910,7 +2910,7 @@
       },
       {
         "code": "GEPE1015",
-        "name": "乒乓球I48拳击与塑形I",
+        "name": "乒乓球 I",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -2929,7 +2929,7 @@
       },
       {
         "code": "GEPE1017",
-        "name": "拳击与塑形I49跆拳道工",
+        "name": "拳击与塑形 I",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -2948,7 +2948,7 @@
       },
       {
         "code": "GEPE1028",
-        "name": "羽毛球I",
+        "name": "羽毛球 I",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -2986,7 +2986,7 @@
       },
       {
         "code": "GEPE1046",
-        "name": "匹克球I57赛艇I",
+        "name": "匹克球 I",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -3100,7 +3100,7 @@
       },
       {
         "code": "GEHA1151",
-        "name": "武侠小说与未元历史",
+        "name": "武侠小说与宋元历史",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3119,7 +3119,7 @@
       },
       {
         "code": "GEHA1152",
-        "name": "唐禾文学精华",
+        "name": "唐宋文学精华",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3138,7 +3138,7 @@
       },
       {
         "code": "GEHA1153",
-        "name": "港合文学与电影",
+        "name": "港台文学与电影",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3157,7 +3157,7 @@
       },
       {
         "code": "GEHA1154",
-        "name": "文学中“空间”",
+        "name": "文学中的“空间”",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3176,7 +3176,7 @@
       },
       {
         "code": "GEHA1155",
-        "name": "电影96 阅读城市：小说与",
+        "name": "阅读城市：小说与电影",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3214,7 +3214,7 @@
       },
       {
         "code": "GEHA1157",
-        "name": "性别视角下文学与电影",
+        "name": "性别视角下的文学与电影",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3469,7 +3469,7 @@
       },
       {
         "code": "GEHA1271",
-        "name": "“家”故事：从传统到现代",
+        "name": "“家”的故事：从传统到现代",
         "credit": 3.0,
         "is_compulsory": false,
         "module": "通识选修-文学与写作",
@@ -3762,7 +3762,7 @@
       },
       {
         "code": "SI140A",
-        "name": "面向信息科学概率论与数理统计",
+        "name": "面向信息科学的概率论与数理统计",
         "credit": 4.0,
         "is_compulsory": true,
         "module": "通识选修-创新创业",
@@ -3783,7 +3783,7 @@
     "5": [
       {
         "code": "GEPE1010",
-        "name": "健美操I60篮球II",
+        "name": "健美操II",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -3802,7 +3802,7 @@
       },
       {
         "code": "GEPE1012",
-        "name": "篮球II61乒乓球I",
+        "name": "篮球 II",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -3821,7 +3821,7 @@
       },
       {
         "code": "GEPE1016",
-        "name": "乒乓球I62拳击与塑形I",
+        "name": "乒乓球 II",
         "credit": 0.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -3840,7 +3840,7 @@
       },
       {
         "code": "GEPE1018",
-        "name": "拳击与塑形I63跆拳道I",
+        "name": "拳击与塑形 II",
         "credit": 0.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -3859,7 +3859,7 @@
       },
       {
         "code": "GEPE1024",
-        "name": "网球I",
+        "name": "网球II",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -3878,7 +3878,7 @@
       },
       {
         "code": "GEPE1026",
-        "name": "游泳I",
+        "name": "游泳 II",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4032,7 +4032,7 @@
     "6": [
       {
         "code": "CS110P",
-        "name": "计算机体系结构【课程设计",
+        "name": "计算机体系结构I课程设计",
         "credit": 2.0,
         "is_compulsory": true,
         "module": "自然科学基础",
@@ -4128,7 +4128,7 @@
       },
       {
         "code": "CLPE1057",
-        "name": "羽毛球运动81 足球运动",
+        "name": "羽毛球运动",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4136,7 +4136,7 @@
       },
       {
         "code": "CLPE1058",
-        "name": "足球运动82 武术运动",
+        "name": "足球运动",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4144,7 +4144,7 @@
       },
       {
         "code": "CLPE1059",
-        "name": "武术运动83瑜伽运动",
+        "name": "武术运动",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4152,7 +4152,7 @@
       },
       {
         "code": "CLPE1060",
-        "name": "瑜伽运动84 匹克球运动",
+        "name": "瑜伽运动",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4160,7 +4160,7 @@
       },
       {
         "code": "CLPE1061",
-        "name": "匹克球运动85 赛艇运动",
+        "name": "匹克球运动",
         "credit": 1.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4168,7 +4168,7 @@
       },
       {
         "code": "CLPE1062",
-        "name": "赛艇运动应修学分",
+        "name": "赛艇运动",
         "credit": 2.0,
         "is_compulsory": false,
         "module": "通识选修-大学体育",
@@ -4195,7 +4195,7 @@
       },
       {
         "code": "CS171",
-        "name": "垂味+108Z",
+        "name": "计算机图形学I",
         "credit": 4.0,
         "is_compulsory": false,
         "module": "自然科学基础",
@@ -4309,7 +4309,7 @@
       },
       {
         "code": "ENTR1006",
-        "name": "新177商业决策和技术创",
+        "name": "商业决策和技术创新",
         "credit": 2.0,
         "is_compulsory": false,
         "module": "通识选修-创意与艺术",
@@ -4349,7 +4349,7 @@
     "8": [
       {
         "code": "CS172",
-        "name": "口附1|118Z",
+        "name": "计算机视觉I",
         "credit": 4.0,
         "is_compulsory": false,
         "module": "自然科学基础",
@@ -4473,7 +4473,7 @@
         3
       ],
       "is_compulsory": true,
-      "dept": "思想政治需按规定理论课教参加形势研部",
+      "dept": "思想政治理论课教研部",
       "raw_module": "通识必修",
       "module": "通识必修",
       "notes": "与政策课",
@@ -4521,7 +4521,7 @@
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": true,
-      "dept": "思想政治论课（思理论课教研部政部开设） +1学分",
+      "dept": "思想政治理论课教研部",
       "raw_module": "通识必修",
       "module": "通识必修",
       "notes": "",
@@ -4576,7 +4576,7 @@
         5
       ],
       "is_compulsory": true,
-      "dept": "思想政治论课（思理论课教政部开设研部1）+1学分",
+      "dept": "思想政治理论课教研部",
       "raw_module": "通识理论课程课",
       "module": "专业选修",
       "notes": "",
@@ -4624,11 +4624,11 @@
     },
     {
       "code": "GEHA1101",
-      "name": "丝绸之路与东西文化",
+      "name": "丝绸之路与东西文化交流",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "思想政治",
+      "dept": "思想政治理论课教研部",
       "raw_module": "思政选修课",
       "module": "思想政治理论课-选修",
       "notes": "",
@@ -4651,7 +4651,7 @@
     },
     {
       "code": "GESS1026",
-      "name": "中国经济发展和改革2进程",
+      "name": "中国经济发展和改革进程",
       "credit": 0.0,
       "semesters": [],
       "is_compulsory": false,
@@ -4705,7 +4705,7 @@
     },
     {
       "code": "MT1014",
-      "name": "人类命运共同体历史基础与当代实践",
+      "name": "人类命运共同体的历史基础与当代实践",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -4835,7 +4835,7 @@
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "理论课教思想政治研部",
+      "dept": "思想政治理论课教研部",
       "raw_module": "思政选修课",
       "module": "思想政治理论课-选修",
       "notes": "",
@@ -4904,7 +4904,7 @@
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "理论课教思想政治研部",
+      "dept": "思想政治理论课教研部",
       "raw_module": "思政选修课",
       "module": "思想政治理论课-选修",
       "notes": ""
@@ -4922,7 +4922,7 @@
     },
     {
       "code": "MT1034",
-      "name": "马克思同时代德国经典著作导读唯物主义与共产主义",
+      "name": "马克思同时代德国唯物主义与共产主义经典著作导读",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -4989,7 +4989,7 @@
         1
       ],
       "is_compulsory": true,
-      "dept": "课，最后合成为该课程学分",
+      "dept": "上道书院",
       "raw_module": "*通识必修课",
       "module": "通识必修",
       "notes": "",
@@ -5012,7 +5012,7 @@
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": true,
-      "dept": "思想政治理论课教",
+      "dept": "思想政治理论课教研部",
       "raw_module": "*通识必修课",
       "module": "通识必修",
       "notes": "",
@@ -5120,7 +5120,7 @@
         4
       ],
       "is_compulsory": false,
-      "dept": "人文科学哲导/世通研究院/科通，三选一",
+      "dept": "人文科学研究院",
       "raw_module": "*通识必修课",
       "module": "通识必修",
       "notes": "",
@@ -5164,7 +5164,7 @@
     },
     {
       "code": "GEHA1165",
-      "name": "读30基础英语I-人文阅",
+      "name": "基础英语I-人文阅读",
       "credit": 2.0,
       "semesters": [
         1
@@ -5214,7 +5214,7 @@
     },
     {
       "code": "GEHA1132",
-      "name": "基础英语I-人文阅读",
+      "name": "基础英语II-人文阅读",
       "credit": 2.0,
       "semesters": [
         2
@@ -5239,7 +5239,7 @@
     },
     {
       "code": "GEHA1150",
-      "name": "基础英语工-写作",
+      "name": "基础英语II-写作",
       "credit": 2.0,
       "semesters": [
         2
@@ -5264,7 +5264,7 @@
     },
     {
       "code": "GEHA1303",
-      "name": "年到1920年间的美国史",
+      "name": "1770年到1920年间的美国史",
       "credit": 3.0,
       "semesters": [
         4
@@ -5289,7 +5289,7 @@
     },
     {
       "code": "GEHA1304",
-      "name": "说的兴起35数字人文：英国小",
+      "name": "数字人文：英国小说的兴起",
       "credit": 3.0,
       "semesters": [
         4
@@ -5327,7 +5327,7 @@
     },
     {
       "code": "GEHA1306",
-      "name": "启蒙时代：现代世界昀诞生",
+      "name": "启蒙时代：现代世界的诞生",
       "credit": 3.0,
       "semesters": [
         4
@@ -5428,7 +5428,7 @@
     },
     {
       "code": "CLPE1001",
-      "name": "游泳运动与健康43科学健身与田径运",
+      "name": "游泳运动与健康",
       "credit": 1.0,
       "semesters": [
         1
@@ -5486,7 +5486,7 @@
     },
     {
       "code": "GEPE1007",
-      "name": "击剑与防卫145健美操I",
+      "name": "击剑与防卫 I",
       "credit": 1.0,
       "semesters": [
         4
@@ -5517,7 +5517,7 @@
         4
       ],
       "is_compulsory": false,
-      "dept": "上道予院",
+      "dept": "上道书院",
       "raw_module": "体育基础",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5536,13 +5536,13 @@
     },
     {
       "code": "GEPE1011",
-      "name": "籃球I47乒乓球I",
+      "name": "篮球 I",
       "credit": 0.0,
       "semesters": [
         4
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育基础",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5561,7 +5561,7 @@
     },
     {
       "code": "GEPE1015",
-      "name": "乒乓球I48拳击与塑形I",
+      "name": "乒乓球 I",
       "credit": 1.0,
       "semesters": [
         4
@@ -5586,7 +5586,7 @@
     },
     {
       "code": "GEPE1017",
-      "name": "拳击与塑形I49跆拳道工",
+      "name": "拳击与塑形 I",
       "credit": 1.0,
       "semesters": [
         4
@@ -5611,7 +5611,7 @@
     },
     {
       "code": "GEPE1019",
-      "name": "跆拳道工",
+      "name": "跆拳道 I",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -5665,7 +5665,7 @@
     },
     {
       "code": "GEPE1025",
-      "name": "游泳I",
+      "name": "游泳 I",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -5692,7 +5692,7 @@
     },
     {
       "code": "GEPE1028",
-      "name": "羽毛球I",
+      "name": "羽毛球 I",
       "credit": 1.0,
       "semesters": [
         4
@@ -5717,7 +5717,7 @@
     },
     {
       "code": "GEPE1030",
-      "name": "足球I",
+      "name": "足球 I",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -5744,7 +5744,7 @@
     },
     {
       "code": "GEPE1032",
-      "name": "武术I",
+      "name": "武术 I",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -5796,13 +5796,13 @@
     },
     {
       "code": "GEPE1046",
-      "name": "匹克球I57赛艇I",
+      "name": "匹克球 I",
       "credit": 1.0,
       "semesters": [
         4
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5821,11 +5821,11 @@
     },
     {
       "code": "GEPE1047",
-      "name": "赛艇I",
+      "name": "赛艇 I",
       "credit": 0.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5848,11 +5848,11 @@
     },
     {
       "code": "GEPE1008",
-      "name": "击剑与防卫I59健美操I",
+      "name": "击剑与防卫 II",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5874,13 +5874,13 @@
     },
     {
       "code": "GEPE1010",
-      "name": "健美操I60篮球II",
+      "name": "健美操II",
       "credit": 1.0,
       "semesters": [
         5
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5899,13 +5899,13 @@
     },
     {
       "code": "GEPE1012",
-      "name": "篮球II61乒乓球I",
+      "name": "篮球 II",
       "credit": 1.0,
       "semesters": [
         5
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5924,7 +5924,7 @@
     },
     {
       "code": "GEPE1016",
-      "name": "乒乓球I62拳击与塑形I",
+      "name": "乒乓球 II",
       "credit": 0.0,
       "semesters": [
         5
@@ -5949,13 +5949,13 @@
     },
     {
       "code": "GEPE1018",
-      "name": "拳击与塑形I63跆拳道I",
+      "name": "拳击与塑形 II",
       "credit": 0.0,
       "semesters": [
         5
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5974,11 +5974,11 @@
     },
     {
       "code": "GEPE1020",
-      "name": "跆拳道I",
+      "name": "跆拳道 II",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -5997,7 +5997,7 @@
     },
     {
       "code": "GEPE1024",
-      "name": "网球I",
+      "name": "网球II",
       "credit": 1.0,
       "semesters": [
         5
@@ -6022,7 +6022,7 @@
     },
     {
       "code": "GEPE1026",
-      "name": "游泳I",
+      "name": "游泳 II",
       "credit": 1.0,
       "semesters": [
         5
@@ -6047,7 +6047,7 @@
     },
     {
       "code": "GEPE1029",
-      "name": "羽毛球II",
+      "name": "羽毛球 II",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -6073,7 +6073,7 @@
     },
     {
       "code": "GEPE1031",
-      "name": "足球I",
+      "name": "足球 II",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -6099,7 +6099,7 @@
     },
     {
       "code": "GEPE1033",
-      "name": "武术I",
+      "name": "武术 II",
       "credit": 0.0,
       "semesters": [],
       "is_compulsory": false,
@@ -6125,7 +6125,7 @@
     },
     {
       "code": "GEPE1043",
-      "name": "基础瑜伽I",
+      "name": "基础瑜伽II",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -6148,11 +6148,11 @@
     },
     {
       "code": "GEPE1048",
-      "name": "匹克球II71赛艇I",
+      "name": "匹克球 II",
       "credit": 0.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育专项",
       "module": "通识选修-大学体育",
       "notes": "",
@@ -6171,7 +6171,7 @@
     },
     {
       "code": "GEPE1049",
-      "name": "赛艇I应修学分",
+      "name": "赛艇 II",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -6310,72 +6310,72 @@
     },
     {
       "code": "CLPE1057",
-      "name": "羽毛球运动81 足球运动",
+      "name": "羽毛球运动",
       "credit": 1.0,
       "semesters": [
         7
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育兴趣",
       "module": "通识选修-大学体育",
       "notes": ""
     },
     {
       "code": "CLPE1058",
-      "name": "足球运动82 武术运动",
+      "name": "足球运动",
       "credit": 1.0,
       "semesters": [
         7
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育兴趣",
       "module": "通识选修-大学体育",
       "notes": ""
     },
     {
       "code": "CLPE1059",
-      "name": "武术运动83瑜伽运动",
+      "name": "武术运动",
       "credit": 1.0,
       "semesters": [
         7
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育兴趣",
       "module": "通识选修-大学体育",
       "notes": ""
     },
     {
       "code": "CLPE1060",
-      "name": "瑜伽运动84 匹克球运动",
+      "name": "瑜伽运动",
       "credit": 1.0,
       "semesters": [
         7
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育兴趣",
       "module": "通识选修-大学体育",
       "notes": ""
     },
     {
       "code": "CLPE1061",
-      "name": "匹克球运动85 赛艇运动",
+      "name": "匹克球运动",
       "credit": 1.0,
       "semesters": [
         7
       ],
       "is_compulsory": false,
-      "dept": "上道书院上道书院",
+      "dept": "上道书院",
       "raw_module": "体育兴趣",
       "module": "通识选修-大学体育",
       "notes": ""
     },
     {
       "code": "CLPE1062",
-      "name": "赛艇运动应修学分",
+      "name": "赛艇运动",
       "credit": 2.0,
       "semesters": [
         7
@@ -6388,7 +6388,7 @@
     },
     {
       "code": "CLPE1048",
-      "name": "健康体适能学分小计",
+      "name": "健康体适能",
       "credit": 1.0,
       "semesters": [
         10
@@ -6526,7 +6526,7 @@
     },
     {
       "code": "GEHA1151",
-      "name": "武侠小说与未元历史",
+      "name": "武侠小说与宋元历史",
       "credit": 3.0,
       "semesters": [
         4
@@ -6551,7 +6551,7 @@
     },
     {
       "code": "GEHA1152",
-      "name": "唐禾文学精华",
+      "name": "唐宋文学精华",
       "credit": 3.0,
       "semesters": [
         4
@@ -6576,7 +6576,7 @@
     },
     {
       "code": "GEHA1153",
-      "name": "港合文学与电影",
+      "name": "港台文学与电影",
       "credit": 3.0,
       "semesters": [
         4
@@ -6601,7 +6601,7 @@
     },
     {
       "code": "GEHA1154",
-      "name": "文学中“空间”",
+      "name": "文学中的“空间”",
       "credit": 3.0,
       "semesters": [
         4
@@ -6626,7 +6626,7 @@
     },
     {
       "code": "GEHA1155",
-      "name": "电影96 阅读城市：小说与",
+      "name": "阅读城市：小说与电影",
       "credit": 3.0,
       "semesters": [
         4
@@ -6676,7 +6676,7 @@
     },
     {
       "code": "GEHA1157",
-      "name": "性别视角下文学与电影",
+      "name": "性别视角下的文学与电影",
       "credit": 3.0,
       "semesters": [
         4
@@ -7014,7 +7014,7 @@
     },
     {
       "code": "GEHA1271",
-      "name": "“家”故事：从传统到现代",
+      "name": "“家”的故事：从传统到现代",
       "credit": 3.0,
       "semesters": [
         4
@@ -7115,7 +7115,7 @@
     },
     {
       "code": "GEHA1076",
-      "name": "《庄子》世界",
+      "name": "《庄子》的世界",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -7209,7 +7209,7 @@
     },
     {
       "code": "GEHA1199",
-      "name": "《尼各马可伦理学》 导读",
+      "name": "《尼各马可伦理学》导读",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -7305,7 +7305,7 @@
     },
     {
       "code": "GEHA1230",
-      "name": "《传习录》解读-一现代视野下王",
+      "name": "《传习录》解读——现代视野下的王阳明思想",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -7332,7 +7332,7 @@
     },
     {
       "code": "GEHA1262",
-      "name": "《想象共同体》导读",
+      "name": "《想象的共同体》导读",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -7538,7 +7538,7 @@
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "创意与艺木学院",
+      "dept": "创意与艺术学院",
       "raw_module": "文明经典导读课程",
       "module": "通识选修-文明经典导读",
       "notes": "",
@@ -7662,7 +7662,7 @@
     },
     {
       "code": "ARTS1407",
-      "name": "计141用户体验与创新设",
+      "name": "用户体验与创新设计",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -7746,7 +7746,7 @@
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "创意与艺木学院",
+      "dept": "创意与艺术学院",
       "raw_module": "创意与艺术课程群",
       "module": "通识选修-创意与艺术",
       "notes": "",
@@ -7772,7 +7772,7 @@
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "创意与艺木学院",
+      "dept": "创意与艺术学院",
       "raw_module": "创意与艺术课程群",
       "module": "通识选修-创意与艺术",
       "notes": "",
@@ -7870,7 +7870,7 @@
     },
     {
       "code": "ARTS1434",
-      "name": "经典艺术鉴赏-从文艺复兴到现代",
+      "name": "经典艺术鉴赏——从文艺复兴到现代",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -8011,7 +8011,7 @@
     },
     {
       "code": "ARTS1444",
-      "name": "科幻漫画与动画鉴賞",
+      "name": "科幻漫画与动画鉴赏",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -8037,7 +8037,7 @@
     },
     {
       "code": "ARTS1452",
-      "name": "物性的叙事：当代首饰痕迹与秩序",
+      "name": "物性的叙事：当代首饰的痕迹与秩序",
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
@@ -8052,7 +8052,7 @@
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "创意与艺木学院",
+      "dept": "创意与艺术学院",
       "raw_module": "创意与艺术课程群",
       "module": "通识选修-创意与艺术",
       "notes": ""
@@ -8063,7 +8063,7 @@
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "创意与艺木学院",
+      "dept": "创意与艺术学院",
       "raw_module": "创意与艺术课程群",
       "module": "通识选修-创意与艺术",
       "notes": ""
@@ -8508,7 +8508,7 @@
     },
     {
       "code": "ENTR1006",
-      "name": "新177商业决策和技术创",
+      "name": "商业决策和技术创新",
       "credit": 2.0,
       "semesters": [
         7
@@ -8633,7 +8633,7 @@
     },
     {
       "code": "ENTR2004",
-      "name": "创新创业工具及人工智能运用",
+      "name": "创新创业工具及人工智能的运用",
       "credit": 1.0,
       "semesters": [],
       "is_compulsory": false,
@@ -8762,7 +8762,7 @@
     },
     {
       "code": "SI140A",
-      "name": "面向信息科学概率论与数理统计",
+      "name": "面向信息科学的概率论与数理统计",
       "credit": 4.0,
       "semesters": [
         4
@@ -8874,7 +8874,7 @@
     },
     {
       "code": "GEMA1010",
-      "name": "数学分析I",
+      "name": "数学分析II",
       "credit": 5.0,
       "semesters": [
         2
@@ -8985,7 +8985,7 @@
         4
       ],
       "is_compulsory": false,
-      "dept": "生命科学与技术学阮",
+      "dept": "生命科学与技术学院",
       "raw_module": "识课 信息课程群学通",
       "module": "自然科学基础",
       "notes": "",
@@ -9061,7 +9061,7 @@
         4
       ],
       "is_compulsory": false,
-      "dept": "生命科学化学/生物与技术学课程群院，选一",
+      "dept": "生命科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -9086,7 +9086,7 @@
         4
       ],
       "is_compulsory": false,
-      "dept": "与技术学生命科学院",
+      "dept": "生命科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -9191,7 +9191,7 @@
         4
       ],
       "is_compulsory": true,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -9239,7 +9239,7 @@
     },
     {
       "code": "CS110P",
-      "name": "计算机体系结构【课程设计",
+      "name": "计算机体系结构I课程设计",
       "credit": 2.0,
       "semesters": [
         6
@@ -9338,7 +9338,7 @@
         5
       ],
       "is_compulsory": false,
-      "dept": "信息科学与技术学或者院",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "（EE150+E",
@@ -9412,7 +9412,7 @@
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学CS181院",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -9435,7 +9435,7 @@
     },
     {
       "code": "CS171",
-      "name": "计算机图形学1",
+      "name": "计算机图形学I",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -9830,7 +9830,7 @@
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": ""
@@ -10073,7 +10073,7 @@
     },
     {
       "code": "SI151A",
-      "name": "凸优化及其在信息科学中应用",
+      "name": "凸优化及其在信息科学中的应用",
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10178,7 +10178,7 @@
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -10228,7 +10228,7 @@
     },
     {
       "code": "SI214H",
-      "name": "偏微分方程数值解",
+      "name": "偏微分方程数值解（H）",
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10432,7 +10432,7 @@
         7
       ],
       "is_compulsory": false,
-      "dept": "信息科学",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -10490,7 +10490,7 @@
         5
       ],
       "is_compulsory": false,
-      "dept": "与技术学信息科学院",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -10608,7 +10608,7 @@
     },
     {
       "code": "CS133H",
-      "name": "甜樂返料++ひゃして",
+      "name": "C++进阶编程",
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10619,7 +10619,7 @@
     },
     {
       "code": "CS150",
-      "name": "鲜酥酱獗与專鲜獗 SLZ",
+      "name": "数据库与数据挖掘",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10675,7 +10675,7 @@
     },
     {
       "code": "CS151",
-      "name": "正所|！ LLZ",
+      "name": "计算机安全I",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10698,7 +10698,7 @@
     },
     {
       "code": "CS160",
-      "name": "互XIAY 6LZ",
+      "name": "人机交互",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10724,7 +10724,7 @@
     },
     {
       "code": "CS171",
-      "name": "垂味+108Z",
+      "name": "计算机图形学I",
       "credit": 4.0,
       "semesters": [
         7
@@ -10753,13 +10753,13 @@
     },
     {
       "code": "CS172",
-      "name": "口附1|118Z",
+      "name": "计算机视觉I",
       "credit": 4.0,
       "semesters": [
         8
       ],
       "is_compulsory": false,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -10786,7 +10786,7 @@
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -10938,7 +10938,7 @@
     },
     {
       "code": "CS210",
-      "name": "计算机体系结构I",
+      "name": "计算机体系结构III",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -10965,7 +10965,7 @@
     },
     {
       "code": "CS211",
-      "name": "计算机体系结构I1",
+      "name": "计算机体系结构II",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -11168,7 +11168,7 @@
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -11381,7 +11381,7 @@
     },
     {
       "code": "CS271",
-      "name": "计算机图形学I",
+      "name": "计算机图形学II",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
@@ -11434,7 +11434,7 @@
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -11724,11 +11724,11 @@
     },
     {
       "code": "CS286",
-      "name": "工程学应用322人工智能在科学与",
+      "name": "人工智能在科学与工程学的应用",
       "credit": 4.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -11788,7 +11788,7 @@
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -11807,7 +11807,7 @@
     },
     {
       "code": "CS290A",
-      "name": "学326 交互式计算机图形",
+      "name": "交互式计算机图形学",
       "credit": 3.0,
       "semesters": [],
       "is_compulsory": false,
@@ -11833,7 +11833,7 @@
       "credit": 2.0,
       "semesters": [],
       "is_compulsory": false,
-      "dept": "信息科学与技术学阮",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": "",
@@ -11930,7 +11930,7 @@
         9
       ],
       "is_compulsory": false,
-      "dept": "信息科学",
+      "dept": "信息科学与技术学院",
       "raw_module": "自然科学基础选修课",
       "module": "自然科学基础",
       "notes": ""

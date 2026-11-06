@@ -126,7 +126,7 @@ def cmd_ask(query, force_refresh=False):
         sw = scores.get("workload", 0)
         sd = scores.get("difficulty", 0)
         sg = scores.get("grade", 0)
-        print(f"> 📊 **学生真实评分**：教学质量 `{sq:.1f}/5.0` | 课业负担 `{sw:.1f}/5.0` | 考核难度 `{sd:.1f}/5.0` | 给分优劣 `{sg:.1f}/5.0`\n")
+        print(f"> 📊 **学生真实评分**：教学质量 `{sq:.1f}/5.0` | 课业友好度 `{sw:.1f}/5.0` (高分=轻松) | 考核友好度 `{sd:.1f}/5.0` (高分=温和) | 给分优劣 `{sg:.1f}/5.0`\n")
     else:
         print("> 📊 *该课程在 CourseBench 暂无足够数量评分。*\n")
 
@@ -181,13 +181,15 @@ def cmd_ask(query, force_refresh=False):
     sd = scores.get("difficulty", 3.0)
     sg = scores.get("grade", 3.0)
 
-    if sw >= 3.8:
-        tips.append("⚠️ **工作量极大**：该课程作业/Project 耗时极长，务必提前规划 ddl，切忌堆积到最后一夜。")
-    elif sw <= 2.2:
-        tips.append("✨ **课业负担温和**：平时压力较小，适合搭配一门硬核专业课一起修读。")
+    if sw <= 2.5:
+        tips.append("⚡ **课业负荷巨大（硬核用时）**：作业/Project 耗时极长（CourseBench 用时 >4~8h+），务必提前规划 ddl，切忌堆积到最后一夜。")
+    elif sw >= 4.0:
+        tips.append("✨ **课业负担温和**：平时压力较小、作业用时少，适合搭配一门硬核专业课一起修读。")
 
-    if sd >= 3.8:
-        tips.append("🔥 **考试硬核度高**：考卷区分度大或覆盖面广，建议考前务必刷完上述历年真题回忆版！")
+    if sd <= 2.5:
+        tips.append("🔥 **考试硬核度高**：考卷难度大或区分度高，建议考前务必刷完上述历年真题回忆版！")
+    elif sd >= 4.0:
+        tips.append("🎯 **考核相对友好**：题目紧扣讲义基础、题量适中，认真复习课件即可稳妥应对。")
     
     if sg >= 4.0:
         tips.append("🎁 **给分较慷慨**：优秀率相对较高或只要平时认真即可保 GPA，属于高性价必修/选修。")

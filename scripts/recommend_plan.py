@@ -128,7 +128,7 @@ def load_curriculum(path):
 def format_cb_score(cb):
     if not cb or not cb.get("score_quality"):
         return "暂无评测"
-    return f"质量⭐{cb['score_quality']:.1f} | 课业负担{cb['score_workload']:.1f} | 给分{cb['score_grade']:.1f} ({cb['comment_num']}条评语)"
+    return f"质量⭐{cb['score_quality']:.1f} | 课业轻松度⭐{cb['score_workload']:.1f} | 给分⭐{cb['score_grade']:.1f} ({cb['comment_num']}条评语)"
 
 def get_semester_name(sem_num):
     year = (sem_num - 1) // 3 + 1
@@ -174,7 +174,8 @@ def cmd_roadmap(args):
             for c in comp_courses:
                 cb = c.get("coursebench")
                 cb_str = format_cb_score(cb)
-                print(f"    • {c['name']} (`{c['code']}`, {c.get('credit', '?')}学分) - [{c.get('module', '必修')}]")
+                c_name = cb.get("official_name") if cb and cb.get("official_name") else c["name"]
+                print(f"    • {c_name} (`{c['code']}`, {c.get('credit', '?')}学分) - [{c.get('module', '必修')}]")
                 print(f"      CourseBench: {cb_str}")
                 
         if elec_courses:
@@ -182,7 +183,8 @@ def cmd_roadmap(args):
             for c in elec_courses:
                 cb = c.get("coursebench")
                 cb_str = format_cb_score(cb)
-                print(f"    • {c['name']} (`{c['code']}`, {c.get('credit', '?')}学分) - [{c.get('module', '选修')}]")
+                c_name = cb.get("official_name") if cb and cb.get("official_name") else c["name"]
+                print(f"    • {c_name} (`{c['code']}`, {c.get('credit', '?')}学分) - [{c.get('module', '选修')}]")
                 print(f"      CourseBench: {cb_str}")
 
     # General Education tips for this semester

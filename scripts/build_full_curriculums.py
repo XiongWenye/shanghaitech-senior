@@ -432,3 +432,5 @@ if __name__ == "__main__":
     for meta in MAJORS_META:
         process_major(meta)
     print("\nAll 12 Curriculums successfully built and saved in data/curriculums/")
+    from clean_curriculums import clean_all_curriculums
+    clean_all_curriculums()

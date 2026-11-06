@@ -285,3 +285,5 @@ def process_major_ocr(ocr_filename, meta):
 if __name__ == "__main__":
     for ocr_file, meta in FILE_MAPPING.items():
         process_major_ocr(ocr_file, meta)
+    from clean_curriculums import clean_all_curriculums
+    clean_all_curriculums()

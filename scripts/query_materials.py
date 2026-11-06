@@ -111,7 +111,7 @@ def format_markdown_report(course):
         sw = scores.get("workload", 0)
         sd = scores.get("difficulty", 0)
         sg = scores.get("grade", 0)
-        lines.append(f"> 🌟 **CourseBench 口碑指数**：教学质量 `{sq:.1f}/5.0` | 课业负担 `{sw:.1f}/5.0` | 考核难度 `{sd:.1f}/5.0` | 给分情况 `{sg:.1f}/5.0`")
+        lines.append(f"> 🌟 **CourseBench 口碑指数**：教学质量 `{sq:.1f}/5.0` | 课业友好度 `{sw:.1f}/5.0` (高分=轻松) | 考核友好度 `{sd:.1f}/5.0` (高分=温和) | 给分情况 `{sg:.1f}/5.0`")
         lines.append("")
 
     # Source badges
